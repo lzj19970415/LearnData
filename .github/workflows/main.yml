@@ -1,0 +1,59 @@
+name: docs build
+
+on:
+  push:
+    branches:
+      # 确保这是你正在使用的分支名称
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  LearnData-build:
+    runs-on: ubuntu-latest
+    env:
+      FTP_HOST: ${{ secrets.ftp_host }}
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v7
+        with:
+          # 获取所有标记和分支的所有历史记录（updatetime 必须，否则每次都会变化）
+          fetch-depth: 0
+          # 如果文档包含 Git 子模块，请取消注释下一行
+          # submodules: true
+
+      # pnpm/setup 同时装 pnpm 和 Node，并自动执行 pnpm install
+      - name: Install pnpm & Node.js
+        uses: pnpm/setup@v3
+        with:
+          runtime: node@24
+          cache: true
+
+      # 复制读书笔记到静态页面路径，并构建页面
+      - name: Build Docs
+        env:
+          NODE_OPTIONS: --max_old_space_size=8192
+        run: |-
+          pnpm cpx "src/reading/**" src/.vuepress/public/reading
+          pnpm run docs:build
+          > src/.vuepress/dist/.nojekyll
+
+      - name: Deploy GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          # 指定静态文件部署到的分支
+          branch: gh-pages
+          folder: src/.vuepress/dist
+
+      # 如果配置了 FTP 服务器密钥，才会执行本步骤，将页面静态文件同步到服务器
+      - name: 📂 Sync files
+        if: env.FTP_HOST != ''
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          local-dir: src/.vuepress/dist/
+          server: ${{ secrets.ftp_host }}
+          username: ${{ secrets.ftp_username }}
+          password: ${{ secrets.ftp_password }}
+          port: ${{ secrets.ftp_port }} # 建议更改默认的 21 端口
+          timeout: 600000
