@@ -6,14 +6,15 @@
     <link>https://newzone.top/LearnData/</link>
     <description>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</description>
     <language>zh-CN</language>
-    <pubDate>Mon, 12 Oct 2026 09:03:11 GMT</pubDate>
-    <lastBuildDate>Mon, 12 Oct 2026 09:03:11 GMT</lastBuildDate>
+    <pubDate>Mon, 12 Oct 2026 09:27:47 GMT</pubDate>
+    <lastBuildDate>Mon, 12 Oct 2026 09:27:47 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>工具</category>
     <category>使用指南</category>
     <category>工作流程与问题处理</category>
-    <category>Linux</category>
+    <category>Linux进阶</category>
+    <category>Linux基础</category>
     <item>
       <title>博客文章样例 2</title>
       <link>https://newzone.top/LearnData/posts/2024-03-02-blog_example2.html</link>
@@ -1136,12 +1137,280 @@ M9000防火墙可以在web界面进行操作</li>
 ]]></content:encoded>
     </item>
     <item>
+      <title>Python运维自动化入门</title>
+      <link>https://newzone.top/LearnData/linux/Python%E8%BF%90%E7%BB%B4%E8%87%AA%E5%8A%A8%E5%8C%96.html</link>
+      <guid>https://newzone.top/LearnData/linux/Python%E8%BF%90%E7%BB%B4%E8%87%AA%E5%8A%A8%E5%8C%96.html</guid>
+      <source url="https://newzone.top/LearnData/rss.xml">Python运维自动化入门</source>
+      <description>Python 运维自动化入门 面向运维方向的 Python 入门笔记，涵盖环境、基本语法、正则、文件操作、数据库与自动化脚本。 一、环境准备 二、基本语法 1. 变量与数据类型 2. 输入输出 3. 条件判断 4. 循环 三、函数 四、正则表达式（运维常用） 正则用于匹配、查找、替换文本，处理日志和配置文件非常高效。 常用正则符号： 五、文件操作（服务...</description>
+      <category>Linux进阶</category>
+      <pubDate>Mon, 12 Oct 2026 06:59:31 GMT</pubDate>
+      <content:encoded><![CDATA[
+<p>面向运维方向的 Python 入门笔记，涵盖环境、基本语法、正则、文件操作、数据库与自动化脚本。</p>
+<h2>一、环境准备</h2>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 检查版本</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">python3</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --version</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 安装 pip</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">yum</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python3-pip</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">apt</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python3-pip</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 安装常用库</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">pip3</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> requests</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> pymysql</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> paramiko</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>二、基本语法</h2>
+<h3>1. 变量与数据类型</h3>
+<div class="language-python line-numbers-mode" data-highlighter="shiki" data-ext="python" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-python"><span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">name </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "运维"</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">        # 字符串</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">num </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 100</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">           # 整数</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">rate </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 3.14</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">         # 浮点数</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">is_ok </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> True</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">        # 布尔值</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">list1 </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">2</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">3</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]   </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 列表</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">dict1 </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"host"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"10.0.0.1"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"port"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">3306</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}  </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 字典</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3>2. 输入输出</h3>
+<div class="language-python line-numbers-mode" data-highlighter="shiki" data-ext="python" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-python"><span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">name </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"请输入主机名: "</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">print</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"主机名是:"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, name)</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">print</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">f</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"端口号是: </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">{</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">dict1[</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'port'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)   </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># f-string 格式化</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3>3. 条件判断</h3>
+<div class="language-python line-numbers-mode" data-highlighter="shiki" data-ext="python" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-python"><span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">load </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 0.85</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">if</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> load </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 0.8</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">:</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    print</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"负载过高，告警！"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">elif</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> load </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 0.5</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">:</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    print</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"负载偏高"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">else</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">:</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    print</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"负载正常"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3>4. 循环</h3>
+<div class="language-python line-numbers-mode" data-highlighter="shiki" data-ext="python" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-python"><span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># for 遍历列表</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">hosts </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"web1"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"web2"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"web3"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">for</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> h </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">in</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> hosts:</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    print</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">f</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"检查主机 </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">{</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">h</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># while</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">i </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 0</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">while</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> i </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x3C;</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 5</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">:</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    print</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(i)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    i </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 1</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>三、函数</h2>
+<div class="language-python line-numbers-mode" data-highlighter="shiki" data-ext="python" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-python"><span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">def</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> check_cpu</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(threshold</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0.8</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">):</span></span>
+<span class="line"><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    """检查 CPU 负载"""</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    cpu </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> get_cpu_usage()   </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 假设有获取函数</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    if</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> cpu </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> threshold:</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">        print</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">f</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"CPU 超限: </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">{</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">cpu</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">%"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">        return</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> False</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    return</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> True</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 调用</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">check_cpu(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0.9</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>四、正则表达式（运维常用）</h2>
+<p>正则用于匹配、查找、替换文本，处理日志和配置文件非常高效。</p>
+<div class="language-python line-numbers-mode" data-highlighter="shiki" data-ext="python" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-python"><span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> re</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 匹配 IP 地址</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">log </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "访问来源 192.168.1.100 端口 80"</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ip </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> re.findall(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">r</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">\d</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#024C1A;--shiki-light-font-weight:bold;--shiki-dark:#72F088;--shiki-dark-font-weight:bold">\.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">\d</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#024C1A;--shiki-light-font-weight:bold;--shiki-dark:#72F088;--shiki-dark-font-weight:bold">\.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">\d</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#024C1A;--shiki-light-font-weight:bold;--shiki-dark:#72F088;--shiki-dark-font-weight:bold">\.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">\d</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, log)</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">print</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(ip)   </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># ['192.168.1.100']</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 匹配邮箱</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">email </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "联系: ops@example.com"</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">m </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> re.search(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">r</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">[\w</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">]</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">@</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">[\w</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">]</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, email)</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">print</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(m.group())   </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># ops@example.com</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 替换</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">new </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> re.sub(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">r</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">\d</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#024C1A;--shiki-light-font-weight:bold;--shiki-dark:#72F088;--shiki-dark-font-weight:bold">\.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">\d</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#024C1A;--shiki-light-font-weight:bold;--shiki-dark:#72F088;--shiki-dark-font-weight:bold">\.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">\d</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#024C1A;--shiki-light-font-weight:bold;--shiki-dark:#72F088;--shiki-dark-font-weight:bold">\.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">\d</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"***.***.***.***"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, log)</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">print</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(new)</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>常用正则符号：</strong></p>
+<p>| 符号 | 含义 |
+|</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Shell脚本编程从入门到实战</title>
+      <link>https://newzone.top/LearnData/linux/Shell%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B.html</link>
+      <guid>https://newzone.top/LearnData/linux/Shell%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B.html</guid>
+      <source url="https://newzone.top/LearnData/rss.xml">Shell脚本编程从入门到实战</source>
+      <description>面向运维的 Shell 编程完整笔记，涵盖基础语法、变量、条件判断、循环、函数、调试及实战场景。 一、Shell 是什么 Shell 是一个命令解释器，位于操作系统外层，负责解释执行用户输入的命令，并把结果返回给用户。用户每输入一条命令，Shell 就解释执行一条，这种交互方式称为交互式。把一系列命令写进一个文件批量执行，就是 Shell 脚本。 常见...</description>
+      <category>Linux进阶</category>
+      <pubDate>Mon, 12 Oct 2026 06:59:31 GMT</pubDate>
+      <content:encoded><![CDATA[<blockquote>
+<p>面向运维的 Shell 编程完整笔记，涵盖基础语法、变量、条件判断、循环、函数、调试及实战场景。</p>
+</blockquote>
+<h2>一、Shell 是什么</h2>
+<p>Shell 是一个<strong>命令解释器</strong>，位于操作系统外层，负责解释执行用户输入的命令，并把结果返回给用户。用户每输入一条命令，Shell 就解释执行一条，这种交互方式称为<strong>交互式</strong>。把一系列命令写进一个文件批量执行，就是 <strong>Shell 脚本</strong>。</p>
+<p><strong>常见 Shell：</strong></p>
+<ul>
+<li><code>bash</code>（Bourne Again Shell）：Linux 默认，功能最强，本教程以 bash 为准</li>
+<li><code>sh</code>：最基础的 Bourne Shell，脚本兼容性最好</li>
+<li><code>csh</code> / <code>zsh</code> / <code>ksh</code> 等</li>
+</ul>
+<p><strong>第一个脚本：</strong></p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#!/bin/bash</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">echo</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "Hello World"</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li><code>#!/bin/bash</code> 是&quot;解释器声明&quot;，告诉系统用 bash 执行</li>
+<li>保存为 <code>hello.sh</code> 后，执行 <code>chmod +x hello.sh</code> 赋予执行权限，然后 <code>./hello.sh</code> 运行</li>
+<li>也可直接 <code>bash hello.sh</code> 运行，无需执行权限</li>
+</ul>
+<h2>二、变量</h2>
+<h3>1. 变量定义与引用</h3>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">name</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"运维小张"</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">        # 变量名=值，等号两边不能有空格</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">num</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">10</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">echo</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> $name            </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 引用变量，前面加 $ </span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">echo</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ${num}           </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 推荐用 {} 包裹，避免歧义</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>规则：</strong> 变量名只能由字母、数字、下划线组成，不能以数字开头。</p>
+<h3>2. 变量类型</h3>
+<p>| 类型 | 说明 | 示例 |
+|</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>信创外网创建云主机流程</title>
+      <link>https://newzone.top/LearnData/huawei/%E4%BF%A1%E5%88%9B%E5%A4%96%E7%BD%91%E5%88%9B%E5%BB%BA%E4%BA%91%E4%B8%BB%E6%9C%BA%E6%B5%81%E7%A8%8B/</link>
+      <guid>https://newzone.top/LearnData/huawei/%E4%BF%A1%E5%88%9B%E5%A4%96%E7%BD%91%E5%88%9B%E5%BB%BA%E4%BA%91%E4%B8%BB%E6%9C%BA%E6%B5%81%E7%A8%8B/</guid>
+      <source url="https://newzone.top/LearnData/rss.xml">信创外网创建云主机流程</source>
+      <description>本文整理自《信创外网创建云主机流程》文档，含操作步骤与截图。 外网1跟外网2主机的堡垒机是开在绿盟堡垒机上 信创外网创建云主机流程： 图0图0 网络就是选择VPC网络，根据合同项目选择网络 图1图1 图2图2 添加安全组 图3图3 填写安全组规则 这两条是堡垒机和扫描器的ip，端口一个是22、另外一个all 图4图4 查看管理者对不对，不对需要修改管理...</description>
+      <category>工作流程与问题处理</category>
+      <pubDate>Mon, 12 Oct 2026 06:59:31 GMT</pubDate>
+      <content:encoded><![CDATA[<blockquote>
+<p>本文整理自《信创外网创建云主机流程》文档，含操作步骤与截图。</p>
+</blockquote>
+<p>外网1跟外网2主机的堡垒机是开在绿盟堡垒机上</p>
+<p>信创外网创建云主机流程：</p>
+<figure><img src="/cloudhost/image1.png" alt="图0" tabindex="0" loading="lazy"><figcaption>图0</figcaption></figure>
+<p>网络就是选择VPC网络，根据合同项目选择网络</p>
+<figure><img src="/cloudhost/image2.png" alt="图1" tabindex="0" loading="lazy"><figcaption>图1</figcaption></figure>
+<figure><img src="/cloudhost/image3.png" alt="图2" tabindex="0" loading="lazy"><figcaption>图2</figcaption></figure>
+<p>添加安全组</p>
+<figure><img src="/cloudhost/image4.png" alt="图3" tabindex="0" loading="lazy"><figcaption>图3</figcaption></figure>
+<p>填写安全组规则</p>
+<p>这两条是堡垒机和扫描器的ip，端口一个是22、另外一个all</p>
+<figure><img src="/cloudhost/image5.png" alt="图4" tabindex="0" loading="lazy"><figcaption>图4</figcaption></figure>
+<p>查看管理者对不对，不对需要修改管理者，管理者可以看审批流程有没有经过这个人（管理局的），没有就选择其他的，有就选择yzw_xc_glj</p>
+<figure><img src="/cloudhost/image6.png" alt="图5" tabindex="0" loading="lazy"><figcaption>图5</figcaption></figure>
+<p>更改所有者后绑定网卡</p>
+<figure><img src="/cloudhost/image7.png" alt="图6" tabindex="0" loading="lazy"><figcaption>图6</figcaption></figure>
+<p>可选：要加公网的情况</p>
+<p>创建弹性IP</p>
+<figure><img src="/cloudhost/image8.png" alt="图7" tabindex="0" loading="lazy"><figcaption>图7</figcaption></figure>
+<p>选择公有网络</p>
+<figure><img src="/cloudhost/image9.png" alt="图8" tabindex="0" loading="lazy"><figcaption>图8</figcaption></figure>
+<p>选择公网地址</p>
+<figure><img src="/cloudhost/image10.png" alt="图9" tabindex="0" loading="lazy"><figcaption>图9</figcaption></figure>
+<p>虚拟ip 搜索</p>
+<figure><img src="/cloudhost/image11.png" alt="图10" tabindex="0" loading="lazy"><figcaption>图10</figcaption></figure>
+<p>添加QoS</p>
+<p>根据需求工单来选择填写</p>
+<figure><img src="/cloudhost/image12.png" alt="图11" tabindex="0" loading="lazy"><figcaption>图11</figcaption></figure>
+<p>第二部分：</p>
+<figure><img src="/cloudhost/image13.png" alt="图12" tabindex="0" loading="lazy"><figcaption>图12</figcaption></figure>
+<figure><img src="/cloudhost/image14.png" alt="图13" tabindex="0" loading="lazy"><figcaption>图13</figcaption></figure>
+<p>加完记得要测试网络是否正常</p>
+<blockquote>
+<p>AI生成</p>
+</blockquote>
+]]></content:encoded>
+      <enclosure url="https://newzone.top/LearnData/cloudhost/image1.png" type="image/png"/>
+    </item>
+    <item>
+      <title>一、HTTP 介绍</title>
+      <link>https://newzone.top/LearnData/security/HTTPS%E8%AF%A6%E8%A7%A3/</link>
+      <guid>https://newzone.top/LearnData/security/HTTPS%E8%AF%A6%E8%A7%A3/</guid>
+      <source url="https://newzone.top/LearnData/rss.xml">一、HTTP 介绍</source>
+      <description>一、HTTP 介绍 HTTP协议是Hyper Text Transfer Protocol（超文本传输协议）的缩写,是用于从万维网（WWW:World Wide Web ）服务器传输超文本到本地浏览器的传送协议。 HTTP是一个基于TCP/IP通信协议来传递数据（HTML 文件, 图片文件, 查询结果等）。 1、HTTP 工作原理 HTTP协议工作于客...</description>
+      <pubDate>Mon, 12 Oct 2026 06:59:31 GMT</pubDate>
+      <content:encoded><![CDATA[
+<p>HTTP协议是Hyper Text Transfer Protocol（超文本传输协议）的缩写,是用于从万维网（WWW:World Wide Web ）服务器传输超文本到本地浏览器的传送协议。</p>
+<p>HTTP是一个基于TCP/IP通信协议来传递数据（HTML 文件, 图片文件, 查询结果等）。</p>
+<h3>1、HTTP 工作原理</h3>
+<p>HTTP协议工作于客户端-服务端架构上。浏览器作为HTTP客户端通过URL向HTTP服务端即WEB服务器发送所有请求。</p>
+<p>Web服务器有：Nginx，Apache服务器，IIS服务器（Internet Information Services）等。</p>
+<p>Web服务器根据接收到的请求后，向客户端发送响应信息。</p>
+<p>HTTP默认端口号为80，但是你也可以改为8080或者其他端口。</p>
+<p><strong>HTTP三点注意事项：</strong></p>
+<ul>
+<li>HTTP是无连接：无连接的含义是限制每次连接只处理一个请求。服务器处理完客户的请求，并收到客户的应答后，即断开连接。采用这种方式可以节省传输时间。</li>
+<li>HTTP是媒体独立的：这意味着，只要客户端和服务器知道如何处理的数据内容，任何类型的数据都可以通过HTTP发送。客户端以及服务器指定使用适合的MIME-type内容类型。</li>
+<li>HTTP是无状态：HTTP协议是无状态协议。无状态是指协议对于事务处理没有记忆能力。缺少状态意味着如果后续处理需要前面的信息，则它必须重传，这样可能导致每次连接传送的数据量增大。另一方面，在服务器不需要先前信息时它的应答就较快。</li>
+</ul>
+<h3>2、HTTP 消息结构</h3>
+<p>HTTP是基于客户端/服务端（C/S）的架构模型，通过一个可靠的链接来交换信息，是一个无状态的请求/响应协议。</p>
+<p>一个HTTP&quot;客户端&quot;是一个应用程序（Web浏览器或其他任何客户端），通过连接到服务器达到向服务器发送一个或多个HTTP的请求的目的。</p>
+<p>一个HTTP&quot;服务器&quot;同样也是一个应用程序（通常是一个Web服务，如Apache Web服务器或IIS服务器等），通过接收客户端的请求并向客户端发送HTTP响应数据。</p>
+<p>HTTP使用统一资源标识符（Uniform Resource Identifiers, URI）来传输数据和建立连接。</p>
+<h3>3、客户端请求消息</h3>
+<p>客户端发送一个HTTP请求到服务器的请求消息包括以下格式：请求行（request line）、请求头部（header）、空行和请求数据四个部分组成</p>
+<h3>4、服务器响应消息</h3>
+<p>HTTP响应也由四个部分组成，分别是：状态行、消息报头、空行和响应正文。</p>
+<p><strong>实例</strong></p>
+<p>下面实例是一点典型的使用GET来传递数据的实例：</p>
+<p>客户端请求：</p>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-shell"><span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">Connected</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> to</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> www.testpm.cn</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (47.244.247.240) port 80 (#0)</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> GET</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> /hello.txt</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> HTTP/1.1</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">   # 请求方式与版本协议。</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> User-Agent: curl/7.29.0   </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#用什么客户端访问</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Host: www.testpm.cn  </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#主机名，域名。主机和端口号，</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Accept: </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">*</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">/</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">*</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  #匹配什么文件类型，“*” 是通用匹配。匹配所有类型</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>服务端响应:</p>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-shell"><span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x3C;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> HTTP/1.1 200 OK       </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#请求返回的状态码</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x3C;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Server: nginx/1.16.0  </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#请求的服务和版本号</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x3C;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Date: Thu, 04 Jul 2019 08:19:40 GMT</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x3C;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Content-Type: text/plain </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#文本类型，有html，plain:普通文本</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x3C;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Content-Length: 12</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x3C;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Last-Modified: Thu, 04 Jul 2019 08:13:25 GMT</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x3C;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Connection: keep-alive  </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#是否支持长连接</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x3C;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ETag: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"5d1db525-c"</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  #标识，每次访问如果与最开始的一样返回304否则校验不一致返回200</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x3C;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Accept-Ranges: bytes</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>输出结果:</p>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-shell"><span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">hello</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> world</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3>5、HTTP 请求方法</h3>
+<p>根据HTTP标准，HTTP请求可以使用多种请求方法。</p>
+<p>HTTP1.0定义了三种请求方法： GET, POST 和 HEAD方法。</p>
+<p>HTTP1.1新增了五种请求方法：OPTIONS, PUT, DELETE, TRACE 和 CONNECT 方法。</p>
+<h1>二、HTTPS 协议介绍</h1>
+<ul>
+<li>
+<p>HTTP 协议（HyperText Transfer Protocol，超文本传输协议）：是客户端浏览器或其他程序与Web服务器之间的应用层通信协议 。</p>
+</li>
+<li>
+<p>HTTPS 协议（HyperText Transfer Protocol over Secure Socket Layer）：可以理解为HTTP+SSL/TLS， 即 HTTP 下加入 SSL 层，HTTPS 的安全基础是 SSL，因此加密的详细内容就需要 SSL，用于安全的 HTTP 数据传输。</p>
+</li>
+<li>
+<p>如上图所示 HTTPS 相比 HTTP 多了一层 SSL/TLS</p>
+<p><strong>SSL/TLS :SSL(Secure Sockets Layer 安全套接层),及其继任者传输层安全（Transport Layer Security，TLS）是为网络通信提供安全及数据完整性的一种安全协议。TLS与SSL在传输层为数据通讯进行加密提供安全支持。</strong></p>
+</li>
+</ul>
+<p>​           <strong>SSL协议可分为两层：</strong> SSL握手协议（SSL Handshake Protocol）：它建立在SSL记录协议之上，用于在实际的数据传输开始前，通讯双方进行身份认证、协商加密算法、交换加密密钥等。<strong>相当于连接</strong></p>
+<p>​    SSL记录协议（SSL Record Protocol）：它建立在可靠的传输协议（如TCP）之上，为高层协议提供数据封装、压缩、加密等基本功能的支持。 <strong>相当于通信</strong></p>
+<p><strong>SSL协议提供的服务主要有：</strong></p>
+<p>ssl:身份认证和数据加密。保证数据完整性
+1）认证用户和服务器，确保数据发送到正确的客户机和服务器；</p>
+<p>2）加密数据以防止数据中途被窃取；</p>
+<p>3）维护数据的完整性，确保数据在传输过程中不被改变。</p>
+<h3>1、HTTP 访问过程</h3>
+<p>如上图所示，HTTP请求过程中，客户端与服务器之间没有任何身份确认的过程，数据全部明文传输，“裸奔”在互联网上，所以很容易遭到黑客的攻击，如下：</p>
+<p>可以看到，客户端发出的请求很容易被黑客截获，如果此时黑客冒充服务器，则其可返回任意信息给客户端，而不被客户端察觉。</p>
+<p><strong>所以 HTTP 传输面临的风险有：</strong></p>
+<ul>
+<li>窃听风险：黑客可以获知通信内容。</li>
+<li>篡改风险：黑客可以修改通信内容。</li>
+<li>冒充风险：黑客可以冒充他人身份参与通信。</li>
+</ul>
+<p>那有没有一种方式既可以安全的获取公钥，又能防止黑客冒充呢？ 那就需要用到终极武器了：SSL 证书（申购）</p>
+<ul>
+<li>证书：.crt, .pem</li>
+<li>私钥：.key</li>
+<li>证书请求文件：.csr</li>
+</ul>
+<p>在第 ② 步时服务器发送了一个SSL证书给客户端，SSL 证书中包含的具体内容有：</p>
+<p>（1）证书的发布机构CA</p>
+<p>（2）证书的有效期</p>
+<p>（3）公钥</p>
+<p>（4）证书所有者</p>
+<p>（5）签名</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>文件管理</title>
-      <link>https://newzone.top/LearnData/linux/01-%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86.html</link>
-      <guid>https://newzone.top/LearnData/linux/01-%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86.html</guid>
+      <link>https://newzone.top/LearnData/linux/basic/01-%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86.html</link>
+      <guid>https://newzone.top/LearnData/linux/basic/01-%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86.html</guid>
       <source url="https://newzone.top/LearnData/rss.xml">文件管理</source>
       <description>文件管理命令 本篇整理千锋 Linux 服务管理课程中的文件管理与编辑命令，涵盖目录创建、文本查看、文件比较、过滤搜索、删除、复制、查找、分割、移动与链接等核心命令。掌握这些命令是 Linux 运维的必备基础。 mkdir：创建目录 mkdir 是 make directory 的缩写，用于创建目录。 常用选项： 示例：在 /home 下连续创建嵌套目...</description>
-      <category>Linux</category>
+      <category>Linux基础</category>
       <pubDate>Mon, 12 Oct 2026 08:00:29 GMT</pubDate>
       <content:encoded><![CDATA[
 <p>本篇整理千锋 Linux 服务管理课程中的文件管理与编辑命令，涵盖目录创建、文本查看、文件比较、过滤搜索、删除、复制、查找、分割、移动与链接等核心命令。掌握这些命令是 Linux 运维的必备基础。</p>
@@ -1150,127 +1419,6 @@ M9000防火墙可以在web界面进行操作</li>
 <div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">mkdir</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [选项] 目录名</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>常用选项：</p>
 <p>| 选项 | 含义 |
-|</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>压缩与解压</title>
-      <link>https://newzone.top/LearnData/linux/02-%E5%8E%8B%E7%BC%A9%E4%B8%8E%E8%A7%A3%E5%8E%8B.html</link>
-      <guid>https://newzone.top/LearnData/linux/02-%E5%8E%8B%E7%BC%A9%E4%B8%8E%E8%A7%A3%E5%8E%8B.html</guid>
-      <source url="https://newzone.top/LearnData/rss.xml">压缩与解压</source>
-      <description>压缩与解压缩命令 本篇整理 Linux 常用压缩/解压与归档备份工具：zip、gzip、bzip2、tar、dd、cpio，以及各自的最常用选项、示例和易错点。 zip / unzip 用于将文件或目录压缩/解压，默认生成 .zip 后缀包，类似于 Windows 的 WinZip。 zip 常用选项： unzip 常用选项： 示例： gzip / g...</description>
-      <category>Linux</category>
-      <pubDate>Mon, 12 Oct 2026 08:00:29 GMT</pubDate>
-      <content:encoded><![CDATA[
-<p>本篇整理 Linux 常用压缩/解压与归档备份工具：<code>zip</code>、<code>gzip</code>、<code>bzip2</code>、<code>tar</code>、<code>dd</code>、<code>cpio</code>，以及各自的最常用选项、示例和易错点。</p>
-<h2>zip / unzip</h2>
-<p>用于将文件或目录压缩/解压，默认生成 <code>.zip</code> 后缀包，类似于 Windows 的 WinZip。</p>
-<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">zip</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [选项] 压缩文件名 需要压缩的文档列表</span></span>
-<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">unzip</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [选项] 压缩文件名</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>zip 常用选项</strong>：</p>
-<p>| 选项 | 含义 |
-|</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>命令的组合应用</title>
-      <link>https://newzone.top/LearnData/linux/03-%E5%91%BD%E4%BB%A4%E7%9A%84%E7%BB%84%E5%90%88%E5%BA%94%E7%94%A8.html</link>
-      <guid>https://newzone.top/LearnData/linux/03-%E5%91%BD%E4%BB%A4%E7%9A%84%E7%BB%84%E5%90%88%E5%BA%94%E7%94%A8.html</guid>
-      <source url="https://newzone.top/LearnData/rss.xml">命令的组合应用</source>
-      <description>命令的组合应用 本篇讲解 Linux 中通过管道 |、for 循环、awk、xargs、sort、uniq、join、paste 等组合命令解决实际运维问题的方法。命令组合是 Linux 运维进阶的核心能力。 查询每个进程的线程数 场景：服务器 CPU 飙升，top 显示 java 进程占 CPU 高，需要查看各 java 进程下线程数。 逐步拆解： ...</description>
-      <category>Linux</category>
-      <pubDate>Mon, 12 Oct 2026 08:00:29 GMT</pubDate>
-      <content:encoded><![CDATA[
-<p>本篇讲解 Linux 中通过管道 <code>|</code>、<code>for</code> 循环、<code>awk</code>、<code>xargs</code>、<code>sort</code>、<code>uniq</code>、<code>join</code>、<code>paste</code> 等组合命令解决实际运维问题的方法。命令组合是 Linux 运维进阶的核心能力。</p>
-<h2>查询每个进程的线程数</h2>
-<p>场景：服务器 CPU 飙升，<code>top</code> 显示 java 进程占 CPU 高，需要查看各 java 进程下线程数。</p>
-<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">for</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> pid </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">in</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> $(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">ps</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -ef</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> |</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> grep</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -v</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> grep</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> |</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> grep</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "java"</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> |</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> awk</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '{print $2}'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">); </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">do</span></span>
-<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  echo</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ${pid} </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> /tmp/a.txt</span></span>
-<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  cat</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> /proc/</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">${pid}</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">/status</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> |</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> grep</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> Threads</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> /tmp/b.txt</span></span>
-<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  paste</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> /tmp/a.txt</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> /tmp/b.txt</span></span>
-<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">done</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> |</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> sort</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -k3</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -rn</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>逐步拆解：</p>
-<ol>
-<li><code>ps -ef | grep -v grep | grep java | awk '{print $2}'</code>：得到 java 进程的 PID 列表。</li>
-<li><code>echo ${pid} &gt; /tmp/a.txt</code>：把 PID 写入 a.txt。</li>
-<li><code>cat /proc/${pid}/status | grep Threads</code>：读取该进程线程信息。</li>
-<li><code>paste /tmp/a.txt /tmp/b.txt</code>：把两个文件按列拼接展示（PID + 线程数）。</li>
-<li><code>sort -k3 -rn</code>：按第 3 列（线程数）降序排列，<code>-k3</code> 按第 3 列、<code>-r</code> 降序、<code>-n</code> 数字排序。</li>
-</ol>
-<p>输出第一列为进程号，最后一列为线程数。</p>
-<h2>2. 检测并清理僵尸进程</h2>
-<p>查找僵尸进程（状态以 Z/z 开头）：</p>
-<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">ps</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -e</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -o</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> stat,ppid,pid,cmd</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> |</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> egrep</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '^[Zz]'</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>参数：<code>-e</code> 列出所有进程；<code>-o</code> 指定输出列（stat 状态、ppid 父进程 PID、pid 当前 PID、cmd 可执行文件）；<code>egrep</code> 正则工具；<code>^[Zz]</code> 表示第一字符是 Z 或 z（僵尸进程状态标记）。</p>
-<p>批量清理（杀掉僵尸进程的父进程）：</p>
-<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">ps</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -e</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -o</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> stat,ppid,pid,cmd</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> |</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> grep</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -e</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '^[Zz]'</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> |</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> awk</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '{print $2}'</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> |</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> xargs</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> kill</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -9</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>解析：</p>
-<ul>
-<li><code>grep -e</code> 等价于 <code>egrep</code>。</li>
-<li><code>awk '{print $2}'</code> 提取第 2 列（父进程 PID）。</li>
-<li><code>xargs kill -9</code> 把父进程 PID 作为参数传给 kill。</li>
-</ul>
-<blockquote>
-<p><strong>易错点</strong>：僵尸进程本身已是死进程，无法接收任何信号，直接 <code>kill</code> 杀不掉。杀掉其父进程后，僵尸进程变成孤儿进程，由 1 号进程（init/systemd）收养并周期调用 <code>wait</code> 清除。</p>
-</blockquote>
-<h2>3. 查看占用 CPU/内存最高的进程</h2>
-<p><strong>查看占用 CPU 最高的前 10 个进程</strong>：</p>
-<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">ps</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> aux</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> |</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> head</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">ps</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> aux</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> |</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> sort</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -rn</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -k3</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> |</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> head</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -10</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><ul>
-<li><code>ps aux|head -1</code>：取标题行（USER PID %CPU %MEM ...）。</li>
-<li><code>ps aux|sort -rn -k3|head -10</code>：<code>a</code> 全部进程、<code>u</code> 用户 ID、<code>x</code> 不以终端区分；<code>sort -rn -k3</code> 按第 3 列 <code>%CPU</code> 数值降序；<code>head -10</code> 取前 10。</li>
-</ul>
-<p><strong>查看占用内存最高的前 10 个进程</strong>：改为 <code>-k4</code>（%MEM 是第 4 列）：</p>
-<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">ps</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> aux</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> |</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> head</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">ps</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> aux</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> |</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> sort</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -rn</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -k4</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> |</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> head</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> -10</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2>4. 文件的连接、合并、排序、去重</h2>
-<h3>join：按指定列连接两个文件</h3>
-<p><code>join</code> 将两个文件中<strong>指定列内容相同</strong>的行连接起来。默认以空格分隔并比对第 1 个字段。</p>
-<p>| 参数 | 含义 |
-|</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>磁盘管理</title>
-      <link>https://newzone.top/LearnData/linux/04-%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86.html</link>
-      <guid>https://newzone.top/LearnData/linux/04-%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86.html</guid>
-      <source url="https://newzone.top/LearnData/rss.xml">磁盘管理</source>
-      <description>磁盘管理与维护命令 本篇整理 Linux 磁盘管理命令，覆盖空间查看、分区检查与修复、挂载/卸载、硬件与时间信息查询、分区格式化与交换区管理。适用于日常运维与磁盘故障排查。 df：查看磁盘空间占用 示例： 从 df -hT 可以看到每种文件系统的总大小、已用、剩余、占用百分比，以及文件系统类型（ext3、ext4、tmpfs、xfs 等）。 du：查看...</description>
-      <category>Linux</category>
-      <pubDate>Mon, 12 Oct 2026 08:00:29 GMT</pubDate>
-      <content:encoded><![CDATA[
-<p>本篇整理 Linux 磁盘管理命令，覆盖空间查看、分区检查与修复、挂载/卸载、硬件与时间信息查询、分区格式化与交换区管理。适用于日常运维与磁盘故障排查。</p>
-<h2>df：查看磁盘空间占用</h2>
-<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">df</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [选项]</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>| 选项 | 含义 |
-|</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>文件服务器（Samba/FTP/NFS 等）</title>
-      <link>https://newzone.top/LearnData/linux/05-%E7%AC%AC1%E5%A4%A9-%E6%96%87%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8.html</link>
-      <guid>https://newzone.top/LearnData/linux/05-%E7%AC%AC1%E5%A4%A9-%E6%96%87%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8.html</guid>
-      <source url="https://newzone.top/LearnData/rss.xml">文件服务器（Samba/FTP/NFS 等）</source>
-      <description>文件服务器（Samba/FTP/NFS 等） Linux 下常用的文件共享服务有三类：FTP（跨平台文件传输）、NFS（Linux 之间的文件级共享，性能最好）、Samba（Linux 与 Windows 之间的共享）。本篇以 Vsftpd 为主线，兼顾 NFS 与 Samba，最后补充 NAS/SAN 存储概念。 FTP 文件传输协议 FTP 基本概...</description>
-      <category>Linux</category>
-      <pubDate>Mon, 12 Oct 2026 08:00:29 GMT</pubDate>
-      <content:encoded><![CDATA[
-<p>Linux 下常用的文件共享服务有三类：<strong>FTP</strong>（跨平台文件传输）、<strong>NFS</strong>（Linux 之间的文件级共享，性能最好）、<strong>Samba</strong>（Linux 与 Windows 之间的共享）。本篇以 Vsftpd 为主线，兼顾 NFS 与 Samba，最后补充 NAS/SAN 存储概念。</p>
-<h2>FTP 文件传输协议</h2>
-<h3>FTP 基本概念</h3>
-<ul>
-<li>FTP（File Transfer Protocol）基于 <strong>TCP</strong> 协议，实现文件的上传、下载、删除与共享。</li>
-<li>采用 <strong>C/S（客户端/服务器）</strong> 模式：服务端提供共享，客户端上传下载；一个服务端可同时服务多人。</li>
-<li>FTP 会建立两条 TCP 连接：
-<ul>
-<li><strong>控制连接</strong>：传输命令信息（固定 21 端口）；</li>
-<li><strong>数据连接</strong>：实际传输文件数据。</li>
-</ul>
-</li>
-<li>主流 FTP 服务端软件：<strong>Vsftpd</strong>（Linux 最主流）、ProFTPD、PureFTPd、Server-U、FileZilla Server 等。</li>
-</ul>
-<h3>主动模式与被动模式</h3>
-<p>两种模式均以 <strong>FTP 服务器端</strong> 为参照（易错点：别站在客户端视角记忆）：</p>
-<p>| 模式 | 过程 | 数据端口 |
 |</p>
 ]]></content:encoded>
     </item>
