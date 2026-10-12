@@ -13,9 +13,9 @@ import theme from "./theme.js";
 import { faqSchemaPlugin } from "./plugins/faq-schema.js";
 
 export default defineUserConfig({
-  // 网站路径：本地自用部署在根路径，访问 http://localhost:8090/
-  // （若以后发布到 GitHub Pages 子路径，改回 "/LearnData/"）
-  base: "/",
+  // 网站路径：本地默认根路径，直接访问 http://localhost:8090/ 即可
+  // 线上 GitHub Pages 由 CI 自动注入 BASE_PATH=/LearnData/，本地和线上互不影响
+  base: (process.env.BASE_PATH || "/"),
 
   // 网站语言，默认为中文
   lang: "zh-CN",

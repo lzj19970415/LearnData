@@ -34,6 +34,8 @@ jobs:
       - name: Build Docs
         env:
           NODE_OPTIONS: --max_old_space_size=8192
+          # GitHub Pages 部署在子路径 /LearnData/ 下，构建时注入正确路径
+          BASE_PATH: /LearnData/
         run: |-
           pnpm cpx "src/reading/**" src/.vuepress/public/reading
           pnpm run docs:build
