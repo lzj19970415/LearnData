@@ -13,8 +13,9 @@ import theme from "./theme.js";
 import { faqSchemaPlugin } from "./plugins/faq-schema.js";
 
 export default defineUserConfig({
-  // 网站路径默认为主域名。如果网站部署在子路径下，比如 xxx.com/yyy，那么 base 应该被设置为 "/yyy/"
-  base: "/LearnData/",
+  // 网站路径：本地自用部署在根路径，访问 http://localhost:8090/
+  // （若以后发布到 GitHub Pages 子路径，改回 "/LearnData/"）
+  base: "/",
 
   // 网站语言，默认为中文
   lang: "zh-CN",
