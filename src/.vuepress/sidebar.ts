@@ -23,7 +23,15 @@ export default sidebar({
       icon: "",
       prefix: "linux/",
       collapsible: true,
-      children: "structure",
+      // 显式列出文件，避免自动扫描时把 linux/basic/ 子目录重复显示为 Basic 分组
+      children: [
+        "16-Docker.md",
+        "17-Kubernetes.md",
+        "18-MySQL.md",
+        "19-Nginx.md",
+        "Python运维自动化.md",
+        "Shell脚本编程.md",
+      ],
     },
     {
       text: "🔐 运维安全",
