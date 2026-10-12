@@ -172,48 +172,49 @@ const hope = hopeTheme(
       },
 
       // 评论配置（仅做样例，记得更换）
-      comment: {
-        /*
-      // 在本地运行 `pnpm docs:dev` 并使用非 localhost 域名时，容易出现 403 错误，移除本部分即可解决
-      provider: "Waline",
-      serverURL: "https://waline.newzone.top",
-      reaction: [
-        "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f44d.png",
-        "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f44f.png",
-        "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f60e.png",
-        "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f602.png",
-        "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f635-200d-1f4ab.png",
-      ],
-      // 部署 Waline：https://waline.js.org/guide/get-started.html
-      // pageview: true, // 浏览量统计
-      locales: {
-        "/": {
-          // 表情互动提示文字
-          reactionTitle: "已到达文章底部，欢迎留言、表情互动~",
-          reaction0: "赞一个",
-          reaction1: "支持下",
-          reaction2: "有点酷",
-          reaction3: "啥玩意",
-          reaction4: "看不懂",
-          // Waline 等级标签
-          admin: "盛年不重来，一日难再晨",
-          level0: "锻体",
-          level1: "炼气",
-          level2: "筑基",
-          level3: "金丹",
-          level4: "元婴",
-          level5: "化神",
-        },
-      },
-      */
-
-        // Giscus
-        provider: "Giscus",
-        repo: "rockbenben/giscus-comment",
-        repoId: "R_kgDOM_MPJA",
-        category: "Comments",
-        categoryId: "DIC_kwDOM_MPJM4CjS0P",
-      },
+      comment: false, // 已关闭：Giscus 为海外服务且指向模板作者仓库，对本站无用
+//       comment: {
+//         /*
+//       // 在本地运行 `pnpm docs:dev` 并使用非 localhost 域名时，容易出现 403 错误，移除本部分即可解决
+//       provider: "Waline",
+//       serverURL: "https://waline.newzone.top",
+//       reaction: [
+//         "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f44d.png",
+//         "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f44f.png",
+//         "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f60e.png",
+//         "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f602.png",
+//         "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f635-200d-1f4ab.png",
+//       ],
+//       // 部署 Waline：https://waline.js.org/guide/get-started.html
+//       // pageview: true, // 浏览量统计
+//       locales: {
+//         "/": {
+//           // 表情互动提示文字
+//           reactionTitle: "已到达文章底部，欢迎留言、表情互动~",
+//           reaction0: "赞一个",
+//           reaction1: "支持下",
+//           reaction2: "有点酷",
+//           reaction3: "啥玩意",
+//           reaction4: "看不懂",
+//           // Waline 等级标签
+//           admin: "盛年不重来，一日难再晨",
+//           level0: "锻体",
+//           level1: "炼气",
+//           level2: "筑基",
+//           level3: "金丹",
+//           level4: "元婴",
+//           level5: "化神",
+//         },
+//       },
+//       */
+// 
+//         // Giscus
+//         provider: "Giscus",
+//         repo: "rockbenben/giscus-comment",
+//         repoId: "R_kgDOM_MPJA",
+//         category: "Comments",
+//         categoryId: "DIC_kwDOM_MPJM4CjS0P",
+//       },
 
       // 组件库
       components: {
