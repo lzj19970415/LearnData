@@ -1,6 +1,6 @@
 ---
 title: 信创外网创建云主机流程
-category: 华为IT云
+category: 工作流程与问题处理
 tags:
   - 云主机
   - 信创

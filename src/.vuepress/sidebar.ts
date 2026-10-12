@@ -5,7 +5,7 @@ import { sidebar } from "vuepress-theme-hope";
 export default sidebar({
   "/": [
     {
-      text: "🚀 华为IT云",
+      text: "🚀 工作流程与问题处理",
       icon: "",
       prefix: "huawei/",
       collapsible: true,

@@ -1,6 +1,6 @@
 ---
 title: 华为IT云部署运维笔记
-category: 华为IT云
+category: 工作流程与问题处理
 tags:
   - FusionCompute
   - 虚拟化

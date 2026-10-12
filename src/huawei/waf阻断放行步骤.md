@@ -1,6 +1,6 @@
 ---
 title: WAF阻断放行步骤
-category: 华为IT云
+category: 工作流程与问题处理
 tags:
   - WAF
   - 安全
