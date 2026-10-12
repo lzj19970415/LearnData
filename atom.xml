@@ -1,0 +1,1757 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://newzone.top/LearnData/atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
+  <id>https://newzone.top/LearnData/</id>
+  <title>LearnData 开源笔记</title>
+  <subtitle>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</subtitle>
+  <icon>https://newzone.top/LearnData/logo.svg</icon>
+  <updated>2026-10-12T07:12:28.613Z</updated>
+  <generator>@vuepress/plugin-feed</generator>
+  <link rel="self" href="https://newzone.top/LearnData/atom.xml"/>
+  <link rel="alternate" href="https://newzone.top/LearnData/"/>
+  <category term="工具"/>
+  <category term="使用指南"/>
+  <category term="华为IT云"/>
+  <category term="Linux"/>
+  <entry>
+    <title type="text">博客文章样例 2</title>
+    <id>https://newzone.top/LearnData/posts/2024-03-02-blog_example2.html</id>
+    <link href="https://newzone.top/LearnData/posts/2024-03-02-blog_example2.html"/>
+    <updated>2026-10-12T06:59:31.000Z</updated>
+    <summary type="html"><![CDATA[<p>博客文章内容，支持 Markdown 和 HTML 语言。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>博客文章内容，支持 Markdown 和 HTML 语言。</p>
+]]></content>
+    <category term="工具"/>
+    <published>2024-03-02T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">博客文章样例</title>
+    <id>https://newzone.top/LearnData/posts/2024-03-01-blog_example.html</id>
+    <link href="https://newzone.top/LearnData/posts/2024-03-01-blog_example.html"/>
+    <updated>2026-10-12T06:59:31.000Z</updated>
+    <summary type="html"><![CDATA[<p>博客文章内容，支持 Markdown 和 HTML 语言。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>博客文章内容，支持 Markdown 和 HTML 语言。</p>
+]]></content>
+    <category term="使用指南"/>
+    <published>2024-03-01T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">华为IT云部署运维笔记</title>
+    <id>https://newzone.top/LearnData/huawei/IT%E4%BA%91%E9%83%A8%E7%BD%B2%E8%BF%90%E7%BB%B4%E7%AC%94%E8%AE%B0.html</id>
+    <link href="https://newzone.top/LearnData/huawei/IT%E4%BA%91%E9%83%A8%E7%BD%B2%E8%BF%90%E7%BB%B4%E7%AC%94%E8%AE%B0.html"/>
+    <updated>2026-10-12T06:59:31.000Z</updated>
+    <summary type="html"><![CDATA[<blockquote>
+<p>本笔记由 xmind 思维导图《华为IT云》整理而来，涵盖华为 FusionCompute 云计算平台的部署、集群、存储、网络与运维要点。</p>
+</blockquote>
+<h1>IT云</h1>
+<h2>OMC部署</h2>
+<h3>fusion computer安装配置</h3>
+<ul>
+<li>使用smartkit工具升级（ibmc，网卡，raid卡，rised卡、划分raid</li>
+<li><strong>安装fc教程</strong>
+<ul>
+<li><strong>虚拟化部署：</strong>
+<ul>
+<li>找两台设备当管理节点，先安装CNA计算节点系统，安装的时候配置管理ip，绑定静态ip就可以（先不做bond，不然会提示安装失败等问题），安装好了使用自定义安装，选择安装vrm，导入vrm包，安装vrm</li>
+<li>备注：bond是把fc平台创建起来后进入web界面平台绑定</li>
+</ul>
+</li>
+<li>备注：安装fc的时候，交换机的网络一定不做bond绑定，如果是主备绑定，网络跟静态网络是相通的，搭建的时候网络才不会有问题</li>
+<li><strong>物理部署：</strong>
+<ul>
+<li>选择两台服务器充当管理节点，手动安装vrm系统，计算节点安装cna系统，平台创建起来后进入web界面配置bond</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>安装主机</strong>
+<ul>
+<li><strong>使用fusion computer安装工具安装</strong>
+<ul>
+<li>使用工具要确定pxe起来，不起来可能是网络问题，网络排查：ping网关，两台电脑连接交换机ping网络是否通，登陆虚拟机查看地址</li>
+</ul>
+</li>
+<li><strong>填写参数注意点</strong>
+<ul>
+<li>使用工具安装时把主机和vrm尽量分开安装</li>
+<li>DHCP起始地址就是要安装主机的第一个IP地址</li>
+<li>设置swap分区大小时，所填数字必须是大于等于30的整数。</li>
+</ul>
+</li>
+<li>点击配置服务之后，等待进入扫描主机页面，然后手动重启主机服务器，等待主机都扫描出来然后修改参数，开始安装。</li>
+</ul>
+</li>
+<li><strong>安装vrm</strong>
+<ul>
+<li>同上所述</li>
+</ul>
+</li>
+<li>主机安装完成后，修改密码（gandalf、bmc、root）修改命令：echo '新密码' | passwd --stdin 账号、使用配置好的IP地址通过crt登陆查询HBA卡信息。命令是：cat /sys/class/fc_host/host*/port_name</li>
+<li><strong>使用浮动IP登陆web进行管理</strong>
+<ul>
+<li>配置fusion computer NTP时钟源与时区</li>
+<li>添加集群</li>
+<li><strong>添加主机</strong>
+<ul>
+<li>手动添加和批量添加</li>
+</ul>
+</li>
+<li>添加vlan池</li>
+<li><strong>配置主机管理域服务资源预留（也就是说配置预留内存和cpu）</strong>
+<ul>
+<li>注：部署好分布式存储后再开始配置这个步骤</li>
+</ul>
+</li>
+<li><strong>绑定网口</strong>
+<ul>
+<li>手动绑定和批量绑定</li>
+<li>在绑定网口这步骤，在不清楚存储平面个业务平面的情况下，可以在主机那里把一边的拔掉，再刷新页面就可以判断存储和业务平面</li>
+<li>网口绑定选择”基于源目的IP和端口负荷分担“这一选项</li>
+</ul>
+</li>
+<li><strong>添加存储接口</strong>
+<ul>
+<li>vlan ID：lld表里的存储平面vlan</li>
+<li>IP地址：管理平面中的存储IP</li>
+</ul>
+</li>
+<li>fc里面创建交换机，只添加服务链路，命名一般是根据服务网口名称来，例如：service</li>
+</ul>
+</li>
+<li><strong>在和fs对接后，发放虚拟机，有的客户需要增加自己规划的vlan</strong>
+<ul>
+<li>添加端口组页面进行添加</li>
+</ul>
+</li>
+</ul>]]></summary>
+    <content type="html"><![CDATA[<blockquote>
+<p>本笔记由 xmind 思维导图《华为IT云》整理而来，涵盖华为 FusionCompute 云计算平台的部署、集群、存储、网络与运维要点。</p>
+</blockquote>
+<h1>IT云</h1>
+<h2>OMC部署</h2>
+<h3>fusion computer安装配置</h3>
+<ul>
+<li>使用smartkit工具升级（ibmc，网卡，raid卡，rised卡、划分raid</li>
+<li><strong>安装fc教程</strong>
+<ul>
+<li><strong>虚拟化部署：</strong>
+<ul>
+<li>找两台设备当管理节点，先安装CNA计算节点系统，安装的时候配置管理ip，绑定静态ip就可以（先不做bond，不然会提示安装失败等问题），安装好了使用自定义安装，选择安装vrm，导入vrm包，安装vrm</li>
+<li>备注：bond是把fc平台创建起来后进入web界面平台绑定</li>
+</ul>
+</li>
+<li>备注：安装fc的时候，交换机的网络一定不做bond绑定，如果是主备绑定，网络跟静态网络是相通的，搭建的时候网络才不会有问题</li>
+<li><strong>物理部署：</strong>
+<ul>
+<li>选择两台服务器充当管理节点，手动安装vrm系统，计算节点安装cna系统，平台创建起来后进入web界面配置bond</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>安装主机</strong>
+<ul>
+<li><strong>使用fusion computer安装工具安装</strong>
+<ul>
+<li>使用工具要确定pxe起来，不起来可能是网络问题，网络排查：ping网关，两台电脑连接交换机ping网络是否通，登陆虚拟机查看地址</li>
+</ul>
+</li>
+<li><strong>填写参数注意点</strong>
+<ul>
+<li>使用工具安装时把主机和vrm尽量分开安装</li>
+<li>DHCP起始地址就是要安装主机的第一个IP地址</li>
+<li>设置swap分区大小时，所填数字必须是大于等于30的整数。</li>
+</ul>
+</li>
+<li>点击配置服务之后，等待进入扫描主机页面，然后手动重启主机服务器，等待主机都扫描出来然后修改参数，开始安装。</li>
+</ul>
+</li>
+<li><strong>安装vrm</strong>
+<ul>
+<li>同上所述</li>
+</ul>
+</li>
+<li>主机安装完成后，修改密码（gandalf、bmc、root）修改命令：echo '新密码' | passwd --stdin 账号、使用配置好的IP地址通过crt登陆查询HBA卡信息。命令是：cat /sys/class/fc_host/host*/port_name</li>
+<li><strong>使用浮动IP登陆web进行管理</strong>
+<ul>
+<li>配置fusion computer NTP时钟源与时区</li>
+<li>添加集群</li>
+<li><strong>添加主机</strong>
+<ul>
+<li>手动添加和批量添加</li>
+</ul>
+</li>
+<li>添加vlan池</li>
+<li><strong>配置主机管理域服务资源预留（也就是说配置预留内存和cpu）</strong>
+<ul>
+<li>注：部署好分布式存储后再开始配置这个步骤</li>
+</ul>
+</li>
+<li><strong>绑定网口</strong>
+<ul>
+<li>手动绑定和批量绑定</li>
+<li>在绑定网口这步骤，在不清楚存储平面个业务平面的情况下，可以在主机那里把一边的拔掉，再刷新页面就可以判断存储和业务平面</li>
+<li>网口绑定选择”基于源目的IP和端口负荷分担“这一选项</li>
+</ul>
+</li>
+<li><strong>添加存储接口</strong>
+<ul>
+<li>vlan ID：lld表里的存储平面vlan</li>
+<li>IP地址：管理平面中的存储IP</li>
+</ul>
+</li>
+<li>fc里面创建交换机，只添加服务链路，命名一般是根据服务网口名称来，例如：service</li>
+</ul>
+</li>
+<li><strong>在和fs对接后，发放虚拟机，有的客户需要增加自己规划的vlan</strong>
+<ul>
+<li>添加端口组页面进行添加</li>
+</ul>
+</li>
+</ul>
+<h3>fusion storage安装配置</h3>
+<ul>
+<li><strong>安装前检查</strong>
+<ul>
+<li>登陆iBMC管理页面安装操作系统（安装操作系统可查看分布式块存储指导书里面）</li>
+<li>安装前检查：确认安装的版本，再下载相关的配套版本固件进行升级</li>
+<li>关闭SMMU功能：进入bios单击“Advanced”页签，选择“MISC Config”。将“Support Smmu”选项置为“Disabled”的状态。（仅taishan 200服务器需要关闭）</li>
+<li>JBOD功能看RAID类型决定开启或关闭</li>
+</ul>
+</li>
+<li><strong>安装操作系统及修改参数配置</strong>
+<ul>
+<li>网站下载相关系统包：https://support.huawei.com/enterprise/zh/intelligent-accelerator-components/es3000-v5-pid-22936194/software/251983097?idAbsPath=fixnode01%7C23710424%7C251364417%7C9856629%7C22936194</li>
+<li>升级bios、ibmc（使用smartkit工具可以升级）、安装加速卡驱动（执行rpm -ivh 驱动软件包名称，安装后查看：rpm -qa | grep hiodriver）、工具（执行rpm -ivh 工具包名称，安装后查看：rpm -qa | grep hioadm）fw固件也要升级</li>
+<li><strong>绑定网口，先查看网口类型</strong>
+<ul>
+<li>ifconfig |more</li>
+</ul>
+</li>
+<li><strong>确定已经连接的网口，使用命令查询后网口会快速闪现，即可判断是业务口还是存储口</strong>
+<ul>
+<li>ethtool 网口名</li>
+</ul>
+</li>
+<li><strong>可以绑定临时IP然后使用远程登陆</strong>
+<ul>
+<li>ifconfig 网口名称 ip地址/子网掩码 up（子网掩码例如：24，25）</li>
+<li>删除临时ip：ip addr del 10.200.153.142/25 dev SLOT3-1</li>
+</ul>
+</li>
+<li><strong>绑定网口配置文件</strong>
+<ul>
+<li>cp 文件名 备份名（也可以放到别的路径）</li>
+<li><strong>修改主管理平面网口</strong>
+<ul>
+<li>cd /etc/sysconfig/network-scripts/</li>
+<li>DEVICE=enp131s0
+BOOTPROTO=none
+ONBOOT=yes
+MASTER=bondEth0
+SLAVE=yes
+USERCTL=no
+NM_CONTROLLED=no</li>
+</ul>
+</li>
+<li><strong>修改备管理平面网口</strong>
+<ul>
+<li>DEVICE=enp137s0
+BOOTPROTO=none
+ONBOOT=yes
+MASTER=bondEth0
+SLAVE=yes
+USERCTL=no
+NM_CONTROLLED=no</li>
+</ul>
+</li>
+<li><strong>添加存储管理地址</strong>
+<ul>
+<li>cd /etc/sysconfig/network-scripts/</li>
+<li><strong>vim bondEth0</strong>
+<ul>
+<li>DEVICE=bondEth0
+IPADDR=ip地址
+NETMASK=网关
+NETWORKING=yes
+GATEWAY=子网掩码
+DEFROUTE=yes
+ONBOOT=yes
+BOOTPROTO=static
+USERCTL=no
+TYPE=Bonding
+MTU=1500
+NM_CONTROLLED=no
+BONDING_OPTS='mode=4 miimon=100 lacp_rate=fast
+xmit_hash_policy=layer3+4'</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>说明：以上是管理网口绑定流程，存储网口绑定流程也是一样，只不过多了要添加vlan这个文件，下面演示</li>
+<li><strong>vlan</strong>
+<ul>
+<li>IPADDR=IP地址
+NETMASK=子网掩码
+DEFROUTE=yes
+BOOTPROTO=static
+PHYSDEV=bondEth1
+ONBOOT=yes
+USERCTL=no
+VLAN=yes
+VID=vlan ID
+NM_CONTROLLED=no</li>
+</ul>
+</li>
+<li><strong>推荐使用脚本配置</strong>
+<ul>
+<li>#!/bin/bash</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>read -p &quot;please input ip:&quot; ip
+read -p &quot;please input mask:&quot; mask
+read -p &quot;please input gw:&quot; gw</p>
+<p>#备份网卡
+HOME='/etc/sysconfig/network-scripts'
+cd $HOME
+mv ifcfg-enahisic2i0 ifcfg-enahisic2i0.bak
+mv ifcfg-enahisic2i1 ifcfg-enahisic2i1.bak</p>
+<p>#设置管理网卡绑定--bond1</p>
+<p>if [ ! -f ${HOME}/ifcfg-enahisic2i0 ]
+then
+cd $HOME
+touch ifcfg-enahisic2i0
+chmod 644 ifcfg-enahisic2i0
+cat &gt;&gt;ifcfg-enahisic2i0&lt;&lt;EOF
+DEVICE=enahisic2i0
+BOOTPROTO=none
+ONBOOT=yes
+MASTER=bond1
+SLAVE=yes
+USERCTL=no
+NM_CONTROLLED=no
+EOF
+fi</p>
+<p>if [ ! -f ${HOME}/ifcfg-enahisic2i1 ]
+then
+cd $HOME
+touch ifcfg-enahisic2i1
+chmod 644 ifcfg-enahisic2i1
+cat &gt;&gt;ifcfg-enahisic2i1&lt;&lt;EOF
+DEVICE=enahisic2i1
+BOOTPROTO=none
+ONBOOT=yes
+MASTER=bond1
+SLAVE=yes
+USERCTL=no
+NM_CONTROLLED=no
+EOF
+fi</p>
+<p>if [ ! -f ${HOME}/ifcfg-bond1 ]
+then
+cd $HOME
+touch ifcfg-bond1
+chmod 644 ifcfg-bond1
+cat &gt;&gt;ifcfg-bond1&lt;&lt;EOF
+DEVICE=bond1
+ONBOOT=yes
+BOOTPROTO=none
+USERCTL=no
+TYPE=Bonding
+IPADDR=$ip
+NETMASK=$mask
+GATEWAY=$gw
+DEFROUTE=yes
+MTU=1500
+NM_CONTROLLED=no
+BONDING_OPTS='mode=4 miimon=100 lacp_rate=fast xmit_hash_policy=layer3+4'
+EOF
+fi</p>
+<p>#重启网卡
+service network restart
+exit
+- 脚本已.sh后缀结尾
+- 配置临时IP地址：ifconfig eth0 192.168.2.100/24 up 配置哪个口就就将网线插入哪个网口
+- <strong>使用远程工具连接然后给脚本权限</strong>
+- 给文件夹权限：chown -R root:root 文件名称
+给文件权限：chmod 777 laocheng-omc.sh
+执行脚本：bash -x laocheng-omc.sh
+cd /proc/net/bonding/  然后使用ls查看
+- 备注：以上脚本只是绑定管理ip，存储IP或者是前后端IP也可以通过以上脚本修改，不过要记得修改网口名称等</p>
+<ul>
+<li><strong>fusion storage 块存储安装（管理部署工具manager）</strong>
+<ul>
+<li><strong>查看fusion storage 块存储安装指导书</strong>
+<ul>
+<li>创建控制集群需要注意的地方：元数据盘的类型是sata盘，一般是选择0盘作为元数据盘，选择几个看规划表</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>fusion storage块存储配置参数</strong>
+<ul>
+<li>创建存储池</li>
+<li><strong>计算节点上创建VBS</strong>
+<ul>
+<li>vbs里填写的账号密码是计算节点服务器的gandalf的</li>
+<li>vbs添加存储ip时要添加一整个段</li>
+<li>配置文件只需要修改一台，</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>对接fusion computer</strong>
+<ul>
+<li>添加存储接口</li>
+<li>向站点添加存储资源</li>
+<li>添加数据存储</li>
+</ul>
+</li>
+</ul>
+<h3>fusion care安装配置</h3>
+<ul>
+<li>准备工作：在fusion computer任意的vrm管理节点上创建一台虚拟机，然后挂载挂载系统，选择本地硬盘方式，用欧拉或者cent os7操作系统安装，进行安装，然后安装tools工具</li>
+<li>步骤1 创建普通帐号。</li>
+<li><strong>步骤2 执行如下命令添加用户组fusioncare。</strong>
+<ul>
+<li>groupadd fusioncare</li>
+</ul>
+</li>
+<li><strong>步骤3 执行如下命令添加用户fusioncare，并将其加入用户组fusioncare。</strong>
+<ul>
+<li>useradd -g fusioncare fusioncare</li>
+</ul>
+</li>
+<li><strong>步骤4 执行如下命令为fusioncare设置密码。</strong>
+<ul>
+<li>passwd fusioncare</li>
+</ul>
+</li>
+<li><strong>步骤5 以root帐户执行如下命令，新建一个“/opt/ServiceTool”目录。</strong>
+<ul>
+<li>mkdir -p /opt/ServiceTool</li>
+</ul>
+</li>
+<li><strong>步骤6 执行如下命令，赋予fusioncare帐户“/opt/ServiceTool”目录权限。</strong>
+<ul>
+<li>chown fusioncare:fusioncare /opt/ServiceTool</li>
+</ul>
+</li>
+<li>步骤7 使用WinSCP工具，以fusioncare帐户，将FusionCare安装包FusionCare.tar.gz拷贝至新建的/opt/ServiceTool目录中。</li>
+<li><strong>步骤8 执行如下命令，切换到fusioncare帐户。</strong>
+<ul>
+<li>su - fusioncare</li>
+</ul>
+</li>
+<li><strong>步骤9 执行如下命令，进入“/opt/ServiceTool”目录下。</strong>
+<ul>
+<li>TMOUT=0</li>
+<li>cd /opt/ServiceTool</li>
+</ul>
+</li>
+<li><strong>步骤10 在“/opt/ServiceTool”目录下，以fusioncare帐户，执行如下命令，解压FusionCare安装包。</strong>
+<ul>
+<li>tar zxvf FusionCare.tar.gz</li>
+</ul>
+</li>
+<li>说明：执行完成后，在“/opt/ServiceTool”目录下将生成FusionCare文件夹。</li>
+<li><strong>步骤11 设置FusionCare绑定IP，进入FusionCare安装目录“/FusionCare/tomcat/conf”文件夹，打开server.xml文件，为Connector添加或修改address属性，值为要绑定的IP。以192.168.0.0为例，如下所示。</strong></li>
+<li><strong>步骤12 先创建ROOT文件夹</strong>
+<ul>
+<li>mkdir ROOT</li>
+</ul>
+</li>
+<li><strong>步骤13 执行如下命令，进入webapps目录，解压hct.war压缩包。</strong>
+<ul>
+<li>cd /opt/ServiceTool/FusionCare/tomcat/webapps</li>
+<li>unzip -o hct.war -d ROOT/</li>
+</ul>
+</li>
+<li><strong>步骤14 以fusioncare帐户，执行如下命令，安装FusionCare工具。</strong>
+<ul>
+<li>sh /opt/ServiceTool/FusionCare/install.sh</li>
+</ul>
+</li>
+<li><strong>步骤14 安装完成后使用root账号登陆，然后关闭火防火墙</strong>
+<ul>
+<li>systemctl stop firewalld.service&amp;&amp;systemctl disable firewalld.service</li>
+</ul>
+</li>
+<li><strong>验证安装成功</strong></li>
+<li>虚拟机不要重启，重启fusion care会掉线需要重新启动，启动先进入cd /opt/ServiceTool/ 再执行sh /opt/ServiceTool/FusionCare/hctd start</li>
+<li><strong>然后以我们之前配置的IP地址进入管理页面：https://IP地址:8803</strong>
+<ul>
+<li>具体操作步骤可查看FusionCare V100R005C00SPC611 用户指南 01</li>
+</ul>
+</li>
+<li><strong>Web管理页面</strong>
+<ul>
+<li><strong>系统管理</strong>
+<ul>
+<li>创建巡检单，添加IP地址（FC管理平面的浮动地址）</li>
+<li>admin密码和root密码</li>
+</ul>
+</li>
+<li><strong>首页创建巡检单</strong>
+<ul>
+<li>巡检开始，结束，导出报告</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>虚拟化部署细节：</h3>
+<p>交换机配置先配置不带标签，不做聚合，做主备或者是能让静态ip网络通的配置
+确定管理口，配置ip先配置静态管理ip（安装fc好后会在页面上进行绑定）
+记得把密码配置成永久chage -M 9999 账号名</p>
+<h2>问题</h2>
+<h3>注意：曙光服务器进入pxe模式需要进入bmc界面手动更改启动顺序、进入bmc需要tftp64软件，配置随机地址</h3>
+<h3>系统解压tools工具时提示解压错误时解决方法，安装其中的三个文件，命令：rpm -ivh 安装包名</h3>
+<ul>
+<li>bzip2-1.0.6-13.el7.x86_64.rpm</li>
+<li>bzip2-devel-1.0.6-13.el7.x86_64.rpm</li>
+<li>bzip2-libs-1.0.6-13.el7.x86_64.rpm</li>
+<li>zlib-1.2.7-17.el7.x86_64.rpm</li>
+<li>zlib-devel-1.2.7-17.el7.x86_64.rpm</li>
+</ul>
+<h3>安装tools提示已有进程占用解决方法</h3>
+<h3>如何判断虚拟机是否已经安装VMTools</h3>
+<ul>
+<li><strong>命令</strong>
+<ul>
+<li>cat /etc/.vmtools/version.ini</li>
+<li>ps -ef | grep vm-agent</li>
+</ul>
+</li>
+</ul>
+<h3>华三服务器</h3>
+<h3>fc内置账号是gandalf、分布式存储内置账号fsadmin</h3>
+<h3>验证tftp是否开启成功</h3>
+<ul>
+<li>export configuration_data ip=192.168.11.30 user=HP password=jie db_file=conf01.dat protocol=FTP</li>
+<li>export running_data ip=192.168.11.30 user=HP password=jie running_data_file=conf02.txt port=21 protocol=FTP</li>
+<li>备注 其中的IP是本机地址，user是本机名，password是本机密码</li>
+</ul>
+<h3>网卡重启失败问题</h3>
+<ul>
+<li>网卡重启失败提示存在错误代码，可能是其他网卡配置导致，可以把其他网卡配置作备份然后修改名字再重启网卡试下</li>
+</ul>
+<h3>创建vbs提示安装cloud组件失败问题</h3>
+<ul>
+<li>vim /etc/ssh/sshd_config</li>
+<li>ssh配置文件把这条语句前面的#号去掉，然后重启#Subsystem sftp /usr/libexec/openssh/sftp-server -l INFO -f AUTH'</li>
+<li>重启语句：service sshd restart</li>
+</ul>
+<h3>仲裁服务器添加不成功问题</h3>
+<ul>
+<li>有可能是浏览器存在兼容性问题，Google浏览器换至86版本以下，或是用火狐浏览器</li>
+</ul>
+<h3>双活开启ha策略问题</h3>
+<ul>
+<li>安装utravr软件，在里面添加fs，fc节点，创建保护组（存储侧双活pair不能手动创建，不然会导致保护组创建失败），在fc平面把集群ha和主机ha开启</li>
+</ul>
+<h3>存储侧提示计算节点丢包，网络延迟等问题</h3>
+<ul>
+<li>fc平台管理存储平面把接口从ovs改为Linux的子接口</li>
+</ul>
+<h3>仲裁服务器网络配置命名规则</h3>
+<ul>
+<li>两个网络配置文件中的device名字不能一样</li>
+</ul>
+<h3>时钟源提示问题</h3>
+<ul>
+<li>解决是时钟源问题，把浮动IP替换成两个管理节点ip</li>
+</ul>
+<h3>主备或是聚合绑定有错误</h3>
+<ul>
+<li>cd /opt/galax/root/vrm/tomcat/script/nrm/
+sh bondNic.sh &quot;bond0&quot; &quot;eth0 eth1&quot; -m绑定
+sh unbondNic.sh &quot;bond0&quot; -m 解绑
+cat /proc/net/bonding/bond4</li>
+</ul>
+<h3>修改密码策略</h3>
+<ul>
+<li>更改密码策略
+vim /etc/pam.d/system-auth
+vim /etc/pam.d/password-auth-local
+remember=5 改为remember=0
+修改完再改回来</li>
+</ul>
+<h3>fc添加主机提示发送消息到主机失败</h3>
+<h3>存储平面不需要配置网关，不需要配置vlan id（标签），fc上面创建分布式交换机后记得把主机的管理口也都加进去</h3>
+<h3>存储版本查询</h3>
+<ul>
+<li>cat /etc/dfv/product.ini</li>
+</ul>
+<h3>fc版本查询</h3>
+<ul>
+<li>cat /opt/galax/version/GalaxVersion.cfg</li>
+</ul>
+<h3>fc更新时出现浮动ip与站点不一致是因为主或者备节点IP出现错误引起，fc更新时提示时钟源未配置导致升级前检查失败，可以忽略</h3>
+<h3>主机名修改</h3>
+<ul>
+<li>vim /etc/hostname</li>
+</ul>
+<h3>网卡名称错误问题</h3>
+<ul>
+<li>使用命令查询网卡名称为eth1，进入网卡配置文件查询到的文件名称为eth2，可以cd /etc/udev/rules.d/70-persistent-net.rules/配置文件</li>
+<li>删除70-persist配置文件然后重启虚机</li>
+</ul>
+<h3>资源统计计算方法</h3>
+<ul>
+<li>Cpu=所有虚拟机实际分配的cpu大小总和/所有主机逻辑CPU总和
+内分配率=所有虚拟机实际分配的内存大小总和/所有主机内存总和
+磁盘分配率=所有虚拟机实际分配的磁盘大小总和/存储总容量</li>
+</ul>
+<h3>判断机器是exp类型还是直通型</h3>
+<ul>
+<li>查看是否含有RAID卡，若含有RAID卡则为EXP机型，否则为直通机型</li>
+</ul>
+<h3>配置路由</h3>
+<ul>
+<li>在Linux系统中，需要互通的设备但是存在不同的网段，则需要在系统层配置明细路由</li>
+<li><strong>举例：KVM项目中存储平面计算节点的和存储节点的存储平面不在同一个网段上，则需要配置明细路由，计算节点采用10.0.7.X段的地址，掩码是24位的，存储节点采用10.0.11.X段的地址，掩码是24位的。</strong>
+<ul>
+<li><strong>计算节点配置路由</strong>
+<ul>
+<li><strong>方法二</strong>
+<ul>
+<li>如果/etc/sysconfig/路径下存在这个static-route文件，也可以直接在这个配置文件下直接配置路由</li>
+<li><strong>举例：系统给ip是10.0.7.0段，现在需要添加10.0.11.0段的ip以能够互通，10.0.7.48是10.0.7.X段的网关</strong>
+<ul>
+<li>any net 10.0.11.0/24 via 10.0.7.48</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>方法一</strong>
+<ul>
+<li><strong>在/etc/sysconfig/network-sripts/route-eth0</strong>
+<ul>
+<li>说明，如果/etc/sysconfig/路径下存在这个static-route文件，也可以直接在这个配置文件下直接配置路由</li>
+<li>添加路由10.0.7.0/24 via 10.0.7.48 dev eth0</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>重启网卡</strong>
+<ul>
+<li>service network restart</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>存储节点配置路由如计算节点侧配置即可</li>
+</ul>
+</li>
+</ul>
+<h3>彻底删除网卡绑定成bond后删除不干净的方法</h3>
+<ul>
+<li>客户现场Linux操作系统需要删除bond配置，在down掉bond网口，删除/etc/sysconfig/network-scripts/ifcfg-bond4后，继续删除/proc/net/bonding/bond4文件，提示没有权限。</li>
+</ul>
+<p>其实删除bond网络设备只需要执行如下命令即可。</p>
+<p>举例：删除bond4</p>
+<p>echo -bond4 &gt;/sys/class/net/bonding_masters</p>
+<h3>Fusioncompute对接块存储提示存储存在错误或异常，这是证书不一致导致的，vrm和fs管理节点的证书md5值不一致而对接失败，可以查看fusioncompute指导书更换证书</h3>
+<h3>案例2：存储升级部署自服务传包时提示内存内存不足报错</h3>
+<ul>
+<li>登录管理节点执行numactl -H 查看是否有node free内存少于3G，少于3G则会提示内存不足，
+可以评估看内存是否足够传包，如果足够传包，则可以规避
+分别登录到主备管理节点切换到root
+依次执行以下两条命令：
+line=$(grep -n 'Start check numa memory' /opt/fusionstorage/deploymanager/clouda/script/agent_handle_inner.sh);
+sed -i &quot;${line}a\return 0&quot; /opt/fusionstorage/deploymanager/clouda/script/agent_handle_inner.sh
+规避后重新执行传包或者热补丁自升级</li>
+</ul>
+<h3>案例3：升级存储时升级到一半时界面上总进度显示暂停</h3>
+<ul>
+<li>登录失败的节点，查看omm_c升级部署日志
+cat /var/log/oam/oam-u/omm_c/script/omm_c.deploy.script.log | grep &quot;omm_cuninstall for upgrade failed&quot;
+cat /var/log/dfv/dfv_info/dfv-ssh.log | grep &quot;coonfig allowuser failed&quot;
+这里有问题会有回显报错，则执行下面的操作
+查看sshd_config配置文件是否配置了AllowUser或者AllowGroups
+有回显则说明是受这两个影响，需要先注释掉，然后重启sshd服务再重试</li>
+</ul>
+<h3>案例1：在界面上不能一键同步证书，在升级工具中不能提交工程</h3>
+<ul>
+<li>查看日志：
+需要手动执行提交工程命令：python /opt/galax/patch/FusionCompute/FusionCompute_8.2.0.SPC6_CNA_Aarch_Upgrade/patchfile/bin/upgradecmd.py -c /opt/galax/patch/FusionCompute/STATE_V100R005C00_8.2.0.SPC6.xml
+然后查看包是否有没有被清除：ll /opt/galax/patch/FusionCompute/</li>
+</ul>
+<h3>案例3：升级过程中，刷新DM界面或重启主管理节点ssh服务导致DM界面登录不上</h3>
+<ul>
+<li>登录到主管理节点，找到基础服务软件包，进入action目录，执行upgrade.sh脚本，执行完毕后再重新登录即可</li>
+</ul>
+<h2>4A账号申请流程</h2>
+<h3>找客户拿模板申请账号</h3>
+<h3>在系统添加申请的账号</h3>
+<ul>
+<li>4a账户系统底层创建步骤：useradd 账户
+passwd 账户
+账户密码
+cp /etc/ssh/sshd_config sshd_config.bak
+vim /etc/ssh/sshd_config
+账户
+service sshd restart
+usermod -G wheel 账户</li>
+</ul>
+<h2>抓包命令</h2>
+<h3>tcpdump -i any src 10.197.11.246 and dst 10.197.10.206 -vvv -n（本机地址到服务器地址）</h3>
+<h2>全闪存储学习</h2>
+<h3>4U控制框后端可划分为A、B、C、D共4个象限</h3>
+<h3>硬盘框级联方案</h3>
+<ul>
+<li><strong>智能硬盘框</strong>
+<ul>
+<li>4U控制框级联3个2U智能硬盘框（非内双活组网）</li>
+</ul>
+</li>
+<li><strong>SAS硬盘框</strong>
+<ul>
+<li><strong>例子</strong>
+<ul>
+<li>4U控制框级联3个2U SAS硬盘框（正向冗余连接）</li>
+<li>4U控制框级联3个2U SAS硬盘框（正反向冗余连接）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>控制框至应用服务器连接方案</h3>
+<ul>
+<li><strong>组网方式</strong>
+<ul>
+<li>iSCSI组网、NVMe over RoCE组网和FC组网</li>
+</ul>
+</li>
+</ul>
+<h3>何如避免单点故网络故障问题</h3>
+<ul>
+<li>为保证组网的可靠性，级联时，采用冗余连接的方式，使同一级联环路中的硬盘框应形成两个相互独立、互为冗余的链路。图3，图4，图5和图6的级联环路中，橙色和蓝色线缆分别代表两个相互独立、互为冗余的链路。任意一个控制器故障都不会导致所有环路失效。</li>
+</ul>
+<h3>华为 OceanStor Dorado 全闪存系列支持的 RAID 类型有几种?</h3>
+<ul>
+<li>RAID5,RAID6,RAID-TP</li>
+</ul>
+<h3>存储基础业务配置流程</h3>
+<ul>
+<li><strong>LUN组和主机组创建的用法</strong>
+<ul>
+<li>举例：一个客户用到多个LUN，可以把属于同一个客户的LUN的加到LUN组，即主机也是一样的做法</li>
+</ul>
+</li>
+</ul>
+<h3>关于Ultrapart安装完成后后面的做法</h3>
+<ul>
+<li><strong>配置主机与存储系统的连通性的准备</strong>
+<ul>
+<li><strong>在主机上查询HBA上相应端口的WWN</strong></li>
+<li><strong>查询HBA属性</strong>
+<ul>
+<li><strong>如何查看Qlogic和Emulex厂商的HBA卡属性</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>配置主机与存储系统的连通性</strong>
+<ul>
+<li>首先要确定好使用什么协议连接</li>
+<li><strong>建立FC连接</strong>
+<ul>
+<li><strong>主机上查询WWN号</strong>
+<ul>
+<li>cat /sys/class/fc_host/host*/port_name</li>
+</ul>
+</li>
+<li><strong>配置存储系统</strong>
+<ul>
+<li>完成交换机上Zone的配置后，登录存储DeviceManager，在主机界面选择要添加启动器的主机，点击右侧的，并选择增加启动器。</li>
+<li>观察能否发现对应主机的启动器。</li>
+<li>勾选启动器，点击将启动器分配给主机</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>建立iSCSI连接</strong>
+<ul>
+<li>配置主机IP</li>
+<li><strong>检查并安装iSCSI软件包</strong>
+<ul>
+<li>使用rpm -qa |grep iscsi查询是否安装了启动器软件包。</li>
+</ul>
+</li>
+<li><strong>主机启动器配置（使用iscsiadm）</strong></li>
+<li><strong>配置存储系统</strong>
+<ul>
+<li>配置存储端口IP</li>
+<li><strong>为以太端口配置IP的操作步骤举例如下</strong>
+<ul>
+<li>在系统菜单中选择硬件，进入设备硬件界面。</li>
+<li>选中设备，点击查看设备后视图。</li>
+<li>选择要配置ip的以太端口，点击修改。</li>
+<li>在弹出的界面编辑端口的名称、ip、子网掩码信息</li>
+</ul>
+</li>
+<li><strong>为主机添加启动器</strong>
+<ul>
+<li>登录存储系统DeviceManager。在主机界面选择要添加启动器的主机，点击右侧的，并选择增加启动器。</li>
+<li>观察能否发现对应主机的启动器。</li>
+<li>勾选启动器，点击将启动器分配给主机。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>主机系统扫描LUN</strong>
+<ul>
+<li><strong>针对FC连接，采用下述方法进行扫Lun：</strong>
+<ul>
+<li><strong>进入/sys/class/fc_host目录，查看HBA端口对应的设备符</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>上述步骤完成后，在主机上使用命令查询到新的卷（上述已经映射到主机的），</h3>
+<ul>
+<li><strong>备注：如何确定一个盘没有挂载</strong></li>
+<li><strong>使用n命令新建分区</strong></li>
+<li><strong>使用w命令将分区数据写入磁盘</strong></li>
+<li><strong>使用mkfs命令创建文件系统</strong>
+<ul>
+<li><strong>挂载文件系统</strong></li>
+</ul>
+</li>
+</ul>
+<h2>裸金属镜像制作</h2>
+<h3>获取系统链接、驱动链接、raid卡驱动链接</h3>
+<h3>安装qemu、下载替换UEFI（BIOS的替代方案）的文件</h3>
+<ul>
+<li>https://qemu.weilnetz.de/w64/2021/qemu-w64-setup-20210505.exe</li>
+<li>http://releases.linaro.org/components/kernel/uefi-linaro/16.02/release/qemu64/QEMU_EFI.fd</li>
+<li><strong>安装qemu</strong>
+<ul>
+<li>在D:\vm\arm64目录下新建文件夹qemu，将qemu安装到D:\vm\arm64\qemu目录下；</li>
+<li><strong>安装好之后，利用qemu生成一个硬盘文件：</strong>
+<ul>
+<li>进入qemu目录下运行cmd命令，调出命令行界面，运行命令：</li>
+<li><strong>qemu-img create -f qcow2 D:\vm\arm64\kylindisk.qcow2 40G</strong>
+<ul>
+<li>创建的大小为40G</li>
+</ul>
+</li>
+<li>最终得到一个命名为kylindisk.qcow2的磁盘文件，以后我们利用此文件进行安装虚拟机；</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>安装虚拟机</h3>
+<ul>
+<li>进入到qemu目录，使用cmd命令调出命令行界面，执行以下命令：</li>
+<li><strong>qemu-system-aarch64.exe -m 8192 -cpu cortex-a72 -smp 8,sockets=4,cores=2 -M virt -bios D:\vm\arm64\QEMU_EFI.fd -device VGA -device nec-usb-xhci -device usb-mouse -device usb-kbd -drive if=none,file=D:\vm\arm64\kylindisk.qcow2,id=hd0 -device virtio-blk-device,drive=hd0 -drive if=none,file=D:\vm\arm64\Kylin-Server-10-SP2-aarch64-Release-Build09-20210524.iso,id=cdrom,media=cdrom -device virtio-scsi-device -device scsi-cd,drive=cdrom  -net nic -net user,hostfwd=tcp::2222-:22</strong>
+<ul>
+<li>内存是8192，CPU是4核2线程，路径是D:\vm\arm64\QEMU_EFI.fd。file=D:\vm\arm64\kylindisk.qcow2
+引用的系统文件：file=D:\vm\arm64\Kylin-Server-10-SP2-aarch64-Release-Build09-20210524.iso</li>
+</ul>
+</li>
+<li>note：命令中的路径要与文件目录对应上，否则可能会报错</li>
+<li><strong>之后在自动弹出的QEMU虚拟机中安装系统：</strong></li>
+</ul>
+<h3>启动虚拟机</h3>
+<ul>
+<li>安装好后，我们需要再次启动（无需指定iso文件启动）;
+进入到qemu所在目录，使用cmd命令行，执行以下命令：</li>
+<li>qemu-system-aarch64.exe -m 8192 -cpu cortex-a72 -smp 8,sockets=4,cores=2 -M virt -bios D:\vm\arm64\QEMU_EFI.fd -device VGA -device nec-usb-xhci -device usb-mouse -device usb-kbd -drive if=none,file=D:\vm\arm64\kylindisk.qcow2,id=hd0 -device virtio-blk-device,drive=hd0 -drive if=none,file=,id=cdrom,media=cdrom -device virtio-scsi-device -device scsi-cd,drive=cdrom -net nic -net user,hostfwd=tcp::2222-:22</li>
+</ul>
+<h3>安装驱动</h3>
+<ul>
+<li>通过挂载ISO的形式把要安装的驱动固件软件都打包好，使用UltraISO工具进行打包，打包的内容包括snmp包以及snmp的配置文件，raid卡的驱动固件、系统的驱动、agent客户端的安装包</li>
+<li><strong>命令</strong>
+<ul>
+<li>qemu-system-aarch64.exe -m 8192 -cpu cortex-a72 -smp 8,sockets=4,cores=2 -M virt -bios D:\vm\arm64\QEMU_EFI.fd -device VGA -device nec-usb-xhci -device usb-mouse -device usb-kbd -drive if=none,file=D:\vm\arm64\kylindisk.qcow2,id=hd0 -device virtio-blk-device,drive=hd0 -drive if=none,file=D:\vm\arm64\snmp_conf.iso,id=cdrom,media=cdrom -device virtio-scsi-device -device scsi-cd,drive=cdrom -net nic -net user,hostfwd=tcp::2222-:22</li>
+<li><strong>备注</strong>
+<ul>
+<li><strong>挂载的路径以及文件</strong>
+<ul>
+<li>file=D:\vm\arm64\snmp_conf.iso</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>安装agent</h3>
+<ul>
+<li><strong>查看相关指导书</strong>
+<ul>
+<li>FusionSphere SIA 8.2.0.3 裸金属服务器镜像制作指导书 03</li>
+</ul>
+</li>
+</ul>
+<h3>安装snmp</h3>
+<ul>
+<li>登陆操作系统，进入/etc/snmp/ 目录下，执行
+mv /etc/snmp/snmpd.conf /etc/snmp/snmpd.conf.bk</li>
+<li>然后检查/etc/snmp下的snmpd.conf配置文件是否已被修改为snmpd.conf.bk</li>
+<li><strong>然后将pass文件夹里面的配置文件替换系统里面原来有的</strong>
+<ul>
+<li>将挂载的pass文件替换到/etc/snmp</li>
+</ul>
+</li>
+<li><strong>重启snmp服务</strong>
+<ul>
+<li>执行systemctl restart snmpd.service</li>
+<li>执行完成后，通过执行systemctl status snmpd.service 检查服务启动情况</li>
+</ul>
+</li>
+</ul>
+<h2>扩容</h2>
+<h3>tftp开启验证方法</h3>
+<ul>
+<li><strong>连接交换机</strong>
+<ul>
+<li>export configuration_data ip=192.168.11.86 user=HP password=*** db_file=conf01.dat protocol=FTP</li>
+<li>export configuration_data ip=本机配置的地址 user=电脑用户名 password=电脑密码 db_file=conf01.dat protocol=FTP</li>
+</ul>
+</li>
+</ul>
+<h2>日常使用的命令</h2>
+<h3>修改密码命令：</h3>
+<ul>
+<li>echo '新密码' | passwd --stdin 账号</li>
+</ul>
+<h3>查询wwm号</h3>
+<ul>
+<li>cat /sys/class/fc_host/host*/port_name</li>
+</ul>
+<h3>1、sed 使用 s 命令来进行文本替换操作</h3>
+<ul>
+<li><strong>sed 's/srcStr/dstStr/' file</strong>
+<ul>
+<li>其中，srcStr 为想要替换的文本，dstStr 为将要替换成的文本。使用 s 命令时，sed 编辑器会在一
+行一行地读取文件 file，并在每行查找文本 srcStr，如果找到了，则将该处的 srcStr 替换为
+dstStr。</li>
+</ul>
+</li>
+<li><strong>将第3行中所有的 5 替 换成 6</strong>
+<ul>
+<li>sed '27 s/5/6/g' /etc/login.defs</li>
+</ul>
+</li>
+</ul>
+<h3>sed 命令删除行</h3>
+<ul>
+<li><strong>sed '3d' /etc/passwd</strong>
+<ul>
+<li>指定删除第三行</li>
+</ul>
+</li>
+</ul>
+<h3>ethtool -p 端口名称</h3>
+<h3>开启端口</h3>
+<ul>
+<li>ifconfig eth0 up</li>
+</ul>
+<h3>赋予账号永久权限</h3>
+<ul>
+<li>chage -M 9999 账号名</li>
+</ul>
+<h3>网卡重启</h3>
+<ul>
+<li>service network restart</li>
+</ul>
+<h3>磁盘挂载查看</h3>
+<ul>
+<li>fdisk -l</li>
+</ul>
+<h3>普通账号如何增加ssh权限</h3>
+<ul>
+<li>4a账户系统底层创建步骤：useradd 账户
+passwd 账户
+账户密码
+cp /etc/ssh/sshd_config sshd_config.bak
+vim /etc/ssh/sshd_config
+账户
+service sshd restart
+usermod -G wheel 账户</li>
+</ul>
+<h3>清除外raid卡部配置文件</h3>
+<ul>
+<li><strong>安装MegaCli和storcli软件</strong>
+<ul>
+<li>rpm -ivh 软件包名</li>
+</ul>
+</li>
+<li><strong>配置变量环境</strong>
+<ul>
+<li>ln -s /opt/MegaRAID/storcli/storcli64 /usr/bin/storcli64</li>
+</ul>
+</li>
+<li><strong>执行命令扫描raid卡上的Foreign信息</strong>
+<ul>
+<li>说明：以下两条命令其中任一条都可以</li>
+<li>/opt/MegaRAID/MegaCli/MegaCli64 -CfgForeign -Scan -a0</li>
+<li>/opt/MegaRAID/storcli/storcli64 /c0/fall show  或者是storcli64 /c0/fall  show</li>
+</ul>
+</li>
+<li><strong>执行如下命令清除 RIAD 上的 Foreign 信息。</strong>
+<ul>
+<li>说明：以下两条命令其中任一条都可以</li>
+<li>/opt/MegaRAID/storcli/storcli64 /c0/fall del  或者是storcli64 /c0/fall del</li>
+<li>/opt/MegaRAID/MegaCli/MegaCli64 -CfgForeign -Clear</li>
+</ul>
+</li>
+<li><strong>查看是否已清除外部配置</strong>
+<ul>
+<li>执行如下命令查看 RIAD 上的 Foreign 信息是否被清除，Foreign State 信息均为none”时表示已全部清除。</li>
+</ul>
+</li>
+</ul>
+<h3>版本查询命令</h3>
+<ul>
+<li><strong>fusioncomputer版本查询</strong>
+<ul>
+<li>cat /opt/galax/version/GalaxVersion.cfg</li>
+</ul>
+</li>
+</ul>
+<h3>修改系统时间</h3>
+<ul>
+<li>举例：date -s &quot;2023-2-21 17:34&quot;</li>
+</ul>
+<h3>查询系统内存储漏洞的命令</h3>
+<ul>
+<li><strong>rpm -qa --changelog | grep +加漏洞名称</strong>
+<ul>
+<li>rpm -qa --changelog | grep CVE-2020-14145</li>
+</ul>
+</li>
+</ul>
+<h3>配置和删除临时网关</h3>
+<ul>
+<li><strong>增加</strong>
+<ul>
+<li>route add default gw 10.200.153.254</li>
+</ul>
+</li>
+<li><strong>删除</strong>
+<ul>
+<li>route del default gw 10.200.153.254</li>
+</ul>
+</li>
+</ul>
+<h3>版本查询</h3>
+<ul>
+<li>cat /opt/huawei/deploy/package/version</li>
+</ul>
+<h3>ssh命令</h3>
+<ul>
+<li>ssh 账号@ip 举例：ssh gandalf@10.200.214.86</li>
+</ul>
+<h3>关闭历史命令</h3>
+<ul>
+<li><strong>vim /etc/profile</strong>
+<ul>
+<li>HISTSIZE=1000</li>
+</ul>
+</li>
+</ul>
+<h3>查询wwm号</h3>
+<ul>
+<li>cat /sys/class/fc_host/host*/port_name  （验证wwm号方法，一个IP地址对应两个wwm，一台主机中 查询出来有两个wwm号就好 然后做记录，发邮件）</li>
+</ul>
+<h2>性能可靠性等测试</h2>
+<h3>安装jdk插件，安装vdbench，进入vdbench文件夹使用./vdbench -t 测试安装是否成功</h3>
+<h2>存储挂载到系统（划分lun挂载到服务器上面，本记录是光纤交换机链路挂载方法）</h2>
+<h3>首先查看进入主机查看wwn号，cat /sys/class/fc host/host*/port name</h3>
+<h3>注：创建lun，然后把lun加到lun组（多个lun要加到一个组里面），创建主机然后把主机加到主机组（多个主机要加到一个组里面）</h3>
+<h3>fc类型，网络是8，16，32光纤</h3>
+<p>在主机上面查询wwn号（cat /sys/class/fc host/host*/port name），然后查询存储上上面端口的wwn号，记录下来，发给交换机的人，让他们在交换机上面划zone，好了之后安装多路径软件（可以借鉴OceanStor UltraPath for Linux 31.0.1 用户指南），安装方式选择boot from Local方式安装，安装好了之后扫盘（登录进去Utratpart软件（登录命令：upadmin）里面扫描，命令是show vlan或者是show vlan type=all），然后分区挂载</p>
+<h3>具体挂载方法可以查询文档：华为SAN存储在Red Hat系统下的主机连通性指南</h3>
+<h3>如果是走ip（也就是iSCSI链路）具体可查看文档</h3>
+<h2>文件存储</h2>
+<h3>对接测试</h3>
+<ul>
+<li><strong>对接虚拟机测试要求</strong>
+<ul>
+<li><strong>不同的vlan之间要互通需要在交换机上配置路由，配置完成后主机上ping网络，如果默认路由不通则需要在系统上配置路由</strong>
+<ul>
+<li><strong>主机上配置路由方法
+通过cls登录admin，使用普通账户切换
+cli_start -u admin，然后输入密码
+配置命令create route config &lt;dest_ip&gt; &lt;network_type&gt; [prefer]</strong>
+<ul>
+<li>举例：admin:/&gt;create route config 192.168.100.10/16 Management 1777</li>
+<li><strong>删除路由</strong>
+<ul>
+<li>delete route config &lt;dest_ip&gt;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>AI生成</p>
+</blockquote>
+]]></content>
+    <category term="华为IT云"/>
+    <published>2026-10-12T06:59:31.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">WAF阻断放行步骤</title>
+    <id>https://newzone.top/LearnData/huawei/waf%E9%98%BB%E6%96%AD%E6%94%BE%E8%A1%8C%E6%AD%A5%E9%AA%A4.html</id>
+    <link href="https://newzone.top/LearnData/huawei/waf%E9%98%BB%E6%96%AD%E6%94%BE%E8%A1%8C%E6%AD%A5%E9%AA%A4.html"/>
+    <updated>2026-10-12T06:59:31.000Z</updated>
+    <summary type="html"><![CDATA[<blockquote>
+<p>本文整理自《waf阻断放行步骤》文档。</p>
+</blockquote>
+<p>已外网二为例子，当日志中阻断记录根客户上报匹配时，点击该策略</p>
+<p>进入对应规则号修改权限</p>
+<p>将启用状态选为【否】，进行放行</p>
+<blockquote>
+<p>AI生成</p>
+</blockquote>
+]]></summary>
+    <content type="html"><![CDATA[<blockquote>
+<p>本文整理自《waf阻断放行步骤》文档。</p>
+</blockquote>
+<p>已外网二为例子，当日志中阻断记录根客户上报匹配时，点击该策略</p>
+<p>进入对应规则号修改权限</p>
+<p>将启用状态选为【否】，进行放行</p>
+<blockquote>
+<p>AI生成</p>
+</blockquote>
+]]></content>
+    <category term="华为IT云"/>
+    <published>2026-10-12T06:59:31.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">问题流程与运维操作</title>
+    <id>https://newzone.top/LearnData/huawei/%E9%97%AE%E9%A2%98%E6%B5%81%E7%A8%8B.html</id>
+    <link href="https://newzone.top/LearnData/huawei/%E9%97%AE%E9%A2%98%E6%B5%81%E7%A8%8B.html"/>
+    <updated>2026-10-12T06:59:31.000Z</updated>
+    <summary type="html"><![CDATA[<blockquote>
+<p>本笔记由 xmind 思维导图《问题流程》整理而来，涵盖添加策略、VPN排查、IP封堵解封等运维操作流程。</p>
+</blockquote>
+<h1>问题操作</h1>
+<h2>添加策略流程</h2>
+<h3>举例</h3>
+<ul>
+<li><strong>源IP</strong>：10.100.7.228（内网云）</li>
+<li><strong>目的IP</strong>：10.160.35.0/24（外网云）</li>
+<li><strong>目的端口</strong>：19114</li>
+</ul>
+<h3>流程</h3>
+<ul>
+<li>源端：登录内网云-云资源池（非信创内网云采用扁平网络部署，不需要写防火墙以及路由表），因为是源端访问出去的安全组默认放通整个段，不需要再写安全组了，由于硬件防火墙出去的策略全部放通也不需要写，核心交换机的路由之前已经写入。</li>
+<li><strong>目的</strong>
+<ul>
+<li>安全组
+1、登录信创外网云-云资源池-进行IP搜索出来后进入主机选择点击安全组（因为是目的端，这里写安全组是为了把源端的IP放进来），搜索用本平台IP搜索，查看入方向原有的规则是否已经存在，如果不存在则添加，因为要把源端的IP添加进入方向才能访问目的端，所以这里添加的是源端IP。</li>
+<li>防火墙
+2、资源中心-网路服务-防火墙-规则集（规则集里面没有的就说明原来因为某些原因所以没有放通，那就默认都是通的不再需要添加，这里要搜索规则是用本平台的IP进行搜索，这里是在目的端，所以搜索的IP也是输入的目的端IP），进入防火墙规则组后输入源端IP（10.100.7.228）搜索是否存在（为什么输入源端IP，现在所在的是目的端平台，那么这里的源IP相对这个平台来说就是目的IP），存在不用管，不存在要添加规则（查看优先级序号再写），目的端是10.160.35.0/24，但是现在所处的就是目的端平台，所以10.160.35.0/24这个IP就是源IP，源IP相对目的端的防火墙来说就是目的端IP（10.100.7.228）。写完要点击启用-确定-同步配置。</li>
+<li>路由表
+3、登录信创外网云-网络服务-路由表（从路由表中看名称看不出来当前网段或者IP是属于哪个路由组的可以从网络资源-VPC网络中查看），进入路由组里点击VPC路由器，这里是查找规则组，所以要输入本平台的IP，确定存在当前要加的网段后-路由条目-搜索用目的端IP（这里是在目的端平台，所以相对来说源IP才是目的IP（10.100.7.228）），查找没有后需要自行添加（下一跳根据之前写的加入，目的地址（当前所在目的端平台，相对来说源端IP才是目的地址10.100.7.228））。
+硬件防火墙（信创外防火墙），进入用户视图-安全策略组security-policy IP-查看当前配置（dis th），查找（输入目的IP），然后选择一个规则组（尽量选择少的添加），查看是否都包含源端和目的端和端口，如果不包含需要添加，</li>
+</ul>
+</li>
+</ul>]]></summary>
+    <content type="html"><![CDATA[<blockquote>
+<p>本笔记由 xmind 思维导图《问题流程》整理而来，涵盖添加策略、VPN排查、IP封堵解封等运维操作流程。</p>
+</blockquote>
+<h1>问题操作</h1>
+<h2>添加策略流程</h2>
+<h3>举例</h3>
+<ul>
+<li><strong>源IP</strong>：10.100.7.228（内网云）</li>
+<li><strong>目的IP</strong>：10.160.35.0/24（外网云）</li>
+<li><strong>目的端口</strong>：19114</li>
+</ul>
+<h3>流程</h3>
+<ul>
+<li>源端：登录内网云-云资源池（非信创内网云采用扁平网络部署，不需要写防火墙以及路由表），因为是源端访问出去的安全组默认放通整个段，不需要再写安全组了，由于硬件防火墙出去的策略全部放通也不需要写，核心交换机的路由之前已经写入。</li>
+<li><strong>目的</strong>
+<ul>
+<li>安全组
+1、登录信创外网云-云资源池-进行IP搜索出来后进入主机选择点击安全组（因为是目的端，这里写安全组是为了把源端的IP放进来），搜索用本平台IP搜索，查看入方向原有的规则是否已经存在，如果不存在则添加，因为要把源端的IP添加进入方向才能访问目的端，所以这里添加的是源端IP。</li>
+<li>防火墙
+2、资源中心-网路服务-防火墙-规则集（规则集里面没有的就说明原来因为某些原因所以没有放通，那就默认都是通的不再需要添加，这里要搜索规则是用本平台的IP进行搜索，这里是在目的端，所以搜索的IP也是输入的目的端IP），进入防火墙规则组后输入源端IP（10.100.7.228）搜索是否存在（为什么输入源端IP，现在所在的是目的端平台，那么这里的源IP相对这个平台来说就是目的IP），存在不用管，不存在要添加规则（查看优先级序号再写），目的端是10.160.35.0/24，但是现在所处的就是目的端平台，所以10.160.35.0/24这个IP就是源IP，源IP相对目的端的防火墙来说就是目的端IP（10.100.7.228）。写完要点击启用-确定-同步配置。</li>
+<li>路由表
+3、登录信创外网云-网络服务-路由表（从路由表中看名称看不出来当前网段或者IP是属于哪个路由组的可以从网络资源-VPC网络中查看），进入路由组里点击VPC路由器，这里是查找规则组，所以要输入本平台的IP，确定存在当前要加的网段后-路由条目-搜索用目的端IP（这里是在目的端平台，所以相对来说源IP才是目的IP（10.100.7.228）），查找没有后需要自行添加（下一跳根据之前写的加入，目的地址（当前所在目的端平台，相对来说源端IP才是目的地址10.100.7.228））。
+硬件防火墙（信创外防火墙），进入用户视图-安全策略组security-policy IP-查看当前配置（dis th），查找（输入目的IP），然后选择一个规则组（尽量选择少的添加），查看是否都包含源端和目的端和端口，如果不包含需要添加，</li>
+</ul>
+</li>
+</ul>
+<h2>VPN登录失败排查流程</h2>
+<h3>举例：回复话术（我们查了一下，该VPN账户是有访问https://10.100.7.251:8443的权限）</h3>
+<h3>VPN打不开处理流程（以https://10.100.7.251:8443 账户：yzw-xcnw_znyw举例）</h3>
+<h3>1、登录inode客户端后打开cmd ping客户说的不通网址，先查看ping结果再进行下一步</h3>
+<p>2、登录https://10.100.7.251:8443，然后用户-用户管理-搜索yzw-xcnw_znyw这个用户。查看用户的状态是否启用，启用则说明这里没问题
+3、登录M9000防火墙（https://10.240.3.1/web/frame/login.html），点击对象-用户-用户管理-本地用户，搜索yzw-xcnw_znyw查看用户的状态是否生效还是失效状态。
+4、还是不通可以让客户发一下账号密码自行登录测试</p>
+<h2>IP封堵与解封</h2>
+<h3>1、服务器遭受攻击后应对策略</h3>
+<ul>
+<li><strong>处理方案</strong>
+<ul>
+<li>登录（M9000防火墙）https://10.240.3.1/wnm/frame/index.php#M_Dashboard
+点击对象、点击ACL规则组，然后输入3002规则组，把要封堵的IP添加进来，3002添加完成后输入3003也进行同样的操作，3002需要截图，3003不需要。
+备注：影响资产是59.50.38.0/24这个段的要在外网一出口路由器封堵</li>
+</ul>
+</li>
+</ul>
+<h3>攻防演练IP解封：</h3>
+<ul>
+<li>需要登录封堵1、2路由器（10.245.49.14、10.245.49.15）以及园区接入防火墙M9000（10.240.0.2），防火墙要进入3002,3003规则解封。</li>
+</ul>
+<h3>正常IP解封</h3>
+<ul>
+<li>信创外、非信创外网2：59.50.3.0、59.50.39.0这两个IP，则需要解封M9000的就行，M9000是3002、3003规则</li>
+</ul>
+<h3>操作步骤</h3>
+<ul>
+<li>两台路由器：dis cu全局查看，输入要解封的IP，例如192.168.2.1进行查找
+查找出来在这条路由中ip route-static 192.168.2.1 255.255.255.255
+执行undo ip route-static 192.168.2.1 255.255.255.255
+M9000防火墙可以在web界面进行操作</li>
+</ul>
+<h2>聚合问题</h2>
+<h3>物理机网卡断联排查：</h3>
+<p>1、Ip -4 a查看对应bond有无UP
+2、ip -s link show br_bond0 查看bond丢包情况
+3、cat /proc/net/bonding/bond0 查看对应物理网卡
+4、dmesg | grep -i &quot;link.*down&quot; 查看最近断联情况
+5、ethtool  -p  enp61s0f0  计算节点服务器网卡电灯定位问题命令
+通过网卡标签找到对端交换机口看聚合和网线口是否正常</p>
+<h2>系统加固镜像问题处理</h2>
+<p>使用系统加固镜像时出现问题的处理方法：</p>
+<ol>
+<li>先查看 sshd 服务是否起来</li>
+<li>重启失败就修改 key 问题：0640 权限过开放，修改到 600，命令：<code>chmod 600 /etc/ssh/ssh_host_ed25519_key</code></li>
+<li>密码登录也被限制，需修改：<code>vi /etc/ssh/sshd_config</code>，将 <code>PasswordAuthentication no</code> 修改为 <code>PasswordAuthentication yes</code>，然后重启：<code>systemctl restart sshd</code></li>
+<li>如果不通外网，可能 DNS-IP 不对。先测试 ping <code>110.242.74.102</code>，通的话说明不需要在 M9000 上开策略（如果不通，以 139 网段为例，需加 ACL 策略：<code>rule 308 permit ip source 10.130.139.0 0.0.0.255</code>）。修改 DNS 地址可改为 <code>223.5.5.5</code>。</li>
+</ol>
+<blockquote>
+<p>AI生成</p>
+</blockquote>
+]]></content>
+    <category term="华为IT云"/>
+    <published>2026-10-12T06:59:31.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">Python运维自动化入门</title>
+    <id>https://newzone.top/LearnData/linux/Python%E8%BF%90%E7%BB%B4%E8%87%AA%E5%8A%A8%E5%8C%96.html</id>
+    <link href="https://newzone.top/LearnData/linux/Python%E8%BF%90%E7%BB%B4%E8%87%AA%E5%8A%A8%E5%8C%96.html"/>
+    <updated>2026-10-12T06:59:31.000Z</updated>
+    <summary type="html"><![CDATA[
+<p>面向运维方向的 Python 入门笔记，涵盖环境、基本语法、正则、文件操作、数据库与自动化脚本。</p>
+<h2>一、环境准备</h2>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 检查版本</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">python3</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --version</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 安装 pip</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">yum</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python3-pip</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">apt</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python3-pip</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 安装常用库</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">pip3</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> requests</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> pymysql</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> paramiko</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></summary>
+    <content type="html"><![CDATA[
+<p>面向运维方向的 Python 入门笔记，涵盖环境、基本语法、正则、文件操作、数据库与自动化脚本。</p>
+<h2>一、环境准备</h2>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 检查版本</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">python3</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> --version</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 安装 pip</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">yum</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python3-pip</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">apt</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> python3-pip</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 安装常用库</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">pip3</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> install</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> requests</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> pymysql</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> paramiko</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>二、基本语法</h2>
+<h3>1. 变量与数据类型</h3>
+<div class="language-python line-numbers-mode" data-highlighter="shiki" data-ext="python" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-python"><span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">name </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "运维"</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">        # 字符串</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">num </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 100</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">           # 整数</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">rate </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 3.14</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">         # 浮点数</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">is_ok </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> True</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">        # 布尔值</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">list1 </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">2</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">3</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]   </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 列表</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">dict1 </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"host"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"10.0.0.1"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"port"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">3306</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}  </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 字典</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3>2. 输入输出</h3>
+<div class="language-python line-numbers-mode" data-highlighter="shiki" data-ext="python" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-python"><span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">name </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"请输入主机名: "</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">print</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"主机名是:"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, name)</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">print</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">f</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"端口号是: </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">{</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">dict1[</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'port'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)   </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># f-string 格式化</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3>3. 条件判断</h3>
+<div class="language-python line-numbers-mode" data-highlighter="shiki" data-ext="python" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-python"><span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">load </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 0.85</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">if</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> load </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 0.8</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">:</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    print</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"负载过高，告警！"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">elif</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> load </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 0.5</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">:</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    print</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"负载偏高"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">else</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">:</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    print</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"负载正常"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3>4. 循环</h3>
+<div class="language-python line-numbers-mode" data-highlighter="shiki" data-ext="python" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-python"><span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># for 遍历列表</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">hosts </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> [</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"web1"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"web2"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"web3"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">for</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> h </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">in</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> hosts:</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    print</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">f</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"检查主机 </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">{</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">h</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># while</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">i </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 0</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">while</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> i </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x3C;</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 5</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">:</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    print</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(i)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    i </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 1</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>三、函数</h2>
+<div class="language-python line-numbers-mode" data-highlighter="shiki" data-ext="python" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-python"><span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">def</span><span style="--shiki-light:#622CBC;--shiki-dark:#DBB7FF"> check_cpu</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(threshold</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0.8</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">):</span></span>
+<span class="line"><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    """检查 CPU 负载"""</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    cpu </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> get_cpu_usage()   </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 假设有获取函数</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    if</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> cpu </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> threshold:</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">        print</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">f</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"CPU 超限: </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">{</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">cpu</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">}</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">%"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">        return</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> False</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    return</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> True</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 调用</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">check_cpu(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0.9</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>四、正则表达式（运维常用）</h2>
+<p>正则用于匹配、查找、替换文本，处理日志和配置文件非常高效。</p>
+<div class="language-python line-numbers-mode" data-highlighter="shiki" data-ext="python" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-python"><span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">import</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> re</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 匹配 IP 地址</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">log </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "访问来源 192.168.1.100 端口 80"</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ip </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> re.findall(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">r</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">\d</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#024C1A;--shiki-light-font-weight:bold;--shiki-dark:#72F088;--shiki-dark-font-weight:bold">\.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">\d</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#024C1A;--shiki-light-font-weight:bold;--shiki-dark:#72F088;--shiki-dark-font-weight:bold">\.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">\d</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#024C1A;--shiki-light-font-weight:bold;--shiki-dark:#72F088;--shiki-dark-font-weight:bold">\.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">\d</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, log)</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">print</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(ip)   </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># ['192.168.1.100']</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 匹配邮箱</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">email </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "联系: ops@example.com"</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">m </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> re.search(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">r</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">[\w</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">]</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">@</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">[\w</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">]</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, email)</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">print</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(m.group())   </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># ops@example.com</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 替换</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">new </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> re.sub(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">r</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">\d</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#024C1A;--shiki-light-font-weight:bold;--shiki-dark:#72F088;--shiki-dark-font-weight:bold">\.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">\d</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#024C1A;--shiki-light-font-weight:bold;--shiki-dark:#72F088;--shiki-dark-font-weight:bold">\.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">\d</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#024C1A;--shiki-light-font-weight:bold;--shiki-dark:#72F088;--shiki-dark-font-weight:bold">\.</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">\d</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">+</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"***.***.***.***"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, log)</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">print</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(new)</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>常用正则符号：</strong></p>
+<p>| 符号 | 含义 |
+|</p>
+]]></content>
+    <category term="Linux"/>
+    <published>2026-10-12T06:59:31.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">Shell脚本编程从入门到实战</title>
+    <id>https://newzone.top/LearnData/linux/Shell%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B.html</id>
+    <link href="https://newzone.top/LearnData/linux/Shell%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B.html"/>
+    <updated>2026-10-12T06:59:31.000Z</updated>
+    <summary type="html"><![CDATA[<blockquote>
+<p>面向运维的 Shell 编程完整笔记，涵盖基础语法、变量、条件判断、循环、函数、调试及实战场景。</p>
+</blockquote>
+<h2>一、Shell 是什么</h2>
+<p>Shell 是一个<strong>命令解释器</strong>，位于操作系统外层，负责解释执行用户输入的命令，并把结果返回给用户。用户每输入一条命令，Shell 就解释执行一条，这种交互方式称为<strong>交互式</strong>。把一系列命令写进一个文件批量执行，就是 <strong>Shell 脚本</strong>。</p>
+<p><strong>常见 Shell：</strong></p>]]></summary>
+    <content type="html"><![CDATA[<blockquote>
+<p>面向运维的 Shell 编程完整笔记，涵盖基础语法、变量、条件判断、循环、函数、调试及实战场景。</p>
+</blockquote>
+<h2>一、Shell 是什么</h2>
+<p>Shell 是一个<strong>命令解释器</strong>，位于操作系统外层，负责解释执行用户输入的命令，并把结果返回给用户。用户每输入一条命令，Shell 就解释执行一条，这种交互方式称为<strong>交互式</strong>。把一系列命令写进一个文件批量执行，就是 <strong>Shell 脚本</strong>。</p>
+<p><strong>常见 Shell：</strong></p>
+<ul>
+<li><code>bash</code>（Bourne Again Shell）：Linux 默认，功能最强，本教程以 bash 为准</li>
+<li><code>sh</code>：最基础的 Bourne Shell，脚本兼容性最好</li>
+<li><code>csh</code> / <code>zsh</code> / <code>ksh</code> 等</li>
+</ul>
+<p><strong>第一个脚本：</strong></p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#!/bin/bash</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">echo</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "Hello World"</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li><code>#!/bin/bash</code> 是&quot;解释器声明&quot;，告诉系统用 bash 执行</li>
+<li>保存为 <code>hello.sh</code> 后，执行 <code>chmod +x hello.sh</code> 赋予执行权限，然后 <code>./hello.sh</code> 运行</li>
+<li>也可直接 <code>bash hello.sh</code> 运行，无需执行权限</li>
+</ul>
+<h2>二、变量</h2>
+<h3>1. 变量定义与引用</h3>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">name</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"运维小张"</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">        # 变量名=值，等号两边不能有空格</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">num</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">10</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">echo</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> $name            </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 引用变量，前面加 $ </span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">echo</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ${num}           </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 推荐用 {} 包裹，避免歧义</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>规则：</strong> 变量名只能由字母、数字、下划线组成，不能以数字开头。</p>
+<h3>2. 变量类型</h3>
+<p>| 类型 | 说明 | 示例 |
+|</p>
+]]></content>
+    <category term="Linux"/>
+    <published>2026-10-12T06:59:31.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">信创外网创建云主机流程</title>
+    <id>https://newzone.top/LearnData/huawei/%E4%BF%A1%E5%88%9B%E5%A4%96%E7%BD%91%E5%88%9B%E5%BB%BA%E4%BA%91%E4%B8%BB%E6%9C%BA%E6%B5%81%E7%A8%8B/</id>
+    <link href="https://newzone.top/LearnData/huawei/%E4%BF%A1%E5%88%9B%E5%A4%96%E7%BD%91%E5%88%9B%E5%BB%BA%E4%BA%91%E4%B8%BB%E6%9C%BA%E6%B5%81%E7%A8%8B/"/>
+    <updated>2026-10-12T06:59:31.000Z</updated>
+    <summary type="html"><![CDATA[<blockquote>
+<p>本文整理自《信创外网创建云主机流程》文档，含操作步骤与截图。</p>
+</blockquote>
+<p>外网1跟外网2主机的堡垒机是开在绿盟堡垒机上</p>
+<p>信创外网创建云主机流程：</p>
+<figure><img src="/cloudhost/image1.png" alt="图0" tabindex="0" loading="lazy"><figcaption>图0</figcaption></figure>
+<p>网络就是选择VPC网络，根据合同项目选择网络</p>
+<figure><img src="/cloudhost/image2.png" alt="图1" tabindex="0" loading="lazy"><figcaption>图1</figcaption></figure>]]></summary>
+    <content type="html"><![CDATA[<blockquote>
+<p>本文整理自《信创外网创建云主机流程》文档，含操作步骤与截图。</p>
+</blockquote>
+<p>外网1跟外网2主机的堡垒机是开在绿盟堡垒机上</p>
+<p>信创外网创建云主机流程：</p>
+<figure><img src="/cloudhost/image1.png" alt="图0" tabindex="0" loading="lazy"><figcaption>图0</figcaption></figure>
+<p>网络就是选择VPC网络，根据合同项目选择网络</p>
+<figure><img src="/cloudhost/image2.png" alt="图1" tabindex="0" loading="lazy"><figcaption>图1</figcaption></figure>
+<figure><img src="/cloudhost/image3.png" alt="图2" tabindex="0" loading="lazy"><figcaption>图2</figcaption></figure>
+<p>添加安全组</p>
+<figure><img src="/cloudhost/image4.png" alt="图3" tabindex="0" loading="lazy"><figcaption>图3</figcaption></figure>
+<p>填写安全组规则</p>
+<p>这两条是堡垒机和扫描器的ip，端口一个是22、另外一个all</p>
+<figure><img src="/cloudhost/image5.png" alt="图4" tabindex="0" loading="lazy"><figcaption>图4</figcaption></figure>
+<p>查看管理者对不对，不对需要修改管理者，管理者可以看审批流程有没有经过这个人（管理局的），没有就选择其他的，有就选择yzw_xc_glj</p>
+<figure><img src="/cloudhost/image6.png" alt="图5" tabindex="0" loading="lazy"><figcaption>图5</figcaption></figure>
+<p>更改所有者后绑定网卡</p>
+<figure><img src="/cloudhost/image7.png" alt="图6" tabindex="0" loading="lazy"><figcaption>图6</figcaption></figure>
+<p>可选：要加公网的情况</p>
+<p>创建弹性IP</p>
+<figure><img src="/cloudhost/image8.png" alt="图7" tabindex="0" loading="lazy"><figcaption>图7</figcaption></figure>
+<p>选择公有网络</p>
+<figure><img src="/cloudhost/image9.png" alt="图8" tabindex="0" loading="lazy"><figcaption>图8</figcaption></figure>
+<p>选择公网地址</p>
+<figure><img src="/cloudhost/image10.png" alt="图9" tabindex="0" loading="lazy"><figcaption>图9</figcaption></figure>
+<p>虚拟ip 搜索</p>
+<figure><img src="/cloudhost/image11.png" alt="图10" tabindex="0" loading="lazy"><figcaption>图10</figcaption></figure>
+<p>添加QoS</p>
+<p>根据需求工单来选择填写</p>
+<figure><img src="/cloudhost/image12.png" alt="图11" tabindex="0" loading="lazy"><figcaption>图11</figcaption></figure>
+<p>第二部分：</p>
+<figure><img src="/cloudhost/image13.png" alt="图12" tabindex="0" loading="lazy"><figcaption>图12</figcaption></figure>
+<figure><img src="/cloudhost/image14.png" alt="图13" tabindex="0" loading="lazy"><figcaption>图13</figcaption></figure>
+<p>加完记得要测试网络是否正常</p>
+<blockquote>
+<p>AI生成</p>
+</blockquote>
+]]></content>
+    <category term="华为IT云"/>
+    <published>2026-10-12T06:59:31.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">一、HTTP 介绍</title>
+    <id>https://newzone.top/LearnData/security/HTTPS%E8%AF%A6%E8%A7%A3/</id>
+    <link href="https://newzone.top/LearnData/security/HTTPS%E8%AF%A6%E8%A7%A3/"/>
+    <updated>2026-10-12T06:59:31.000Z</updated>
+    <summary type="html"><![CDATA[
+<p>HTTP协议是Hyper Text Transfer Protocol（超文本传输协议）的缩写,是用于从万维网（WWW:World Wide Web ）服务器传输超文本到本地浏览器的传送协议。</p>
+<p>HTTP是一个基于TCP/IP通信协议来传递数据（HTML 文件, 图片文件, 查询结果等）。</p>
+<h3>1、HTTP 工作原理</h3>
+<p>HTTP协议工作于客户端-服务端架构上。浏览器作为HTTP客户端通过URL向HTTP服务端即WEB服务器发送所有请求。</p>
+<p>Web服务器有：Nginx，Apache服务器，IIS服务器（Internet Information Services）等。</p>]]></summary>
+    <content type="html"><![CDATA[
+<p>HTTP协议是Hyper Text Transfer Protocol（超文本传输协议）的缩写,是用于从万维网（WWW:World Wide Web ）服务器传输超文本到本地浏览器的传送协议。</p>
+<p>HTTP是一个基于TCP/IP通信协议来传递数据（HTML 文件, 图片文件, 查询结果等）。</p>
+<h3>1、HTTP 工作原理</h3>
+<p>HTTP协议工作于客户端-服务端架构上。浏览器作为HTTP客户端通过URL向HTTP服务端即WEB服务器发送所有请求。</p>
+<p>Web服务器有：Nginx，Apache服务器，IIS服务器（Internet Information Services）等。</p>
+<p>Web服务器根据接收到的请求后，向客户端发送响应信息。</p>
+<p>HTTP默认端口号为80，但是你也可以改为8080或者其他端口。</p>
+<p><strong>HTTP三点注意事项：</strong></p>
+<ul>
+<li>HTTP是无连接：无连接的含义是限制每次连接只处理一个请求。服务器处理完客户的请求，并收到客户的应答后，即断开连接。采用这种方式可以节省传输时间。</li>
+<li>HTTP是媒体独立的：这意味着，只要客户端和服务器知道如何处理的数据内容，任何类型的数据都可以通过HTTP发送。客户端以及服务器指定使用适合的MIME-type内容类型。</li>
+<li>HTTP是无状态：HTTP协议是无状态协议。无状态是指协议对于事务处理没有记忆能力。缺少状态意味着如果后续处理需要前面的信息，则它必须重传，这样可能导致每次连接传送的数据量增大。另一方面，在服务器不需要先前信息时它的应答就较快。</li>
+</ul>
+<h3>2、HTTP 消息结构</h3>
+<p>HTTP是基于客户端/服务端（C/S）的架构模型，通过一个可靠的链接来交换信息，是一个无状态的请求/响应协议。</p>
+<p>一个HTTP&quot;客户端&quot;是一个应用程序（Web浏览器或其他任何客户端），通过连接到服务器达到向服务器发送一个或多个HTTP的请求的目的。</p>
+<p>一个HTTP&quot;服务器&quot;同样也是一个应用程序（通常是一个Web服务，如Apache Web服务器或IIS服务器等），通过接收客户端的请求并向客户端发送HTTP响应数据。</p>
+<p>HTTP使用统一资源标识符（Uniform Resource Identifiers, URI）来传输数据和建立连接。</p>
+<h3>3、客户端请求消息</h3>
+<p>客户端发送一个HTTP请求到服务器的请求消息包括以下格式：请求行（request line）、请求头部（header）、空行和请求数据四个部分组成</p>
+<h3>4、服务器响应消息</h3>
+<p>HTTP响应也由四个部分组成，分别是：状态行、消息报头、空行和响应正文。</p>
+<p><strong>实例</strong></p>
+<p>下面实例是一点典型的使用GET来传递数据的实例：</p>
+<p>客户端请求：</p>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-shell"><span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">Connected</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> to</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> www.testpm.cn</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (47.244.247.240) port 80 (#0)</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757"> GET</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> /hello.txt</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> HTTP/1.1</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">   # 请求方式与版本协议。</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> User-Agent: curl/7.29.0   </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#用什么客户端访问</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Host: www.testpm.cn  </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#主机名，域名。主机和端口号，</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Accept: </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">*</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">/</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">*</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  #匹配什么文件类型，“*” 是通用匹配。匹配所有类型</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>服务端响应:</p>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-shell"><span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x3C;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> HTTP/1.1 200 OK       </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#请求返回的状态码</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x3C;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Server: nginx/1.16.0  </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#请求的服务和版本号</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x3C;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Date: Thu, 04 Jul 2019 08:19:40 GMT</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x3C;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Content-Type: text/plain </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#文本类型，有html，plain:普通文本</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x3C;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Content-Length: 12</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x3C;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Last-Modified: Thu, 04 Jul 2019 08:13:25 GMT</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x3C;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Connection: keep-alive  </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#是否支持长连接</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x3C;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ETag: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"5d1db525-c"</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  #标识，每次访问如果与最开始的一样返回304否则校验不一致返回200</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">&#x3C;</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> Accept-Ranges: bytes</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>输出结果:</p>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-shell"><span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">hello</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> world</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3>5、HTTP 请求方法</h3>
+<p>根据HTTP标准，HTTP请求可以使用多种请求方法。</p>
+<p>HTTP1.0定义了三种请求方法： GET, POST 和 HEAD方法。</p>
+<p>HTTP1.1新增了五种请求方法：OPTIONS, PUT, DELETE, TRACE 和 CONNECT 方法。</p>
+<h1>二、HTTPS 协议介绍</h1>
+<ul>
+<li>
+<p>HTTP 协议（HyperText Transfer Protocol，超文本传输协议）：是客户端浏览器或其他程序与Web服务器之间的应用层通信协议 。</p>
+</li>
+<li>
+<p>HTTPS 协议（HyperText Transfer Protocol over Secure Socket Layer）：可以理解为HTTP+SSL/TLS， 即 HTTP 下加入 SSL 层，HTTPS 的安全基础是 SSL，因此加密的详细内容就需要 SSL，用于安全的 HTTP 数据传输。</p>
+</li>
+<li>
+<p>如上图所示 HTTPS 相比 HTTP 多了一层 SSL/TLS</p>
+<p><strong>SSL/TLS :SSL(Secure Sockets Layer 安全套接层),及其继任者传输层安全（Transport Layer Security，TLS）是为网络通信提供安全及数据完整性的一种安全协议。TLS与SSL在传输层为数据通讯进行加密提供安全支持。</strong></p>
+</li>
+</ul>
+<p>​           <strong>SSL协议可分为两层：</strong> SSL握手协议（SSL Handshake Protocol）：它建立在SSL记录协议之上，用于在实际的数据传输开始前，通讯双方进行身份认证、协商加密算法、交换加密密钥等。<strong>相当于连接</strong></p>
+<p>​    SSL记录协议（SSL Record Protocol）：它建立在可靠的传输协议（如TCP）之上，为高层协议提供数据封装、压缩、加密等基本功能的支持。 <strong>相当于通信</strong></p>
+<p><strong>SSL协议提供的服务主要有：</strong></p>
+<p>ssl:身份认证和数据加密。保证数据完整性
+1）认证用户和服务器，确保数据发送到正确的客户机和服务器；</p>
+<p>2）加密数据以防止数据中途被窃取；</p>
+<p>3）维护数据的完整性，确保数据在传输过程中不被改变。</p>
+<h3>1、HTTP 访问过程</h3>
+<p>如上图所示，HTTP请求过程中，客户端与服务器之间没有任何身份确认的过程，数据全部明文传输，“裸奔”在互联网上，所以很容易遭到黑客的攻击，如下：</p>
+<p>可以看到，客户端发出的请求很容易被黑客截获，如果此时黑客冒充服务器，则其可返回任意信息给客户端，而不被客户端察觉。</p>
+<p><strong>所以 HTTP 传输面临的风险有：</strong></p>
+<ul>
+<li>窃听风险：黑客可以获知通信内容。</li>
+<li>篡改风险：黑客可以修改通信内容。</li>
+<li>冒充风险：黑客可以冒充他人身份参与通信。</li>
+</ul>
+<p>那有没有一种方式既可以安全的获取公钥，又能防止黑客冒充呢？ 那就需要用到终极武器了：SSL 证书（申购）</p>
+<ul>
+<li>证书：.crt, .pem</li>
+<li>私钥：.key</li>
+<li>证书请求文件：.csr</li>
+</ul>
+<p>在第 ② 步时服务器发送了一个SSL证书给客户端，SSL 证书中包含的具体内容有：</p>
+<p>（1）证书的发布机构CA</p>
+<p>（2）证书的有效期</p>
+<p>（3）公钥</p>
+<p>（4）证书所有者</p>
+<p>（5）签名</p>
+]]></content>
+    <published>2026-10-12T06:59:31.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">虚拟专用网络-VPN</title>
+    <id>https://newzone.top/LearnData/security/VPN%E8%AF%A6%E8%A7%A3/</id>
+    <link href="https://newzone.top/LearnData/security/VPN%E8%AF%A6%E8%A7%A3/"/>
+    <updated>2026-10-12T06:59:31.000Z</updated>
+    <summary type="html"><![CDATA[
+<h2>一、VPN基础介绍</h2>
+<h3>1、VPN概念</h3>
+<p>Virtual Private Network，即虚拟专用网络，简称VPN，VPN是在互联网上建立专用网络，为了保证数据安全，VPN服务器和客户机之间数据通信都进行了加密处理，有了数据加密就可以认为数据是在一条安全链路上进行安全传输，如同架构了一个专用网络一样，但实际上VPN使用的依然是互联网上的公用链路，因此VPN称为虚拟专用网络，其实质上就是利用数据加密技术在公网上封装出一个数据通信遂道，VPN高密性与便捷性使其在企业中有非常方法的应用。vpn技术实质是vpn网关通过对数据包的加密和数据包目标地址的转换实现远程访问。</p>]]></summary>
+    <content type="html"><![CDATA[
+<h2>一、VPN基础介绍</h2>
+<h3>1、VPN概念</h3>
+<p>Virtual Private Network，即虚拟专用网络，简称VPN，VPN是在互联网上建立专用网络，为了保证数据安全，VPN服务器和客户机之间数据通信都进行了加密处理，有了数据加密就可以认为数据是在一条安全链路上进行安全传输，如同架构了一个专用网络一样，但实际上VPN使用的依然是互联网上的公用链路，因此VPN称为虚拟专用网络，其实质上就是利用数据加密技术在公网上封装出一个数据通信遂道，VPN高密性与便捷性使其在企业中有非常方法的应用。vpn技术实质是vpn网关通过对数据包的加密和数据包目标地址的转换实现远程访问。</p>
+<p>VPN属于远程访问技术，简单地说就是利用公用网络架设专用网络。</p>
+<p>例如：某公司员工出差到外地，他想访问企业内网的服务器资源，这种访问就属于远程访问。在传统的企业网络配置中，要进行远程访问，传统的方法是租用DDN（数字数据网）专线或帧中继，这样的通讯方案必然导致高昂的网络通讯和维护费用。对于移动用户（移动办公人员）与远端个人用户而言，一般会通过拨号线路（Internet）进入企业的局域网，但这样必然带来安全上的隐患。
+让外地员工访问到内网资源，利用VPN的解决方法就是在内网中架设一台VPN服务器。外地员工在当地连上互联网后，通过互联网连接VPN服务器，然后通过VPN服务器进入企业内网。为了保证数据安全，VPN服务器和客户机之间的通讯数据都进行了加密处理。有了数据加密，就可以认为数据是在一条专用的数据链路上进行安全传输，就如同专门架设了一个专用网络一样，但实际上VPN使用的是互联网上的公用链路，因此VPN称为虚拟专用网络，其实质上就是利用加密技术在公网上封装出一个数据通讯隧道。有了VPN技术，用户无论是在外地出差还是在家中办公，只要能上互联网就能利用VPN访问内网资源，这就是VPN在企业中应用得如此广泛的原因。</p>
+<h3>2、VPN作用</h3>
+<p>1)、在互联网通信链路上封装数据，对数据进行加密传输</p>
+<p>2)、可对数据包目标地址转换实现远程访问</p>
+<h3>3、VPN实现方法</h3>
+<ol>
+<li>
+<p>通常情况下，VPN网关采取双网卡结构，外网卡使用公网IP接入Internet。</p>
+</li>
+<li>
+<p>网络一(假定为公网internet)的终端A访问网络二(假定为公司内网)的终端B，其发出的访问数据包的目标地址为终端B的内部IP地址。</p>
+</li>
+<li>
+<p>网络一的VPN网关在接收到终端A发出的访问数据包时对其目标地址进行检查，如果目标地址属于网络二的地址，则将该数据包进行封装，封装的方式根据所采用的VPN技术不同而不同，同时VPN网关会构造一个新VPN数据包，并将封装后的原数据包作为VPN数据包的负载，VPN数据包的目标地址为网络二的VPN网关的外部地址。</p>
+</li>
+<li>
+<p>网络一的VPN网关将VPN数据包发送到Internet，由于VPN数据包的目标地址是网络二的VPN网关的外部地址，所以该数据包将被Internet中的路由正确地发送到网络二的VPN网关。</p>
+</li>
+<li>
+<p>网络二的VPN网关对接收到的数据包进行检查，如果发现该数据包是从网络一的VPN网关发出的，即可判定该数据包为VPN数据包，并对该数据包进行解包处理。解包的过程主要是先将VPN数据包的包头剥离，再将数据包反向处理还原成原始的数据包。</p>
+</li>
+<li>
+<p>网络二的VPN网关将还原后的原始数据包发送至目标终端B，由于原始数据包的目标地址是终端B的IP，所以该数据包能够被正确地发送到终端B。在终端B看来，它收到的数据包就和从终端A直接发过来的一样。</p>
+</li>
+<li>
+<p>从终端B返回终端A的数据包处理过程和上述过程一样，这样两个网络内的终端就可以相互通讯了。</p>
+<p>通过上述说明可以发现，在VPN网关对数据包进行处理时，有两个参数对于VPN通讯十分重要：原始数据包的目标地址（VPN目标地址）和远程VPN网关地址。根据VPN目标地址，VPN网关能够判断对哪些数据包进行VPN处理，对于不需要处理的数据包通常情况下可直接转发到上级路由；远程VPN网关地址则指定了处理后的VPN数据包发送的目标地址，即VPN隧道的另一端VPN网关地址。由于网络通讯是双向的，在进行VPN通讯时，隧道两端的VPN网关都必须知道VPN目标地址和与此对应的远端VPN网关地址。</p>
+</li>
+</ol>
+<h3>4、VPN分类</h3>
+<h4>4.1、按VPN协议分</h4>
+<p>VPN的隧道协议主要有PPTP、L2TP、IPSec、SSLVPN，其中PPTP和L2TP协议工作在OSI模型的第二层，又称为二层隧道协议；IPSec是第三层隧道协议。</p>
+<h4>4.2、按VPN应用分</h4>
+<ul>
+<li>Access VPN（远程接入VPN）：客户端到网关，使用公网作为骨干网在设备之间传输VPN数据流</li>
+<li>Intranet VPN（内联网VPN）：网关到网关，通过公司的网络架构连接来自同公司的资源</li>
+<li>Extranet VPN（外联网VPN）：与合作伙伴企业网构成Extranet，将一个公司与另一个公司的资源进行连接</li>
+</ul>
+<h4>4.3、按所用设备类型分</h4>
+<ul>
+<li>路由器式VPN：路由器上添加VPN服务</li>
+<li>交换机式VPN：交换机上添加VPN服务</li>
+<li>防火墙式VPN：硬件防火墙或软件防火墙上添加VPN服务，常见的一种</li>
+</ul>
+<h4>4.4、按实现原理</h4>
+<ul>
+<li>对等VPN 网络运营商提供</li>
+<li>覆盖VPN 企业借住于网络运营商网络实现企业VPN</li>
+</ul>
+<h3>5、VPN协议</h3>
+<h4>5.1、PPTP</h4>
+<p>点对点隧道协议 (PPTP) 是由包括微软和3Com等公司组成的PPTP论坛开发的一种点对点隧道协，基于拨号使用的PPP协议使用PAP或CHAP之类的加密算法，或者使用Microsoft的点对点加密算法MPPE。其通过跨越基于 TCP/IP 的数据网络创建 VPN 实现了从远程客户端到专用企业服务器之间数据的安全传输。PPTP 支持通过公共网络(例如 Internet)建立按需的、多协议的、虚拟专用网络。PPTP 允许加密 IP 通讯，然后在要跨越公司 IP 网络或公共 IP 网络(如 Internet)发送的 IP 头中对其进行封装。</p>
+<h4>5.2、L2TP</h4>
+<p>第 2 层隧道协议 (L2TP) 是IETF基于L2F (Cisco的第二层转发协议)开发的PPTP的后续版本。是一种工业标准 Internet 隧道协议，其可以为跨越面向数据包的媒体发送点到点协议 (PPP) 框架提供封装。PPTP和L2TP都使用PPP协议对数据进行封装，然后添加附加包头用于数据在互联网络上的传输。PPTP只能在两端点间建立单一隧道。 L2TP支持在两端点间使用多隧道，用户可以针对不同的服务质量创建不同的隧道。L2TP可以提供隧道验证，而PPTP则不支持隧道验证。但是当L2TP 或PPTP与IPSEC共同使用时，可以由IPSEC提供隧道验证，不需要在第2层协议上验证隧道使用L2TP。 PPTP要求互联网络为IP网络。L2TP只要求隧道媒介提供面向数据包的点对点的连接，L2TP可以在IP(使用UDP)，桢中继永久虚拟电路 (PVCs),X.25虚拟电路(VCs)或ATM VCs网络上使用。</p>
+<h4>5.3、IPSec</h4>
+<p>IPSec 的隧道是封装、路由与解封装的整个过程。隧道将原始数据包隐藏(或封装)在新的数据包内部。该新的数据包可能会有新的寻址与路由信息，从而使其能够通过网络传输。隧道与数据保密性结合使用时，在网络上窃听通讯的人将无法获取原始数据包数据(以及原始的源和目标)。封装的数据包到达目的地后，会删除封装，原始数据包头用于将数据包路由到最终目的地。</p>
+<p>隧道本身是封装数据经过的逻辑数据路径，对原始的源和目的端，隧道是不可见的，而只能看到网络路径中的点对点连接。连接双方并不关心隧道起点和终点之间的任何路由器、交换机、代理服务器或其他安全网关。将隧道和数据保密性结合使用时，可用于提供VPN。</p>
+<p>封装的数据包在网络中的隧道内部传输。在此示例中，该网络是 Internet。网关可以是外部 Internet 与专用网络间的周界网关。周界网关可以是路由器、防火墙、代理服务器或其他安全网关。另外，在专用网络内部可使用两个网关来保护网络中不信任的通讯。</p>
+<p>当以隧道模式使用 IPSec 时，其只为 IP 通讯提供封装。使用 IPSec 隧道模式主要是为了与其他不支持 IPSec 上的 L2TP 或 PPTP VPN 隧道技术的路由器、网关或终端系统之间的相互操作。</p>
+<h4>5.5、SSLVPN</h4>
+<p>SSL协议提供了数据私密性、端点验证、信息完整性等特性。SSL协议由许多子协议组成，其中两个主要的子协议是握手协议和记录协议。握手协议允许服务器 和客户端在应用协议传输第一个数据字节以前，彼此确认，协商一种加密算法和密码钥匙。在数据传输期间，记录协议利用握手协议生成的密钥加密和解密后来交换 的数据。</p>
+<p>SSL独立于应用，因此任何一个应用程序都可以享受它的安全性而不必理会执行细节。SSL置身于网络结构体系的传输层和应用层之间。此外，SSL本身就被几乎所有的Web浏览器支持。这意味着客户端不需要为了支持SSL连接安装额外的软件。这两个特征就是SSL能 应用于VPN的关键点。</p>
+<p>典型的SSL VPN应用如OpenVPN，是一个比较好的开源软件。PPTP主要为那些经常外出移动或家庭办公的用户考虑；而OpenVPN主要是针对企业异地两地总分公司之间的VPN不间断按需连接，例如ERP在企业中的应用。</p>
+<h2>二、OpenVPN 介绍</h2>
+<p>OpenVPN 允许参与建立VPN的单点使用预设的私钥，第三方证书，或者用户名/密码来进行身份验证。它大量使用了OpenSSL加密库，以及SSLv3/TLSv1 协议。OpenVPN能在Linux、xBSD、Mac OS X与Windows 2008上运行。它并不是一个基于Web的VPN软件，也不与IPsec及其他VPN软件包兼容。</p>
+<p>1、隧道加密
+OpenVPN使用OpenSSL库加密数据与控制信息：它使用了OpesSSL的加密以及验证功能，意味着，它能够使用任何OpenSSL支持的算法。它提供了可选的数据包HMAC功能以提高连接的安全性。此外，OpenSSL的硬件加速也能提高它的性能。</p>
+<p>2、验证
+OpenVPN提供了多种身份验证方式，用以确认参与连接双方的身份，包括：预享私钥，第三方证书以及用户名/密码组合。预享密钥最为简单，但同时它 只能用于建立点对点的VPN;基于PKI的第三方证书提供了最完善的功能，但是需要额外的精力去维护一个PKI证书体系。OpenVPN2.0后引入了用 户名/口令组合的身份验证方式，它可以省略客户端证书，但是仍有一份服务器证书需要被用作加密.</p>
+<p>3、网络
+OpenVPN所有的通信都基于一个单一的IP端口，默认且推荐使用UDP协议通讯，同时TCP也被支持。OpenVPN连接能通过大多数的代理服务 器，并且能够在NAT的环境中很好地工作。服务端具有向客户端“推送”某些网络配置信息的功能，这些信息包括：IP地址、路由设置等。OpenVPN提供 了两种虚拟网络接口：通用Tun/Tap驱动，通过它们，可以建立三层IP隧道，或者虚拟二层以太网，后者可以传送任何类型的二层以太网络数据。传送的数 据可通过LZO算法压缩。IANA(Internet Assigned Numbers Authority)指定给OpenVPN的官方端口为1194。OpenVPN 2.0以后版本每个进程可以同时管理数个并发的隧道。</p>
+<p>OpenVPN使用通用网络协议(TCP与UDP)的特点使它成为IPsec等协议的理想替代，尤其是在ISP(Internet service provider)过滤某些特定VPN协议的情况下。在选择协议时候，需要注意2个加密隧道之间的网络状况，如有高延迟或者丢包较多的情况下，请选择 TCP协议作为底层协议，UDP协议由于存在无连接和重传机制，导致要隧道上层的协议进行重传，效率非常低下。</p>
+<p>4、安全
+OpenVPN与生俱来便具备了许多安全特性：它在用户空间运行，无须对内核及网络协议栈作修改; 初始完毕后以chroot方式运行，放弃root权限;使用mlockall以防止敏感数据交换到磁盘。</p>
+<h2>三、VPN案例</h2>
+<h4>1、实验拓扑</h4>
+<h4>2、配置</h4>
+<h5>2.1、内网web服务器配置</h5>
+<p>1）下载httpd服务，用于验证</p>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-shell"><span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[root@web </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">~</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]# yum -y install httpd</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[root@web </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">~</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]# echo </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"internal test"</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> >></span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> /var/www/html/index.html</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[root@web </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">~</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]# systemctl enable httpd;</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">systemctl</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> start</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> httpd</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>2)修改IP地址</p>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-shell"><span class="line"></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[root@web </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">~</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]# cat /etc/sysconfig/network-scripts/ifcfg-ens33</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">TYPE</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">Ethernet</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">PROXY_METHOD</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">none</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">BROWSER_ONLY</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">no</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">BOOTPROTO</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">static</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">DEFROUTE</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">yes</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">IPV4_FAILURE_FATAL</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">no</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">IPV6INIT</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">yes</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">IPV6_AUTOCONF</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">yes</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">IPV6_DEFROUTE</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">yes</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">IPV6_FAILURE_FATAL</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">no</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">IPV6_ADDR_GEN_MODE</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">stable-privacy</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">NAME</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">ens33</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">UUID</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">486d5c6d-17ed-4a3f-baab-92d56d042796</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">DEVICE</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">ens33</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ONBOOT</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">yes</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">IPADDR</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">192.168.1.2</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">PREFIX</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">24</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">GATEWAY</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">192.168.1.1</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5>2.2、VPN网关服务器配置</h5>
+<p>1）下载应用</p>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-shell"><span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#安装额外源</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[root@vpnserver </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">~</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]# yum -y install epel-release</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-shell"><span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#OpenVPN Server Install</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[root@vpnserver </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">~</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]# yum -y install openvpn easy-rsa</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#openvpn用于实现vpn</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#easy-rsa用于生成证书</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>2）配置网卡</p>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-shell"><span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">网卡一：</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[root@vpnserver </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">~</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]# cat /etc/sysconfig/network-scripts/ifcfg-ens33</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">TYPE</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">Ethernet</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">PROXY_METHOD</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">none</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">BROWSER_ONLY</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">no</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">BOOTPROTO</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">static</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">DEFROUTE</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">yes</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">IPV4_FAILURE_FATAL</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">no</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">IPV6INIT</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">yes</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">IPV6_AUTOCONF</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">yes</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">IPV6_DEFROUTE</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">yes</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">IPV6_FAILURE_FATAL</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">no</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">IPV6_ADDR_GEN_MODE</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">stable-privacy</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">NAME</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">ens33</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">UUID</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">4ac0aefc-628f-4461-ab59-636aae59965f</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">DEVICE</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">ens33</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ONBOOT</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">yes</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">IPADDR</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">192.168.1.1</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">PREFIX</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">24</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">网卡二：</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[root@vpnserver </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">~</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]# cat /etc/sysconfig/network-scripts/ifcfg-ens37</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">TYPE</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">Ethernet</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">PROXY_METHOD</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">none</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">BROWSER_ONLY</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">no</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">BOOTPROTO</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">static</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">DEFROUTE</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">yes</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">IPV4_FAILURE_FATAL</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">no</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">IPV6INIT</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">yes</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">IPV6_AUTOCONF</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">yes</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">IPV6_DEFROUTE</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">yes</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">IPV6_FAILURE_FATAL</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">no</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">IPV6_ADDR_GEN_MODE</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">stable-privacy</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">NAME</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">ens37</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">DEVICE</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">ens37</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">ONBOOT</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">yes</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">IPADDR</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">1.1.1.1</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">PREFIX</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">24</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>3)、配置证书密钥信息</p>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-shell"><span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[root@vpnserver openvpn]#pwd</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">/etc/openvpn</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#生成密钥</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[root@vpnserver openvpn]# cp -r /usr/share/easy-rsa/3.0.7/ /etc/openvpn/easy-rsa</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[root@vpnserver openvpn]# cp /usr/share/doc/easy-rsa-3.0.7/vars.example /etc/openvpn/easy-rsa/vars         </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#vars用于生成证书的配置文件</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#修改用于生成证书的配置文件vars，此为修改后</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[root@vpnserver easy-rsa]# grep ^set /etc/openvpn/easy-rsa/vars</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#84-89 line</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">set_var</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> EASYRSA_REQ_COUNTRY</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">     "CN"</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  #国家</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">set_var</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> EASYRSA_REQ_PROVINCE</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">    "Beijing"</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"> #省</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">set_var</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> EASYRSA_REQ_CITY</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">        "Beijing"</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"> #市</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">set_var</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> EASYRSA_REQ_ORG</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "aiops"</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"> #公司</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">set_var</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> EASYRSA_REQ_EMAIL</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">       "smartgo@aiops.net.cn"</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"> #邮箱</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">set_var</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> EASYRSA_REQ_OU</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">          "IT"</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"> #部门</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#创建PKI公钥认证体系基础设施</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">初始化pki</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[root@vpnserver easy-rsa]# ./easyrsa init-pki</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">Note:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> using</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> Easy-RSA</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> configuration</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> from:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ./vars</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">init-pki</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> complete</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">; </span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">you</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> may</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> now</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> create</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> a</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> CA</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> or</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> requests.</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">Your</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> newly</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> created</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> PKI</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> dir</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> is:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> /etc/openvpn/easy-rsa/pki</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"> #生成此文件夹</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#生成CA证书</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[root@vpnserver easy-rsa]# ./easyrsa build-ca</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">Note:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> using</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> Easy-RSA</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> configuration</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> from:</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> ./vars</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">Generating</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> a</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 2048</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> bit</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> RSA</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> private</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> key</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">...........</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">+++</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">.............................................................</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">+++</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">writing</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> new</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> private</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> key</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> to</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> '/etc/openvpn/easy-rsa/pki/private/ca.key.Yp03HcUCDB'</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">Enter</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> PEM</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> pass</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> phrase:</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"> #输入密码</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">Verifying</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> -</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> Enter</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> PEM</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> pass</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> phrase:</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"> #输入与上述相同的密码</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
+    <published>2026-10-12T06:59:31.000Z</published>
+  </entry>
+</feed>
