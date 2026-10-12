@@ -6,13 +6,13 @@
     <link>https://newzone.top/LearnData/</link>
     <description>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</description>
     <language>zh-CN</language>
-    <pubDate>Mon, 12 Oct 2026 08:40:38 GMT</pubDate>
-    <lastBuildDate>Mon, 12 Oct 2026 08:40:38 GMT</lastBuildDate>
+    <pubDate>Mon, 12 Oct 2026 09:03:11 GMT</pubDate>
+    <lastBuildDate>Mon, 12 Oct 2026 09:03:11 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>工具</category>
     <category>使用指南</category>
-    <category>华为IT云</category>
+    <category>工作流程与问题处理</category>
     <category>Linux</category>
     <item>
       <title>博客文章样例 2</title>
@@ -42,7 +42,7 @@
       <guid>https://newzone.top/LearnData/huawei/IT%E4%BA%91%E9%83%A8%E7%BD%B2%E8%BF%90%E7%BB%B4%E7%AC%94%E8%AE%B0.html</guid>
       <source url="https://newzone.top/LearnData/rss.xml">华为IT云部署运维笔记</source>
       <description>本笔记由 xmind 思维导图《华为IT云》整理而来，涵盖华为 FusionCompute 云计算平台的部署、集群、存储、网络与运维要点。 IT云 OMC部署 fusion computer安装配置 使用smartkit工具升级（ibmc，网卡，raid卡，rised卡、划分raid 安装fc教程 虚拟化部署： 找两台设备当管理节点，先安装CNA计算节...</description>
-      <category>华为IT云</category>
+      <category>工作流程与问题处理</category>
       <pubDate>Mon, 12 Oct 2026 06:59:31 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p>本笔记由 xmind 思维导图《华为IT云》整理而来，涵盖华为 FusionCompute 云计算平台的部署、集群、存储、网络与运维要点。</p>
@@ -1034,7 +1034,7 @@ cli_start -u admin，然后输入密码
       <guid>https://newzone.top/LearnData/huawei/waf%E9%98%BB%E6%96%AD%E6%94%BE%E8%A1%8C%E6%AD%A5%E9%AA%A4.html</guid>
       <source url="https://newzone.top/LearnData/rss.xml">WAF阻断放行步骤</source>
       <description>本文整理自《waf阻断放行步骤》文档。 已外网二为例子，当日志中阻断记录根客户上报匹配时，点击该策略 进入对应规则号修改权限 将启用状态选为【否】，进行放行 AI生成</description>
-      <category>华为IT云</category>
+      <category>工作流程与问题处理</category>
       <pubDate>Mon, 12 Oct 2026 06:59:31 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p>本文整理自《waf阻断放行步骤》文档。</p>
@@ -1053,7 +1053,7 @@ cli_start -u admin，然后输入密码
       <guid>https://newzone.top/LearnData/huawei/%E9%97%AE%E9%A2%98%E6%B5%81%E7%A8%8B.html</guid>
       <source url="https://newzone.top/LearnData/rss.xml">问题流程与运维操作</source>
       <description>本笔记由 xmind 思维导图《问题流程》整理而来，涵盖添加策略、VPN排查、IP封堵解封等运维操作流程。 问题操作! 添加策略流程 举例 源IP：10.100.7.228（内网云） 目的IP：10.160.35.0/24（外网云） 目的端口：19114 流程 源端：登录内网云-云资源池（非信创内网云采用扁平网络部署，不需要写防火墙以及路由表），因为是...</description>
-      <category>华为IT云</category>
+      <category>工作流程与问题处理</category>
       <pubDate>Mon, 12 Oct 2026 06:59:31 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p>本笔记由 xmind 思维导图《问题流程》整理而来，涵盖添加策略、VPN排查、IP封堵解封等运维操作流程。</p>
