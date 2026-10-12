@@ -1,6 +1,6 @@
 ---
 title: Python运维自动化入门
-category: Linux
+category: Linux进阶
 tags:
   - Python
   - 运维

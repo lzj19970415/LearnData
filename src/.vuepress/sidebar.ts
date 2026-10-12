@@ -12,7 +12,14 @@ export default sidebar({
       children: "structure",
     },
     {
-      text: "🐧 Linux与云计算",
+      text: "📚 Linux基础",
+      icon: "",
+      prefix: "linux/basic/",
+      collapsible: true,
+      children: "structure",
+    },
+    {
+      text: "🐧 Linux进阶",
       icon: "",
       prefix: "linux/",
       collapsible: true,

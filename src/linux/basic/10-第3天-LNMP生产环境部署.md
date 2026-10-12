@@ -1,6 +1,6 @@
 ---
 title: LNMP生产环境部署
-category: Linux
+category: Linux基础
 tags:
   - Linux
   - LNMP

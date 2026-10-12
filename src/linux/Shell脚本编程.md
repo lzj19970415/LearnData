@@ -1,6 +1,6 @@
 ---
 title: Shell脚本编程从入门到实战
-category: Linux
+category: Linux进阶
 tags:
   - Shell
   - Linux
