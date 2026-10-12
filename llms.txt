@@ -41,6 +41,21 @@
 - [信创外网创建云主机流程](https://newzone.top/huawei/信创外网创建云主机流程/) - 外网1跟外网2主机的堡垒机是开在绿盟堡垒机上
 - [问题流程与运维操作](https://newzone.top/huawei/问题流程.html) - - **源IP**：10.100.7.228（内网云）
 - [个人介绍](https://newzone.top/intro.html) - 互联网广告人，
+- [文件管理](https://newzone.top/linux/01-文件管理.html) - 本篇整理千锋 Linux 服务管理课程中的文件管理与编辑命令，涵盖目录创建、文本查看、文件比较、过滤搜索、删除、复制、查找、分割、移动与链接等核心命令。掌握这些命令是 Linux 运维的必备基础。
+- [压缩与解压](https://newzone.top/linux/02-压缩与解压.html) - 本篇整理 Linux 常用压缩/解压与归档备份工具：`zip`、`gzip`、`bzip2`、`tar`、`dd`、`cpio`，以及各自的最常用选项、示例和易错点。
+- [命令的组合应用](https://newzone.top/linux/03-命令的组合应用.html) - 本篇讲解 Linux 中通过管道 `|`、`for` 循环、`awk`、`xargs`、`sort`、`uniq`、`join`、`paste` 等组合命令解决实际运维问题的方法。命令组合是 Linux 运维进阶的核心能力。
+- [磁盘管理](https://newzone.top/linux/04-磁盘管理.html) - 本篇整理 Linux 磁盘管理命令，覆盖空间查看、分区检查与修复、挂载/卸载、硬件与时间信息查询、分区格式化与交换区管理。适用于日常运维与磁盘故障排查。
+- [文件服务器（Samba/FTP/NFS 等）](https://newzone.top/linux/05-第1天-文件服务器.html) - Linux 下常用的文件共享服务有三类：**FTP**（跨平台文件传输）、**NFS**（Linux 之间的文件级共享，性能最好）、**Samba**（Linux 与 Windows 之间的共享）。本篇以 Vsftpd 为主线，兼顾 NFS 与 Samba，最后补充...
+- [软件管理](https://newzone.top/linux/06-第1天-软件管理.html) - Linux（红帽系）安装软件有四种途径：**yum、rpm、source（源码编译）、bin（二进制）**。日常以 yum 为主、rpm 为辅，特殊需求用源码编译。本篇重点掌握 RPM 包结构与 rpm/yum 两套工具。
+- [Web服务器（Apache/Nginx）](https://newzone.top/linux/07-第2天-Web服务器.html) - 本篇覆盖 Web 服务基础（HTTP/HTTPS、工作原理）、Apache 与 Nginx 的搭建与常用配置（虚拟主机、rewrite、日志、防盗链、访问控制）、Web 中间件、LNMP/LAMP 架构，并以 LNMP 搭建 WordPress 为综合实战。
+- [源码安装与网络协议](https://newzone.top/linux/08-第2天-源码安装_网络协议.html) - 本篇分两部分：一是**源码编译安装**（以 Tengine/Nginx 为例的标准四步法），二是**网络基础**（OSI/TCP 模型、TCP/UDP/IP/ARP/ICMP 协议、交换机/路由器、VLAN）。
+- [IP详解及配置](https://newzone.top/linux/09-第3天-IP详解及配置.html) - - IP 地址由 **4 部分数字**组成，每部分对应 **8 位二进制**，各部分之间用点分开。
+- [LNMP生产环境部署](https://newzone.top/linux/10-第3天-LNMP生产环境部署.html) - - 官网：https://dev.mysql.com/；下载：https://dev.mysql.com/downloads/mirrors/；文档：https://dev.mysql.com/doc/relnotes/mysql/5.7/en/（每个版本都有对应文档，看文档要对准版本）。
+- [域名申请及解析](https://newzone.top/linux/11-第4天-域名申请及解析.html) - - **DNS（Domain Name System，域名系统）**是因特网的一项核心服务。
+- [路由与日志管理](https://newzone.top/linux/12-第4天-路由与日志管理.html) - 路由器转发数据时，需要在**路由表**中查找相应路由。路由表中的路由有三种途径：
+- [计划任务与服务器远程管理](https://newzone.top/linux/13-第5天-计划任务_服务器远程管理.html) - 在 Linux 中，除了用户即时执行的命令操作外，还可以配置在**指定时间、指定日期**执行预先计划好的系统管理任务，例如：
+- [系统维护篇](https://newzone.top/linux/14-系统维护篇.html) - | 命令 | 一句话功能 |
+- [网络维护与管理](https://newzone.top/linux/15-网络维护与管理.html) - | 命令 | 功能 |
 - [Python运维自动化入门](https://newzone.top/linux/Python运维自动化.html) - 面向运维方向的 Python 入门笔记，涵盖环境、基本语法、正则、文件操作、数据库与自动化脚本。
 - [Shell脚本编程从入门到实战](https://newzone.top/linux/Shell脚本编程.html) - Shell 是一个**命令解释器**，位于操作系统外层，负责解释执行用户输入的命令，并把结果返回给用户。用户每输入一条命令，Shell 就解释执行一条，这种交互方式称为**交互式**。把一系列命令写进一个文件批量执行...
 - [博客文章样例](https://newzone.top/posts/2024-03-01-blog_example.html) - 博客文章内容，支持 Markdown 和 HTML 语言。
