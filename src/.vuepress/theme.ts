@@ -269,8 +269,4 @@ const hope = hopeTheme(
   { custom: true }
 );
 
-// 注册自定义布局（Layout.vue 覆盖根布局，注入「编辑此页」按钮）
-export default {
-  ...hope,
-  layouts: "./layouts",
-};
+export default hope;
