@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="{{ themeMode }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="keywords" content="自我提升,效率提升,开源工具,学习笔记" />
+    <!-- 移动端浏览器外壳着色：宣纸（亮）/ 暖墨黑（暗），与 --vp-c-bg 保持一致 -->
+    <meta
+      name="theme-color"
+      content="#faf6ef"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#1c1814"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.cn" />
+    <link rel="preconnect" href="https://fonts.gstatic.cn" crossorigin />
+    <link
+      href="https://fonts.googleapis.cn/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --vp-c-bg: #faf6ef;
+      }
+
+      [data-theme="dark"] {
+        --vp-c-bg: #1c1814;
+      }
+
+      html,
+      body {
+        background: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem("vuepress-theme-hope-scheme");
+      const systemDarkMode = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      if (userMode === "dark" || (userMode !== "light" && systemDarkMode)) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    </script>
+    <title>JavaScript | LearnData 开源笔记</title><meta name="description" content="全面的JavaScript实用笔记。从ES6核心语法、Map/Set数据结构到DOM操作与字符串处理，涵盖前端开发必备知识。无论新手入门还是查漏补缺，这份实战指南都能帮你巩固JS基础。">
+    
+    <link rel="modulepreload" href="/assets/app-CfpVmhNU.js"><link rel="modulepreload" href="/assets/Javascript-DTcUwI57.js"><link rel="modulepreload" href="/assets/plugin-vue_export-helper-BDNMzG2s.js">
+    
+    <!-- 统计代码区域：在此粘贴你自己的 Google Tag Manager / Umami / 百度统计 等脚本 -->
+  </head>
+  <body>
+    <div id="app"><!----></div>
+    <script type="module" src="/assets/app-CfpVmhNU.js" defer></script>
+    <!-- 看板娘区块 -->
+    <script src="/live2d-widget/v20260619/autoload.js"></script>
+    <!-- End 看板娘区块 -->
+  </body>
+</html>

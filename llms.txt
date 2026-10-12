@@ -1,0 +1,85 @@
+# LearnData 开源笔记
+
+> 开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。
+
+## Pages
+
+- [LearnData 开源笔记](https://newzone.top/) - 演示站：你正在浏览 LearnData 模板的默认样态。Use this template 创建仓库后部署得到的就是这套站点框架，按需替换内容即可上线属于自己的知识库。
+- [必备应用](https://newzone.top/apps/Applist.html) - 正在寻找好用的Windows软件？这份必备应用清单为你精心筛选了从知识管理到设计开发的各类工具。无论你是效率达人还是开发者，都能在这里找到优化工作流的最佳选择。
+- [Chrome 扩展](https://newzone.top/apps/Chrome.html) - 想提升Chrome使用效率？这份超强扩展清单，帮你一站式解决标签页管理、网页监控、图片视频下载等需求。精选多款实用插件，全面优化你的浏览体验与工作流。
+- [平面设计](https://newzone.top/apps/design.html) - 想提升设计效率？本文为你精选多款设计利器：从Excalidraw等电子白板，到Eagle图片管理，再到海量免费可商用字体。一站式解决你的设计灵感与工具需求。
+- [加密页面](https://newzone.top/apps/encrypt03.html) - 加密样例页面
+- [开源工具](https://newzone.top/apps/toolbox.html) - 探索强大的开源工具宝库！本清单精选了Whisper语音识别、CodeFormer图像修复、AutoCut视频剪辑等效率神器。无论你是否是开发者，都能在这里找到提升生产力的解决方案。
+- [专题示例](https://newzone.top/apps/topic/) - 如果想形成专题文章，并想使用独立侧边栏，则参考本目录使用专题文章。
+- [专题文章1](https://newzone.top/apps/topic/topic01.html) - 不建议过度囤积婴儿用品，尤其是尿不湿和奶粉。虽然有时会有吸引人的优惠，但我们必须记住，新生儿的成长速度惊人。今天合适的尿不湿尺寸，明天可能就小了。我还记得，老婆的朋友曾大量储备尿不湿，结果没用完。...
+- [专题文章2](https://newzone.top/apps/topic/topic02anytitle.html) - 原本想着带娃就是阿姨带着我待着。但真正开始后，为了让娃不近视，每天都需要带娃外出。
+- [LearnData开源笔记博客](https://newzone.top/blog.html) - 欢迎访问LearnData博客，一个专注自我提升的知识分享平台。探索开源工具、效率方法与心理学，与我一同学习、实践、成长。盛年不重来，让我们即刻开始！
+- [Coding](https://newzone.top/code/) - 想入门编程或提升技能？这份指南为你规划全栈学习路径：从Vue/React前端到Node.js后端，再到AutoHotkey自动化脚本。精选实用IDE与在线编辑器推荐，助你构建完整技术栈。
+- [AutoHotkey](https://newzone.top/code/AutoHotkey.html) - 想让Windows操作更高效？本文从基础语法到热键设置，详解AutoHotkey核心应用。提供丰富实战脚本样例，助你轻松实现程序速启、弹窗控制等自动化操作，大幅提升工作效率。
+- [Electron](https://newzone.top/code/Electron.html) - 想用Web技术开发桌面应用？Electron是你的首选。详解环境部署与builder打包流程，提供解决打包报错、跨系统构建等问题的实战指南，助你上手跨平台开发。
+- [HTML](https://newzone.top/code/HTML.html) - 前端开发者的HTML实用宝典。涵盖相对路径、字符实体等基础知识，精选实用JS插件与CSS布局技巧。从Bootstrap响应式布局到代码压缩工具，助你全面提升网页与移动端开发效率。
+- [JavaScript](https://newzone.top/code/Javascript.html) - 全面的JavaScript实用笔记。从ES6核心语法、Map/Set数据结构到DOM操作与字符串处理，涵盖前端开发必备知识。无论新手入门还是查漏补缺，这份实战指南都能帮你巩固JS基础。
+- [Markdown](https://newzone.top/code/Markdown.html) - 想提升Markdown技能？本篇技巧指南教你玩转图片尺寸调整、脚注引用，并解决代码块自动换行、整段删除线等常见排版难题，让你的文档更专业、更美观。
+- [Python](https://newzone.top/code/Python.html) - Python3实用学习备忘录。涵盖基础语法、常用模块、数据结构、字符串操作，及Lambda函数等进阶用法。无论初学入门还是快速查阅，助你高效掌握核心知识。
+- [正则表达式](https://newzone.top/code/Regex.html) - 正则表达式快速入门指南。汇总字符匹配、前后查找等核心语法与高频替换技巧。附带元字符速查表与分组说明，通过实战案例助你轻松掌握正则。
+- [Vue](https://newzone.top/code/Vue.html) - mounted 是生命周期函数，自动执行。
+- [Cloudflare](https://newzone.top/deploy/Cloudflare.html) - 释放Cloudflare的强大功能！本指南教你加速网站访问，并提供页面优化的实用技巧，如设置缓存和使用Zaraz。更有进阶的Workers反向代理教程，助你全面掌控网站部署与性能。
+- [云计算服务](https://newzone.top/deploy/CloudServices.html) - 如何优化网站性能与部署？本篇云计算服务指南，探讨CDN在静态文件托管、图床和全站加速中的应用。同时分享Vercel、Cloudflare Tunnel等第三方服务的部署经验与避坑技巧。
+- [域名 DNS 托管](https://newzone.top/deploy/DNS.html) - 如何优化域名DNS解析？分享阿里云与Cloudflare托管实践，对比国内访问速度与备案流程。探讨NS记录设置与DNS迁移技巧，助你为网站选择稳定高效的解析方案。
+- [GitHub](https://newzone.top/deploy/GitHub.html) - 想全面掌握GitHub高级玩法？本指南深入讲解Actions自动化工作流，从Secrets管理到Dependabot。更有Git Commit规范、分支管理及常见问题解决方案，助你成为GitHub高手。
+- [数据库管理](https://newzone.top/deploy/MySQL.html) - 我的数据库是通过 MySQL 和 phpMyAdmin 进行管理的。本页面将记录遇到的日常问题及其解决办法。
+- [静态部署](https://newzone.top/deploy/Static.html) - 静态网站部署全解析。对比主流静态资源库与Vercel等平台，提供GitHub Actions自动同步FTP、OSS实战教程，助你选择并实施高效部署策略。
+- [服务器 VPS](https://newzone.top/deploy/VPS.html) - 部署应用前，为服务器配置好包管理工具，以便节省部署时间。主流的前端包管理工具有 npm、yarn、pnpm、以及国内的镜像 cnpm、tyarn 等，这些包管理器都是基于 nodejs。
+- [加密](https://newzone.top/encrypt/) - 加密内容，支持 Markdown 和 HTML 语言。
+- [加密 1](https://newzone.top/encrypt/encrypt01.html) - 加密内容，支持 Markdown 和 HTML 语言。
+- [加密 2](https://newzone.top/encrypt/encrypt02.html) - 加密内容，支持 Markdown 和 HTML 语言。
+- [网购攻略](https://newzone.top/family/Coupon.html) - 网购如何省钱？这份超全攻略带你玩转淘宝、拼多多、京东、1688等主流电商平台。从大额优惠券、购物返利到挖掘品牌代工厂，助你成为真正的省钱达人，避开消费陷阱。
+- [健康饮食](https://newzone.top/family/Diet.html) - 科学饮食全攻略！从调整进食顺序、培养良好习惯，到分享零食饮料选择和冷泡燕麦做法。更有源自《程序员延寿指南》的健康理论和21天减肥食谱，助你吃出健康好身材。
+- [个人记录](https://newzone.top/family/Life.html) - 实用生活经验分享。涵盖个人护理（理发、穿搭）、家居妙用（铷磁铁、固定器），及玻璃自爆处理、网线更换等琐事。一系列经过实践检验的小窍门，助你轻松应对日常。
+- [华为IT云部署运维笔记](https://newzone.top/huawei/IT云部署运维笔记.html) - - 使用smartkit工具升级（ibmc，网卡，raid卡，rised卡、划分raid
+- [WAF阻断放行步骤](https://newzone.top/huawei/waf阻断放行步骤.html) - 已外网二为例子，当日志中阻断记录根客户上报匹配时，点击该策略
+- [信创外网创建云主机流程](https://newzone.top/huawei/信创外网创建云主机流程/) - 外网1跟外网2主机的堡垒机是开在绿盟堡垒机上
+- [问题流程与运维操作](https://newzone.top/huawei/问题流程.html) - - **源IP**：10.100.7.228（内网云）
+- [个人介绍](https://newzone.top/intro.html) - 互联网广告人，
+- [Python运维自动化入门](https://newzone.top/linux/Python运维自动化.html) - 面向运维方向的 Python 入门笔记，涵盖环境、基本语法、正则、文件操作、数据库与自动化脚本。
+- [Shell脚本编程从入门到实战](https://newzone.top/linux/Shell脚本编程.html) - Shell 是一个**命令解释器**，位于操作系统外层，负责解释执行用户输入的命令，并把结果返回给用户。用户每输入一条命令，Shell 就解释执行一条，这种交互方式称为**交互式**。把一系列命令写进一个文件批量执行...
+- [博客文章样例](https://newzone.top/posts/2024-03-01-blog_example.html) - 博客文章内容，支持 Markdown 和 HTML 语言。
+- [博客文章样例 2](https://newzone.top/posts/2024-03-02-blog_example2.html) - 博客文章内容，支持 Markdown 和 HTML 语言。
+- [The 5 AM Club](https://newzone.top/reading/#/0_效率与习惯/The_5_AM_Club) - 早上 5 点 - 8 点，专注做 Personal Project，比如读书、考证、写作和你特别想做的事情。
+- [吃掉那只青蛙](https://newzone.top/reading/#/0_效率与习惯/吃掉那只青蛙) - 《吃掉那只青蛙》的核心是每天先完成重要的工作、吃掉丑陋的青蛙。
+- [福格行为模型](https://newzone.top/reading/#/0_效率与习惯/福格行为模型) - 《福格行为模型》是习惯养成的行为设计学。明确你的愿望或成果，然后尽可能多的罗列行为，最后找到适合你的黄金行为。习惯从微小的行动开始，比如：开煤气灶 - 烧开水 - 煮粥 - 早餐。
+- [这就是 OKR](https://newzone.top/reading/#/0_效率与习惯/这就是_OKR) - 《这就是 OKR》介绍了硅谷创业团队在使用 OKR 时遇到的问题、阻碍以及取得的成果，让人更容易理解 OKR 的作用。个人觉得，OKR 的优点在于聚焦优先事务，提高团队透明度，让整个团队朝着一个方向努力。
+- [了不起的我](https://newzone.top/reading/#/1_思维与成长/了不起的我) - 《了不起的我》罗列了我们生活中常见的心理学案例，你可以逐个地去寻找符合自己的案例，去比对，去思索是不是自己有哪些需要改善的。
+- [人，做得到任何事](https://newzone.top/reading/#/1_思维与成长/人_做得到任何事) - 《人，做得到任何事：阿德勒心理学讲义》探讨了人生的各个方面，特别是从心理学角度深入分析了童年经历对认知发展的影响。全书晦涩难懂，适合作为专业工具书使用。书中包含了许多引人深思的观点。
+- [原则](https://newzone.top/reading/#/1_思维与成长/原则) - 《原则》对我的影响最大，结合批评与自我批评，找到了提升的方向。但一定要制订计划，并严格按照计划来走，否则只会是一本无聊的理论书。总结内容查看 普通人的生活原则－批评与自我批评。
+- [成长的边界](https://newzone.top/reading/#/1_思维与成长/成长的边界) - 《成长的边界》是探索更多的可能性，从外部视角审视自己。
+- [拖延心理学](https://newzone.top/reading/#/1_思维与成长/拖延心理学) - 《拖延心理学》翻译生涩，快速阅读认知自己的深层拖延心理。
+- [拥抱可能](https://newzone.top/reading/#/1_思维与成长/拥抱可能) - 《拥抱可能》是由九十岁的著名心理医生 Edith Eva Eger 所写的回忆录。Eger 是一名来自匈牙利的犹太人，也是奥斯维辛集中营的幸存者。
+- [终身成长](https://newzone.top/reading/#/1_思维与成长/终身成长) - 《终身成长》书名与内容不太符合，它更多地是通过各种案例描述**成长型思维和固定型思维**。
+- [人性的弱点](https://newzone.top/reading/#/2_沟通与影响/人性的弱点) - 《人性的弱点》的副标题是如何赢取友谊与影响他人。
+- [如何正确求助](https://newzone.top/reading/#/2_沟通与影响/如何正确求助) - 《如何正确求助》有些实用的理论，但中文版翻译得晦涩难懂，需要细品。
+- [影响力](https://newzone.top/reading/#/2_沟通与影响/影响力) - 《影响力》让其他人按你的想法行为。
+- [掌控力](https://newzone.top/reading/#/2_沟通与影响/掌控力) - 《掌控力》的大部分内容都是 CIA 的审讯记录，阅读起来相当费劲。书中的内容不仅与普通人的生活相距甚远，而且里面充斥的西方观点与东方的道德观也存在巨大差异。
+- [阅人无数](https://newzone.top/reading/#/2_沟通与影响/阅人无数) - 《阅人无数》是关于如何与他人建立有效沟通的书。
+- [一本小小的红色写作书](https://newzone.top/reading/#/3_创意与写作/一本小小的红色写作书) - 《一本小小的红色写作书》是基础写作，只适合中小学学生阅读，都为基础写作技巧，大多无参考作用。关键内容都在目录中。
+- [你的顾客需要一个好故事](https://newzone.top/reading/#/3_创意与写作/你的顾客需要一个好故事) - 《你的顾客需要一个好故事》教你把主人公的位置留给顾客，而把你的品牌放到向导的位置上。作者提出的故事品牌框架（SB7），能让你清晰有效地阐明品牌信息。
+- [创意，是一笔灵魂交易](https://newzone.top/reading/#/3_创意与写作/创意_是一笔灵魂交易) - 《创意，是一笔灵魂交易》没读全文，直接使用提出的两种关键实践方法，“晨间笔记”和“艺术家之约”： 这是书中被比作无线电的接收器和发射台。
+- [吴军阅读与写作讲义](https://newzone.top/reading/#/3_创意与写作/吴军阅读与写作讲义) - 《吴军阅读与写作讲义》的前半部分涵盖了很多实用技巧，帮助我澄清了对听、说、读、写的认识。而后半部分则是一些阅读范例，类似于语文书中的阅读理解，我准备将其当作工具书，等待无聊时慢慢阅读。
+- [故事：材质、结构、风格和银幕剧作的原理](https://newzone.top/reading/#/3_创意与写作/故事_材质_结构_风格和银幕剧作的原理) - 《故事：材质、结构、风格和银幕剧作的原理》
+- [中国居民膳食指南](https://newzone.top/reading/#/4_健康与生活/中国居民膳食指南) - 《中国居民膳食指南（2022）》是由中国营养学会对中国人提供的膳食指导。网上很多它的要点截图，为了完整阅读，我直接买了书。
+- [何为良好生活](https://newzone.top/reading/#/4_健康与生活/何为良好生活) - 《何为良好生活》与主题无关，更像是伦理哲学入门书，介绍些简单的哲学理论与现实的联系。简单读读就好。
+- [天生就会跑](https://newzone.top/reading/#/4_健康与生活/天生就会跑) - 《天生就会跑》记录了作者探索耐力跑的过程。虽然理论知识并不深奥，但能够激发你对跑步的热爱。
+- [商业至简](https://newzone.top/reading/#/5_商业与社会/商业至简) - 《商业至简》涵盖了个人时间管理、品牌营销、团队建设、谈判等方面的商业知识。这本书更像是一本读书笔记，提取了 60 个知识点。它可以作为一本工具书，在需要时可以拿出来使用。例如，在制作报价单时使用。
+- [增长黑客](https://newzone.top/reading/#/5_商业与社会/增长黑客) - 《增长黑客》的实用价值不是很高，因为书中介绍的增长手段大多数都是早在 2010 年左右就已经开始使用的通用方法。虽然可以作为参考，但更多的是用来反思当前产品是否存在不足。
+- [巴拉巴西成功定律](https://newzone.top/reading/#/5_商业与社会/巴拉巴西成功定律) - 《巴拉巴西成功定律》并不是成功鸡汤，而是通过一些现象让你了解成功的部分规律。
+- [炒作机器](https://newzone.top/reading/#/5_商业与社会/炒作机器) - 《炒作机器》更像是一本关于社交网络传播知识的科普书，向你介绍一些有关传播学的信息。
+- [置身事内](https://newzone.top/reading/#/5_商业与社会/置身事内) - 《置身事内》基本是概念介绍，对于问题浅尝辄止，想通盘理解政府的税制变革和运作模式可以略读。不能明白评分为什么那么高。
+- [苏世民：我的经验与教训](https://newzone.top/reading/#/5_商业与社会/苏世民_我的经验与教训) - 《苏世民：我的经验与教训》阅读体验不错，其中故事化的情节让本书更有趣，比如：「第一份工作是为了获取比同班同学更高的工资 (一万)，强行跟对方招聘人员，说我要 10500 美元」，「工作初期的工作是审核对方公...
+- [读书笔记](https://newzone.top/reading/#/README) - 曾经我尝试使用 Notion 来管理书单，用 Calibre、Logseq 来对电子书做读书笔记。我渐渐发现自己几乎从不回头再看这些电子书的笔记。因此，我决定放弃电子书这种方式，而将我的注意力更多地集中在实体书籍上的摘要...
+- [一、HTTP 介绍](https://newzone.top/security/HTTPS详解/) - HTTP协议是Hyper Text Transfer Protocol（超文本传输协议）的缩写,是用于从万维网（WWW:World Wide Web ）服务器传输超文本到本地浏览器的传送协议。
+- [虚拟专用网络-VPN](https://newzone.top/security/VPN详解/) - Virtual Private Network，即虚拟专用网络，简称VPN，VPN是在互联网上建立专用网络，为了保证数据安全，VPN服务器和客户机之间数据通信都进行了加密处理，有了数据加密就可以认为数据是在一条安全链路上进行安全...
+- [企业级iptalbes防火墙](https://newzone.top/security/企业级iptables防火墙/) - Netfilter/Iptables(以下简称Iptables)是unix/linux自带的一款优秀且开放源代码的完全自由的基于包过滤的防火墙工具，它的功能十分强大，使用非常灵活，可以对流入和流出服务器的数据包进行很精细的控制。
+- [第4-5天-运维安全详解](https://newzone.top/security/运维安全详解/) - 随着IT技术和业务的发展，以及各式各样安全漏洞的涌现，运维与安全这两个专业日渐交融，人们对运维安全的重视程度越来越高，出现了一个新的交叉领域叫“运维安全”。黑客、白帽子忙于挖掘运维安全漏洞，企业忙于...
+- [评论插件](https://newzone.top/web/Comments.html) - 网站评论插件深度指南：对比Waline、Giscus与Gitalk。详解Waline从Vercel部署到Linux配置及数据库迁移全流程，搭建安全高效评论系统。
+- [docsify](https://newzone.top/web/docsify.html) - docsify建站避坑指南：汇总插件配置、本地Serve命令及GitHub Pages部署等常见问题解决方案。助你轻松驾驭这款神奇的静态网站生成器。
+- [VuePress](https://newzone.top/web/VuePress.html) - VuePress v2建站攻略：从基础环境搭建到theme-hope主题深度定制。涵盖搜索插件、Webpack打包优化及性能调优技巧，助你构建专业静态文档网站。
