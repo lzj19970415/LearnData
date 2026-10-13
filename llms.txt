@@ -4,7 +4,7 @@
 
 ## Pages
 
-- [LearnData 开源笔记](https://newzone.top/) - 演示站：你正在浏览 LearnData 模板的默认样态。Use this template 创建仓库后部署得到的就是这套站点框架，按需替换内容即可上线属于自己的知识库。
+- [LearnData 开源笔记](https://newzone.top/) - 运维工程师个人知识库：工作流程、Linux 基础与进阶、网络设备（华为/华三）、运维安全等分类学习笔记，按学习路径组织，从基础到生产实战。
 - [必备应用](https://newzone.top/apps/Applist.html) - 正在寻找好用的Windows软件？这份必备应用清单为你精心筛选了从知识管理到设计开发的各类工具。无论你是效率达人还是开发者，都能在这里找到优化工作流的最佳选择。
 - [Chrome 扩展](https://newzone.top/apps/Chrome.html) - 想提升Chrome使用效率？这份超强扩展清单，帮你一站式解决标签页管理、网页监控、图片视频下载等需求。精选多款实用插件，全面优化你的浏览体验与工作流。
 - [平面设计](https://newzone.top/apps/design.html) - 想提升设计效率？本文为你精选多款设计利器：从Excalidraw等电子白板，到Eagle图片管理，再到海量免费可商用字体。一站式解决你的设计灵感与工具需求。
@@ -30,12 +30,6 @@
 - [数据库管理](https://newzone.top/deploy/MySQL.html) - 我的数据库是通过 MySQL 和 phpMyAdmin 进行管理的。本页面将记录遇到的日常问题及其解决办法。
 - [静态部署](https://newzone.top/deploy/Static.html) - 静态网站部署全解析。对比主流静态资源库与Vercel等平台，提供GitHub Actions自动同步FTP、OSS实战教程，助你选择并实施高效部署策略。
 - [服务器 VPS](https://newzone.top/deploy/VPS.html) - 部署应用前，为服务器配置好包管理工具，以便节省部署时间。主流的前端包管理工具有 npm、yarn、pnpm、以及国内的镜像 cnpm、tyarn 等，这些包管理器都是基于 nodejs。
-- [加密](https://newzone.top/encrypt/) - 加密内容，支持 Markdown 和 HTML 语言。
-- [加密 1](https://newzone.top/encrypt/encrypt01.html) - 加密内容，支持 Markdown 和 HTML 语言。
-- [加密 2](https://newzone.top/encrypt/encrypt02.html) - 加密内容，支持 Markdown 和 HTML 语言。
-- [网购攻略](https://newzone.top/family/Coupon.html) - 网购如何省钱？这份超全攻略带你玩转淘宝、拼多多、京东、1688等主流电商平台。从大额优惠券、购物返利到挖掘品牌代工厂，助你成为真正的省钱达人，避开消费陷阱。
-- [健康饮食](https://newzone.top/family/Diet.html) - 科学饮食全攻略！从调整进食顺序、培养良好习惯，到分享零食饮料选择和冷泡燕麦做法。更有源自《程序员延寿指南》的健康理论和21天减肥食谱，助你吃出健康好身材。
-- [个人记录](https://newzone.top/family/Life.html) - 实用生活经验分享。涵盖个人护理（理发、穿搭）、家居妙用（铷磁铁、固定器），及玻璃自爆处理、网线更换等琐事。一系列经过实践检验的小窍门，助你轻松应对日常。
 - [华为IT云部署运维笔记](https://newzone.top/huawei/IT云部署运维笔记.html) - - 使用smartkit工具升级（ibmc，网卡，raid卡，rised卡、划分raid
 - [WAF阻断放行步骤](https://newzone.top/huawei/waf阻断放行步骤.html) - 已外网二为例子，当日志中阻断记录根客户上报匹配时，点击该策略
 - [信创外网创建云主机流程](https://newzone.top/huawei/信创外网创建云主机流程/) - 外网1跟外网2主机的堡垒机是开在绿盟堡垒机上
@@ -75,8 +69,6 @@
 - [路由器·初级](https://newzone.top/network/router/01-初级.html) - - **交换机（二层）**：工作在 OSI 数据链路层（第 2 层），依据 **MAC 地址表** 转发数据帧，只能连接同一网段（同一广播域）内的设备。
 - [路由器·中级](https://newzone.top/network/router/02-中级.html) - | 协议 | 算法 | 度量 | 适用范围 | 优缺点 |
 - [路由器·高级](https://newzone.top/network/router/03-高级.html) - 单区域在大规模网络中 LSA 洪泛严重、SPF 计算频繁。分区域后：**区域内路由细节（1/2 类 LSA）只在本区域洪泛**，跨区域只通告汇总信息（3 类 LSA），大幅减小 LSDB。
-- [博客文章样例](https://newzone.top/posts/2024-03-01-blog_example.html) - 博客文章内容，支持 Markdown 和 HTML 语言。
-- [博客文章样例 2](https://newzone.top/posts/2024-03-02-blog_example2.html) - 博客文章内容，支持 Markdown 和 HTML 语言。
 - [The 5 AM Club](https://newzone.top/reading/#/0_效率与习惯/The_5_AM_Club) - 早上 5 点 - 8 点，专注做 Personal Project，比如读书、考证、写作和你特别想做的事情。
 - [吃掉那只青蛙](https://newzone.top/reading/#/0_效率与习惯/吃掉那只青蛙) - 《吃掉那只青蛙》的核心是每天先完成重要的工作、吃掉丑陋的青蛙。
 - [福格行为模型](https://newzone.top/reading/#/0_效率与习惯/福格行为模型) - 《福格行为模型》是习惯养成的行为设计学。明确你的愿望或成果，然后尽可能多的罗列行为，最后找到适合你的黄金行为。习惯从微小的行动开始，比如：开煤气灶 - 烧开水 - 煮粥 - 早餐。

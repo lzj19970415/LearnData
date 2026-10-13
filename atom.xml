@@ -4,38 +4,12 @@
   <title>LearnData 开源笔记</title>
   <subtitle>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</subtitle>
   <icon>https://newzone.top/LearnData/logo.svg</icon>
-  <updated>2026-10-13T01:53:37.662Z</updated>
+  <updated>2026-10-13T02:29:28.526Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://newzone.top/LearnData/atom.xml"/>
   <link rel="alternate" href="https://newzone.top/LearnData/"/>
-  <category term="工具"/>
-  <category term="使用指南"/>
   <category term="工作流程与问题处理"/>
   <category term="Linux进阶"/>
-  <entry>
-    <title type="text">博客文章样例 2</title>
-    <id>https://newzone.top/LearnData/posts/2024-03-02-blog_example2.html</id>
-    <link href="https://newzone.top/LearnData/posts/2024-03-02-blog_example2.html"/>
-    <updated>2026-10-12T06:59:31.000Z</updated>
-    <summary type="html"><![CDATA[<p>博客文章内容，支持 Markdown 和 HTML 语言。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>博客文章内容，支持 Markdown 和 HTML 语言。</p>
-]]></content>
-    <category term="工具"/>
-    <published>2024-03-02T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">博客文章样例</title>
-    <id>https://newzone.top/LearnData/posts/2024-03-01-blog_example.html</id>
-    <link href="https://newzone.top/LearnData/posts/2024-03-01-blog_example.html"/>
-    <updated>2026-10-12T06:59:31.000Z</updated>
-    <summary type="html"><![CDATA[<p>博客文章内容，支持 Markdown 和 HTML 语言。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>博客文章内容，支持 Markdown 和 HTML 语言。</p>
-]]></content>
-    <category term="使用指南"/>
-    <published>2024-03-01T00:00:00.000Z</published>
-  </entry>
   <entry>
     <title type="text">华为IT云部署运维笔记</title>
     <id>https://newzone.top/LearnData/huawei/IT%E4%BA%91%E9%83%A8%E7%BD%B2%E8%BF%90%E7%BB%B4%E7%AC%94%E8%AE%B0.html</id>
@@ -1514,6 +1488,104 @@ M9000防火墙可以在web界面进行操作</li>
 |</p>
 ]]></content>
     <category term="Linux进阶"/>
+    <published>2026-10-12T06:59:31.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">Shell脚本编程从入门到实战</title>
+    <id>https://newzone.top/LearnData/linux/Shell%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B.html</id>
+    <link href="https://newzone.top/LearnData/linux/Shell%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B.html"/>
+    <updated>2026-10-12T09:14:17.000Z</updated>
+    <summary type="html"><![CDATA[<blockquote>
+<p>面向运维的 Shell 编程完整笔记，涵盖基础语法、变量、条件判断、循环、函数、调试及实战场景。</p>
+</blockquote>
+<h2>一、Shell 是什么</h2>
+<p>Shell 是一个<strong>命令解释器</strong>，位于操作系统外层，负责解释执行用户输入的命令，并把结果返回给用户。用户每输入一条命令，Shell 就解释执行一条，这种交互方式称为<strong>交互式</strong>。把一系列命令写进一个文件批量执行，就是 <strong>Shell 脚本</strong>。</p>
+<p><strong>常见 Shell：</strong></p>]]></summary>
+    <content type="html"><![CDATA[<blockquote>
+<p>面向运维的 Shell 编程完整笔记，涵盖基础语法、变量、条件判断、循环、函数、调试及实战场景。</p>
+</blockquote>
+<h2>一、Shell 是什么</h2>
+<p>Shell 是一个<strong>命令解释器</strong>，位于操作系统外层，负责解释执行用户输入的命令，并把结果返回给用户。用户每输入一条命令，Shell 就解释执行一条，这种交互方式称为<strong>交互式</strong>。把一系列命令写进一个文件批量执行，就是 <strong>Shell 脚本</strong>。</p>
+<p><strong>常见 Shell：</strong></p>
+<ul>
+<li><code>bash</code>（Bourne Again Shell）：Linux 默认，功能最强，本教程以 bash 为准</li>
+<li><code>sh</code>：最基础的 Bourne Shell，脚本兼容性最好</li>
+<li><code>csh</code> / <code>zsh</code> / <code>ksh</code> 等</li>
+</ul>
+<p><strong>第一个脚本：</strong></p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">#!/bin/bash</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">echo</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF"> "Hello World"</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li><code>#!/bin/bash</code> 是&quot;解释器声明&quot;，告诉系统用 bash 执行</li>
+<li>保存为 <code>hello.sh</code> 后，执行 <code>chmod +x hello.sh</code> 赋予执行权限，然后 <code>./hello.sh</code> 运行</li>
+<li>也可直接 <code>bash hello.sh</code> 运行，无需执行权限</li>
+</ul>
+<h2>二、变量</h2>
+<h3>1. 变量定义与引用</h3>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10"><pre class="shiki shiki-themes github-light-high-contrast github-dark-high-contrast vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">name</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"运维小张"</span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">        # 变量名=值，等号两边不能有空格</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">num</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">10</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">echo</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> $name            </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 引用变量，前面加 $ </span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">echo</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> ${num}           </span><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC"># 推荐用 {} 包裹，避免歧义</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>规则：</strong> 变量名只能由字母、数字、下划线组成，不能以数字开头。</p>
+<h3>2. 变量类型</h3>
+<p>| 类型 | 说明 | 示例 |
+|</p>
+]]></content>
+    <category term="Linux进阶"/>
+    <published>2026-10-12T06:59:31.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">信创外网创建云主机流程</title>
+    <id>https://newzone.top/LearnData/huawei/%E4%BF%A1%E5%88%9B%E5%A4%96%E7%BD%91%E5%88%9B%E5%BB%BA%E4%BA%91%E4%B8%BB%E6%9C%BA%E6%B5%81%E7%A8%8B/</id>
+    <link href="https://newzone.top/LearnData/huawei/%E4%BF%A1%E5%88%9B%E5%A4%96%E7%BD%91%E5%88%9B%E5%BB%BA%E4%BA%91%E4%B8%BB%E6%9C%BA%E6%B5%81%E7%A8%8B/"/>
+    <updated>2026-10-12T08:55:38.000Z</updated>
+    <summary type="html"><![CDATA[<blockquote>
+<p>本文整理自《信创外网创建云主机流程》文档，含操作步骤与截图。</p>
+</blockquote>
+<p>外网1跟外网2主机的堡垒机是开在绿盟堡垒机上</p>
+<p>信创外网创建云主机流程：</p>
+<figure><img src="/cloudhost/image1.png" alt="图0" tabindex="0" loading="lazy"><figcaption>图0</figcaption></figure>
+<p>网络就是选择VPC网络，根据合同项目选择网络</p>
+<figure><img src="/cloudhost/image2.png" alt="图1" tabindex="0" loading="lazy"><figcaption>图1</figcaption></figure>]]></summary>
+    <content type="html"><![CDATA[<blockquote>
+<p>本文整理自《信创外网创建云主机流程》文档，含操作步骤与截图。</p>
+</blockquote>
+<p>外网1跟外网2主机的堡垒机是开在绿盟堡垒机上</p>
+<p>信创外网创建云主机流程：</p>
+<figure><img src="/cloudhost/image1.png" alt="图0" tabindex="0" loading="lazy"><figcaption>图0</figcaption></figure>
+<p>网络就是选择VPC网络，根据合同项目选择网络</p>
+<figure><img src="/cloudhost/image2.png" alt="图1" tabindex="0" loading="lazy"><figcaption>图1</figcaption></figure>
+<figure><img src="/cloudhost/image3.png" alt="图2" tabindex="0" loading="lazy"><figcaption>图2</figcaption></figure>
+<p>添加安全组</p>
+<figure><img src="/cloudhost/image4.png" alt="图3" tabindex="0" loading="lazy"><figcaption>图3</figcaption></figure>
+<p>填写安全组规则</p>
+<p>这两条是堡垒机和扫描器的ip，端口一个是22、另外一个all</p>
+<figure><img src="/cloudhost/image5.png" alt="图4" tabindex="0" loading="lazy"><figcaption>图4</figcaption></figure>
+<p>查看管理者对不对，不对需要修改管理者，管理者可以看审批流程有没有经过这个人（管理局的），没有就选择其他的，有就选择yzw_xc_glj</p>
+<figure><img src="/cloudhost/image6.png" alt="图5" tabindex="0" loading="lazy"><figcaption>图5</figcaption></figure>
+<p>更改所有者后绑定网卡</p>
+<figure><img src="/cloudhost/image7.png" alt="图6" tabindex="0" loading="lazy"><figcaption>图6</figcaption></figure>
+<p>可选：要加公网的情况</p>
+<p>创建弹性IP</p>
+<figure><img src="/cloudhost/image8.png" alt="图7" tabindex="0" loading="lazy"><figcaption>图7</figcaption></figure>
+<p>选择公有网络</p>
+<figure><img src="/cloudhost/image9.png" alt="图8" tabindex="0" loading="lazy"><figcaption>图8</figcaption></figure>
+<p>选择公网地址</p>
+<figure><img src="/cloudhost/image10.png" alt="图9" tabindex="0" loading="lazy"><figcaption>图9</figcaption></figure>
+<p>虚拟ip 搜索</p>
+<figure><img src="/cloudhost/image11.png" alt="图10" tabindex="0" loading="lazy"><figcaption>图10</figcaption></figure>
+<p>添加QoS</p>
+<p>根据需求工单来选择填写</p>
+<figure><img src="/cloudhost/image12.png" alt="图11" tabindex="0" loading="lazy"><figcaption>图11</figcaption></figure>
+<p>第二部分：</p>
+<figure><img src="/cloudhost/image13.png" alt="图12" tabindex="0" loading="lazy"><figcaption>图12</figcaption></figure>
+<figure><img src="/cloudhost/image14.png" alt="图13" tabindex="0" loading="lazy"><figcaption>图13</figcaption></figure>
+<p>加完记得要测试网络是否正常</p>
+<blockquote>
+<p>AI生成</p>
+</blockquote>
+]]></content>
+    <category term="工作流程与问题处理"/>
     <published>2026-10-12T06:59:31.000Z</published>
   </entry>
 </feed>
