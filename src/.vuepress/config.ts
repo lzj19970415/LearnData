@@ -33,7 +33,7 @@ export default defineUserConfig({
   templateBuild: "./src/.vuepress/templateBuild.html",
 
   // 禁止文件夹生成静态文件，参考 [VuePress 文档]（https://v2.vuepress.vuejs.org/zh/guide/page.html#routing）
-  pagePatterns: ["**/*.md", "!_temp", "!reading", "!.vuepress", "!node_modules"],
+  pagePatterns: ["**/*.md", "!_temp", "!.vuepress", "!node_modules"],
 
   plugins: [
     // 谷歌分析：填回你自己的 GA4 ID 后，取消本段与顶部 import 的注释即可启用
