@@ -63,6 +63,15 @@
 - [网络维护与管理](https://newzone.top/linux/basic/15-网络维护与管理.html) - | 命令 | 功能 |
 - [Python运维自动化入门](https://newzone.top/linux/Python运维自动化.html) - 面向运维方向的 Python 入门笔记，涵盖环境、基本语法、正则、文件操作、数据库与自动化脚本。
 - [Shell脚本编程从入门到实战](https://newzone.top/linux/Shell脚本编程.html) - Shell 是一个**命令解释器**，位于操作系统外层，负责解释执行用户输入的命令，并把结果返回给用户。用户每输入一条命令，Shell 就解释执行一条，这种交互方式称为**交互式**。把一系列命令写进一个文件批量执行...
+- [防火墙·初级](https://newzone.top/network/firewall/01-初级.html) - 防火墙是**网络边界上的安全检查站**：所有进出网络的流量都必须经过它，由它根据"允许/拒绝"规则决定放行还是拦截。它把网络划分成"可信区"和"不可信区"，是内网安全的第一道大门。
+- [防火墙·中级](https://newzone.top/network/firewall/02-中级.html) - 当源/目的地址很多时，一条条写 IP 太痛苦，用地址组一次定义、处处引用。
+- [防火墙·高级](https://newzone.top/network/firewall/03-高级.html) - IPsec（Internet Protocol Security）是在 IP 层做加密和认证的协议族，隧道两端设备（本笔记为防火墙）为流量加解密，业务主机完全无感知。
+- [网络基础·初级](https://newzone.top/network/network/01-初级.html) - 本篇面向电信运维岗位新手，从零讲清楚"网络是什么、IP 怎么算、交换机怎么配"，全程使用华为 eNSP 模拟器 + 华为 VRP 命令（华三 Comware 命令差异处用括号标注）。学完本篇，你应能独立搭一个小型二层网络并完...
+- [网络基础·中级](https://newzone.top/network/network/02-中级.html) - 本篇面向已掌握二层交换配置的运维同学，重点解决"**不同 VLAN 怎么互通、网络间怎么路由、地址怎么自动分配、安全怎么控制、故障怎么排**"五大问题。全程华为 VRP 命令（华三 Comware 差异处用括号标注），建议...
+- [网络基础·高级](https://newzone.top/network/network/03-高级.html) - 本篇面向能独立完成中小型网络设计与排障的运维同学，覆盖 OSPF 进阶、BGP、VRRP 高可用、MPLS/VPN 概念、网络监控运维（SNMP/NTP/日志）、LLDP 与网管平台、企业三层架构设计，以及软考网络工程师考点提示。全程...
+- [路由器·初级](https://newzone.top/network/router/01-初级.html) - - **交换机（二层）**：工作在 OSI 数据链路层（第 2 层），依据 **MAC 地址表** 转发数据帧，只能连接同一网段（同一广播域）内的设备。
+- [路由器·中级](https://newzone.top/network/router/02-中级.html) - | 协议 | 算法 | 度量 | 适用范围 | 优缺点 |
+- [路由器·高级](https://newzone.top/network/router/03-高级.html) - 单区域在大规模网络中 LSA 洪泛严重、SPF 计算频繁。分区域后：**区域内路由细节（1/2 类 LSA）只在本区域洪泛**，跨区域只通告汇总信息（3 类 LSA），大幅减小 LSDB。
 - [博客文章样例](https://newzone.top/posts/2024-03-01-blog_example.html) - 博客文章内容，支持 Markdown 和 HTML 语言。
 - [博客文章样例 2](https://newzone.top/posts/2024-03-02-blog_example2.html) - 博客文章内容，支持 Markdown 和 HTML 语言。
 - [The 5 AM Club](https://newzone.top/reading/#/0_效率与习惯/The_5_AM_Club) - 早上 5 点 - 8 点，专注做 Personal Project，比如读书、考证、写作和你特别想做的事情。
