@@ -51,6 +51,36 @@ export default sidebar({
       ],
     },
     {
+      text: "🌐 网络设备（华为/华三）",
+      icon: "",
+      prefix: "network/",
+      collapsible: true,
+      // 三大主题：网络基础/路由器/防火墙，各按初级→中级→高级递进
+      children: [
+        {
+          text: "📡 网络基础",
+          icon: "",
+          prefix: "network/",
+          collapsible: true,
+          children: ["01-初级.md", "02-中级.md", "03-高级.md"],
+        },
+        {
+          text: "🛣️ 路由器",
+          icon: "",
+          prefix: "router/",
+          collapsible: true,
+          children: ["01-初级.md", "02-中级.md", "03-高级.md"],
+        },
+        {
+          text: "🛡️ 防火墙",
+          icon: "",
+          prefix: "firewall/",
+          collapsible: true,
+          children: ["01-初级.md", "02-中级.md", "03-高级.md"],
+        },
+      ],
+    },
+    {
       text: "🔐 运维安全",
       icon: "",
       prefix: "security/",
