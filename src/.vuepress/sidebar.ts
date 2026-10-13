@@ -152,28 +152,6 @@ export default sidebar({
         },
       ],
     },
-    {
-      text: "🛖 生活记录",
-      icon: "",
-      prefix: "family/",
-      collapsible: true,
-      children: "structure",
-    },
-    {
-      text: "加密目录",
-      icon: "material-symbols:encrypted",
-      prefix: "encrypt/",
-      collapsible: true,
-      children: "structure",
-    },
-    {
-      text: "博客文章",
-      icon: "fa6-solid:feather-pointed",
-      prefix: "_posts/",
-      link: "/blog",
-      collapsible: true,
-      children: "structure",
-    },
   ],
   // 专题区（独立侧边栏）
   "/apps/topic/": "structure",
