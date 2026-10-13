@@ -4,7 +4,7 @@
   <title>LearnData 开源笔记</title>
   <subtitle>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</subtitle>
   <icon>https://newzone.top/LearnData/logo.svg</icon>
-  <updated>2026-10-13T06:25:29.168Z</updated>
+  <updated>2026-10-13T08:11:13.870Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://newzone.top/LearnData/atom.xml"/>
   <link rel="alternate" href="https://newzone.top/LearnData/"/>
@@ -1535,455 +1535,454 @@ M9000防火墙可以在web界面进行操作</li>
     <published>2026-10-12T06:59:31.000Z</published>
   </entry>
   <entry>
-    <title type="text">1. 涓嶈鏃╂</title>
+    <title type="text">1. 不要早死</title>
     <id>https://newzone.top/LearnData/reading/01-%E4%B8%8D%E8%A6%81%E6%97%A9%E6%AD%BB.html</id>
     <link href="https://newzone.top/LearnData/reading/01-%E4%B8%8D%E8%A6%81%E6%97%A9%E6%AD%BB.html"/>
-    <updated>2026-10-13T06:24:44.000Z</updated>
-    <summary type="html"><![CDATA[<p>[鈫?鍥炴€荤洰褰昡(../README.md)</p>
-<h1>1. 涓嶈鏃╂</h1>
-<p>杩欎竴鑺傝涓変欢浜嬶細杞︾ジ銆佺伀鐏俱€佷腑姣掕繖绫绘剰澶栧拰浼ゅ姝讳骸锛涘皯鏁板嚑绉嶈瘉鎹渶纭殑鐤嫍鍜岀瓫鏌ワ紱韬綋鍑轰簡浠€涔堜俊鍙峰氨璇ュ幓鏌ヤ竴鏌ャ€傛敹鐩婇偅涓€鏍忕殑鏁板瓧锛屾潵鑷殢鏈哄垎缁勭殑璇曢獙銆佽窡韪竴澶ф壒浜哄緢澶氬勾鐨勭爺绌讹紝鎴栬€呭畼鏂圭粺璁°€傛垚鏈偅涓€鏍忔槸浣滆€呮寜甯傞潰浠锋牸鐨勭矖鐣ヤ及璁★紝鍙敤鏉ヤ簰鐩告瘮杈冿紝涓嶈鎷垮幓寮曠敤銆?</p>
-<p>鏈妭鏉＄洰鎸変富棰樺垎鎴愪笅闈㈠嚑鍧楋紝鎷彿閲屾槸鏉″彿銆?</p>
-<p><strong>璺笂</strong>锛氱郴瀹夊叏甯︼紙绗?1 鏉★級锛屾埓澶寸洈锛堢 2 鏉★級锛屽紑杞︿笉瓒呴€熴€佷笉閰掗┚锛堢 9 鏉★級锛屽効绔ュ畨鍏ㄥ骇妞咃紙绗?10 鏉★級銆?</p>]]></summary>
-    <content type="html"><![CDATA[<p>[鈫?鍥炴€荤洰褰昡(../README.md)</p>
-<h1>1. 涓嶈鏃╂</h1>
-<p>杩欎竴鑺傝涓変欢浜嬶細杞︾ジ銆佺伀鐏俱€佷腑姣掕繖绫绘剰澶栧拰浼ゅ姝讳骸锛涘皯鏁板嚑绉嶈瘉鎹渶纭殑鐤嫍鍜岀瓫鏌ワ紱韬綋鍑轰簡浠€涔堜俊鍙峰氨璇ュ幓鏌ヤ竴鏌ャ€傛敹鐩婇偅涓€鏍忕殑鏁板瓧锛屾潵鑷殢鏈哄垎缁勭殑璇曢獙銆佽窡韪竴澶ф壒浜哄緢澶氬勾鐨勭爺绌讹紝鎴栬€呭畼鏂圭粺璁°€傛垚鏈偅涓€鏍忔槸浣滆€呮寜甯傞潰浠锋牸鐨勭矖鐣ヤ及璁★紝鍙敤鏉ヤ簰鐩告瘮杈冿紝涓嶈鎷垮幓寮曠敤銆?</p>
-<p>鏈妭鏉＄洰鎸変富棰樺垎鎴愪笅闈㈠嚑鍧楋紝鎷彿閲屾槸鏉″彿銆?</p>
-<p><strong>璺笂</strong>锛氱郴瀹夊叏甯︼紙绗?1 鏉★級锛屾埓澶寸洈锛堢 2 鏉★級锛屽紑杞︿笉瓒呴€熴€佷笉閰掗┚锛堢 9 鏉★級锛屽効绔ュ畨鍏ㄥ骇妞咃紙绗?10 鏉★級銆?</p>
-<p><strong>瀹堕噷鐨勭伀銆佹皵銆佺數</strong>锛氳鐑熼浘鎶ヨ鍣紙绗?3 鏉★級锛岀噧姘旇蒋绠″埌鏈熷氨鎹紙绗?4 鏉★級锛岀數鍔ㄨ嚜琛岃溅涓嶆帹杩涙ゼ閬擄紙绗?6 鏉★級锛屽榻愮伃鐏櫒鍜屾€ユ晳鍖咃紙绗?26 鏉★級锛岃濂芥姢缃╁啀鐢ㄨ纾ㄦ満锛堢 42 鏉★級銆?</p>
-<p><strong>瀛╁瓙銆佽€佷汉鍜岄噹澶栫殑鎰忓</strong>锛氱獥鎴疯闄愪綅鍣紙绗?11 鏉★級锛屽効绔ヨ繎姘翠笉绂昏绾匡紙绗?12 鏉★級锛?0 宀佷互涓婄粌骞宠　锛堢 13 鏉★級锛屼笉鍚冮噹鐢熻槕鑿囷紙绗?5 鏉★級锛屼笉鎹℃潵璺笉鏄庣殑閲戝睘浠讹紙绗?36 鏉★級锛屼笂閲庡鍐伴潰鍓嶉噺鍘氬害锛堢 41 鏉★級銆?</p>
-<p><strong>鐤嫍</strong>锛氭煡涔欒倽涓ゅ鍗婏紙绗?14 鏉★級锛岀牬浼ら锛堢 15 鏉★級锛孒PV 鐤嫍锛堢 16 鏉★級锛屾祦鎰熺柅鑻楋紙绗?20 鏉★級锛屽甫鐘剁柋鐤圭柅鑻楋紙绗?21 鏉★級锛岃偤鐐庣悆鑿岀柅鑻楋紙绗?22 鏉★級銆?</p>
-<p>**绛涙煡鍜屾煡鐥?*锛氶噺琛€鍘嬶紙绗?7 鏉★級锛屾煡绌鸿吂琛€绯栵紙绗?8 鏉★級锛屼钩鑵虹檶绛涙煡锛堢 17 鏉★級锛屽棰堢檶绛涙煡锛堢 18 鏉★級锛岀粨鐩磋偁鐧岀瓫鏌ワ紙绗?19 鏉★級锛屾煡骞介棬铻烘潌鑿岋紙绗?23 鏉★級锛屼綆鍓傞噺鑳搁儴 CT锛堢 24 鏉★級锛岄瀵嗗害妫€鏌ワ紙绗?39 鏉★級锛屾姉楠ㄨ川鐤忔澗鑽紙绗?40 鏉★級銆?</p>
-<p>**韬綋淇″彿鍜屾€у仴搴?*锛氬翱閲屾湁鑲夌溂鐪嬪緱瑙佺殑琛€锛堢 27 鏉★級锛屽媰璧峰姛鑳藉嚭闂鍏堟煡蹇冭绠★紙绗?28 鏉★級锛屽噺閲嶆垝鐑熻兘鏀瑰杽鍕冭捣鍔熻兘锛堢 29 鏉★級锛屽畨鍏ㄥ鍜屼笉鍏辩敤閽堝叿锛堢 30 鏉★級锛屾煡鑹炬粙鐥咃紙绗?31 鏉★級锛屾毚闇插墠棰勯槻鑽紙绗?38 鏉★級銆?</p>
-<p><strong>蹇冪悊鍗辨満</strong>锛氭湁鑷潃蹇靛ご鎵?12356锛堢 25 鏉★級锛岃嚜鏉€蹇靛ご鍏堝憡璇変竴涓汉锛堢 32 鏉★級锛岃祵鍒板€熼挶杩樿祵锛堢 37 鏉★級锛屽枬鍐滆嵂銆佸惛鐓ゆ皵涔嬪悗鏁戝洖鏉ョ殑浠ｄ环锛堢 33 鏉★級锛岄珮澶勫潬钀戒箣鍚庣殑浠ｄ环锛堢 34 鏉★級锛屽皯涓€涓偩鐨勪唬浠凤紙绗?35 鏉★級锛岀洿鎺ラ棶韬竟浜烘湁娌℃湁鎯宠繃鑷潃锛堢 43 鏉★級銆?</p>
-<h3>1. 绯诲畨鍏ㄥ甫锛屽墠鎺掑悗鎺掗兘绯?</h3>
-<!-- 鎴愭湰鏍囩: 閽?0 鏃堕棿=灏?姣呭姏=鍚?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?-->
+    <updated>2026-10-13T08:10:41.000Z</updated>
+    <summary type="html"><![CDATA[
+<p>这一节讲三件事：车祸、火灾、中毒这类意外和伤害死亡；少数几种证据最硬的疫苗和筛查；身体出了什么信号就该去查一查。收益那一栏的数字，来自随机分组的试验、跟踪一大批人很多年的研究，或者官方统计。成本那一栏是作者按市面价格的粗略估计，只用来互相比较，不要拿去引用。</p>
+<p>本节条目按主题分成下面几块，括号里是条号。</p>
+<p><strong>路上</strong>：系安全带（第 1 条），戴头盔（第 2 条），开车不超速、不酒驾（第 9 条），儿童安全座椅（第 10 条）。</p>
+<p><strong>家里的火、气、电</strong>：装烟雾报警器（第 3 条），燃气软管到期就换（第 4 条），电动自行车不推进楼道（第 6 条），备齐灭火器和急救包（第 26 条），装好护罩再用角磨机（第 42 条）。</p>]]></summary>
+    <content type="html"><![CDATA[
+<p>这一节讲三件事：车祸、火灾、中毒这类意外和伤害死亡；少数几种证据最硬的疫苗和筛查；身体出了什么信号就该去查一查。收益那一栏的数字，来自随机分组的试验、跟踪一大批人很多年的研究，或者官方统计。成本那一栏是作者按市面价格的粗略估计，只用来互相比较，不要拿去引用。</p>
+<p>本节条目按主题分成下面几块，括号里是条号。</p>
+<p><strong>路上</strong>：系安全带（第 1 条），戴头盔（第 2 条），开车不超速、不酒驾（第 9 条），儿童安全座椅（第 10 条）。</p>
+<p><strong>家里的火、气、电</strong>：装烟雾报警器（第 3 条），燃气软管到期就换（第 4 条），电动自行车不推进楼道（第 6 条），备齐灭火器和急救包（第 26 条），装好护罩再用角磨机（第 42 条）。</p>
+<p><strong>孩子、老人和野外的意外</strong>：窗户装限位器（第 11 条），儿童近水不离视线（第 12 条），60 岁以上练平衡（第 13 条），不吃野生蘑菇（第 5 条），不捡来路不明的金属件（第 36 条），上野外冰面前量厚度（第 41 条）。</p>
+<p><strong>疫苗</strong>：查乙肝两对半（第 14 条），破伤风（第 15 条），HPV 疫苗（第 16 条），流感疫苗（第 20 条），带状疱疹疫苗（第 21 条），肺炎球菌疫苗（第 22 条）。</p>
+<p><strong>筛查和查病</strong>：量血压（第 7 条），查空腹血糖（第 8 条），乳腺癌筛查（第 17 条），宫颈癌筛查（第 18 条），结直肠癌筛查（第 19 条），查幽门螺杆菌（第 23 条），低剂量胸部 CT（第 24 条），骨密度检查（第 39 条），抗骨质疏松药（第 40 条）。</p>
+<p><strong>身体信号和性健康</strong>：尿里有肉眼看得见的血（第 27 条），勃起功能出问题先查心血管（第 28 条），减重戒烟能改善勃起功能（第 29 条），安全套和不共用针具（第 30 条），查艾滋病（第 31 条），暴露前预防药（第 38 条）。</p>
+<p><strong>心理危机</strong>：有自杀念头打 12356（第 25 条），自杀念头先告诉一个人（第 32 条），赌到借钱还赌（第 37 条），喝农药、吸煤气之后救回来的代价（第 33 条），高处坠落之后的代价（第 34 条），少一个肾的代价（第 35 条），直接问身边人有没有想过自杀（第 43 条）。</p>
+<h3>1. 系安全带，前排后排都系</h3>
+<!-- 成本标签: 钱=0 时间=少 毅力=否 收益=大 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氫笉鑺遍挶銆傛瘡娆′笂杞﹀鑺?2 绉掋€?</li>
-<li>璇翠汉璇濓細鍧愬墠鎺掔郴涓婂畨鍏ㄥ甫锛屽嚭杞︾ジ鏃惰鎾炴鐨勬鐜囧ぇ绾﹂檷涓€鍗娿€傚潗杞诲瀷鍗¤溅鍓嶆帓鐨勯檷鍏垚銆傜編鍥?2022 骞存鍦ㄨ溅閲岀殑浜猴紝鑳芥煡鍒扮郴娌＄郴甯︾殑锛屾湁涓€鍗婃病绯汇€?</li>
-<li>鏀剁泭锛氱編鍥戒氦閫氬畨鍏ㄤ富绠￠儴闂紙NHTSA锛変及璁★紝绯诲畨鍏ㄥ甫鑳借杞胯溅鍓嶆帓涔樺憳鍙楄嚧鍛戒激鐨勯闄╀笅闄?45%銆傝交鍨嬪崱杞﹀墠鎺掍笅闄?60%銆?022 骞寸編鍥芥鍦ㄤ箻鐢ㄨ溅锛堣浇浜虹殑灏忔苯杞︼級閲岀殑浜哄綋涓紝鑳芥煡鍒扮郴娌＄郴甯︾殑锛屾湁 50% 娌＄郴銆備笘鐣屽崼鐢熺粍缁囷紙WHO锛夌殑鍙ｅ緞鏄紝瀹夊叏甯﹁杞﹀唴浜哄憳鐨勬浜￠闄╂渶澶氶檷浣?50%銆俉HO 浼拌涓浗 2021 骞存浜庨亾璺氦閫氫簨鏁呯殑鏈?248,099 浜猴紝鐩稿綋浜庢瘡 10 涓囦汉閲屾 17.4 浜?</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛歂HTSA (2024). Occupant Protection in Passenger Vehicles: 2022 Data (DOT HS 813 573). <a href="https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813573" target="_blank" rel="noopener noreferrer">https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813573</a> ; WHO (2025). Road traffic injuries fact sheet. <a href="https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries" target="_blank" rel="noopener noreferrer">https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries</a> ; WHO GHO RS_196/RS_198 (China, 2021). <a href="https://ghoapi.azureedge.net/api/RS_196?$filter=SpatialDim%20eq%20%27CHN%27" target="_blank" rel="noopener noreferrer">https://ghoapi.azureedge.net/api/RS_196?$filter=SpatialDim eq 'CHN'</a></li>
-<li>澶囨敞锛氬悗鎺掍篃瑕佺郴銆傚悓涓€浠芥姤鍛婇噷锛岀浜屾帓琚挒姝荤殑浜烘湁 60% 娌＄郴甯︺€?5%銆?0% 杩欎袱涓暟锛屾槸缇庡浗浜ら€氬畨鍏ㄤ富绠￠儴闂紙NHTSA锛夋嬁浜嬫晠鏁版嵁搴撶畻鍑烘潵鐨勪及璁★紙寮?Kahane 2015锛夛紝涓嶆槸闅忔満鍒嗙粍鐨勮瘯楠屻€俉HO 閭ｄ釜涓浗姝讳骸浜烘暟鏄帹绠楀嚭鏉ョ殑锛屾瘮鍏畨浜ょ鐧昏鐨勬暟瀛楅珮濂藉嚑鍊嶃€備袱杈圭粺璁＄殑鑼冨洿涓嶄竴鏍凤紝杩欓噷鍙敤 WHO 鐨勫彛寰勩€?</li>
+<li>成本：不花钱。每次上车多花 2 秒。</li>
+<li>说人话：坐前排系上安全带，出车祸时被撞死的概率大约降一半。坐轻型卡车前排的降六成。美国 2022 年死在车里的人，能查到系没系带的，有一半没系。</li>
+<li>收益：美国交通安全主管部门（NHTSA）估计，系安全带能让轿车前排乘员受致命伤的风险下降 45%。轻型卡车前排下降 60%。2022 年美国死在乘用车（载人的小汽车）里的人当中，能查到系没系带的，有 50% 没系。世界卫生组织（WHO）的口径是，安全带让车内人员的死亡风险最多降低 50%。WHO 估计中国 2021 年死于道路交通事故的有 248,099 人，相当于每 10 万人里死 17.4 人</li>
+<li>证据等级：A</li>
+<li>来源：NHTSA (2024). Occupant Protection in Passenger Vehicles: 2022 Data (DOT HS 813 573). <a href="https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813573" target="_blank" rel="noopener noreferrer">https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813573</a> ; WHO (2025). Road traffic injuries fact sheet. <a href="https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries" target="_blank" rel="noopener noreferrer">https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries</a> ; WHO GHO RS_196/RS_198 (China, 2021). <a href="https://ghoapi.azureedge.net/api/RS_196?$filter=SpatialDim%20eq%20%27CHN%27" target="_blank" rel="noopener noreferrer">https://ghoapi.azureedge.net/api/RS_196?$filter=SpatialDim eq 'CHN'</a></li>
+<li>备注：后排也要系。同一份报告里，第二排被撞死的人有 60% 没系带。45%、60% 这两个数，是美国交通安全主管部门（NHTSA）拿事故数据库算出来的估计（引 Kahane 2015），不是随机分组的试验。WHO 那个中国死亡人数是推算出来的，比公安交管登记的数字高好几倍。两边统计的范围不一样，这里只用 WHO 的口径。</li>
 </ul>
-<h3>2. 楠戞懇鎵樿溅銆佺數鍔ㄨ嚜琛岃溅鎴村ご鐩斿苟鎵ｅソ</h3>
-<!-- 鎴愭湰鏍囩: 閽?灏?鏃堕棿=灏?姣呭姏=鍚?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?-->
+<h3>2. 骑摩托车、电动自行车戴头盔并扣好</h3>
+<!-- 成本标签: 钱=少 时间=少 毅力=否 收益=大 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氫拱涓€椤?100 鍒?300 鍏冦€傛瘡娆℃埓涓婅姳 5 绉掋€?</li>
-<li>璇翠汉璇濓細鎴村ご鐩斿苟涓旀妸鎵ｅ甫鎵ｅソ锛屾懇鎵樿溅楠戞墜鍑轰簨鏃舵浜＄殑姒傜巼浣庣害鍥涙垚銆傚ご閮ㄥ彈浼や綆绾︿竷鎴愩€傛墸甯﹁绯荤揣锛屾澗鏉惧灝鍨寕鍦ㄥご涓婁笉绠楁埓銆?</li>
-<li>鏀剁泭锛欳ochrane 鎶婂椤圭爺绌跺悎璧锋潵涓€璧风畻銆傛懇鎵樿溅楠戣鑰呮埓澶寸洈锛屾浜￠闄╀笅闄?42%銆傚師鍊?OR 0.58锛屽彲淇¤寖鍥?95% CI 0.50 鍒?0.68銆傚ご閮ㄦ崯浼や笅闄?69%锛圤R 0.31锛?5% CI 0.25 鍒?0.38锛?</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛歀iu BC 绛?(2008). Helmets for preventing injury in motorcycle riders. Cochrane Database of Systematic Reviews. <a href="https://doi.org/10.1002/14651858.CD004333.pub3" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/14651858.CD004333.pub3</a></li>
-<li>澶囨敞锛氬ご鐩旇鎶婃墸甯︽墸濂斤紝鎸傚湪杞︽妸涓婁笉绠楁埓銆備笂闈㈢殑鏁版嵁鏉ヨ嚜鎽╂墭杞︺€傜數鍔ㄨ嚜琛岃溅娌℃湁鐩存帴鐮旂┒锛屾槸鐓х潃鎺ㄨ繃鏉ョ殑锛屽洜涓烘挒涓婁互鍚庡ご閮ㄥ彈浼ょ殑鏂瑰紡鐩稿悓銆?</li>
+<li>成本：买一顶 100 到 300 元。每次戴上花 5 秒。</li>
+<li>说人话：戴头盔并且把扣带扣好，摩托车骑手出事时死亡的概率低约四成。头部受伤低约七成。扣带要系紧，松松垮垮挂在头上不算戴。</li>
+<li>收益：Cochrane 把多项研究合起来一起算。摩托车骑行者戴头盔，死亡风险下降 42%。原值 OR 0.58，可信范围 95% CI 0.50 到 0.68。头部损伤下降 69%（OR 0.31，95% CI 0.25 到 0.38）</li>
+<li>证据等级：A</li>
+<li>来源：Liu BC 等 (2008). Helmets for preventing injury in motorcycle riders. Cochrane Database of Systematic Reviews. <a href="https://doi.org/10.1002/14651858.CD004333.pub3" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/14651858.CD004333.pub3</a></li>
+<li>备注：头盔要把扣带扣好，挂在车把上不算戴。上面的数据来自摩托车。电动自行车没有直接研究，是照着推过来的，因为撞上以后头部受伤的方式相同。</li>
 </ul>
-<h3>3. 瑁呯儫闆炬姤璀﹀櫒锛涘啲澶╁湪瀹ゅ唴鐑х叅銆佺敤鐕冩皵鍙栨殩鐨勫啀瑁呬竴姘у寲纰虫姤璀﹀櫒</h3>
-<!-- 鎴愭湰鏍囩: 閽?灏?鏃堕棿=灏?姣呭姏=鍚?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?-->
+<h3>3. 装烟雾报警器；冬天在室内烧煤、用燃气取暖的再装一氧化碳报警器</h3>
+<!-- 成本标签: 钱=少 时间=少 毅力=否 收益=大 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氱儫闆炬姤璀﹀櫒涓€涓?30 鍒?100 鍏冦€備竴姘у寲纰虫姤璀﹀櫒涓€涓?50 鍒?150 鍏冦€傝濂戒互鍚庢瘡骞存崲涓€娆＄數姹犮€?</li>
-<li>璇翠汉璇濓細涓€涓兘姝ｅ父宸ヤ綔鐨勭儫闆炬姤璀﹀櫒锛岃兘鎶婁綇瀹呯伀鐏鹃噷姝讳骸鐨勬鐜囬檷绾﹀叚鎴愩€傝捣鐏椂鏈夊洓鎴愪汉鍦ㄧ潯瑙夛紝鍏夐潬榧诲瓙鏄啋涓嶈繃鏉ョ殑銆傚啲澶╁湪灞嬮噷鐑х叅鎴栫敤鐕冩皵鐨勶紝鍐嶅姞涓€涓竴姘у寲纰虫姤璀﹀櫒銆備腑鍥?2018 骞存湁 1.15 涓囦汉姝讳簬涓€姘у寲纰充腑姣掞紝鍐ぉ閭ｄ笁涓湀涓冩垚姝诲湪瀹堕噷銆?</li>
-<li>鏀剁泭锛氱編鍥藉寳鍗＄綏鏉ョ撼宸炵爺绌朵簡涓€鎵逛綇瀹呯伀鐏撅紝鍥炲ご姣斿鍑轰簨鍜屾病鍑轰簨鐨勫搴€傚閲屾湁涓€涓兘姝ｅ父宸ヤ綔鐨勭儫闆炬姤璀﹀櫒锛屾浜￠闄╀笅闄嶇害鍏垚銆傚師鍊?OR 0.39锛屽彲淇¤寖鍥?95% CI 0.18 鍒?0.83銆傜編鍥?2018 鍒?2020 骞达紝鏈変汉浣忕殑浣忓畢閲屽彂鐢熺殑鑷存鐏伨锛?4% 瀹堕噷娌℃湁鐑熼浘鎶ヨ鍣紝41% 璧风伀鏃朵汉鍦ㄧ潯瑙夈€備腑鍥?2018 骞存姤鍛婁竴姘у寲纰充腑姣掓浜?11,523 渚嬨€傝繖浜涙浜￠噷锛?2 鏈堟湁 72.59%銆? 鏈堟湁 67.42%銆? 鏈堟湁 66.48% 鍙戠敓鍦ㄥ涓?</li>
-<li>璇佹嵁绛夌骇锛欱</li>
-<li>鏉ユ簮锛歁arshall SW 绛?(1998). Fatal residential fires: who dies and who survives? JAMA. <a href="https://doi.org/10.1001/jama.279.20.1633" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/jama.279.20.1633</a> ; USFA (2022). Fatal Fires in Residential Buildings (2018-2020), Topical Fire Report Series 22(2). <a href="https://www.usfa.fema.gov/downloads/pdf/statistics/v22i2.pdf" target="_blank" rel="noopener noreferrer">https://www.usfa.fema.gov/downloads/pdf/statistics/v22i2.pdf</a> ; You J 绛?(2020). Number of Deaths due to Carbon Monoxide Poisoning by Month and by Place of Death 鈥?China, 2018. China CDC Weekly. <a href="https://doi.org/10.46234/ccdcw2020.008" target="_blank" rel="noopener noreferrer">https://doi.org/10.46234/ccdcw2020.008</a></li>
-<li>澶囨敞锛氱粰 B 鐨勫師鍥狅細鐑熼浘鎶ヨ鍣ㄨ繖杈瑰彧鏈変竴椤圭爺绌讹紝鍋氭硶鏄洖澶存瘮瀵瑰嚭浜嬪拰娌″嚭浜嬬殑瀹跺涵锛屼笉鏄殢鏈哄垎缁勭殑璇曢獙銆備竴姘у寲纰虫姤璀﹀櫒鏈韩娌℃湁闄嶄綆姝讳骸鐜囩殑鐮旂┒銆傝繖閲岀殑鏀剁泭鏄寜銆屼腑姣掓浜￠泦涓湪鍐銆侀泦涓湪瀹朵腑銆嶆帹鍑烘潵鐨勩€?</li>
+<li>成本：烟雾报警器一个 30 到 100 元。一氧化碳报警器一个 50 到 150 元。装好以后每年换一次电池。</li>
+<li>说人话：一个能正常工作的烟雾报警器，能把住宅火灾里死亡的概率降约六成。起火时有四成人在睡觉，光靠鼻子是醒不过来的。冬天在屋里烧煤或用燃气的，再加一个一氧化碳报警器。中国 2018 年有 1.15 万人死于一氧化碳中毒，冬天那三个月七成死在家里。</li>
+<li>收益：美国北卡罗来纳州研究了一批住宅火灾，回头比对出事和没出事的家庭。家里有一个能正常工作的烟雾报警器，死亡风险下降约六成。原值 OR 0.39，可信范围 95% CI 0.18 到 0.83。美国 2018 到 2020 年，有人住的住宅里发生的致死火灾，24% 家里没有烟雾报警器，41% 起火时人在睡觉。中国 2018 年报告一氧化碳中毒死亡 11,523 例。这些死亡里，12 月有 72.59%、1 月有 67.42%、2 月有 66.48% 发生在家中</li>
+<li>证据等级：B</li>
+<li>来源：Marshall SW 等 (1998). Fatal residential fires: who dies and who survives? JAMA. <a href="https://doi.org/10.1001/jama.279.20.1633" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/jama.279.20.1633</a> ; USFA (2022). Fatal Fires in Residential Buildings (2018-2020), Topical Fire Report Series 22(2). <a href="https://www.usfa.fema.gov/downloads/pdf/statistics/v22i2.pdf" target="_blank" rel="noopener noreferrer">https://www.usfa.fema.gov/downloads/pdf/statistics/v22i2.pdf</a> ; You J 等 (2020). Number of Deaths due to Carbon Monoxide Poisoning by Month and by Place of Death — China, 2018. China CDC Weekly. <a href="https://doi.org/10.46234/ccdcw2020.008" target="_blank" rel="noopener noreferrer">https://doi.org/10.46234/ccdcw2020.008</a></li>
+<li>备注：给 B 的原因：烟雾报警器这边只有一项研究，做法是回头比对出事和没出事的家庭，不是随机分组的试验。一氧化碳报警器本身没有降低死亡率的研究。这里的收益是按「中毒死亡集中在冬季、集中在家中」推出来的。</li>
 </ul>
-<h3>4. 鐕冩皵杞鍜岀伓鍏峰埌鏈熷氨鎹紝涓嶈嚜宸辨敼绠￠亾锛岀噧姘斿叕鍙镐笂闂ㄦ帹閿€鍙互鐩存帴鎷掔粷</h3>
-<!-- 鎴愭湰鏍囩: 閽?灏?鏃堕棿=灏?姣呭姏=鍚?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?-->
+<h3>4. 燃气软管和灶具到期就换，不自己改管道，燃气公司上门推销可以直接拒绝</h3>
+<!-- 成本标签: 钱=少 时间=少 毅力=否 收益=大 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氫竴鏍瑰悎瑙勭殑鐕冩皵杞鍑犲崄鍏冦€傜伓鍏峰嚑骞存崲涓€娆°€傛崲鐨勬椂鍊欓『鎵嬬湅涓€鐪兼湁娌℃湁杩囨湡銆?</li>
-<li>璇翠汉璇濓細涓€鏍瑰悎瑙勮蒋绠″嚑鍗佸潡銆傚埌鏈熷氨鎹紝杩欐槸銆婂煄闀囩噧姘旂鐞嗘潯渚嬨€嬪啓鏄庣殑鐢ㄦ埛涔夊姟銆傝嚜宸辨敼绠￠亾銆佹媶鐕冩皵琛ㄦ槸鏉′緥鏄庝护绂佹鐨勩€傚悓涓€閮ㄦ潯渚嬭繕鍐欎簡锛岀噧姘斿叕鍙镐笉鑳借姹備綘涔板畠鎸囧畾鐨勪骇鍝佸拰鏈嶅姟銆備笂闂ㄨ銆屽繀椤绘崲銆嶇殑鎺ㄩ攢锛屽彲浠ョ洿鎺ユ嫆缁濄€?</li>
-<li>鏀剁泭锛氭潯渚嬫妸銆屽強鏃舵洿鎹㈠浗瀹舵槑浠ゆ窐姹版垨鑰呬娇鐢ㄥ勾闄愬凡灞婃弧鐨勭噧姘旂噧鐑у櫒鍏枫€佽繛鎺ョ銆嶅啓鎴愪簡鐢ㄦ埛鐨勪箟鍔★細鐏跺叿鍜岃蒋绠″埌浜嗗勾闄愭垨鑰呰鍥藉娣樻卑浜嗭紝浣犲氨瑕佹崲銆傛潯渚嬭繕鎶娿€屾搮鑷畨瑁呫€佹敼瑁呫€佹媶闄ゆ埛鍐呯噧姘旇鏂藉拰鐕冩皵璁￠噺瑁呯疆銆嶅垪涓虹姝㈣涓猴紝鑷繁鍔ㄦ墜鏀圭閬撱€佹媶鐕冩皵琛ㄩ兘鍦ㄩ噷闈€傛潯渚嬪悓鏃舵槑纭紝鐕冩皵缁忚惀鑰呬笉寰楄姹傜敤鎴疯喘涔板畠鎸囧畾鐨勪骇鍝侊紝涔熶笉寰楄姹傜敤鎴锋帴鍙楀畠鎻愪緵鐨勬湇鍔?</li>
-<li>璇佹嵁绛夌骇锛欳</li>
-<li>鏉ユ簮锛氬浗鍔￠櫌 (2010). 鍩庨晣鐕冩皵绠＄悊鏉′緥锛堝浗鍔￠櫌浠ょ 583 鍙凤級绗簩鍗佷竷鏉★細銆岀噧姘旂敤鎴峰簲褰撻伒瀹堝畨鍏ㄧ敤姘旇鍒欙紝浣跨敤鍚堟牸鐨勭噧姘旂噧鐑у櫒鍏峰拰姘旂摱锛屽強鏃舵洿鎹㈠浗瀹舵槑浠ゆ窐姹版垨鑰呬娇鐢ㄥ勾闄愬凡灞婃弧鐨勭噧姘旂噧鐑у櫒鍏枫€佽繛鎺ョ绛夈€嶏紱绗簩鍗佸叓鏉＄姝㈣涓哄惈銆岋紙涓€锛夋搮鑷搷浣滃叕鐢ㄧ噧姘旈榾闂ㄣ€嶃€岋紙浜岋級灏嗙噧姘旂閬撲綔涓鸿礋閲嶆敮鏋舵垨鑰呮帴鍦板紩绾裤€嶃€岋紙鍥涳級鎿呰嚜瀹夎銆佹敼瑁呫€佹媶闄ゆ埛鍐呯噧姘旇鏂藉拰鐕冩皵璁￠噺瑁呯疆銆嶏紱绗簩鍗佹潯鐕冩皵缁忚惀鑰呬笉寰椼€岋紙鍏級瑕佹眰鐕冩皵鐢ㄦ埛璐拱鍏舵寚瀹氱殑浜у搧鎴栬€呮帴鍙楀叾鎻愪緵鐨勬湇鍔°€嶏紱绗簩鍗佷節鏉＄敤鎴峰彲灏辨敹璐广€佹湇鍔″悜鐕冩皵绠＄悊绛夐儴闂ㄦ姇璇夛紝銆屾湁鍏抽儴闂ㄥ簲褰撹嚜鏀跺埌鎶曡瘔涔嬫棩璧?5涓伐浣滄棩鍐呬簣浠ュ鐞嗐€? <a href="http://www.gov.cn/gongbao/content/2010/content_1758214.htm" target="_blank" rel="noopener noreferrer">http://www.gov.cn/gongbao/content/2010/content_1758214.htm</a>锛涙繁鍦冲競浣忔埧鍜屽缓璁惧眬 (2024). 瀹夊叏鐢ㄦ皵灏忕煡璇嗭紙浜岋級锛氥€岀珛鍗冲叧闂閲岀殑鐕冩皵鎬婚榾闂ㄣ€嶃€岃繀閫熷紑闂ㄣ€佸紑绐楄繘琛岄€氶銆嶃€屼竴瀹氫笉瑕佸紑銆佸叧瀹堕噷鐨勭數鐏€佹娊娌圭儫鏈虹瓑鐢靛櫒銆嶃€屼汉鍛樺簲璇ヨ繀閫熸挙绂伙紝杞Щ鍒板畨鍏ㄧ殑鍦版柟锛屽苟涓斿強鏃舵嫧鎵撶噧姘斿叕鍙哥殑鎶ヨ鐢佃瘽銆? <a href="https://zjj.sz.gov.cn/zcjzts/content/post_11882410.html" target="_blank" rel="noopener noreferrer">https://zjj.sz.gov.cn/zcjzts/content/post_11882410.html</a>锛涘紶瀹舵腐甯傚簲鎬ョ鐞嗗眬 (2024). 鐕冩皵瀹夊叏浣跨敤鐭ヨ瘑锛氥€屼笉瑕佹儏鎬ヤ箣涓嬫墦寮€鎺掓皵鎵囪繘琛岄€氶銆嶃€屽簲杩滅鐜板満涔嬪悗鎵嶈兘鎵撶數璇濇眰鍔┿€? <a href="https://www.zjg.gov.cn/zjgszwz/yjaqzs/202411/72b4fad7399c48378302460c6ce2d55b.shtml" target="_blank" rel="noopener noreferrer">https://www.zjg.gov.cn/zjgszwz/yjaqzs/202411/72b4fad7399c48378302460c6ce2d55b.shtml</a></li>
-<li>澶囨敞锛氭潯渚嬪師鏂囪兘閫愬瓧鏍稿锛屼絾瀹冨彧璇存槑鍒版湡鎹㈢鏄綘鐨勪箟鍔★紝涓嶈鏄庢崲浜嗚兘灏戝嚭澶氬皯浜嬫晠銆傛寜骞撮檺鎹㈢鑳芥妸鐕冩皵浜嬫晠闄嶅灏戯紝娌℃壘鍒板畼鏂圭粺璁℃暟瀛楋紝鎵€浠ュ彧缁?C 绾с€傛湁浜轰互銆屽畨妫€銆嶅悕涔変笂闂紝妫€鏌ュ畬灏辨帹閿€鑷棴闃€鍜屾姤璀﹀櫒銆傛潯渚嬬浜屽崄鏉＄鍏」涓嶈鐕冩皵鍏徃瑕佹眰浣犱拱瀹冩寚瀹氱殑浜у搧锛屼綘鍙互鎷掔粷锛屼篃鍙互鎶曡瘔銆傞椈鍒扮噧姘斿懗锛屽厛鍏崇噧姘旀€婚榾锛岀摱瑁呮皵鍏抽挗鐡堕榾闂ㄣ€傚啀寮€闂ㄥ紑绐楅€氶锛屽埆寮€鎺掓皵鎵囥€傜數鐏€佹娊娌圭儫鏈鸿繖浜涚數鍣ㄤ竴寰嬪埆寮€涔熷埆鍏筹紝鎵撶伀鏈轰篃鍒銆傜劧鍚庝汉鎾ゅ嚭鍘伙紝绂诲紑鐜板満鍐嶆墦鐕冩皵鍏徃鐨勬姤璀︾數璇濄€備竴姘у寲纰充腑姣掓槸鍙︿竴浠朵簨锛岃绗?13 鑺傘€?</li>
+<li>成本：一根合规的燃气软管几十元。灶具几年换一次。换的时候顺手看一眼有没有过期。</li>
+<li>说人话：一根合规软管几十块。到期就换，这是《城镇燃气管理条例》写明的用户义务。自己改管道、拆燃气表是条例明令禁止的。同一部条例还写了，燃气公司不能要求你买它指定的产品和服务。上门说「必须换」的推销，可以直接拒绝。</li>
+<li>收益：条例把「及时更换国家明令淘汰或者使用年限已届满的燃气燃烧器具、连接管」写成了用户的义务：灶具和软管到了年限或者被国家淘汰了，你就要换。条例还把「擅自安装、改装、拆除户内燃气设施和燃气计量装置」列为禁止行为，自己动手改管道、拆燃气表都在里面。条例同时明确，燃气经营者不得要求用户购买它指定的产品，也不得要求用户接受它提供的服务</li>
+<li>证据等级：C</li>
+<li>来源：国务院 (2010). 城镇燃气管理条例（国务院令第 583 号）第二十七条：「燃气用户应当遵守安全用气规则，使用合格的燃气燃烧器具和气瓶，及时更换国家明令淘汰或者使用年限已届满的燃气燃烧器具、连接管等」；第二十八条禁止行为含「（一）擅自操作公用燃气阀门」「（二）将燃气管道作为负重支架或者接地引线」「（四）擅自安装、改装、拆除户内燃气设施和燃气计量装置」；第二十条燃气经营者不得「（六）要求燃气用户购买其指定的产品或者接受其提供的服务」；第二十九条用户可就收费、服务向燃气管理等部门投诉，「有关部门应当自收到投诉之日起15个工作日内予以处理」. <a href="http://www.gov.cn/gongbao/content/2010/content_1758214.htm" target="_blank" rel="noopener noreferrer">http://www.gov.cn/gongbao/content/2010/content_1758214.htm</a>；深圳市住房和建设局 (2024). 安全用气小知识（二）：「立即关闭家里的燃气总阀门」「迅速开门、开窗进行通风」「一定不要开、关家里的电灯、抽油烟机等电器」「人员应该迅速撤离，转移到安全的地方，并且及时拨打燃气公司的报警电话」. <a href="https://zjj.sz.gov.cn/zcjzts/content/post_11882410.html" target="_blank" rel="noopener noreferrer">https://zjj.sz.gov.cn/zcjzts/content/post_11882410.html</a>；张家港市应急管理局 (2024). 燃气安全使用知识：「不要情急之下打开排气扇进行通风」「应远离现场之后才能打电话求助」. <a href="https://www.zjg.gov.cn/zjgszwz/yjaqzs/202411/72b4fad7399c48378302460c6ce2d55b.shtml" target="_blank" rel="noopener noreferrer">https://www.zjg.gov.cn/zjgszwz/yjaqzs/202411/72b4fad7399c48378302460c6ce2d55b.shtml</a></li>
+<li>备注：条例原文能逐字核对，但它只说明到期换管是你的义务，不说明换了能少出多少事故。按年限换管能把燃气事故降多少，没找到官方统计数字，所以只给 C 级。有人以「安检」名义上门，检查完就推销自闭阀和报警器。条例第二十条第六项不许燃气公司要求你买它指定的产品，你可以拒绝，也可以投诉。闻到燃气味，先关燃气总阀，瓶装气关钢瓶阀门。再开门开窗通风，别开排气扇。电灯、抽油烟机这些电器一律别开也别关，打火机也别碰。然后人撤出去，离开现场再打燃气公司的报警电话。一氧化碳中毒是另一件事，见第 13 节。</li>
 </ul>
-<h3>5. 涓嶉噰銆佷笉涔般€佷笉鍚冮噹鐢熻槕鑿囷紝浠讳綍銆屽湡鍔炴硶閴村埆銆嶉兘涓嶆垚绔?</h3>
-<!-- 鎴愭湰鏍囩: 閽?0 鏃堕棿=灏?姣呭姏=浜?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?-->
+<h3>5. 不采、不买、不吃野生蘑菇，任何「土办法鉴别」都不成立</h3>
+<!-- 成本标签: 钱=0 时间=少 毅力=些 收益=大 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氫笉鑺遍挶銆傞毦鐨勫湴鏂规槸鏀惧純涓€绉嶅鑺傛€х殑閲庡懗銆?</li>
-<li>璇翠汉璇濓細鍏?2025 骞翠竴骞达紝鍏ㄥ浗灏辨湁 828 璧疯槕鑿囦腑姣掞紝2165 浜轰腑鎷涳紝13 浜烘銆傞偅涓€骞磋繕鏂拌鍑?34 绉嶄互鍓嶆病璁板綍杩囦細姣掍汉鐨勮槕鑿囥€傞摱閽堣瘯姣掋€佽櫕瀛愬悆杩囧氨娌℃瘨銆侀鑹查矞鑹虫墠鏈夋瘨锛岃繖浜涜娉曞叏閮戒笉鎴愮珛銆?</li>
-<li>鏀剁泭锛氫腑鍥界柧鎺т腑蹇?2025 骞磋皟鏌ヤ簡 828 璧疯槕鑿囦腑姣掍簨浠讹紝娑夊強 2165 浜猴紝姝讳骸 13 浜恒€傜梾姝荤巼 0.6%锛屾寚涓瘨鐨勪汉閲屾湁 0.6% 姝讳骸銆?019 鍒?2024 骞存瘡骞?276 鍒?676 璧凤紝鐥呮鐜囧湪 0.87% 鍒?2.86% 涔嬮棿銆傚厜 2025 骞村氨閴村畾鍑?138 绉嶆湁姣掕槕鑿囷紝鍏朵腑 34 绉嶆槸鍥藉唴绗竴娆¤褰曞埌浼氬紩璧蜂腑姣?</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛歁ushroom Poisoning Outbreaks 鈥?China, 2025. China CDC Weekly (2026)锛氥€孖n 2025, China CDC investigated 828 mushroom poisoning incidents across 27 provincial-level administrative divisions (PLADs), affecting 2,165 individuals and causing 13 deaths - a case fatality rate of 0.6%, the lowest of the past six years. In total, 138 poisonous mushroom species were identified, including 34 newly recorded in poisoning incidents in China.銆嶃€孎rom 2019 to 2024, the annual number of incidents ranged from 276 to 676, and the case fatality rate ranged from 0.87% to 2.86%.銆?https://doi.org/10.46234/ccdcw2026.120&gt;锛涘悓鍒?2024 骞村害鎶ュ憡 <a href="https://doi.org/10.46234/ccdcw2025.106" target="_blank" rel="noopener noreferrer">https://doi.org/10.46234/ccdcw2025.106</a></li>
-<li>澶囨敞锛氬悆閿欎簡灏辩珛鍒诲偓鍚愶紝鐒跺悗甯︿笂鍓╀笅鐨勮槕鑿囨垨鑰呮媿鐨勭収鐗囧幓鍖婚櫌銆傛瘨铇戣弴涓瘨鍒嗗ソ鍑犵绫诲瀷锛岃鍑烘槸鍝竴绉嶈槕鑿囩洿鎺ュ喅瀹氬尰鐢熸€庝箞娌汇€傛瘡骞撮兘鏈夋柊绉嶇被琚褰曞埌鑳芥瘨浜猴紝鎵€浠ャ€屾湰鍦颁汉璁ゅ緱娓呫€嶈繖涓墠鎻愭湰韬珯涓嶄綇銆傞摱閽堥獙姣掋€佸拰澶ц挏鍚岀叜銆佽櫕瀛愬悆杩囧氨娌℃瘨銆侀鑹查矞鑹虫墠鏈夋瘨锛岃繖浜涜娉曞叏閮戒笉鎴愮珛銆?</li>
+<li>成本：不花钱。难的地方是放弃一种季节性的野味。</li>
+<li>说人话：光 2025 年一年，全国就有 828 起蘑菇中毒，2165 人中招，13 人死。那一年还新认出 34 种以前没记录过会毒人的蘑菇。银针试毒、虫子吃过就没毒、颜色鲜艳才有毒，这些说法全都不成立。</li>
+<li>收益：中国疾控中心 2025 年调查了 828 起蘑菇中毒事件，涉及 2165 人，死亡 13 人。病死率 0.6%，指中毒的人里有 0.6% 死亡。2019 到 2024 年每年 276 到 676 起，病死率在 0.87% 到 2.86% 之间。光 2025 年就鉴定出 138 种有毒蘑菇，其中 34 种是国内第一次记录到会引起中毒</li>
+<li>证据等级：A</li>
+<li>来源：Mushroom Poisoning Outbreaks — China, 2025. China CDC Weekly (2026)：「In 2025, China CDC investigated 828 mushroom poisoning incidents across 27 provincial-level administrative divisions (PLADs), affecting 2,165 individuals and causing 13 deaths - a case fatality rate of 0.6%, the lowest of the past six years. In total, 138 poisonous mushroom species were identified, including 34 newly recorded in poisoning incidents in China.」「From 2019 to 2024, the annual number of incidents ranged from 276 to 676, and the case fatality rate ranged from 0.87% to 2.86%.」<a href="https://doi.org/10.46234/ccdcw2026.120" target="_blank" rel="noopener noreferrer">https://doi.org/10.46234/ccdcw2026.120</a>；同刊 2024 年度报告 <a href="https://doi.org/10.46234/ccdcw2025.106" target="_blank" rel="noopener noreferrer">https://doi.org/10.46234/ccdcw2025.106</a></li>
+<li>备注：吃错了就立刻催吐，然后带上剩下的蘑菇或者拍的照片去医院。毒蘑菇中毒分好几种类型，认出是哪一种蘑菇直接决定医生怎么治。每年都有新种类被记录到能毒人，所以「本地人认得清」这个前提本身站不住。银针验毒、和大蒜同煮、虫子吃过就没毒、颜色鲜艳才有毒，这些说法全都不成立。</li>
 </ul>
-<h3>6. 鐢靛姩鑷杞︿笉鎺ㄨ繘妤奸亾銆佷笉杩涚數姊€佷笉鍦ㄥ閲屽厖鐢?</h3>
-<!-- 鎴愭湰鏍囩: 閽?0 鏃堕棿=灏?姣呭姏=浜?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?-->
+<h3>6. 电动自行车不推进楼道、不进电梯、不在家里充电</h3>
+<!-- 成本标签: 钱=0 时间=少 毅力=些 收益=大 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氫笉鑺遍挶銆傞毦鐨勫湴鏂规槸姣忔閮藉仠鍒版ゼ涓嬬殑闆嗕腑鍏呯數鐐癸紝澶氳蛋鍑犲崄绫炽€?</li>
-<li>璇翠汉璇濓細鎶婄數鍔ㄨ溅鎺ㄨ繘妤奸亾銆佹帹杩涚數姊紝鎴栬€呭湪瀹堕噷鍏呯數锛屽簲鎬ョ鐞嗛儴鐨勩€婇珮灞傛皯鐢ㄥ缓绛戞秷闃插畨鍏ㄧ鐞嗚瀹氥€嬫槑浠ょ姝€備笉鏀规鐨勶紝涓汉缃?500 鍒?1000 鍏冿紝鍋氱敓鎰忕殑缃?2000 鍒?10000 鍏冦€傜綒娆捐繕鏄皬浜嬶紝瑕佺揣鐨勬槸杩欑鐏濂界儳鍦ㄤ綘鍞竴鐨勯€冪敓閫氶亾涓娿€?</li>
-<li>鏀剁泭锛氬簲鎬ョ鐞嗛儴鐨勮绔犳槑鏂囩姝細銆岀姝㈠湪楂樺眰姘戠敤寤虹瓚鍏叡闂ㄥ巺銆佺枏鏁ｈ蛋閬撱€佹ゼ姊棿銆佸畨鍏ㄥ嚭鍙ｅ仠鏀剧數鍔ㄨ嚜琛岃溅鎴栬€呬负鐢靛姩鑷杞﹀厖鐢点€嶃€傛ゼ闂ㄥ巺銆佽蛋閬撱€佹ゼ姊棿銆佸畨鍏ㄥ嚭鍙ｈ繖鍑犲锛屾棦涓嶈兘鍋滆溅涔熶笉鑳藉厖鐢点€傛嫆涓嶆敼姝ｇ殑锛屼笉鍋氱敓鎰忕殑鍗曚綅鍜屼釜浜虹綒 500 鑷?1000 鍏冿紝鍋氱敓鎰忕殑缃?2000 鑷?10000 鍏?</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛氬簲鎬ョ鐞嗛儴 (2021). 楂樺眰姘戠敤寤虹瓚娑堥槻瀹夊叏绠＄悊瑙勫畾锛堝簲鎬ョ鐞嗛儴浠ょ 5 鍙凤紝绗笁鍗佷竷鏉°€佺鍥涘崄涓冩潯锛? <a href="https://www.gov.cn/zhengce/zhengceku/2021-08/01/content_5628815.htm" target="_blank" rel="noopener noreferrer">https://www.gov.cn/zhengce/zhengceku/2021-08/01/content_5628815.htm</a>锛涘簲鎬ョ鐞嗛儴 (2023). 鍏充簬鏀垮崗绗崄涓夊眾鍏ㄥ浗濮斿憳浼氱浜旀浼氳绗?0969鍙锋彁妗堢瓟澶嶇殑鍑斤細銆?021骞达紝鍏ㄥ浗鍏辨帴鎶ョ數鍔ㄨ嚜琛岃溅鐏伨1.8涓囪捣锛岄€犳垚65浜烘浜°€?22浜哄彈浼わ紝鐩存帴璐骇鎹熷け杈?.21浜垮厓锛屽叾涓彂鐢熷湪寤虹瓚鐗╁唴3782璧凤紝閫犳垚60浜烘浜°€?75浜哄彈浼ゃ€? <a href="https://www.mem.gov.cn/gk/jytabljggk/zxwytadfzy/2022zx/202301/t20230119_440918.shtml" target="_blank" rel="noopener noreferrer">https://www.mem.gov.cn/gk/jytabljggk/zxwytadfzy/2022zx/202301/t20230119_440918.shtml</a>锛涘簲鎬ョ鐞嗛儴 (2025). 2025骞?鏈?5鏃ユ柊闂诲彂甯冧細锛氥€岀伀鐏捐捣鏁板悓姣斾笅闄?2.2%锛屼激浜′汉鏁颁笅闄嶈秴杩?0%銆? <a href="https://www.mem.gov.cn/xw/xwfbh/2025n01y15xwfbh_6337/" target="_blank" rel="noopener noreferrer">https://www.mem.gov.cn/xw/xwfbh/2025n01y15xwfbh_6337/</a></li>
-<li>澶囨敞锛氬埆涔版敼瑁呯數姹狅紝鍒敤鏉傜墝鍏呯數鍣紝鍒暣澶滃厖鐫€涓嶇銆傞攤鐢垫睜涓€鏃﹁捣鐏紝鍑犲崄绉掗噷灏辨暣鐗囩儳寮€锛屽悓鏃跺啋鍑哄墽姣掔殑鐑熴€傝溅鍋滃湪妤奸亾閲岃捣鐏紝鐑х殑灏辨槸浣犲敮涓€鐨勯€冪敓閫氶亾銆傚簲鎬ョ鐞嗛儴鍏竷鐨勬暟瀛楁槸锛?021 骞村叏鍥界數鍔ㄨ嚜琛岃溅鐏伨 1.8 涓囪捣锛屾 65 浜恒€傚叾涓儳鍦ㄥ缓绛戠墿閲岀殑 3782 璧凤紝姝讳簡 60 浜猴紝姝昏€呭嚑涔庨兘鍦ㄥ鍐呫€?024 骞存暣娌讳箣鍚庯紝鐏伨璧锋暟姣斾笂骞撮檷浜?42.2%锛屼激浜￠檷浜嗕節鎴愪互涓婏紝閭ｄ竴骞寸殑缁濆鏁版病鏈夊叕甯冦€?</li>
+<li>成本：不花钱。难的地方是每次都停到楼下的集中充电点，多走几十米。</li>
+<li>说人话：把电动车推进楼道、推进电梯，或者在家里充电，应急管理部的《高层民用建筑消防安全管理规定》明令禁止。不改正的，个人罚 500 到 1000 元，做生意的罚 2000 到 10000 元。罚款还是小事，要紧的是这种火正好烧在你唯一的逃生通道上。</li>
+<li>收益：应急管理部的规章明文禁止：「禁止在高层民用建筑公共门厅、疏散走道、楼梯间、安全出口停放电动自行车或者为电动自行车充电」。楼门厅、走道、楼梯间、安全出口这几处，既不能停车也不能充电。拒不改正的，不做生意的单位和个人罚 500 至 1000 元，做生意的罚 2000 至 10000 元</li>
+<li>证据等级：A</li>
+<li>来源：应急管理部 (2021). 高层民用建筑消防安全管理规定（应急管理部令第 5 号，第三十七条、第四十七条）. <a href="https://www.gov.cn/zhengce/zhengceku/2021-08/01/content_5628815.htm" target="_blank" rel="noopener noreferrer">https://www.gov.cn/zhengce/zhengceku/2021-08/01/content_5628815.htm</a>；应急管理部 (2023). 关于政协第十三届全国委员会第五次会议第00969号提案答复的函：「2021年，全国共接报电动自行车火灾1.8万起，造成65人死亡、222人受伤，直接财产损失达2.21亿元，其中发生在建筑物内3782起，造成60人死亡、175人受伤」. <a href="https://www.mem.gov.cn/gk/jytabljggk/zxwytadfzy/2022zx/202301/t20230119_440918.shtml" target="_blank" rel="noopener noreferrer">https://www.mem.gov.cn/gk/jytabljggk/zxwytadfzy/2022zx/202301/t20230119_440918.shtml</a>；应急管理部 (2025). 2025年1月15日新闻发布会：「火灾起数同比下降42.2%，伤亡人数下降超过90%」. <a href="https://www.mem.gov.cn/xw/xwfbh/2025n01y15xwfbh_6337/" target="_blank" rel="noopener noreferrer">https://www.mem.gov.cn/xw/xwfbh/2025n01y15xwfbh_6337/</a></li>
+<li>备注：别买改装电池，别用杂牌充电器，别整夜充着不管。锂电池一旦起火，几十秒里就整片烧开，同时冒出剧毒的烟。车停在楼道里起火，烧的就是你唯一的逃生通道。应急管理部公布的数字是，2021 年全国电动自行车火灾 1.8 万起，死 65 人。其中烧在建筑物里的 3782 起，死了 60 人，死者几乎都在室内。2024 年整治之后，火灾起数比上年降了 42.2%，伤亡降了九成以上，那一年的绝对数没有公布。</li>
 </ul>
-<h3>7. 閲忚鍘嬶紝楂樹簡灏卞悆鑽檷鍒拌揪鏍?</h3>
-<!-- 鎴愭湰鏍囩: 閽?灏?鏃堕棿=灏?姣呭姏=浜?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?-->
+<h3>7. 量血压，高了就吃药降到达标</h3>
+<!-- 成本标签: 钱=少 时间=少 毅力=些 收益=大 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氱數瀛愯鍘嬭 100 鍒?200 鍏冦€傞噺涓€娆?1 鍒嗛挓銆傞檷鍘嬭嵂澶氭暟姣忔湀鍑犲厓鍒板嚑鍗佸厓銆傞毦鐨勫湴鏂规槸娌＄棁鐘朵篃瑕佹帴鐫€鍚冦€?</li>
-<li>璇翠汉璇濓細琛€鍘嬫瘡闄?10 mmHg锛屽嚭澶х殑蹇冭绠℃瘺鐥呯殑姒傜巼闄嶄袱鎴愶紝涓闄?27%锛屽績琛伴檷 28%锛屾浜℃鐜囬檷 13%銆備腑鍥?35 鍒?75 宀佺殑浜洪噷锛?4.7% 鏈夐珮琛€鍘嬶紝鐪熸鎺у埗浣忕殑鍙湁 7.2%銆?</li>
-<li>鏀剁泭锛氭妸 123 椤硅瘯楠屻€?1 涓囦綑浜哄悎璧锋潵涓€璧风畻銆傛敹缂╁帇姣忛檷 10 mmHg锛屼富瑕佸績琛€绠′簨浠朵綆绾︿袱鎴愩€傚師鍊?RR 0.80锛屽彲淇¤寖鍥?95% CI 0.77 鍒?0.83銆傛敹缂╁帇灏辨槸琛€鍘嬩袱涓暟閲岄珮鐨勯偅涓€傚崚涓紙涓锛変綆绾?27%锛圧R 0.73锛夈€傚績鍔涜“绔綆绾?28%锛圧R 0.72锛夈€傛€绘浜＄巼涓嬮檷 13%锛圧R 0.87锛?5% CI 0.84 鍒?0.91锛夈€備腑鍥界粰 35 鍒?75 宀佺殑 170 涓囦汉鍋氳繃绛涙煡锛?4.7% 鏈夐珮琛€鍘嬨€傝繖浜涗汉閲岋紝鐭ラ亾鑷繁鏈夌殑鍗?44.7%锛屽湪娌荤枟鐨勫崰 30.1%锛屾帶鍒朵綇鐨勫彧鏈?7.2%</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛欵ttehad D 绛?(2016). Blood pressure lowering for prevention of cardiovascular disease and death: a systematic review and meta-analysis. Lancet. <a href="https://doi.org/10.1016/S0140-6736(15)01225-8" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/S0140-6736(15)01225-8</a> ; Lu J 绛?(2017). Prevalence, awareness, treatment, and control of hypertension in China (China PEACE Million Persons Project). Lancet. <a href="https://doi.org/10.1016/S0140-6736(17)32478-9" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/S0140-6736(17)32478-9</a></li>
-<li>澶囨敞锛氬厛鍘婚噺涓€娆¤鍘嬨€備腑鍥?10 涓珮琛€鍘嬬殑浜洪噷鍙湁涓嶅埌 1 涓帶鍒朵綇浜嗭紝鎵€浠ラ噺杩欎竴娆℃槸鏈功閲屾€т环姣旀渶楂樼殑鍔ㄤ綔涔嬩竴銆傞檷鍒板灏戠畻杈炬爣锛?30 杩樻槸 140锛夎繕鏈夎璁猴紝浣嗐€岀煡閬撹嚜宸遍珮琛€鍘嬪苟鎶婂畠闄嶄笅鏉ャ€嶈繖浠朵簨鏈韩娌℃湁浜夎銆?</li>
+<li>成本：电子血压计 100 到 200 元。量一次 1 分钟。降压药多数每月几元到几十元。难的地方是没症状也要接着吃。</li>
+<li>说人话：血压每降 10 mmHg，出大的心血管毛病的概率降两成，中风降 27%，心衰降 28%，死亡概率降 13%。中国 35 到 75 岁的人里，44.7% 有高血压，真正控制住的只有 7.2%。</li>
+<li>收益：把 123 项试验、61 万余人合起来一起算。收缩压每降 10 mmHg，主要心血管事件低约两成。原值 RR 0.80，可信范围 95% CI 0.77 到 0.83。收缩压就是血压两个数里高的那个。卒中（中风）低约 27%（RR 0.73）。心力衰竭低约 28%（RR 0.72）。总死亡率下降 13%（RR 0.87，95% CI 0.84 到 0.91）。中国给 35 到 75 岁的 170 万人做过筛查：44.7% 有高血压。这些人里，知道自己有的占 44.7%，在治疗的占 30.1%，控制住的只有 7.2%</li>
+<li>证据等级：A</li>
+<li>来源：Ettehad D 等 (2016). Blood pressure lowering for prevention of cardiovascular disease and death: a systematic review and meta-analysis. Lancet. <a href="https://doi.org/10.1016/S0140-6736(15)01225-8" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/S0140-6736(15)01225-8</a> ; Lu J 等 (2017). Prevalence, awareness, treatment, and control of hypertension in China (China PEACE Million Persons Project). Lancet. <a href="https://doi.org/10.1016/S0140-6736(17)32478-9" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/S0140-6736(17)32478-9</a></li>
+<li>备注：先去量一次血压。中国 10 个高血压的人里只有不到 1 个控制住了，所以量这一次是本书里性价比最高的动作之一。降到多少算达标（130 还是 140）还有讨论，但「知道自己高血压并把它降下来」这件事本身没有争议。</li>
 </ul>
-<h3>8. 35 宀佷互鍚庡彧瑕佽秴閲嶏紝灏卞幓鏌ヤ竴娆＄┖鑵硅绯栵紝姝ｅ父涔熸瘡涓夊勾鍐嶆煡</h3>
-<!-- 鎴愭湰鏍囩: 閽?灏?鏃堕棿=灏?姣呭姏=鍚?鏀剁泭=涓?鍙ｅ緞=姝讳骸鐜?浜虹兢=35宀?-->
+<h3>8. 35 岁以后只要超重，就去查一次空腹血糖，正常也每三年再查</h3>
+<!-- 成本标签: 钱=少 时间=少 毅力=否 收益=中 口径=死亡率 人群=35岁 -->
 <ul>
-<li>鎴愭湰锛氱┖鑵硅绯栧崄鍑犲厓銆傜硸鍖栬绾㈣泲鐧藉嚑鍗佸厓銆傚幓鍖婚櫌鎶戒竴娆¤灏辫銆?</li>
-<li>璇翠汉璇濓細鑺卞嚑鍗佸潡鎶戒竴绠¤锛屽氨鑳藉湪涓€鐐圭棁鐘堕兘娌℃湁鐨勬椂鍊欐煡鍑虹硸灏跨梾鍓嶆湡銆傜編鍥藉畼鏂圭殑绛涙煡寤鸿鏄細35 鍒?70 宀併€佽秴閲嶆垨鑲ヨ儢鐨勪汉鍘绘煡銆傛煡鍑烘潵姝ｅ父鐨勶紝姣忎笁骞村啀鏌ヤ竴娆°€傜編鍥芥寜浣撻噸鎸囨暟 25 绠楄秴閲嶏紝瀵逛簹瑁旀斁瀹藉埌 23锛涗腑鍥芥爣鍑嗘槸 24 灏辩畻瓒呴噸銆?</li>
-<li>鏀剁泭锛氱編鍥介闃叉湇鍔″伐浣滅粍鏄編鍥藉畼鏂圭粰绛涙煡寤鸿鐨勬満鏋勩€傚畠鐜板湪鐨勫缓璁槸锛氬 35 鍒?70 宀併€佽秴閲嶆垨鑲ヨ儢鐨勬垚骞翠汉绛涙煡绯栧翱鐥呭墠鏈熷拰 2 鍨嬬硸灏跨梾锛屽摢鎬曚竴鐐圭棁鐘堕兘娌℃湁銆傝秴閲嶆寚浣撻噸鎸囨暟 鈮?5锛岃偉鑳栨寚 鈮?0銆傚浜氳缇庡浗浜猴紝瀹冨缓璁妸鐣岀嚎闄嶅埌浣撻噸鎸囨暟 鈮?3锛屽洜涓哄悓鏍风殑浣撻噸鎸囨暟涓嬶紝浜氳鐨勭硸灏跨梾椋庨櫓鏇撮珮銆備腑鍥界殑琛屼笟鏍囧噯鏄細浣撻噸鎸囨暟 24.0 鍒?28.0 涔嬮棿绠楄秴閲嶏紝鈮?8.0 绠楄偉鑳栥€傝繖鏉″缓璁殑鎺ㄨ崘绛夌骇鏄?B銆傚畠杩樺啓鏄庯細銆屽琛€绯栨甯哥殑鎴愬勾浜猴紝姣?3 骞寸瓫鏌ヤ竴娆℃槸鍚堢悊鐨勫仛娉曘€?</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛歎S Preventive Services Task Force (2021). Screening for Prediabetes and Type 2 Diabetes. <a href="https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/screening-for-prediabetes-and-type-2-diabetes" target="_blank" rel="noopener noreferrer">https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/screening-for-prediabetes-and-type-2-diabetes</a>锛氥€宎t a lower BMI (鈮?3) if the patient is Asian American銆嶏紱鍥藉鍗敓鍋ュ悍濮斿姙鍏巺 (2024). 灞呮皯浣撻噸绠＄悊鏍稿績鐭ヨ瘑锛?024 骞寸増锛夐噴涔夛細銆屾牴鎹€婃垚骞翠汉浣撻噸鍒ゅ畾銆嬶紙WS/T 428-2013锛夎涓氭爣鍑嗏€︹€?4.0鈮MI锛?8.0 涓鸿秴閲嶏紝BMI鈮?8.0 涓鸿偉鑳栥€? <a href="https://www.gov.cn/zhengce/zhengceku/202407/P020240703481519509521.pdf" target="_blank" rel="noopener noreferrer">https://www.gov.cn/zhengce/zhengceku/202407/P020240703481519509521.pdf</a></li>
-<li>澶囨敞锛氭煡鍑虹硸灏跨梾鍓嶆湡涓嶇瓑浜庡氨瑕佸悆鑽€傜浉褰撲竴閮ㄥ垎浜哄厜闈犳敼鐢熸椿鏂瑰紡灏辫兘鎶婂畠鎵洖鍘汇€備腑鍥芥垚浜洪噷锛岀煡閬撹嚜宸辨湁绯栧翱鐥呯殑涓€鐩存槸灏戞暟锛屽緢澶氫汉鏄瓑鍒板嚭浜嗗苟鍙戠棁鎵嶅彂鐜?</li>
+<li>成本：空腹血糖十几元。糖化血红蛋白几十元。去医院抽一次血就行。</li>
+<li>说人话：花几十块抽一管血，就能在一点症状都没有的时候查出糖尿病前期。美国官方的筛查建议是：35 到 70 岁、超重或肥胖的人去查。查出来正常的，每三年再查一次。美国按体重指数 25 算超重，对亚裔放宽到 23；中国标准是 24 就算超重。</li>
+<li>收益：美国预防服务工作组是美国官方给筛查建议的机构。它现在的建议是：对 35 到 70 岁、超重或肥胖的成年人筛查糖尿病前期和 2 型糖尿病，哪怕一点症状都没有。超重指体重指数 ≥25，肥胖指 ≥30。对亚裔美国人，它建议把界线降到体重指数 ≥23，因为同样的体重指数下，亚裔的糖尿病风险更高。中国的行业标准是：体重指数 24.0 到 28.0 之间算超重，≥28.0 算肥胖。这条建议的推荐等级是 B。它还写明：「对血糖正常的成年人，每 3 年筛查一次是合理的做法」</li>
+<li>证据等级：A</li>
+<li>来源：US Preventive Services Task Force (2021). Screening for Prediabetes and Type 2 Diabetes. <a href="https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/screening-for-prediabetes-and-type-2-diabetes" target="_blank" rel="noopener noreferrer">https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/screening-for-prediabetes-and-type-2-diabetes</a>：「at a lower BMI (≥23) if the patient is Asian American」；国家卫生健康委办公厅 (2024). 居民体重管理核心知识（2024 年版）释义：「根据《成年人体重判定》（WS/T 428-2013）行业标准……24.0≤BMI＜28.0 为超重，BMI≥28.0 为肥胖」. <a href="https://www.gov.cn/zhengce/zhengceku/202407/P020240703481519509521.pdf" target="_blank" rel="noopener noreferrer">https://www.gov.cn/zhengce/zhengceku/202407/P020240703481519509521.pdf</a></li>
+<li>备注：查出糖尿病前期不等于就要吃药。相当一部分人光靠改生活方式就能把它扭回去。中国成人里，知道自己有糖尿病的一直是少数，很多人是等到出了并发症才发现</li>
 </ul>
-<h3>9. 寮€杞︿笉瓒呴€熴€佷笉閰掗┚</h3>
-<!-- 鎴愭湰鏍囩: 閽?0 鏃堕棿=灏?姣呭姏=浜?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?-->
+<h3>9. 开车不超速、不酒驾</h3>
+<!-- 成本标签: 钱=0 时间=少 毅力=些 收益=大 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氫笉鑺遍挶銆傚紑鎱竴鐐癸紝涓€瓒熷鑺卞嚑鍒嗛挓銆傞毦鐨勫湴鏂规槸楗眬涓婂皯鍠濄€?</li>
-<li>璇翠汉璇濓細骞冲潎杞﹂€熸瘡楂?1%锛屾挒姝讳汉鐨勬鐜囬珮绾?4%銆傞厭绮炬病鏈夈€屽枬涓€鐐规病浜嬨€嶇殑瀹夊叏绾裤€傝閲岀殑閰掔簿娴撳害杩樺緢浣庣殑鏃跺€欙紝椋庨櫓灏卞凡缁忓紑濮嬪線涓婅蛋浜嗐€?</li>
-<li>鏀剁泭锛氫笘鐣屽崼鐢熺粍缁囷紙WHO锛夌殑璇存硶锛氬钩鍧囪溅閫熸瘡鍗囬珮 1%锛屽嚭浜哄懡鐨勪簨鏁呴闄╁崌楂?4%銆傞厭椹剧殑椋庨櫓锛屼粠寰堜綆鐨勮娑查厭绮炬祿搴﹁捣灏卞紑濮嬩笂鍗?</li>
-<li>璇佹嵁绛夌骇锛欱</li>
-<li>鏉ユ簮锛歐HO (2025). Road traffic injuries fact sheet. <a href="https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries" target="_blank" rel="noopener noreferrer">https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries</a></li>
-<li>澶囨敞锛氶€熷害鍜屾浜＄殑閭ｇ粍 1%銆?%锛屾槸鎸変簨鏁呮ā鍨嬫帹绠楀嚭鏉ョ殑锛屼笉鏄殢鏈哄垎缁勭殑璇曢獙銆傞厭椹捐繖杈?WHO 鍙粰浜嗘柟鍚戯紝娌＄粰鏁板瓧銆傘€屽枬澶氬皯銆侀闄╂定澶氬皯銆嶈繖涓棶棰橈紝鏈妭娌℃湁鏍稿疄杩囧師濮嬫枃鐚€?</li>
+<li>成本：不花钱。开慢一点，一趟多花几分钟。难的地方是饭局上少喝。</li>
+<li>说人话：平均车速每高 1%，撞死人的概率高约 4%。酒精没有「喝一点没事」的安全线。血里的酒精浓度还很低的时候，风险就已经开始往上走了。</li>
+<li>收益：世界卫生组织（WHO）的说法：平均车速每升高 1%，出人命的事故风险升高 4%。酒驾的风险，从很低的血液酒精浓度起就开始上升</li>
+<li>证据等级：B</li>
+<li>来源：WHO (2025). Road traffic injuries fact sheet. <a href="https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries" target="_blank" rel="noopener noreferrer">https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries</a></li>
+<li>备注：速度和死亡的那组 1%、4%，是按事故模型推算出来的，不是随机分组的试验。酒驾这边 WHO 只给了方向，没给数字。「喝多少、风险涨多少」这个问题，本节没有核实过原始文献。</li>
 </ul>
-<h3>10. 鍧愯溅鏃剁粰 4 宀佷互涓嬪効绔ョ敤瀹夊叏搴ф锛屼笉瑕佹姳鍦ㄦ€€閲?</h3>
-<!-- 鎴愭湰鏍囩: 閽?澶?鏃堕棿=灏?姣呭姏=鍚?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?浜虹兢=濠村辜鍎?瀛╁瓙,鎬€瀛?-->
+<h3>10. 坐车时给 4 岁以下儿童用安全座椅，不要抱在怀里</h3>
+<!-- 成本标签: 钱=多 时间=少 毅力=否 收益=大 口径=死亡率 人群=婴幼儿,孩子,怀孕 -->
 <ul>
-<li>鎴愭湰锛氫竴涓?300 鍒?2000 鍏冿紝鑳界敤鍑犲勾銆傛瘡娆′笂杞﹀鑺?1 鍒嗛挓鎶婂瀛愮粦濂姐€?</li>
-<li>璇翠汉璇濓細涓€宀佷互涓嬬殑濠村効鍧愯溅鏃剁敤瀹夊叏搴ф锛岃溅绁搁噷鍙楄嚧鍛戒激鐨勬鐜囦綆绾︿竷鎴愩€? 鍒?4 宀佺殑瀛╁瓙浣庣害涓€鍗娿€傛姳鍦ㄦ€€閲屾病鏈夎繖涓晥鏋滐紝鎬ュ埞杞︽椂浣犱篃鎶变笉浣忋€?</li>
-<li>鏀剁泭锛氱編鍥戒氦閫氬畨鍏ㄤ富绠￠儴闂紙NHTSA锛変及璁★紝鐢ㄥ畨鍏ㄥ骇妞呰兘璁╄娇杞﹂噷 1 宀佷互涓嬪┐鍎垮彈鑷村懡浼ょ殑椋庨櫓涓嬮檷 71%銆? 鍒?4 宀佺殑骞煎効涓嬮檷 54%銆備笘鐣屽崼鐢熺粍缁囷紙WHO锛夌殑鍙ｅ緞鏄┐鍎挎浜′笅闄?71%</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛歂HTSA (2024). Occupant Protection in Passenger Vehicles: 2022 Data (DOT HS 813 573). <a href="https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813573" target="_blank" rel="noopener noreferrer">https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813573</a> ; WHO (2025). Road traffic injuries fact sheet. <a href="https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries" target="_blank" rel="noopener noreferrer">https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries</a></li>
-<li>澶囨敞锛氭寜璇存槑涔︽妸搴ф鍥哄畾濂斤紝瑁呴敊绛変簬娌¤銆? 宀佷互涓嬭鍙嶅悜瀹夎锛岃瀛╁瓙闈㈡湞杞﹀熬銆備笂闈㈢殑鏁板瓧鏄編鍥藉畼鏂规嬁浜嬫晠鏁版嵁浼板嚭鏉ョ殑銆?</li>
+<li>成本：一个 300 到 2000 元，能用几年。每次上车多花 1 分钟把孩子绑好。</li>
+<li>说人话：一岁以下的婴儿坐车时用安全座椅，车祸里受致命伤的概率低约七成。1 到 4 岁的孩子低约一半。抱在怀里没有这个效果，急刹车时你也抱不住。</li>
+<li>收益：美国交通安全主管部门（NHTSA）估计，用安全座椅能让轿车里 1 岁以下婴儿受致命伤的风险下降 71%。1 到 4 岁的幼儿下降 54%。世界卫生组织（WHO）的口径是婴儿死亡下降 71%</li>
+<li>证据等级：A</li>
+<li>来源：NHTSA (2024). Occupant Protection in Passenger Vehicles: 2022 Data (DOT HS 813 573). <a href="https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813573" target="_blank" rel="noopener noreferrer">https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813573</a> ; WHO (2025). Road traffic injuries fact sheet. <a href="https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries" target="_blank" rel="noopener noreferrer">https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries</a></li>
+<li>备注：按说明书把座椅固定好，装错等于没装。1 岁以下要反向安装，让孩子面朝车尾。上面的数字是美国官方拿事故数据估出来的。</li>
 </ul>
-<h3>11. 瀹堕噷鏈夊皬瀛╁氨缁欑獥鎴峰拰闃冲彴瑁呴檺浣嶅櫒锛岀罕绐椾笉绠楅槻鎶?</h3>
-<!-- 鎴愭湰鏍囩: 閽?灏?鏃堕棿=灏?姣呭姏=鍚?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?浜虹兢=濠村辜鍎?瀛╁瓙 -->
+<h3>11. 家里有小孩就给窗户和阳台装限位器，纱窗不算防护</h3>
+<!-- 成本标签: 钱=少 时间=少 毅力=否 收益=大 口径=死亡率 人群=婴幼儿,孩子 -->
 <ul>
-<li>鎴愭湰锛氫竴鍓獥鎴烽檺浣嶅櫒鎴栬€呭効绔ュ畨鍏ㄩ攣鍑犲崄鍏冦€傝涓婂幓鍗佸垎閽熴€?</li>
-<li>璇翠汉璇濓細涓€鍓檺浣嶅櫒鍑犲崄鍧楅挶銆傜航绾﹀競缁欓珮椋庨櫓浣忔埛鍏嶈垂瑁呯獥鎴锋姢鏍忋€佸張涓婇棬璁茶В锛屼竴涓尯涓婃姤鐨勫効绔ュ潬钀芥暟涓夊勾閲岄檷浜嗕竴鍗娿€傚悗鏉ョ航绾﹀共鑴嗙珛娉曪紝瑕佹眰鎴夸笢缁欎綇鐫€灏忓鐨勬埧瀛愯鎶ゆ爮銆傜罕绐椾竴鎺ㄥ氨寮€锛屼笉绠楅槻鎶ゃ€?</li>
-<li>鏀剁泭锛氱航绾﹀競浠?1972 骞磋捣鍔炰簡涓€涓彨銆屽瀛愪笉浼氶銆嶇殑椤圭洰锛屽湪楂橀闄╁煄鍖哄厤璐瑰彂绐楁埛鎶ゆ爮锛岃繕涓婇棬璁茶В銆傚竷鏈楀厠鏂尯涓婃姤鐨勫潬钀芥暟锛?973 鍒?1975 骞翠笅闄?50%銆傛鍚庣航绾﹀競淇敼鍗敓娉曞吀锛屽己鍒舵埧涓滀负浣忔湁 10 宀佸強浠ヤ笅鍎跨鐨勫叕瀵撳畨瑁呯獥鎴锋姢鏍?</li>
-<li>璇佹嵁绛夌骇锛欱</li>
-<li>鏉ユ簮锛歋piegel CN, Lindaman FC (1977). Children can't fly: a program to prevent childhood morbidity and mortality from window falls. American Journal of Public Health锛氥€孲ignificant reduction in falls resulted, particularly in the Bronx, where reported falls declined 50 percent from 1973 to 1975銆嶏紝1976 骞寸航绾﹀競鍗敓娉曞吀淇銆宼o require that landlords provide window guards in apartments where children ten years old and younger reside銆? <a href="https://doi.org/10.2105/AJPH.67.12.1143" target="_blank" rel="noopener noreferrer">https://doi.org/10.2105/AJPH.67.12.1143</a>锛?2021). Unintentional Window Falls in Children and Adolescents. Academic Pediatrics锛?007 骞?1 鏈堣嚦 2017 骞?8 鏈堝叏鍥界數瀛愪激瀹崇洃娴嬬郴缁?38,840 渚嬫€ヨ瘖灏辫瘖锛屻€孴he majority of falls occurred in children under the age of 6 and were related to falls from a second story or below銆? <a href="https://doi.org/10.1016/j.acap.2020.07.008" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.acap.2020.07.008</a></li>
-<li>澶囨敞锛氱獥杈瑰拰闃冲彴杈逛笉瑕佹斁搴娿€佹矙鍙戙€佺瀛愯繖绫诲皬瀛╄兘鐖笂鍘荤殑涓滆タ銆傜罕绐楀彧鎸¤殜瀛愶紝涓€鎺ㄥ氨鎺夛紝鍒妸瀹冨綋鎶ゆ爮銆備篃涓嶆槸鍙湁浣忛珮灞傛墠瑕佽锛氱編鍥介偅浠芥暟鎹噷锛屽鏁板潬钀藉彂鐢熷湪浜屽眰鎴栬€呮洿浣庛€?</li>
+<li>成本：一副窗户限位器或者儿童安全锁几十元。装上去十分钟。</li>
+<li>说人话：一副限位器几十块钱。纽约市给高风险住户免费装窗户护栏、又上门讲解，一个区上报的儿童坠落数三年里降了一半。后来纽约干脆立法，要求房东给住着小孩的房子装护栏。纱窗一推就开，不算防护。</li>
+<li>收益：纽约市从 1972 年起办了一个叫「孩子不会飞」的项目，在高风险城区免费发窗户护栏，还上门讲解。布朗克斯区上报的坠落数，1973 到 1975 年下降 50%。此后纽约市修改卫生法典，强制房东为住有 10 岁及以下儿童的公寓安装窗户护栏</li>
+<li>证据等级：B</li>
+<li>来源：Spiegel CN, Lindaman FC (1977). Children can't fly: a program to prevent childhood morbidity and mortality from window falls. American Journal of Public Health：「Significant reduction in falls resulted, particularly in the Bronx, where reported falls declined 50 percent from 1973 to 1975」，1976 年纽约市卫生法典修订「to require that landlords provide window guards in apartments where children ten years old and younger reside」. <a href="https://doi.org/10.2105/AJPH.67.12.1143" target="_blank" rel="noopener noreferrer">https://doi.org/10.2105/AJPH.67.12.1143</a>；(2021). Unintentional Window Falls in Children and Adolescents. Academic Pediatrics：2007 年 1 月至 2017 年 8 月全国电子伤害监测系统 38,840 例急诊就诊，「The majority of falls occurred in children under the age of 6 and were related to falls from a second story or below」. <a href="https://doi.org/10.1016/j.acap.2020.07.008" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.acap.2020.07.008</a></li>
+<li>备注：窗边和阳台边不要放床、沙发、箱子这类小孩能爬上去的东西。纱窗只挡蚊子，一推就掉，别把它当护栏。也不是只有住高层才要装：美国那份数据里，多数坠落发生在二层或者更低。</li>
 </ul>
-<h3>12. 鍎跨杩戞按涓嶇瑙嗙嚎锛屽垝鑸广€侀噹娉崇┛鏁戠敓琛?</h3>
-<!-- 鎴愭湰鏍囩: 閽?灏?鏃堕棿=涓?姣呭姏=鍚?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?-->
+<h3>12. 儿童近水不离视线，划船、野泳穿救生衣</h3>
+<!-- 成本标签: 钱=少 时间=中 毅力=否 收益=大 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氭晳鐢熻。 50 鍒?200 鍏冦€傚彟澶栬鎼笂鐪嬬潃瀛╁瓙鐨勯偅浠芥敞鎰忓姏銆?</li>
-<li>璇翠汉璇濓細钀芥按鐨勬椂鍊欑┛鐫€鏁戠敓琛ｏ紝娣规鐨勬鐜囧ぇ绾﹀彧鏈変笉绌跨殑涓€鍗娿€傛汉姘磋嚦浠婃槸涓浗 1 鍒?14 宀佸瀛愮殑澶村彿姝诲洜銆傚啘鏉戠殑婧烘按姝讳骸鐜囧ぇ绾︽槸鍩庡競鐨勪袱鍊嶃€?</li>
-<li>鏀剁泭锛氱敤缇庡浗娴峰哺璀﹀崼闃熺殑鏁版嵁鍋氱殑鐮旂┒锛屾妸鏉′欢鐩歌繎鐨勪汉閰嶆垚瀵规潵姣斻€傚潗浼戦棽鑸瑰彧钀芥按鐨勪汉锛岀┛鐫€鏁戠敓琛ｇ殑婧轰骸椋庨櫓浣庣害涓€鍗娿€傚師鍊兼槸鏍℃鍚?RR 0.51锛屽彲淇¤寖鍥?95% CI 0.35 鍒?0.74銆備腑鍥?20 宀佷互涓嬬殑婧烘按姝讳骸鐜囷紝浠?2013 骞寸殑姣?10 涓囦汉 6.60 浜洪檷鍒?2021 骞寸殑姣?10 涓囦汉 3.28 浜恒€傚啘鏉戠害涓哄煄甯傜殑 2 鍊嶃€傛汉姘翠粛鐒舵槸 1 鍒?14 宀佸効绔ョ殑澶村彿姝诲洜銆?021 骞?0 鍒?19 宀佺殑浼ゅ姝讳骸閲岋紝婧烘按鍗?31.1%锛岄亾璺氦閫氬崰 27.9%</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛欳ummings P 绛?(2011). Association between wearing a personal floatation device and death by drowning among recreational boaters. Injury Prevention. <a href="https://doi.org/10.1136/ip.2010.028688" target="_blank" rel="noopener noreferrer">https://doi.org/10.1136/ip.2010.028688</a> ; Li Z 绛?(2023). Unintentional Drowning Mortality Among Individuals Under Age 20 鈥?China, 2013鈥?021. China CDC Weekly. <a href="https://doi.org/10.46234/ccdcw2023.198" target="_blank" rel="noopener noreferrer">https://doi.org/10.46234/ccdcw2023.198</a> ; Zhou J 绛?(2024). Injury Mortality of Children and Adolescents Aged 0鈥?9 Years 鈥?China, 2010鈥?021. China CDC Weekly. <a href="https://doi.org/10.46234/ccdcw2024.057" target="_blank" rel="noopener noreferrer">https://doi.org/10.46234/ccdcw2024.057</a></li>
-<li>澶囨敞锛欰 绾у彧瀵瑰簲鏁戠敓琛ｈ繖涓€鍗娿€傘€屼笉绂昏绾裤€嶆槸澶у鐨勫叡璇嗭紝鍗曠畻鍙湁 C 绾э紝娌℃湁闅忔満璇曢獙锛屼互鍚庝篃涓嶄細鏈夈€備腑鍥界殑婧烘按姝讳骸闆嗕腑鍦ㄥ啘鏉戙€佸瀛ｏ紝浠ュ強 15 鍒?19 宀佺殑鐢锋€с€傚啲澶╀笂鍐伴潰鐜╋紝瑙佺 41 鏉★紙閲庡鍐伴潰鍏堥噺鍘氬害锛夈€?</li>
+<li>成本：救生衣 50 到 200 元。另外要搭上看着孩子的那份注意力。</li>
+<li>说人话：落水的时候穿着救生衣，淹死的概率大约只有不穿的一半。溺水至今是中国 1 到 14 岁孩子的头号死因。农村的溺水死亡率大约是城市的两倍。</li>
+<li>收益：用美国海岸警卫队的数据做的研究，把条件相近的人配成对来比。坐休闲船只落水的人，穿着救生衣的溺亡风险低约一半。原值是校正后 RR 0.51，可信范围 95% CI 0.35 到 0.74。中国 20 岁以下的溺水死亡率，从 2013 年的每 10 万人 6.60 人降到 2021 年的每 10 万人 3.28 人。农村约为城市的 2 倍。溺水仍然是 1 到 14 岁儿童的头号死因。2021 年 0 到 19 岁的伤害死亡里，溺水占 31.1%，道路交通占 27.9%</li>
+<li>证据等级：A</li>
+<li>来源：Cummings P 等 (2011). Association between wearing a personal floatation device and death by drowning among recreational boaters. Injury Prevention. <a href="https://doi.org/10.1136/ip.2010.028688" target="_blank" rel="noopener noreferrer">https://doi.org/10.1136/ip.2010.028688</a> ; Li Z 等 (2023). Unintentional Drowning Mortality Among Individuals Under Age 20 — China, 2013–2021. China CDC Weekly. <a href="https://doi.org/10.46234/ccdcw2023.198" target="_blank" rel="noopener noreferrer">https://doi.org/10.46234/ccdcw2023.198</a> ; Zhou J 等 (2024). Injury Mortality of Children and Adolescents Aged 0–19 Years — China, 2010–2021. China CDC Weekly. <a href="https://doi.org/10.46234/ccdcw2024.057" target="_blank" rel="noopener noreferrer">https://doi.org/10.46234/ccdcw2024.057</a></li>
+<li>备注：A 级只对应救生衣这一半。「不离视线」是大家的共识，单算只有 C 级，没有随机试验，以后也不会有。中国的溺水死亡集中在农村、夏季，以及 15 到 19 岁的男性。冬天上冰面玩，见第 41 条（野外冰面先量厚度）。</li>
 </ul>
-<h3>13. 60 宀佷互涓婄粌骞宠　鍜岃吙閮ㄥ姏閲忥紝鏀归€犲閲岀殑娴村鍜屾ゼ姊?</h3>
-<!-- 鎴愭湰鏍囩: 閽?灏?鏃堕棿=澶?姣呭姏=鏄?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?浜虹兢=鑰佷汉,60宀?-->
+<h3>13. 60 岁以上练平衡和腿部力量，改造家里的浴室和楼梯</h3>
+<!-- 成本标签: 钱=少 时间=多 毅力=是 收益=大 口径=死亡率 人群=老人,60岁 -->
 <ul>
-<li>鎴愭湰锛氭瘡鍛ㄧ粌 2 鍒?3 娆★紝姣忔 30 鍒嗛挓澶瀬鎴栬€呭钩琛¤缁冦€傛荡瀹ら槻婊戝灚銆佹壎鎵嬨€佸鐏嚑鍗佸埌鍑犵櫨鍏冦€傞毦鐨勫湴鏂规槸瑕侀暱鏈熺粌涓嬪幓銆?</li>
-<li>璇翠汉璇濓細姣忓懆缁冧袱涓夋骞宠　锛屾瘮濡傚お鏋侊紝鑰佷汉璺屽€掔殑娆℃暟闄嶇害涓ゆ垚涓夛紝鎽旇繃鐨勪汉鏁伴檷 15%銆傚閲屽仛闃叉粦銆佽鎵舵墜锛屽啀闄嶇害涓ゆ垚銆傝穼鍊掓槸涓浗 65 宀佷互涓婅€佷汉鍥犱激瀹虫浜＄殑澶村彿鍘熷洜锛岃€屼笖涓€澶氬崐灏辨憯鍦ㄨ嚜宸卞閲屻€?</li>
-<li>鏀剁泭锛欳ochrane 鎶?108 椤硅瘯楠屻€?3,407 浜哄悎璧锋潵涓€璧风畻銆傝繍鍔ㄨ鑰佸勾浜鸿穼鍊掔殑娆℃暟涓嬮檷 23%銆傚師鍊兼槸璺屽€掔巼涔嬫瘮 RaR 0.77锛屽彲淇¤寖鍥?95% CI 0.71 鍒?0.83銆傛憯杩囩殑浜烘暟涓嬮檷 15%锛圧R 0.85锛夈€傝浜哄埌瀹堕噷鍋氬畨鍏ㄨ瘎浼板拰鏀归€狅紝璺屽€掔巼涓嬮檷绾︿袱鎴愶紙RR 0.81锛?5% CI 0.68 鍒?0.97锛夈€傜粌澶瀬锛岃穼鍊掗闄╀綆绾?29%锛圧R 0.71锛夈€傚湪涓浗锛岃穼鍊掓槸 65 宀佷互涓婅€佷汉鍥犱激瀹虫浜＄殑澶村彿鍘熷洜銆?018 骞寸洃娴嬪埌鐨勮€佸勾浜鸿穼鍊掞紝55.97% 鍙戠敓鍦ㄥ涓?</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛歋herrington C 绛?(2019). Exercise for preventing falls in older people living in the community. Cochrane Database of Systematic Reviews. <a href="https://doi.org/10.1002/14651858.CD012424.pub2" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/14651858.CD012424.pub2</a> ; Gillespie LD 绛?(2012). Interventions for preventing falls in older people living in the community. Cochrane Database of Systematic Reviews. <a href="https://doi.org/10.1002/14651858.CD007146.pub3" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/14651858.CD007146.pub3</a> ; Lu Z 绛?(2021). Characteristics of Falls Among Older People 鈥?China, 2018. China CDC Weekly. <a href="https://doi.org/10.46234/ccdcw2021.013" target="_blank" rel="noopener noreferrer">https://doi.org/10.46234/ccdcw2021.013</a></li>
-<li>澶囨敞锛氳繖鏉￠€傜敤浜庝綇鍦ㄨ嚜宸卞閲屻€佷笉鍦ㄥ吇鑰侀櫌鐨?60 宀佷互涓婅€佷汉銆備笂闈㈢殑鐮旂┒鏁扮殑鏄穼鍊掓鏁帮紝涓嶆槸姝讳骸浜烘暟銆傝€佷汉浠庤穼鍊掑埌楂嬮儴楠ㄦ姌銆佸啀鍒版浜★紝杩欐璺緢鐭€傜湅涓嶆竻璺篃浼氬鎽旓紝鐧藉唴闅滃奖鍝嶇湅璺殑瑙佺 17 鑺傜 9 鏉★紙鐧藉唴闅滄墜鏈級銆傝€佷汉鐗电嫍鏁ｆ琚嫿鍊掔殑锛岃绗?17 鑺傜 10 鏉★紙鑰佷汉閬涚嫍锛夈€傞澶寸粡涓嶇粡寰楄捣鎽旓紝瑙佹湰鑺傜 39 鏉★紙楠ㄥ瘑搴︽鏌ワ級銆?</li>
+<li>成本：每周练 2 到 3 次，每次 30 分钟太极或者平衡训练。浴室防滑垫、扶手、夜灯几十到几百元。难的地方是要长期练下去。</li>
+<li>说人话：每周练两三次平衡，比如太极，老人跌倒的次数降约两成三，摔过的人数降 15%。家里做防滑、装扶手，再降约两成。跌倒是中国 65 岁以上老人因伤害死亡的头号原因，而且一多半就摔在自己家里。</li>
+<li>收益：Cochrane 把 108 项试验、23,407 人合起来一起算。运动让老年人跌倒的次数下降 23%。原值是跌倒率之比 RaR 0.77，可信范围 95% CI 0.71 到 0.83。摔过的人数下降 15%（RR 0.85）。请人到家里做安全评估和改造，跌倒率下降约两成（RR 0.81，95% CI 0.68 到 0.97）。练太极，跌倒风险低约 29%（RR 0.71）。在中国，跌倒是 65 岁以上老人因伤害死亡的头号原因。2018 年监测到的老年人跌倒，55.97% 发生在家中</li>
+<li>证据等级：A</li>
+<li>来源：Sherrington C 等 (2019). Exercise for preventing falls in older people living in the community. Cochrane Database of Systematic Reviews. <a href="https://doi.org/10.1002/14651858.CD012424.pub2" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/14651858.CD012424.pub2</a> ; Gillespie LD 等 (2012). Interventions for preventing falls in older people living in the community. Cochrane Database of Systematic Reviews. <a href="https://doi.org/10.1002/14651858.CD007146.pub3" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/14651858.CD007146.pub3</a> ; Lu Z 等 (2021). Characteristics of Falls Among Older People — China, 2018. China CDC Weekly. <a href="https://doi.org/10.46234/ccdcw2021.013" target="_blank" rel="noopener noreferrer">https://doi.org/10.46234/ccdcw2021.013</a></li>
+<li>备注：这条适用于住在自己家里、不在养老院的 60 岁以上老人。上面的研究数的是跌倒次数，不是死亡人数。老人从跌倒到髋部骨折、再到死亡，这段路很短。看不清路也会多摔，白内障影响看路的见第 17 节第 9 条（白内障手术）。老人牵狗散步被拽倒的，见第 17 节第 10 条（老人遛狗）。骨头经不经得起摔，见本节第 39 条（骨密度检查）。</li>
 </ul>
-<h3>14. 鏌ヤ箼鑲濅袱瀵瑰崐锛屾病鏈夋姉浣撳氨鎵撶柅鑻?</h3>
-<!-- 鎴愭湰鏍囩: 閽?灏?鏃堕棿=灏?姣呭姏=鍚?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?-->
+<h3>14. 查乙肝两对半，没有抗体就打疫苗</h3>
+<!-- 成本标签: 钱=少 时间=少 毅力=否 收益=大 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氭煡涓€娆″嚑鍗佸厓銆傛垚浜轰箼鑲濈柅鑻?3 閽堝悎璧锋潵 100 鍒?300 鍏冦€傚崐骞翠箣鍐呮墦瀹屻€?</li>
-<li>璇翠汉璇濓細鏌ヤ竴娆″嚑鍗佸潡銆傚惎涓滈偅椤硅窡韪簡 30 骞寸殑璇曢獙閲岋紝涓€鍑虹敓灏辨墦浜嗕箼鑲濈柅鑻楃殑浜猴紝鍚庢潵寰楀師鍙戞€ц倽鐧岀殑姒傜巼浣?84%锛岃韩涓婂甫鐫€涔欒倽鐥呮瘨鐨勬瘮渚嬩綆 72%銆傛垚浜烘煡鍑烘病鎶椾綋鐨勮ˉ涓夐拡锛屽崐骞存墦瀹岋紝涓€涓ょ櫨鍧椼€?</li>
-<li>鏀剁泭锛氬惎涓滈偅椤硅瘯楠屾寜缇や綋闅忔満鍒嗙粍锛屼笉鏄寜涓汉鍒嗙粍锛岃窡韪簡 30 骞淬€傛柊鐢熷効鎺ョ涔欒倽鐤嫍锛屽師鍙戞€ц倽鐧屼笅闄?84%銆傚彲淇¤寖鍥存槸 95% CI 23% 鍒?97%銆備箼鑲濊〃闈㈡姉鍘?HBsAg 闃虫€х巼涓嬮檷 72%锛?5% CI 68% 鍒?75%锛夛紝杩欎釜闃虫€х巼灏辨槸鏌ュ嚭韬笂甯︾潃鐥呮瘨鐨勪汉鎵€鍗犵殑姣斾緥銆備腑鍥藉叏浜虹兢鐨?HBsAg 闃虫€ф瘮渚嬶紝1992 鍒?2014 骞翠笅闄?52%锛? 宀佷互涓嬩笅闄?97%</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛歈u C 绛?(2014). Efficacy of neonatal HBV vaccination on liver cancer and other liver diseases over 30-year follow-up of the Qidong hepatitis B intervention study. PLoS Medicine. <a href="https://doi.org/10.1371/journal.pmed.1001774" target="_blank" rel="noopener noreferrer">https://doi.org/10.1371/journal.pmed.1001774</a> ; Cui F 绛?(2017). Prevention of Chronic Hepatitis B after 3 Decades of Escalating Vaccination Policy, China. Emerging Infectious Diseases. <a href="https://doi.org/10.3201/eid2305.161477" target="_blank" rel="noopener noreferrer">https://doi.org/10.3201/eid2305.161477</a></li>
-<li>澶囨敞锛氳繖鏉￠€傜敤浜?1992 骞村墠鍑虹敓銆佹病鎵撹繃鐤嫍鎴栬€呮姉浣撳凡缁忔秷澶辩殑鎴愪汉銆傝倽鐧屼笅闄?84% 閭ｄ釜鏁版潵鑷竴鍑虹敓灏辨墦鐨勪汉銆傚悓涓€椤硅瘯楠岄噷锛屽埌闈掑皯骞存墠琛ユ墦鐨勶紝闃蹭綇鐥呮瘨鎼哄甫鐨勬晥鍔涘彧鏈?21%銆傛垚浜烘墦涓昏鍥剧殑鏄笉鍐嶈鎰熸煋锛屼笉鑳界洿鎺ュ閭ｄ釜 84%銆傚凡缁忔劅鏌撶殑浜烘墦鐤嫍娌＄敤锛岃鍘昏倽鐥呯瀹氭湡澶嶆煡銆傛€庝箞绠楀凡缁忔劅鏌擄細鍖栭獙鍗曚笂涔欒倽琛ㄩ潰鎶楀師 HBsAg 閭ｄ竴椤规槸闃虫€с€?</li>
+<li>成本：查一次几十元。成人乙肝疫苗 3 针合起来 100 到 300 元。半年之内打完。</li>
+<li>说人话：查一次几十块。启东那项跟踪了 30 年的试验里，一出生就打了乙肝疫苗的人，后来得原发性肝癌的概率低 84%，身上带着乙肝病毒的比例低 72%。成人查出没抗体的补三针，半年打完，一两百块。</li>
+<li>收益：启东那项试验按群体随机分组，不是按个人分组，跟踪了 30 年。新生儿接种乙肝疫苗，原发性肝癌下降 84%。可信范围是 95% CI 23% 到 97%。乙肝表面抗原 HBsAg 阳性率下降 72%（95% CI 68% 到 75%），这个阳性率就是查出身上带着病毒的人所占的比例。中国全人群的 HBsAg 阳性比例，1992 到 2014 年下降 52%，5 岁以下下降 97%</li>
+<li>证据等级：A</li>
+<li>来源：Qu C 等 (2014). Efficacy of neonatal HBV vaccination on liver cancer and other liver diseases over 30-year follow-up of the Qidong hepatitis B intervention study. PLoS Medicine. <a href="https://doi.org/10.1371/journal.pmed.1001774" target="_blank" rel="noopener noreferrer">https://doi.org/10.1371/journal.pmed.1001774</a> ; Cui F 等 (2017). Prevention of Chronic Hepatitis B after 3 Decades of Escalating Vaccination Policy, China. Emerging Infectious Diseases. <a href="https://doi.org/10.3201/eid2305.161477" target="_blank" rel="noopener noreferrer">https://doi.org/10.3201/eid2305.161477</a></li>
+<li>备注：这条适用于 1992 年前出生、没打过疫苗或者抗体已经消失的成人。肝癌下降 84% 那个数来自一出生就打的人。同一项试验里，到青少年才补打的，防住病毒携带的效力只有 21%。成人打主要图的是不再被感染，不能直接套那个 84%。已经感染的人打疫苗没用，要去肝病科定期复查。怎么算已经感染：化验单上乙肝表面抗原 HBsAg 那一项是阳性。</li>
 </ul>
-<h3>15. 琚搧閽夈€佹湪鍒烘墡鍒版垨鑰呬激鍙ｆ簿浜嗘偿鍦燂紝褰撳ぉ鍘诲鐞嗭紝椤轰究闂牬浼ら瑕佷笉瑕佹墦</h3>
-<!-- 鎴愭湰鏍囩: 閽?灏?鏃堕棿=灏?姣呭姏=鍚?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?-->
+<h3>15. 被铁钉、木刺扎到或者伤口沾了泥土，当天去处理，顺便问破伤风要不要打</h3>
+<!-- 成本标签: 钱=少 时间=少 毅力=否 收益=大 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氭寕鍙峰姞澶勭悊浼ゅ彛鍑犲崄鍏冦€傚尰鐢熻瑕佹墦鐨勮瘽锛岀柅鑻楁垨鑰呭厤鐤悆铔嬬櫧鍑犲崄鍒板嚑鐧惧厓銆?</li>
-<li>璇翠汉璇濓細鐮翠激椋庝竴鏃﹀彂鐥咃紝澶х害姣?10 涓汉閲屾 1 涓€傛繁鐨勪激鍙ｃ€佹簿浜嗘偿鍦熺殑浼ゅ彛椋庨櫓鏈€楂樸€備激鍙ｈ剰銆佺涓婁竴閽堟弧 5 骞寸殑锛岃鍔犲己 1 閽堛€傚綋澶╁幓澶勭悊鑺变笉浜嗗嚑鍗佸潡锛屽埆鎷栧埌浼ゅ彛鑲胯捣鏉ュ啀璇淬€?</li>
-<li>鏀剁泭锛氱編鍥界殑鐮翠激椋庣梾渚嬮噷锛屽ぇ绾︽瘡 10 渚嬫 1 渚嬨€傛繁鐨勪激鍙ｃ€佽娉ュ湡姹℃煋鐨勪激鍙ｏ紝椋庨櫓鏇撮珮銆備腑鍥?2024 骞寸殑璇婄枟瑙勮寖鎶婁激鍙ｅ垎鎴愪袱妗ｃ€? 灏忔椂鍐呭鐞嗐€佹病娌炬偿鍦熺勃渚垮拰鍔ㄧ墿鍙ｆ按鐨勬祬浼ゅ彛锛岀畻浣庨闄┿€傝秴杩?6 灏忔椂鎵嶅鐞嗐€佹簿浜嗚繖浜涗笢瑗匡紝鎴栬€呮槸鎵庝激銆佹挄鑴变激銆佹尋鍘嬩激銆佺儳鐑激銆佸喕浼ゃ€佷激鍙ｉ噷鐣欑潃寮傜墿鐨勶紝绠楅珮椋庨櫓銆傛墦杩?3 閽堜互涓娿€佹渶鍚庝竴閽堜笉鍒?5 骞寸殑锛屼粈涔堥兘涓嶇敤鎵撱€? 鍒?10 骞寸殑锛岄珮椋庨櫓浼ゅ彛鍔犲己 1 閽堛€傛弧 10 骞寸殑锛屼笉绠″摢妗ｉ兘鍔犲己 1 閽堛€傛病鎵撳叏 3 閽堟垨鑰呰涓嶆竻鐨勶紝瑕佹妸鐤嫍琛ュ叏锛岄珮椋庨櫓浼ゅ彛杩樿鍚屾椂鎵撹鍔ㄥ厤鐤埗鍓傦紙鍏嶇柅鐞冭泲鐧芥垨鎶楁瘨绱犺繖绫荤洿鎺ョ粰鎶椾綋鐨勯拡锛?</li>
-<li>璇佹嵁绛夌骇锛欱</li>
-<li>鏉ユ簮锛氱編鍥界柧鐥呮帶鍒朵笌棰勯槻涓績. 鐮翠激椋庯細銆孴etanus bacteria can get into someone's body through broken skin, usually through injuries.銆嶃€孴etanus can lead to death (1 in 10 cases in the United States are fatal).銆嶃€孭eople who didn't complete the primary series or who aren't up to date with their 10-year tetanus booster shots are also at increased risk.銆嶃€孷accination also helps prevent tetanus in people with wounds, depending on their tetanus vaccination history.銆?https://www.cdc.gov/tetanus/about/index.html&gt;锛涘浗瀹跺崼鐢熷仴搴峰鍔炲叕鍘?(2024). 鍏充簬鍗板彂闈炴柊鐢熷効鐮翠激椋庤瘖鐤楄鑼冿紙2024 骞寸増锛夌殑閫氱煡锛堝浗鍗姙鍖绘€ュ嚱銆?024銆?81 鍙凤紝椋庨櫓鍒嗙骇瑙侀檮浠剁 16 椤碉紝琛?4 瑙佺 20 椤碉級. <a href="https://www.gov.cn/zhengce/zhengceku/202410/content_6982262.htm" target="_blank" rel="noopener noreferrer">https://www.gov.cn/zhengce/zhengceku/202410/content_6982262.htm</a>锛涢檮浠?PDF锛堟壂鎻忎欢锛? <a href="https://www.gov.cn/zhengce/zhengceku/202410/P020241023483425528555.pdf" target="_blank" rel="noopener noreferrer">https://www.gov.cn/zhengce/zhengceku/202410/P020241023483425528555.pdf</a></li>
-<li>澶囨敞锛氬埌浜嗗尰闄㈣鍖荤敓鍒ゆ柇锛屽埆鑷繁鎷夸富鎰忥紝涔熷埆瀚岄夯鐑︿笉闂€備笉鏄墍鏈変激鍙ｉ兘瑕佹墦銆傚尰鐢熶細鐪嬩激鍙ｅ睘浜庡摢涓€妗ｏ紝鍐嶉棶浣犱笂涓€娆℃墦閽堟槸浠€涔堟椂鍊欙紝鐒跺悗鍐冲畾銆傘€屽皬鏃跺€欐墦杩囧氨涓€杈堝瓙鏈夋晥銆嶆槸閿欑殑銆備激鍙ｈ剰鐨勮瘽锛岀涓婁竴閽堟弧 5 骞村氨瑕佸姞寮恒€傛墍浠ュ幓涔嬪墠鎯充竴鎯宠嚜宸辨渶鍚庝竴娆℃墦鐮翠激椋庨拡鏄摢涓€骞淬€?</li>
+<li>成本：挂号加处理伤口几十元。医生说要打的话，疫苗或者免疫球蛋白几十到几百元。</li>
+<li>说人话：破伤风一旦发病，大约每 10 个人里死 1 个。深的伤口、沾了泥土的伤口风险最高。伤口脏、离上一针满 5 年的，要加强 1 针。当天去处理花不了几十块，别拖到伤口肿起来再说。</li>
+<li>收益：美国的破伤风病例里，大约每 10 例死 1 例。深的伤口、被泥土污染的伤口，风险更高。中国 2024 年的诊疗规范把伤口分成两档。6 小时内处理、没沾泥土粪便和动物口水的浅伤口，算低风险。超过 6 小时才处理、沾了这些东西，或者是扎伤、撕脱伤、挤压伤、烧烫伤、冻伤、伤口里留着异物的，算高风险。打过 3 针以上、最后一针不到 5 年的，什么都不用打。5 到 10 年的，高风险伤口加强 1 针。满 10 年的，不管哪档都加强 1 针。没打全 3 针或者记不清的，要把疫苗补全，高风险伤口还要同时打被动免疫制剂（免疫球蛋白或抗毒素这类直接给抗体的针）</li>
+<li>证据等级：B</li>
+<li>来源：美国疾病控制与预防中心. 破伤风：「Tetanus bacteria can get into someone's body through broken skin, usually through injuries.」「Tetanus can lead to death (1 in 10 cases in the United States are fatal).」「People who didn't complete the primary series or who aren't up to date with their 10-year tetanus booster shots are also at increased risk.」「Vaccination also helps prevent tetanus in people with wounds, depending on their tetanus vaccination history.」<a href="https://www.cdc.gov/tetanus/about/index.html" target="_blank" rel="noopener noreferrer">https://www.cdc.gov/tetanus/about/index.html</a>；国家卫生健康委办公厅 (2024). 关于印发非新生儿破伤风诊疗规范（2024 年版）的通知（国卫办医急函〔2024〕381 号，风险分级见附件第 16 页，表 4 见第 20 页）. <a href="https://www.gov.cn/zhengce/zhengceku/202410/content_6982262.htm" target="_blank" rel="noopener noreferrer">https://www.gov.cn/zhengce/zhengceku/202410/content_6982262.htm</a>；附件 PDF（扫描件）. <a href="https://www.gov.cn/zhengce/zhengceku/202410/P020241023483425528555.pdf" target="_blank" rel="noopener noreferrer">https://www.gov.cn/zhengce/zhengceku/202410/P020241023483425528555.pdf</a></li>
+<li>备注：到了医院让医生判断，别自己拿主意，也别嫌麻烦不问。不是所有伤口都要打。医生会看伤口属于哪一档，再问你上一次打针是什么时候，然后决定。「小时候打过就一辈子有效」是错的。伤口脏的话，离上一针满 5 年就要加强。所以去之前想一想自己最后一次打破伤风针是哪一年。</li>
 </ul>
-<h3>16. 濂虫€ф帴绉?HPV 鐤嫍锛岃秺鏃╄秺濂?</h3>
-<!-- 鎴愭湰鏍囩: 閽?澶?鏃堕棿=灏?姣呭姏=鍚?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?浜虹兢=濂虫€?瀛╁瓙 -->
+<h3>16. 女性接种 HPV 疫苗，越早越好</h3>
+<!-- 成本标签: 钱=多 时间=少 毅力=否 收益=大 口径=死亡率 人群=女性,孩子 -->
 <ul>
-<li>鎴愭湰锛氬浗浜т簩浠风害 300 澶氬厓涓€閽堬紝杩涘彛涔濅环绾?1300 鍏冧竴閽堛€備竴鍏辨墦 2 鍒?3 閽堛€傛瘡娆¤窇涓€瓒燂紝鍗婂ぉ銆?</li>
-<li>璇翠汉璇濓細鐟炲吀 167 涓囧コ鎬х殑鏁版嵁閲岋紝17 宀佷互鍓嶆墦杩?HPV 鐤嫍鐨勪汉锛屽悗鏉ュ緱娴告鼎鎬у棰堢檶鐨勬鐜囧彧鏈夋病鎵撶殑绾﹀叓鍒嗕箣涓€銆?7 鍒?30 宀佹墠鎵撶殑锛屼篃鍙湁涓€鍗婂乏鍙炽€傛墍浠ヨ秺鏃╂墦瓒婂€笺€?</li>
-<li>鏀剁泭锛氱憺鍏歌窡韪簡 167 涓囧悕濂虫€у仛缁熻锛氭墦杩囩柅鑻楃殑浜猴紝娴告鼎鎬у棰堢檶鐨勫彂鐥呯巼姣旀病鎵撶殑浣庛€?7 宀佷互鍓嶆帴绉嶇殑浣庣害 88%锛圛RR 0.12锛?5% CI 0.00 鍒?0.34锛屾嫭鍙烽噷鏄師鍊煎拰瀹冪殑鍙俊鑼冨洿锛夈€?7 鍒?30 宀佹帴绉嶇殑浣庣害 53%锛圛RR 0.47锛?5% CI 0.27 鍒?0.75锛?</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛歀ei J 绛?(2020). HPV Vaccination and the Risk of Invasive Cervical Cancer. New England Journal of Medicine. <a href="https://doi.org/10.1056/NEJMoa1917338" target="_blank" rel="noopener noreferrer">https://doi.org/10.1056/NEJMoa1917338</a></li>
-<li>澶囨敞锛? 鍒?14 宀佹墦鏀剁泭鏈€澶с€?7 鍒?30 宀佹墦锛岃繕鏈変竴鍗婁互涓婄殑涓嬮檷銆?0 宀佷互鍚庢墦锛屾敹鐩婂氨涓€璺彉灏忋€傛墦杩囩柅鑻椾篃杩樻槸瑕佸仛瀹鐧岀瓫鏌ワ紝鐤嫍鏇夸唬涓嶄簡绛涙煡锛岃绗?18 鏉★紙30 宀佷互涓婂コ鎬у仛瀹鐧岀瓫鏌ワ級銆?</li>
+<li>成本：国产二价约 300 多元一针，进口九价约 1300 元一针。一共打 2 到 3 针。每次跑一趟，半天。</li>
+<li>说人话：瑞典 167 万女性的数据里，17 岁以前打过 HPV 疫苗的人，后来得浸润性宫颈癌的概率只有没打的约八分之一。17 到 30 岁才打的，也只有一半左右。所以越早打越值。</li>
+<li>收益：瑞典跟踪了 167 万名女性做统计：打过疫苗的人，浸润性宫颈癌的发病率比没打的低。17 岁以前接种的低约 88%（IRR 0.12，95% CI 0.00 到 0.34，括号里是原值和它的可信范围）。17 到 30 岁接种的低约 53%（IRR 0.47，95% CI 0.27 到 0.75）</li>
+<li>证据等级：A</li>
+<li>来源：Lei J 等 (2020). HPV Vaccination and the Risk of Invasive Cervical Cancer. New England Journal of Medicine. <a href="https://doi.org/10.1056/NEJMoa1917338" target="_blank" rel="noopener noreferrer">https://doi.org/10.1056/NEJMoa1917338</a></li>
+<li>备注：9 到 14 岁打收益最大。17 到 30 岁打，还有一半以上的下降。30 岁以后打，收益就一路变小。打过疫苗也还是要做宫颈癌筛查，疫苗替代不了筛查，见第 18 条（30 岁以上女性做宫颈癌筛查）。</li>
 </ul>
-<h3>17. 濂虫€?40 宀佽捣鍋氫钩鑵虹檶绛涙煡锛屾瘡涓ゅ勾涓€娆￠捈闈?</h3>
-<!-- 鎴愭湰鏍囩: 閽?灏?鏃堕棿=灏?姣呭姏=鍚?鏀剁泭=涓?鍙ｅ緞=姝讳骸鐜?浜虹兢=濂虫€?35宀?-->
+<h3>17. 女性 40 岁起做乳腺癌筛查，每两年一次钼靶</h3>
+<!-- 成本标签: 钱=少 时间=少 毅力=否 收益=中 口径=死亡率 人群=女性+35岁 -->
 <ul>
-<li>鎴愭湰锛氶捈闈舵瘡娆′袱涓夌櫨鍏冦€傚緢澶氬湴鍖烘湁鍏嶈垂绛涙煡椤圭洰銆傛瘡涓ゅ勾鑺卞崐澶┿€?</li>
-<li>璇翠汉璇濓細40 鍒?74 宀佺殑濂虫€ф瘡涓ゅ勾鎷嶄竴娆￠捈闈讹紝杩欐槸缇庡浗瀹樻柟绛涙煡寤鸿閲屾槑纭帹鑽愮殑銆?5 宀佷互涓婏紝浠ュ強缁欒嚧瀵嗕钩鑵哄姞鍋氳秴澹板拰纾佸叡鎸紝瀹樻柟鐨勭粨璁烘槸璇佹嵁杩樹笉澶熴€備綋妫€濂楅鎷胯繖浜涘姞閽辩殑鏃跺€欙紝鍙互涓嶄拱銆?</li>
-<li>鏀剁泭锛氱編鍥介闃叉湇鍔″伐浣滅粍鏄編鍥藉畼鏂圭粰绛涙煡寤鸿鐨勬満鏋勩€傚畠鐜板湪鐨勫缓璁槸锛氥€屽缓璁?40 鑷?74 宀佸コ鎬ф瘡涓ゅ勾鍋氫竴娆＄瓫鏌ユ€т钩鑵?X 绾挎憚褰便€嶃€備钩鑵?X 绾挎憚褰卞氨鏄钩鏃惰鐨勯捈闈躲€傝繖鏉″缓璁殑鎺ㄨ崘绛夌骇鏄?B銆傚 75 宀佸強浠ヤ笂鐨勫コ鎬э紝浠ュ強缁欒嚧瀵嗗瀷涔宠吅琛ュ仛瓒呭０銆佺鍏辨尟锛屽畠閮藉垽瀹氫负銆岀幇鏈夎瘉鎹笉瓒炽€?</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛歎S Preventive Services Task Force (2024). Breast Cancer: Screening. <a href="https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/breast-cancer-screening" target="_blank" rel="noopener noreferrer">https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/breast-cancer-screening</a></li>
-<li>澶囨敞锛氫粠鍑犲瞾寮€濮嬫煡锛屽悇鍥戒笉涓€鏍凤紝涓浗鏈変簺鎸囧崡鍜屽湴鏂归」鐩槸浠?45 宀佽捣銆傜埗姣嶃€佸瓙濂虫垨鑰呬翰鍏勫紵濮愬寰楄繃涔宠吅鐧岀殑锛屼互鍙婂甫鏈?BRCA 绐佸彉鐨勶紝灞炰簬楂樺嵄锛岃鍗曠嫭鎵惧尰鐢熷畾鏂规锛屾湰鏉′笉閫傜敤</li>
+<li>成本：钼靶每次两三百元。很多地区有免费筛查项目。每两年花半天。</li>
+<li>说人话：40 到 74 岁的女性每两年拍一次钼靶，这是美国官方筛查建议里明确推荐的。75 岁以上，以及给致密乳腺加做超声和磁共振，官方的结论是证据还不够。体检套餐拿这些加钱的时候，可以不买。</li>
+<li>收益：美国预防服务工作组是美国官方给筛查建议的机构。它现在的建议是：「建议 40 至 74 岁女性每两年做一次筛查性乳腺 X 线摄影」。乳腺 X 线摄影就是平时说的钼靶。这条建议的推荐等级是 B。对 75 岁及以上的女性，以及给致密型乳腺补做超声、磁共振，它都判定为「现有证据不足」</li>
+<li>证据等级：A</li>
+<li>来源：US Preventive Services Task Force (2024). Breast Cancer: Screening. <a href="https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/breast-cancer-screening" target="_blank" rel="noopener noreferrer">https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/breast-cancer-screening</a></li>
+<li>备注：从几岁开始查，各国不一样，中国有些指南和地方项目是从 45 岁起。父母、子女或者亲兄弟姐妹得过乳腺癌的，以及带有 BRCA 突变的，属于高危，要单独找医生定方案，本条不适用</li>
 </ul>
-<h3>18. 30 宀佷互涓婂コ鎬у仛瀹鐧岀瓫鏌ワ紝浼樺厛 HPV 妫€娴?</h3>
-<!-- 鎴愭湰鏍囩: 閽?灏?鏃堕棿=灏?姣呭姏=鍚?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?浜虹兢=濂虫€?-->
+<h3>18. 30 岁以上女性做宫颈癌筛查，优先 HPV 检测</h3>
+<!-- 成本标签: 钱=少 时间=少 毅力=否 收益=大 口径=死亡率 人群=女性 -->
 <ul>
-<li>鎴愭湰锛欻PV 妫€娴嬩竴娆?100 鍒?300 鍏冦€傜粨鏋滈槾鎬х殑锛? 骞存煡涓€娆″氨琛屻€傚彇鏍峰嚑鍒嗛挓銆?</li>
-<li>璇翠汉璇濓細鍗板害鍐滄潙閭ｉ」璇曢獙閲岋紝涓€杈堝瓙鍙仛杩囦竴娆?HPV 妫€娴嬬殑濂虫€э紝姝讳簬瀹鐧岀殑姒傜巼浣庣害涓€鍗婏紝鏌ュ嚭鏅氭湡瀹鐧岀殑姒傜巼浣庣害浜旀垚銆備竴娆′竴涓ょ櫨鍧楋紝缁撴灉闃存€ц兘绠?5 骞淬€?</li>
-<li>鏀剁泭锛氬嵃搴﹀啘鏉戦偅椤硅瘯楠屾寜缇や綋闅忔満鍒嗙粍锛屼笉鏄寜涓汉鍒嗙粍銆傚璞℃槸 30 鍒?59 宀佺殑濂虫€с€傚彧鍋氫竴娆?HPV 妫€娴嬬瓫鏌ワ紝姝讳簬瀹鐧岀殑椋庨櫓灏变綆绾?48%銆傚師鍊?HR 0.52锛屽彲淇¤寖鍥?95% CI 0.33 鍒?0.83銆傛煡鍑烘櫄鏈熷棰堢檶鐨勯闄╀綆绾?53%锛圚R 0.47锛?5% CI 0.32 鍒?0.69锛?</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛歋ankaranarayanan R 绛?(2009). HPV screening for cervical cancer in rural India. New England Journal of Medicine. <a href="https://doi.org/10.1056/NEJMoa0808516" target="_blank" rel="noopener noreferrer">https://doi.org/10.1056/NEJMoa0808516</a></li>
-<li>澶囨敞锛氭墦杩?HPV 鐤嫍鐨勪汉涔熻绛涙煡锛屽洜涓虹柅鑻楃洊涓嶄綇鍏ㄩ儴鐨勭梾姣掑瀷鍒€傝繖椤圭爺绌跺皯瑙佺殑鍦版柟鏄細瀹冩槸闅忔満鍒嗙粍鐨勭瓫鏌ヨ瘯楠岋紝鐩存帴鎷挎浜′汉鏁板綋缁撴灉锛岃€屼笖鍙瓫浜嗕竴杞€?</li>
+<li>成本：HPV 检测一次 100 到 300 元。结果阴性的，5 年查一次就行。取样几分钟。</li>
+<li>说人话：印度农村那项试验里，一辈子只做过一次 HPV 检测的女性，死于宫颈癌的概率低约一半，查出晚期宫颈癌的概率低约五成。一次一两百块，结果阴性能管 5 年。</li>
+<li>收益：印度农村那项试验按群体随机分组，不是按个人分组。对象是 30 到 59 岁的女性。只做一次 HPV 检测筛查，死于宫颈癌的风险就低约 48%。原值 HR 0.52，可信范围 95% CI 0.33 到 0.83。查出晚期宫颈癌的风险低约 53%（HR 0.47，95% CI 0.32 到 0.69）</li>
+<li>证据等级：A</li>
+<li>来源：Sankaranarayanan R 等 (2009). HPV screening for cervical cancer in rural India. New England Journal of Medicine. <a href="https://doi.org/10.1056/NEJMoa0808516" target="_blank" rel="noopener noreferrer">https://doi.org/10.1056/NEJMoa0808516</a></li>
+<li>备注：打过 HPV 疫苗的人也要筛查，因为疫苗盖不住全部的病毒型别。这项研究少见的地方是：它是随机分组的筛查试验，直接拿死亡人数当结果，而且只筛了一轮。</li>
 </ul>
-<h3>19. 45 鍒?50 宀佽捣鍋氱粨鐩磋偁鐧岀瓫鏌ワ紝鍋氭煡澶т究闅愯鐨勭勃渚垮厤鐤寲瀛︽娴嬫垨鑰呰偁闀?</h3>
-<!-- 鎴愭湰鏍囩: 閽?灏?鏃堕棿=涓?姣呭姏=鍚?鏀剁泭=涓?鍙ｅ緞=姝讳骸鐜?浜虹兢=35宀?-->
+<h3>19. 45 到 50 岁起做结直肠癌筛查，做查大便隐血的粪便免疫化学检测或者肠镜</h3>
+<!-- 成本标签: 钱=少 时间=中 毅力=否 收益=中 口径=死亡率 人群=35岁 -->
 <ul>
-<li>鎴愭湰锛氱勃渚挎娴嬪嚑鍗佸厓锛屾瘡 1 鍒?2 骞村仛涓€娆°€傝偁闀滃嚑鐧惧埌涓€鍗冨鍏冿紝缁撴灉闃存€х殑 10 骞村仛涓€娆″氨琛屻€傚仛鑲犻暅鍓嶈鐣欏嚭涓€澶╂竻鑲犮€?</li>
-<li>璇翠汉璇濓細姣忎竴涓ゅ勾鍋氫竴娆″嚑鍗佸潡鐨勭勃渚块殣琛€妫€鏌ワ紝姝讳簬缁撶洿鑲犵檶鐨勬鐜囦綆绾?16%锛岃嚦灏戞煡杩囦竴杞殑浜轰綆 25%銆傝鍙幓鍋氫竴娆¤偁闀滅殑浜猴紝寰€鍚庡崄骞村緱缁撶洿鑲犵檶鐨勬鐜囦粠 1.20% 闄嶅埌 0.98%銆?</li>
-<li>鏀剁泭锛欳ochrane 鎶婂椤圭爺绌跺悎璧锋潵涓€璧风畻銆傚仛绮究闅愯绛涙煡鐨勪汉锛屾浜庣粨鐩磋偁鐧岀殑椋庨櫓浣庣害 16%銆傚師鍊?RR 0.84锛屽彲淇¤寖鍥?95% CI 0.78 鍒?0.90銆傝嚦灏戝弬鍔犺繃涓€杞殑浜轰綆绾?25%锛圧R 0.75锛夈€傚啀鐪?NordICC 閭ｉ」闅忔満璇曢獙銆傝閭€璇峰幓鍋氳偁闀滅殑浜猴紝10 骞撮噷缁撶洿鑲犵檶鐨勫彂鐥呬粠 1.20% 闄嶅埌 0.98%銆傚師鍊?RR 0.82锛屽彲淇¤寖鍥?95% CI 0.70 鍒?0.93</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛欻ewitson P 绛?(2007). Screening for colorectal cancer using the faecal occult blood test, Hemoccult. Cochrane Database of Systematic Reviews. <a href="https://doi.org/10.1002/14651858.CD001216.pub2" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/14651858.CD001216.pub2</a> ; Bretthauer M 绛?(2022). Effect of Colonoscopy Screening on Risks of Colorectal Cancer and Related Death. New England Journal of Medicine. <a href="https://doi.org/10.1056/NEJMoa2208375" target="_blank" rel="noopener noreferrer">https://doi.org/10.1056/NEJMoa2208375</a></li>
-<li>澶囨敞锛氫簤璁€侼ordICC 鏄寜銆岃閭€璇峰幓鍋氳偁闀溿€嶇殑浜烘潵绠楃殑锛岀粨鐩磋偁鐧屾浜?0.28% 瀵?0.31%锛圧R 0.90锛?5% CI 0.64 鍒?1.16锛夛紝宸埆杩樺湪璇樊鑼冨洿鍐呫€傝繖璇存槑鑲犻暅瀵规浜＄巼鐨勫ソ澶勪互鍓嶈楂樹及杩囥€傜勃渚挎娴嬪湪姝讳骸鐜囦笂鐨勮瘉鎹弽鑰屾洿纭€備粠鍑犲瞾寮€濮嬫煡锛屽悇鍥芥寚鍗楀湪 45 鍒?50 宀佷箣闂淬€傚閲屾湁浜哄緱杩囪繖涓梾鐨勮鏇存棭寮€濮嬨€?</li>
+<li>成本：粪便检测几十元，每 1 到 2 年做一次。肠镜几百到一千多元，结果阴性的 10 年做一次就行。做肠镜前要留出一天清肠。</li>
+<li>说人话：每一两年做一次几十块的粪便隐血检查，死于结直肠癌的概率低约 16%，至少查过一轮的人低 25%。被叫去做一次肠镜的人，往后十年得结直肠癌的概率从 1.20% 降到 0.98%。</li>
+<li>收益：Cochrane 把多项研究合起来一起算。做粪便隐血筛查的人，死于结直肠癌的风险低约 16%。原值 RR 0.84，可信范围 95% CI 0.78 到 0.90。至少参加过一轮的人低约 25%（RR 0.75）。再看 NordICC 那项随机试验。被邀请去做肠镜的人，10 年里结直肠癌的发病从 1.20% 降到 0.98%。原值 RR 0.82，可信范围 95% CI 0.70 到 0.93</li>
+<li>证据等级：A</li>
+<li>来源：Hewitson P 等 (2007). Screening for colorectal cancer using the faecal occult blood test, Hemoccult. Cochrane Database of Systematic Reviews. <a href="https://doi.org/10.1002/14651858.CD001216.pub2" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/14651858.CD001216.pub2</a> ; Bretthauer M 等 (2022). Effect of Colonoscopy Screening on Risks of Colorectal Cancer and Related Death. New England Journal of Medicine. <a href="https://doi.org/10.1056/NEJMoa2208375" target="_blank" rel="noopener noreferrer">https://doi.org/10.1056/NEJMoa2208375</a></li>
+<li>备注：争议。NordICC 是按「被邀请去做肠镜」的人来算的，结直肠癌死亡 0.28% 对 0.31%（RR 0.90，95% CI 0.64 到 1.16），差别还在误差范围内。这说明肠镜对死亡率的好处以前被高估过。粪便检测在死亡率上的证据反而更硬。从几岁开始查，各国指南在 45 到 50 岁之间。家里有人得过这个病的要更早开始。</li>
 </ul>
-<h3>20. 鏈夊績琛€绠＄梾鐨勪汉鍜岃€佸勾浜烘瘡骞存墦娴佹劅鐤嫍</h3>
-<!-- 鎴愭湰鏍囩: 閽?灏?鏃堕棿=灏?姣呭姏=鍚?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?-->
+<h3>20. 有心血管病的人和老年人每年打流感疫苗</h3>
+<!-- 成本标签: 钱=少 时间=少 毅力=否 收益=大 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氫竴閽?50 鍒?150 鍏冦€傛瘡骞寸澶╂墦涓€娆°€?</li>
-<li>璇翠汉璇濓細蹇冩涔嬪悗鎵撴祦鎰熺柅鑻楃殑閭ｉ」璇曢獙閲岋紝涓€骞村唴姝讳骸鐨勬瘮渚嬩粠 4.9% 闄嶅埌 2.9%銆傛湁蹇冭绠＄梾鐨勪汉鍜岃€佷汉锛屾瘡骞寸澶╄ˉ涓€閽堬紝50 鍒?150 鍏冦€?</li>
-<li>鏀剁泭锛氫竴椤硅瘯楠屽湪蹇冭倢姊楁涔嬪悗鍋氾紝2571 浜洪殢鏈哄垎缁勩€傚尰鐢熷拰鐥呬汉閮戒笉鐭ラ亾鎵撶殑鏄摢涓€閽堛€傛墦娴佹劅鐤嫍鐨勪汉锛?2 涓湀閲岀殑鎬绘浜＄巼鏄?2.9%銆傛墦瀹夋叞鍓傜殑鏄?4.9%銆傚師鍊?HR 0.59锛屽彲淇¤寖鍥?95% CI 0.39 鍒?0.89銆傚畨鎱板墏灏辨槸涓嶅惈鏈夋晥鎴愬垎鐨勫鐓ч拡銆傚績琛€绠℃浜＄殑 HR 鏄?0.59銆傚彟涓€椤圭爺绌舵妸澶氶」鐮旂┒鍚堣捣鏉ヤ竴璧风畻銆傛墦娴佹劅鐤嫍鐨勪汉涓昏蹇冭绠′簨浠朵负 3.6%锛屽鐓т负 5.4%銆傚師鍊?RR 0.66锛屽彲淇¤寖鍥?95% CI 0.53 鍒?0.83銆傚績琛€绠℃浜?RR 0.74锛?5% CI 0.42 鍒?1.30锛岃繖鐐瑰樊鍒繕鍦ㄨ宸寖鍥村唴锛岀畻涓嶄笂鏈夌粺璁″鎰忎箟锛?</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛欶r枚bert O 绛?(2021). Influenza Vaccination After Myocardial Infarction: A Randomized, Double-Blind, Placebo-Controlled, Multicenter Trial. Circulation. <a href="https://doi.org/10.1161/CIRCULATIONAHA.121.057042" target="_blank" rel="noopener noreferrer">https://doi.org/10.1161/CIRCULATIONAHA.121.057042</a> ; Behrouzi B 绛?(2022). Association of Influenza Vaccination With Cardiovascular Risk: A Meta-analysis. JAMA Network Open. <a href="https://doi.org/10.1001/jamanetworkopen.2022.8873" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/jamanetworkopen.2022.8873</a>锛汥emicheli V 绛?(2018). Vaccines for preventing influenza in the elderly. Cochrane Database of Systematic Reviews. <a href="https://doi.org/10.1002/14651858.CD004876.pub4" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/14651858.CD004876.pub4</a>锛堝娉ㄩ噷璇寸殑閭ｄ唤 Cochrane 姹囨€伙級</li>
-<li>澶囨敞锛氫簤璁€侫 绾у彧瀵瑰簲鏈夊績琛€绠＄梾鐨勪汉銆傚鏈潵鍋ュ悍鐨勮€佸勾浜猴紝Cochrane 缁艰堪鍙粰鍑轰竴涓粨璁猴細涓€瀛ｆ祦鎰熺殑鍙戠梾浠?6% 闄嶅埌 2.4%銆傚畠鎶婅繖鏉¤瘉鎹殑鍙俊搴﹁瘎涓恒€屼綆銆嶏紝姝讳骸鐜囨柟闈㈢殑璇佹嵁璇勪负銆屾瀬浣庛€嶃€傜患杩板嚭澶勬槸 Demicheli V 绛?2018 骞撮偅绡囥€?</li>
+<li>成本：一针 50 到 150 元。每年秋天打一次。</li>
+<li>说人话：心梗之后打流感疫苗的那项试验里，一年内死亡的比例从 4.9% 降到 2.9%。有心血管病的人和老人，每年秋天补一针，50 到 150 元。</li>
+<li>收益：一项试验在心肌梗死之后做，2571 人随机分组。医生和病人都不知道打的是哪一针。打流感疫苗的人，12 个月里的总死亡率是 2.9%。打安慰剂的是 4.9%。原值 HR 0.59，可信范围 95% CI 0.39 到 0.89。安慰剂就是不含有效成分的对照针。心血管死亡的 HR 是 0.59。另一项研究把多项研究合起来一起算。打流感疫苗的人主要心血管事件为 3.6%，对照为 5.4%。原值 RR 0.66，可信范围 95% CI 0.53 到 0.83。心血管死亡 RR 0.74（95% CI 0.42 到 1.30，这点差别还在误差范围内，算不上有统计学意义）</li>
+<li>证据等级：A</li>
+<li>来源：Fröbert O 等 (2021). Influenza Vaccination After Myocardial Infarction: A Randomized, Double-Blind, Placebo-Controlled, Multicenter Trial. Circulation. <a href="https://doi.org/10.1161/CIRCULATIONAHA.121.057042" target="_blank" rel="noopener noreferrer">https://doi.org/10.1161/CIRCULATIONAHA.121.057042</a> ; Behrouzi B 等 (2022). Association of Influenza Vaccination With Cardiovascular Risk: A Meta-analysis. JAMA Network Open. <a href="https://doi.org/10.1001/jamanetworkopen.2022.8873" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/jamanetworkopen.2022.8873</a>；Demicheli V 等 (2018). Vaccines for preventing influenza in the elderly. Cochrane Database of Systematic Reviews. <a href="https://doi.org/10.1002/14651858.CD004876.pub4" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/14651858.CD004876.pub4</a>（备注里说的那份 Cochrane 汇总）</li>
+<li>备注：争议。A 级只对应有心血管病的人。对本来健康的老年人，Cochrane 综述只给出一个结论：一季流感的发病从 6% 降到 2.4%。它把这条证据的可信度评为「低」，死亡率方面的证据评为「极低」。综述出处是 Demicheli V 等 2018 年那篇。</li>
 </ul>
-<h3>21. 50 宀佷互鍚庢墦甯︾姸鐤辩柟鐤嫍</h3>
-<!-- 鎴愭湰鏍囩: 閽?澶?鏃堕棿=灏?姣呭姏=鍚?鏀剁泭=涓?鍙ｅ緞=姝讳骸鐜?浜虹兢=鑰佷汉,35宀?-->
+<h3>21. 50 岁以后打带状疱疹疫苗</h3>
+<!-- 成本标签: 钱=多 时间=少 毅力=否 收益=中 口径=死亡率 人群=老人,35岁 -->
 <ul>
-<li>鎴愭湰锛氶噸缁勫甫鐘剁柋鐤圭柅鑻楄鎵撲袱閽堬紝鍚堣绾?3000 鍒?4000 鍏冦€傝繖绗旈挶鍏ㄩ儴鑷繁鍑恒€?</li>
-<li>璇翠汉璇濓細涓夋湡璇曢獙閲岋紝杩欐敮鐤嫍鎶婂甫鐘剁柋鐤规尅鎺変簡 97%锛屽悇涓勾榫勬閮藉樊涓嶅銆傜己鐐规槸涓ら拡涓夊洓鍗冨厓鍏ㄨ嚜璐广€傝繖绗旈挶涔板洖鏉ョ殑锛屾槸涔濇垚涓冪殑鍙戠梾鐜囬檷骞呫€?</li>
-<li>鏀剁泭锛氫竴椤逛笁鏈熻瘯楠岃法 18 涓浗瀹讹紝鏈?1.54 涓囦汉銆傝瘯楠屾妸浜洪殢鏈哄垎鎴愪袱缁勶紝涓€缁勬墦鐤嫍锛屼竴缁勬墦瀵圭収閽堬紝骞冲潎璺熻釜 3.2 骞淬€傜粨鏋滅柅鑻楃粍 6 渚嬨€佸畨鎱板墏缁?210 渚嬪彂鐢熷甫鐘剁柋鐤广€傛崲绠楁垚姣忓崈浜哄勾鏄?0.3 瀵?9.1锛屾瘡鍗冧汉骞寸殑鎰忔€濇槸 1000 涓汉瑙傚療涓€骞撮噷鍑虹幇鐨勪緥鏁般€傚師鏂囧啓銆岀柅鑻楀甯︾姸鐤辩柟鐨勬€讳綋鏁堝姏涓?97.2%锛?5% CI 93.7鈥?9.0锛孭&lt;0.001锛夈€嶃€傚悇骞撮緞缁勭殑鏁堝姏鍦?96.6% 鍒?97.9% 涔嬮棿</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛歀al H, Cunningham AL, Godeaux O, et al. (2015). Efficacy of an adjuvanted herpes zoster subunit vaccine in older adults. New England Journal of Medicine, 372(22), 2087-2096. <a href="https://doi.org/10.1056/NEJMoa1501184" target="_blank" rel="noopener noreferrer">https://doi.org/10.1056/NEJMoa1501184</a></li>
-<li>澶囨敞锛氬畠鍦ㄦ€т环姣斾笂鎺掑緱闈犲悗锛屽師鍥犳槸璐点€傚甫鐘剁柋鐤规湰韬緢灏戣鍛斤紝楹荤儲鍦ㄥ甫鐘剁柋鐤瑰悗绁炵粡鐥涳紝鍙兘鐤间笂鍑犱釜鏈堝埌鍑犲勾銆傛墦瀹岀柅鑻楋紝鎵撻拡鐨勫湴鏂圭柤銆佸彂鐑х殑姣斾緥閮戒笉浣庛€傚叾涓渶閲嶇殑閭ｄ竴妗ｏ紙涓夌骇鐥囩姸锛夋槸 17.0% 瀵?3.2%</li>
+<li>成本：重组带状疱疹疫苗要打两针，合计约 3000 到 4000 元。这笔钱全部自己出。</li>
+<li>说人话：三期试验里，这支疫苗把带状疱疹挡掉了 97%，各个年龄段都差不多。缺点是两针三四千元全自费。这笔钱买回来的，是九成七的发病率降幅。</li>
+<li>收益：一项三期试验跨 18 个国家，有 1.54 万人。试验把人随机分成两组，一组打疫苗，一组打对照针，平均跟踪 3.2 年。结果疫苗组 6 例、安慰剂组 210 例发生带状疱疹。换算成每千人年是 0.3 对 9.1，每千人年的意思是 1000 个人观察一年里出现的例数。原文写「疫苗对带状疱疹的总体效力为 97.2%（95% CI 93.7–99.0，P&lt;0.001）」。各年龄组的效力在 96.6% 到 97.9% 之间</li>
+<li>证据等级：A</li>
+<li>来源：Lal H, Cunningham AL, Godeaux O, et al. (2015). Efficacy of an adjuvanted herpes zoster subunit vaccine in older adults. New England Journal of Medicine, 372(22), 2087-2096. <a href="https://doi.org/10.1056/NEJMoa1501184" target="_blank" rel="noopener noreferrer">https://doi.org/10.1056/NEJMoa1501184</a></li>
+<li>备注：它在性价比上排得靠后，原因是贵。带状疱疹本身很少要命，麻烦在带状疱疹后神经痛，可能疼上几个月到几年。打完疫苗，打针的地方疼、发烧的比例都不低。其中最重的那一档（三级症状）是 17.0% 对 3.2%</li>
 </ul>
-<h3>22. 65 宀佷互涓婃墦鑲虹値鐞冭弻鐤嫍</h3>
-<!-- 鎴愭湰鏍囩: 閽?灏?鏃堕棿=灏?姣呭姏=鍚?鏀剁泭=涓?鍙ｅ緞=姝讳骸鐜?浜虹兢=鑰佷汉,60宀?-->
+<h3>22. 65 岁以上打肺炎球菌疫苗</h3>
+<!-- 成本标签: 钱=少 时间=少 毅力=否 收益=中 口径=死亡率 人群=老人,60岁 -->
 <ul>
-<li>鎴愭湰锛氬嚑鐧惧厓銆傞儴鍒嗗湴鍖哄鑰佸勾浜哄厤璐广€?</li>
-<li>璇翠汉璇濓細8.45 涓囪€佷汉鐨勮瘯楠岄噷锛?3 浠疯偤鐐庣悆鑿岀柅鑻楁妸鐤嫍绠″緱浣忕殑閭ｅ嚑鍨嬭偤鐐庢尅鎺夌害 46%锛屾妸鏈€鍑堕櫓鐨勪镜琚€ф劅鏌撴尅鎺?75%銆備絾瀵广€屾墍鏈夊師鍥犵殑鑲虹値銆嶆病鐪嬪嚭鏁堟灉锛屽埆鎸囨湜瀹冪浣忓叏閮ㄨ偤鐐庛€?</li>
-<li>鏀剁泭锛氳嵎鍏版妸 8.45 涓囧悕 65 宀佷互涓婅€佷汉闅忔満鍒嗘垚涓ょ粍鏉ユ瘮銆傜敤鐨勬槸 13 浠疯偤鐐庣悆鑿岀粨鍚堢柅鑻椼€傚畠瀵圭柅鑻楄鐩栧瀷鑲虹値鐨勬晥鍔涙槸 45.6%銆傚彲淇¤寖鍥存槸 95.2% CI 21.8鈥?2.5銆傜柅鑻楄鐩栧瀷灏辨槸杩欐敮鐤嫍绠″緱浣忕殑閭ｅ嚑涓弻鍨嬨€傚渚佃鎬ц偤鐐庣悆鑿岀梾鐨勬晥鍔涙槸 75.0%锛?5% CI 41.4鈥?0.8锛夛紝杩欐槸鏈€鍑堕櫓鐨勯偅涓€绫绘劅鏌撱€傚鍏ㄩ儴鍘熷洜鍔犲湪涓€璧风殑鑲虹値锛屽畠娌℃湁鏁堟灉</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛欱onten MJ, Huijts SM, Bolkenbaas M, et al. (2015). Polysaccharide conjugate vaccine against pneumococcal pneumonia in adults. New England Journal of Medicine, 372(12), 1114-1125. <a href="https://doi.org/10.1056/NEJMoa1408544" target="_blank" rel="noopener noreferrer">https://doi.org/10.1056/NEJMoa1408544</a></li>
-<li>澶囨敞锛氬畠鍙槻鐤嫍瑕嗙洊鐨勯偅鍑犱釜鍨嬪埆锛屼笉鏄墦浜嗗氨涓嶅緱鑲虹値銆備腑鍥借€佸勾浜哄父鎵撶殑鏄?23 浠峰绯栫柅鑻楋紝鍜岃繖椤硅瘯楠岀敤鐨?13 浠风粨鍚堢柅鑻椾笉鏄悓涓€绉嶏紝涓婇潰鐨勬晥鍔涙暟鎹笉鑳界洿鎺ュ杩囧幓</li>
+<li>成本：几百元。部分地区对老年人免费。</li>
+<li>说人话：8.45 万老人的试验里，13 价肺炎球菌疫苗把疫苗管得住的那几型肺炎挡掉约 46%，把最凶险的侵袭性感染挡掉 75%。但对「所有原因的肺炎」没看出效果，别指望它管住全部肺炎。</li>
+<li>收益：荷兰把 8.45 万名 65 岁以上老人随机分成两组来比。用的是 13 价肺炎球菌结合疫苗。它对疫苗覆盖型肺炎的效力是 45.6%。可信范围是 95.2% CI 21.8–62.5。疫苗覆盖型就是这支疫苗管得住的那几个菌型。对侵袭性肺炎球菌病的效力是 75.0%（95% CI 41.4–90.8），这是最凶险的那一类感染。对全部原因加在一起的肺炎，它没有效果</li>
+<li>证据等级：A</li>
+<li>来源：Bonten MJ, Huijts SM, Bolkenbaas M, et al. (2015). Polysaccharide conjugate vaccine against pneumococcal pneumonia in adults. New England Journal of Medicine, 372(12), 1114-1125. <a href="https://doi.org/10.1056/NEJMoa1408544" target="_blank" rel="noopener noreferrer">https://doi.org/10.1056/NEJMoa1408544</a></li>
+<li>备注：它只防疫苗覆盖的那几个型别，不是打了就不得肺炎。中国老年人常打的是 23 价多糖疫苗，和这项试验用的 13 价结合疫苗不是同一种，上面的效力数据不能直接套过去</li>
 </ul>
-<h3>23. 鏌ュ菇闂ㄨ灪鏉嗚弻锛岄槼鎬у氨鏍归櫎</h3>
-<!-- 鎴愭湰鏍囩: 閽?灏?鏃堕棿=灏?姣呭姏=浜?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?-->
+<h3>23. 查幽门螺杆菌，阳性就根除</h3>
+<!-- 成本标签: 钱=少 时间=少 毅力=些 收益=大 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氱⒊ 13 鎴栫⒊ 14 鍛兼皵璇曢獙 100 鍒?200 鍏冦€傛牴闄よ鍚屾椂鍚冨洓绉嶈嵂锛屼袱鍛ㄨ嵂璐?200 鍒?500 鍏冦€傞毦鐨勫湴鏂规槸杩欎袱鍛ㄧ殑鑽鎸夌偣鍚冩弧銆?</li>
-<li>璇翠汉璇濓細灞变笢涓存湊閭ｉ」璺熻釜浜?22 骞寸殑璇曢獙閲岋紝鎶婂菇闂ㄨ灪鏉嗚弻鏍归櫎鎺夌殑浜猴紝鍚庢潵寰楄儍鐧岀殑姒傜巼浣庣害涓€鍗婏紝姝讳簬鑳冪檶鐨勬鐜囦綆绾﹀洓鎴愩€傛煡涓€娆′竴涓ょ櫨鍧楋紝鏍归櫎瑕佸悆涓ゅ懆鑽€?</li>
-<li>鏀剁泭锛氬北涓滀复鏈愰偅椤归殢鏈哄垎缁勭殑璇曢獙璺熻釜浜?22 骞淬€傚仛杩囧菇闂ㄨ灪鏉嗚弻鏍归櫎娌荤枟鐨勪汉锛屽緱鑳冪檶鐨勯闄╀綆绾︿竴鍗娿€傚師鍊?OR 0.48锛屽彲淇¤寖鍥?95% CI 0.32 鍒?0.71銆傛浜庤儍鐧岀殑椋庨櫓浣庣害 38%锛圚R 0.62锛?5% CI 0.39 鍒?0.99锛?</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛歀i WQ 绛?(2019). Effects of Helicobacter pylori treatment and vitamin and garlic supplementation on gastric cancer incidence and mortality: follow-up of a randomized intervention trial. BMJ. <a href="https://doi.org/10.1136/bmj.l5016" target="_blank" rel="noopener noreferrer">https://doi.org/10.1136/bmj.l5016</a></li>
-<li>澶囨敞锛氭牴闄や互鍚庤繕鍙兘鍐嶆劅鏌擄紝鎵€浠ュ閲屼汉涓€璧锋煡銆佷竴璧锋不銆傝繖椤硅瘯楠岀殑浜虹兢鏄儍鐧岄珮鍙戝尯鐨勫眳姘戙€備綇鍦ㄤ綆鍙戝尯鐨勪汉锛屽疄闄呮嬁鍒扮殑濂藉浼氬皬寰楀銆?</li>
+<li>成本：碳 13 或碳 14 呼气试验 100 到 200 元。根除要同时吃四种药，两周药费 200 到 500 元。难的地方是这两周的药要按点吃满。</li>
+<li>说人话：山东临朐那项跟踪了 22 年的试验里，把幽门螺杆菌根除掉的人，后来得胃癌的概率低约一半，死于胃癌的概率低约四成。查一次一两百块，根除要吃两周药。</li>
+<li>收益：山东临朐那项随机分组的试验跟踪了 22 年。做过幽门螺杆菌根除治疗的人，得胃癌的风险低约一半。原值 OR 0.48，可信范围 95% CI 0.32 到 0.71。死于胃癌的风险低约 38%（HR 0.62，95% CI 0.39 到 0.99）</li>
+<li>证据等级：A</li>
+<li>来源：Li WQ 等 (2019). Effects of Helicobacter pylori treatment and vitamin and garlic supplementation on gastric cancer incidence and mortality: follow-up of a randomized intervention trial. BMJ. <a href="https://doi.org/10.1136/bmj.l5016" target="_blank" rel="noopener noreferrer">https://doi.org/10.1136/bmj.l5016</a></li>
+<li>备注：根除以后还可能再感染，所以家里人一起查、一起治。这项试验的人群是胃癌高发区的居民。住在低发区的人，实际拿到的好处会小得多。</li>
 </ul>
-<h3>24. 閲嶅害鍚哥儫鑰呮瘡骞村仛涓€娆′綆鍓傞噺鑳搁儴 CT</h3>
-<!-- 鎴愭湰鏍囩: 閽?灏?鏃堕棿=灏?姣呭姏=鍚?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?浜虹兢=35宀?-->
+<h3>24. 重度吸烟者每年做一次低剂量胸部 CT</h3>
+<!-- 成本标签: 钱=少 时间=少 毅力=否 收益=大 口径=死亡率 人群=35岁 -->
 <ul>
-<li>鎴愭湰锛氫竴娆?200 鍒?400 鍏冿紝10 鍒嗛挓鍋氬畬銆傚彟澶栬绠椾笂铏氭儕涓€鍦轰箣鍚庣殑澶嶆煡锛屽拰閭ｆ鏃堕棿鐨勬彁蹇冨悐鑳嗐€?</li>
-<li>璇翠汉璇濓細绗﹀悎鏉′欢鐨勯噸搴﹀惛鐑熻€呮瘡骞村仛涓€娆′綆鍓傞噺 CT锛屾浜庤偤鐧岀殑姒傜巼姣斿彧鎷嶈兏鐗囦綆 20%锛屾€荤殑姝讳骸姒傜巼浣?6.7%銆備唬浠锋槸鏌ュ嚭鍙枒缁撴灉鍚庣殑澶嶆煡锛屽拰閭ｄ竴娈垫椂闂寸殑鎻愬績鍚婅儐銆?</li>
-<li>鏀剁泭锛氱編鍥?NLST 闅忔満璇曢獙鏀朵簡 53,454 浜猴紝閮芥槸 55 鍒?74 宀併€佸惛鐑熷彶 30 鍖呭勾浠ヤ笂銆佹垝鐑熶笉瓒呰繃 15 骞寸殑浜恒€傚寘骞存槸绠楃儫閲忕殑鍗曚綅锛屾瘡澶╀竴鍖呮娊涓€骞寸畻涓€鍖呭勾銆傜粨鏋滄槸杩欐牱銆傚仛浣庡墏閲?CT 鐨勪汉姣斿彧鎷嶈兏鐗囩殑浜猴紝鑲虹檶姝讳骸鐩稿涓嬮檷 20.0%銆傚彲淇¤寖鍥?95% CI 6.8 鍒?26.7銆傛€绘浜＄巼鐩稿涓嬮檷 6.7%锛屽彲淇¤寖鍥?95% CI 1.2 鍒?13.6</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛歂ational Lung Screening Trial Research Team (2011). Reduced Lung-Cancer Mortality with Low-Dose Computed Tomographic Screening. New England Journal of Medicine. <a href="https://doi.org/10.1056/NEJMoa1102873" target="_blank" rel="noopener noreferrer">https://doi.org/10.1056/NEJMoa1102873</a></li>
-<li>澶囨敞锛氳繖鏉″彧閫傜敤浜庨珮鍗卞惛鐑熻€呫€傚悓涓€椤硅瘯楠岄噷锛屽仛浣庡墏閲?CT 鐨勪汉鏈?24.2% 鏌ュ嚭鍙枒缁撴灉锛岃繖浜涗汉閲?96.4% 鏄櫄鎯婁竴鍦猴紙鍋囬槼鎬э級銆備笉鍚哥儫鐨勪汉鍋氳繖椤规鏌ワ紝绛変簬鑺遍挶涔扮劍铏戙€?</li>
+<li>成本：一次 200 到 400 元，10 分钟做完。另外要算上虚惊一场之后的复查，和那段时间的提心吊胆。</li>
+<li>说人话：符合条件的重度吸烟者每年做一次低剂量 CT，死于肺癌的概率比只拍胸片低 20%，总的死亡概率低 6.7%。代价是查出可疑结果后的复查，和那一段时间的提心吊胆。</li>
+<li>收益：美国 NLST 随机试验收了 53,454 人，都是 55 到 74 岁、吸烟史 30 包年以上、戒烟不超过 15 年的人。包年是算烟量的单位，每天一包抽一年算一包年。结果是这样。做低剂量 CT 的人比只拍胸片的人，肺癌死亡相对下降 20.0%。可信范围 95% CI 6.8 到 26.7。总死亡率相对下降 6.7%，可信范围 95% CI 1.2 到 13.6</li>
+<li>证据等级：A</li>
+<li>来源：National Lung Screening Trial Research Team (2011). Reduced Lung-Cancer Mortality with Low-Dose Computed Tomographic Screening. New England Journal of Medicine. <a href="https://doi.org/10.1056/NEJMoa1102873" target="_blank" rel="noopener noreferrer">https://doi.org/10.1056/NEJMoa1102873</a></li>
+<li>备注：这条只适用于高危吸烟者。同一项试验里，做低剂量 CT 的人有 24.2% 查出可疑结果，这些人里 96.4% 是虚惊一场（假阳性）。不吸烟的人做这项检查，等于花钱买焦虑。</li>
 </ul>
-<h3>25. 鎶戦儊鎴栨湁鑷潃蹇靛ご鏃舵墦 12356锛屽閲屼笉鍥ゅ畨鐪犺嵂鍜屽啘鑽?</h3>
-<!-- 鎴愭湰鏍囩: 閽?0 鏃堕棿=灏?姣呭姏=鍚?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?-->
+<h3>25. 抑郁或有自杀念头时打 12356，家里不囤安眠药和农药</h3>
+<!-- 成本标签: 钱=0 时间=少 毅力=否 收益=大 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氫笉鑺遍挶銆傛墦涓€涓數璇濄€傚彟澶栨妸鑽攣璧锋潵锛屽啘鑽笉鏀惧湪瀹堕噷銆?</li>
-<li>璇翠汉璇濓細鎶婅兘瑕佸懡鐨勪笢瑗夸粠鎵嬭竟鎷胯蛋锛岃繖绫诲仛娉曠殑璇佹嵁涓€鐩村湪鍙樺己锛氱浣忛晣鐥涜嵂浠ュ悗锛岀浉鍏宠嚜鏉€闄?43%锛涘父鏈変汉璺虫ゼ鐨勫湴鏂硅涓婇槻鎶わ紝闄?86%銆傛墍浠ュ閲屼笉鍥ゅ畨鐪犺嵂鍜屽啘鑽€傛兂涓嶅紑鐨勬椂鍊欏厛鎵?12356锛屽叏鍥介€氱敤锛屾瘡澶╄嚦灏戝紑 18 灏忔椂銆?</li>
-<li>鏀剁泭锛氫竴绡囨妸杩?10 骞寸殑鐮旂┒绯荤粺姊崇悊浜嗕竴閬嶇殑缁艰堪锛氶檺鍒朵汉鎷垮埌鑷存鎵嬫锛岃繖鏂归潰鐨勮瘉鎹竴鐩村湪澧炲己銆傜鎺ч晣鐥涜嵂浠ュ悗锛屽拰闀囩棝鑽湁鍏崇殑鑷潃涓嬮檷 43%銆傚父鏈変汉璺虫ゼ鐨勫湴鐐瑰姞浜嗛槻鎶や箣鍚庯紝涓嬮檷 86%锛?9% 鍒?91%锛屾嫭鍙烽噷鏄繖涓暟鐨勫彲淇¤寖鍥达級銆傚鏍￠噷寮€灞曠殑璁ょ煡绫婚」鐩紝璁╄嚜鏉€鏈亗浣庣害 55%锛圤R 0.45锛?5% CI 0.24 鍒?0.85锛夈€傛不鎶戦儊鐨勮嵂鐗╁拰蹇冪悊娌荤枟锛屾槸棰勯槻鑷潃鐨勯噸瑕佷竴鐜€備腑鍥戒粠 2025 骞?5 鏈?1 鏃ヨ捣锛屽叏鍥芥嫧 12356 閮借兘鎺ラ€氬績鐞嗘彺鍔╃儹绾匡紝姣忓ぉ寮€閫氫笉灏戜簬 18 灏忔椂</li>
-<li>璇佹嵁绛夌骇锛欱</li>
-<li>鏉ユ簮锛歓alsman G 绛?(2016). Suicide prevention strategies revisited: 10-year systematic review. Lancet Psychiatry. <a href="https://doi.org/10.1016/S2215-0366(16)30030-X" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/S2215-0366(16)30030-X</a> ; 鍥藉鍗敓鍋ュ悍濮?(2024). 鍏充簬搴旂敤&quot;12356&quot;鍏ㄥ浗缁熶竴蹇冪悊鎻村姪鐑嚎鐢佃瘽鍙风爜鐨勯€氱煡锛堝浗鍗尰鏀垮嚱銆?024銆?59 鍙凤級. <a href="https://www.gov.cn/zhengce/zhengceku/202412/content_6994470.htm" target="_blank" rel="noopener noreferrer">https://www.gov.cn/zhengce/zhengceku/202412/content_6994470.htm</a></li>
-<li>澶囨敞锛氱粰 B 鐨勫師鍥狅細闄愬埗鎵嬫閭ｈ竟鐨勮瘉鎹鏁版槸鐢熸€佸鐮旂┒锛屽仛娉曟槸姣旇緝鏀跨瓥鍑哄彴鍓嶅悗鐨勬暟瀛楋紱鐑嚎鏈韩娌℃湁闄嶄綆姝讳骸鐜囩殑璇佹嵁銆傝嚜鏉€鐨勫啿鍔ㄥ線寰€鍙寔缁嚑鍒嗛挓鍒板嚑灏忔椂锛屾妸鑳借嚧姝荤殑涓滆タ鎸繙涓€姝ワ紝鏈韩灏辨槸骞查銆傝繖涓椂闂村昂搴︾殑鏁版嵁锛屼互鍙婃湭閬備箣鍚庣殑闀挎湡缁撳眬锛岃鏈妭绗?32 鏉★紙鑷潃蹇靛ご涓€鍐掑嚭鏉ュ厛鍛婅瘔韬竟鐨勪竴涓汉锛夈€傝鏁戝洖鏉ヤ箣鍚庝細鐣欎笅浠€涔堬紝瑙佹湰鑺傜 33 鏉°€?</li>
+<li>成本：不花钱。打一个电话。另外把药锁起来，农药不放在家里。</li>
+<li>说人话：把能要命的东西从手边拿走，这类做法的证据一直在变强：管住镇痛药以后，相关自杀降 43%；常有人跳楼的地方装上防护，降 86%。所以家里不囤安眠药和农药。想不开的时候先打 12356，全国通用，每天至少开 18 小时。</li>
+<li>收益：一篇把近 10 年的研究系统梳理了一遍的综述：限制人拿到致死手段，这方面的证据一直在增强。管控镇痛药以后，和镇痛药有关的自杀下降 43%。常有人跳楼的地点加了防护之后，下降 86%（79% 到 91%，括号里是这个数的可信范围）。学校里开展的认知类项目，让自杀未遂低约 55%（OR 0.45，95% CI 0.24 到 0.85）。治抑郁的药物和心理治疗，是预防自杀的重要一环。中国从 2025 年 5 月 1 日起，全国拨 12356 都能接通心理援助热线，每天开通不少于 18 小时</li>
+<li>证据等级：B</li>
+<li>来源：Zalsman G 等 (2016). Suicide prevention strategies revisited: 10-year systematic review. Lancet Psychiatry. <a href="https://doi.org/10.1016/S2215-0366(16)30030-X" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/S2215-0366(16)30030-X</a> ; 国家卫生健康委 (2024). 关于应用&quot;12356&quot;全国统一心理援助热线电话号码的通知（国卫医政函〔2024〕259 号）. <a href="https://www.gov.cn/zhengce/zhengceku/202412/content_6994470.htm" target="_blank" rel="noopener noreferrer">https://www.gov.cn/zhengce/zhengceku/202412/content_6994470.htm</a></li>
+<li>备注：给 B 的原因：限制手段那边的证据多数是生态学研究，做法是比较政策出台前后的数字；热线本身没有降低死亡率的证据。自杀的冲动往往只持续几分钟到几小时，把能致死的东西挪远一步，本身就是干预。这个时间尺度的数据，以及未遂之后的长期结局，见本节第 32 条（自杀念头一冒出来先告诉身边的一个人）。被救回来之后会留下什么，见本节第 33 条。</li>
 </ul>
-<h3>26. 澶囬綈鐏伀鍣ㄣ€佺伃鐏銆侀€冪敓鍛煎惛闈㈢僵鍜屾€ユ晳鍖咃紝姣忓勾妫€鏌ヤ竴娆?</h3>
-<!-- 鎴愭湰鏍囩: 閽?灏?鏃堕棿=灏?姣呭姏=鍚?鏀剁泭=涓?鍙ｅ緞=姝讳骸鐜?-->
+<h3>26. 备齐灭火器、灭火毯、逃生呼吸面罩和急救包，每年检查一次</h3>
+<!-- 成本标签: 钱=少 时间=少 毅力=否 收益=中 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氱伃鐏櫒銆佺伃鐏銆佹瘡浜轰竴鍙懠鍚搁潰缃╋紝鍐嶅姞涓€涓€ユ晳鍖咃紝涓€濂楀嚑鐧惧厓銆備拱涓€娆″氨琛岋紝浠ュ悗姣忓勾鑺卞崄鍒嗛挓妫€鏌ヤ竴閬嶃€?</li>
-<li>璇翠汉璇濓細鐏伀鍣ㄣ€佺伃鐏銆侀€冪敓闈㈢僵銆佹€ユ晳鍖咃紝閮藉湪搴旀€ョ鐞嗛儴閭ｄ唤 11 鏍风殑瀹跺涵搴旀€ユ竻鍗曢噷銆備竴濂楀嚑鐧惧厓锛屼拱涓€娆″氨琛屻€備笂闂ㄥ仛杩囧搴畨鍏ㄦ寚瀵肩殑閭ｄ簺鐮旂┒閲岋紝浼ゅ鍙戠敓鐜囦綆绾﹀洓鍒嗕箣涓€銆?</li>
-<li>鏀剁泭锛氬簲鎬ョ鐞嗛儴鐨勩€婂叏鍥藉熀纭€鐗堝搴簲鎬ョ墿璧勫偍澶囧缓璁竻鍗曘€嬩竴鍏?11 鏍枫€傚叾涓€岀伃鐏櫒鍜岀伃鐏銆嶇敤浜庛€屽垵璧风伀鐏剧殑鎵戞晳銆嶏紝娓呭崟杩樺啓鏄庛€岀伃鐏鍙姭瑕嗗湪韬笂閫冪敓銆嶃€傘€屽懠鍚搁潰缃┿€嶆寚鐨勬槸銆屾秷闃茶繃婊ゅ紡鑷晳鍛煎惛鍣紝鐢ㄤ簬鐏伨閫冪敓浣跨敤銆嶃€傘€屽鐢ㄨ嵂鍝併€嶆槸銆屾琛€绮夈€佹琛€璐淬€佺罕甯冪环甯︾瓑锛岀敤浜庡鐞嗕激鍙ｃ€嶃€侰ochrane 鎶?98 椤圭爺绌躲€?,605,044 浜哄悎璧锋潵涓€璧风畻銆傚搴畨鍏ㄥ共棰勮浼ゅ鍙戠敓鐜囬檷鍒?IRR 0.89銆傚彲淇¤寖鍥存槸 95% CI 0.78 鍒?1.01銆傚叾涓笂闂ㄥ紑灞曠殑骞查锛屼激瀹冲彂鐢熺巼浣庣害 25%锛圛RR 0.75锛?5% CI 0.62 鍒?0.91锛?</li>
-<li>璇佹嵁绛夌骇锛欱</li>
-<li>鏉ユ簮锛氬簲鎬ョ鐞嗛儴 (2020). 鍏ㄥ浗鍩虹鐗堝搴簲鎬ョ墿璧勫偍澶囧缓璁竻鍗? <a href="https://www.mem.gov.cn/kp/shaq/202011/t20201129_372149.shtml" target="_blank" rel="noopener noreferrer">https://www.mem.gov.cn/kp/shaq/202011/t20201129_372149.shtml</a> ; Kendrick D 绛?(2012). Home safety education and provision of safety equipment for injury prevention. Cochrane Database of Systematic Reviews. <a href="https://doi.org/10.1002/14651858.CD005014.pub3" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/14651858.CD005014.pub3</a> ; 姝﹁儨鍘垮競鍦虹洃鐫ｇ鐞嗗眬 (2025). 鎵嬫彁寮忕伃鐏櫒銆侀槻鐏棬锛堢獥锛夈€佺偣鍨嬫劅娓╋紙鐑燂級鐏伨鎺㈡祴鍣ㄦ秷璐规彁绀? <a href="https://www.wusheng.gov.cn/gasylbzj/c109568/zzzq/content/content_1988424970198126592.html" target="_blank" rel="noopener noreferrer">https://www.wusheng.gov.cn/gasylbzj/c109568/zzzq/content/content_1988424970198126592.html</a> ; 璐靛窞鐪佹秷闃叉晳鎻存€婚槦 (2025). 灞呭蹇呭鐏伀姣?鍔熻兘鐢ㄦ硶鍏ㄦ敾鐣ワ紙杞浇鍖椾含娑堥槻锛? <a href="https://gz.119.gov.cn/xfkp/xfcs/202503/t20250313_87157898.html" target="_blank" rel="noopener noreferrer">https://gz.119.gov.cn/xfkp/xfcs/202503/t20250313_87157898.html</a> ; NVWA (2014). Blusdekens oktober 2014锛堣嵎鍏伴鍝佷笌娑堣垂鍝佸畨鍏ㄥ眬妫€鏌ユ姤鍛婏紝鍘熼〉闈㈠凡涓嬬嚎锛岄摼鎺ヤ负 2021 骞?10 鏈?20 鏃ョ殑缃戦〉瀛樻。锛? <a href="https://web.archive.org/web/20211020154732/https://www.nvwa.nl/binaries/nvwa/documenten/consument/consumentenartikelen/non-food/overige-non-food/blusdekens-oktober-2014/Factsheet+Blusdekens+Oktober+2014.pdf" target="_blank" rel="noopener noreferrer">https://web.archive.org/web/20211020154732/https://www.nvwa.nl/binaries/nvwa/documenten/consument/consumentenartikelen/non-food/overige-non-food/blusdekens-oktober-2014/Factsheet+Blusdekens+Oktober+2014.pdf</a></li>
-<li>澶囨敞锛氫簤璁€傚悓涓€浠?Cochrane 姹囨€婚噷锛屼笉鍙戣澶囩殑閭ｄ竴绫诲共棰勶紝鍙椾激鐜囦綆绾︿袱鎴愩€傚師鍊?IRR 0.78锛屽彲淇¤寖鍥?95% CI 0.66 鍒?0.92銆傚彂浜嗚澶囩殑閭ｄ竴缁勫苟娌℃湁鍋氬緱鏇村ソ銆傞檷浣庝激瀹崇殑涓昏鏄叆鎴锋暀鑲插拰鏀归€狅紝鎵€浠ヨ澶囩殑鏀剁泭璁般€屼腑銆嶏紝涓嶈銆屽ぇ銆嶃€備拱鐏伀鍣ㄨ鍑?CCC 鏍囧織锛岃串鍘嬪紡鐨勬寚閽堣鍋滃湪缁垮尯銆傜伃鐏澶氭槸鐜荤拑绾ょ淮鐨勶紝鍙姄閭ｄ袱鏍规媺甯︼紝鍒厜鐫€鎵嬫懜姣潰銆傛嬁瀹冪洊娌归攨涔熸湁浜夎锛氳嵎鍏扮洃绠℃満鏋?2014 骞存祴浜?22 涓墝瀛愶紝鎸夋櫘閫氫汉鐨勭敤娉曟病鏈変竴涓兘绋冲畾鎵戠伃銆傛补閿呯潃鐏厛鍏崇伀銆佺洊閿呯洊銆傜儫闆炬姤璀﹀櫒鍜屼竴姘у寲纰虫姤璀﹀櫒瑙佹湰鑺傜 3 鏉°€傛琛€甯︾殑鐢ㄦ硶瑙佺 13 鑺傜 12 鏉°€傛瘡鏍蜂笢瑗挎€庝箞閫夈€佹斁鍦ㄥ摢閲屻€佸嚑骞存崲涓€娆★紝瑙?<a href="../docs/%E7%80%B9%E8%B7%BA%E6%B6%B5%E6%90%B4%E6%97%80%E2%82%AC%E3%83%A8%EE%97%8A%E6%BE%B6%E5%9B%A8%E7%AB%BB%E9%8D%97?md">docs/瀹跺涵搴旀€ヨ澶囨竻鍗?md</a></li>
+<li>成本：灭火器、灭火毯、每人一只呼吸面罩，再加一个急救包，一套几百元。买一次就行，以后每年花十分钟检查一遍。</li>
+<li>说人话：灭火器、灭火毯、逃生面罩、急救包，都在应急管理部那份 11 样的家庭应急清单里。一套几百元，买一次就行。上门做过家庭安全指导的那些研究里，伤害发生率低约四分之一。</li>
+<li>收益：应急管理部的《全国基础版家庭应急物资储备建议清单》一共 11 样。其中「灭火器和灭火毯」用于「初起火灾的扑救」，清单还写明「灭火毯可披覆在身上逃生」。「呼吸面罩」指的是「消防过滤式自救呼吸器，用于火灾逃生使用」。「外用药品」是「止血粉、止血贴、纱布绷带等，用于处理伤口」。Cochrane 把 98 项研究、2,605,044 人合起来一起算。家庭安全干预让伤害发生率降到 IRR 0.89。可信范围是 95% CI 0.78 到 1.01。其中上门开展的干预，伤害发生率低约 25%（IRR 0.75，95% CI 0.62 到 0.91）</li>
+<li>证据等级：B</li>
+<li>来源：应急管理部 (2020). 全国基础版家庭应急物资储备建议清单. <a href="https://www.mem.gov.cn/kp/shaq/202011/t20201129_372149.shtml" target="_blank" rel="noopener noreferrer">https://www.mem.gov.cn/kp/shaq/202011/t20201129_372149.shtml</a> ; Kendrick D 等 (2012). Home safety education and provision of safety equipment for injury prevention. Cochrane Database of Systematic Reviews. <a href="https://doi.org/10.1002/14651858.CD005014.pub3" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/14651858.CD005014.pub3</a> ; 武胜县市场监督管理局 (2025). 手提式灭火器、防火门（窗）、点型感温（烟）火灾探测器消费提示. <a href="https://www.wusheng.gov.cn/gasylbzj/c109568/zzzq/content/content_1988424970198126592.html" target="_blank" rel="noopener noreferrer">https://www.wusheng.gov.cn/gasylbzj/c109568/zzzq/content/content_1988424970198126592.html</a> ; 贵州省消防救援总队 (2025). 居家必备灭火毯 功能用法全攻略（转载北京消防）. <a href="https://gz.119.gov.cn/xfkp/xfcs/202503/t20250313_87157898.html" target="_blank" rel="noopener noreferrer">https://gz.119.gov.cn/xfkp/xfcs/202503/t20250313_87157898.html</a> ; NVWA (2014). Blusdekens oktober 2014（荷兰食品与消费品安全局检查报告，原页面已下线，链接为 2021 年 10 月 20 日的网页存档）. <a href="https://web.archive.org/web/20211020154732/https://www.nvwa.nl/binaries/nvwa/documenten/consument/consumentenartikelen/non-food/overige-non-food/blusdekens-oktober-2014/Factsheet+Blusdekens+Oktober+2014.pdf" target="_blank" rel="noopener noreferrer">https://web.archive.org/web/20211020154732/https://www.nvwa.nl/binaries/nvwa/documenten/consument/consumentenartikelen/non-food/overige-non-food/blusdekens-oktober-2014/Factsheet+Blusdekens+Oktober+2014.pdf</a></li>
+<li>备注：争议。同一份 Cochrane 汇总里，不发装备的那一类干预，受伤率低约两成。原值 IRR 0.78，可信范围 95% CI 0.66 到 0.92。发了装备的那一组并没有做得更好。降低伤害的主要是入户教育和改造，所以装备的收益记「中」，不记「大」。买灭火器认准 CCC 标志，贮压式的指针要停在绿区。灭火毯多是玻璃纤维的，只抓那两根拉带，别光着手摸毯面。拿它盖油锅也有争议：荷兰监管机构 2014 年测了 22 个牌子，按普通人的用法没有一个能稳定扑灭。油锅着火先关火、盖锅盖。烟雾报警器和一氧化碳报警器见本节第 3 条。止血带的用法见第 13 节第 12 条。每样东西怎么选、放在哪里、几年换一次，见 <a href="/LearnData/docs/%E5%AE%B6%E5%BA%AD%E5%BA%94%E6%80%A5%E8%A3%85%E5%A4%87%E6%B8%85%E5%8D%95.html" target="_blank">docs/家庭应急装备清单.md</a></li>
 </ul>
-<h3>27. 灏块噷鍑虹幇鑲夌溂鐪嬪緱瑙佺殑琛€锛屽摢鎬曚笉鐤笺€佸摢鎬曠浜屽ぉ灏卞共鍑€浜嗭紝涔熻鍘绘煡涓€娆?</h3>
-<!-- 鎴愭湰鏍囩: 閽?灏?鏃堕棿=涓?姣呭姏=鍚?鏀剁泭=灏?鍙ｅ緞=姝讳骸鐜?-->
+<h3>27. 尿里出现肉眼看得见的血，哪怕不疼、哪怕第二天就干净了，也要去查一次</h3>
+<!-- 成本标签: 钱=少 时间=中 毅力=否 收益=小 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氬翱甯歌鍑犲崄鍏冿紝娉屽翱绯昏秴澹颁竴涓ょ櫨鍏冦€傚尰鐢熻涓洪渶瑕佺殑璇濓紝鍐嶅姞涓€涓唨鑳遍暅锛屽崈鍏冧笂涓嬨€?</li>
-<li>璇翠汉璇濓細60 宀佷互涓婄殑浜哄嚭鐜颁竴娆¤倝鐪肩湅寰楄鐨勮灏匡紝鏈€鍚庢煡鍑鸿唨鑳辩檶鐨勬鐜囩害 2.8%锛?0 鍒?59 宀佺害 1.2%銆傝繖涓暟涓嶇畻楂橈紝浣嗕篃楂樺埌蹇呴』鍘绘煡涓€娆°€傚摢鎬曠浜屽ぉ涓嶅嚭琛€浜嗕篃瑕佸幓鏌ャ€?</li>
-<li>鏀剁泭锛氳嫳鍥芥嬁绀惧尯鍏ㄧ闂ㄨ瘖锛堝垵绾у尰鐤楋級鐨勭數瀛愮梾鍘嗗仛浜嗕竴椤圭爺绌讹紝4915 渚嬭唨鑳辩檶瀵?21718 渚嬪鐓с€傚嚭鐜拌倝鐪艰灏跨殑浜洪噷锛屾渶鍚庣湡鏌ュ嚭鑶€鑳辩檶鐨勬瘮渚嬫槸杩欐牱銆?0 宀佷互涓婃槸 2.8%锛屽彲淇¤寖鍥?95% CI 2.5 鍒?3.1銆?0 鍒?59 宀佹槸 1.2%锛屽彲淇¤寖鍥?0.6 鍒?2.3銆傝繖涓瘮渚嬬殑瀛﹀悕鍙槼鎬ч娴嬪€笺€傚彧鏈夊湪鏄惧井闀滀笅鎵嶇湅寰楄鐨勮灏匡紝鍚屾牱鏈夋剰涔夈€傛瘮鍊兼瘮 20锛屽彲淇¤寖鍥?95% CI 12 鍒?33銆?0 宀佷互涓婅繖涓瘮渚嬩负 1.6%锛屽彲淇¤寖鍥?1.2 鍒?2.1</li>
-<li>璇佹嵁绛夌骇锛欱</li>
-<li>鏉ユ簮锛歅rice SJ, Shephard EA, Stapley SA, Barraclough K, Hamilton WT (2014). Non-visible versus visible haematuria and bladder cancer risk: a study of electronic records in primary care. British Journal of General Practice, 64(626), e584-e589. <a href="https://doi.org/10.3399/bjgp14X681409" target="_blank" rel="noopener noreferrer">https://doi.org/10.3399/bjgp14X681409</a></li>
-<li>澶囨敞锛氥€屼笉鐤笺€嶆槸鍏抽敭銆傜粨鐭冲拰鎰熸煋寮曡捣鐨勮灏匡紝澶氬崐鍚屾椂鑵拌吂缁炵棝锛屾垨鑰呭翱棰戙€佸翱鎬ャ€佸翱鐥涖€傝偪鐦ゅ紩璧风殑寰€寰€涓€鐐规劅瑙夐兘娌℃湁锛岃€屼笖浼氳嚜宸卞仠鍑犲ぉ鍐嶅嚭鐜帮紝寰堝浜哄氨杩欎箞鏀捐繃浜嗐€傛鍦ㄥ悆鎶楀嚌鑽紝涓嶆槸鍙互涓嶆煡鐨勭悊鐢便€傚墽鐑堣繍鍔ㄤ箣鍚庛€佸コ鎬х粡鏈熷墠鍚庣殑琛€灏匡紝鍙互鍏堝鏌ヤ竴娆″啀瀹氥€傛敹鐩婅銆屽皬銆嶏紝鏄洜涓哄彧鏈夋鍑虹巼锛屾病鏈夈€屾棭鏌ヨ兘闄嶄綆澶氬皯姝讳骸銆嶇殑鏁堝簲閲忋€?</li>
+<li>成本：尿常规几十元，泌尿系超声一两百元。医生认为需要的话，再加一个膀胱镜，千元上下。</li>
+<li>说人话：60 岁以上的人出现一次肉眼看得见的血尿，最后查出膀胱癌的概率约 2.8%，40 到 59 岁约 1.2%。这个数不算高，但也高到必须去查一次。哪怕第二天不出血了也要去查。</li>
+<li>收益：英国拿社区全科门诊（初级医疗）的电子病历做了一项研究，4915 例膀胱癌对 21718 例对照。出现肉眼血尿的人里，最后真查出膀胱癌的比例是这样。60 岁以上是 2.8%，可信范围 95% CI 2.5 到 3.1。40 到 59 岁是 1.2%，可信范围 0.6 到 2.3。这个比例的学名叫阳性预测值。只有在显微镜下才看得见的血尿，同样有意义。比值比 20，可信范围 95% CI 12 到 33。60 岁以上这个比例为 1.6%，可信范围 1.2 到 2.1</li>
+<li>证据等级：B</li>
+<li>来源：Price SJ, Shephard EA, Stapley SA, Barraclough K, Hamilton WT (2014). Non-visible versus visible haematuria and bladder cancer risk: a study of electronic records in primary care. British Journal of General Practice, 64(626), e584-e589. <a href="https://doi.org/10.3399/bjgp14X681409" target="_blank" rel="noopener noreferrer">https://doi.org/10.3399/bjgp14X681409</a></li>
+<li>备注：「不疼」是关键。结石和感染引起的血尿，多半同时腰腹绞痛，或者尿频、尿急、尿痛。肿瘤引起的往往一点感觉都没有，而且会自己停几天再出现，很多人就这么放过了。正在吃抗凝药，不是可以不查的理由。剧烈运动之后、女性经期前后的血尿，可以先复查一次再定。收益记「小」，是因为只有检出率，没有「早查能降低多少死亡」的效应量。</li>
 </ul>
-<h3>28. 鍕冭捣鍔熻兘鍑轰簡闂锛屽厛鍘绘煡蹇冭绠★紝鍒綋鎴愬崟绾殑銆岄偅鏂归潰鐨勪簨銆?</h3>
-<!-- 鎴愭湰鏍囩: 閽?灏?鏃堕棿=涓?姣呭姏=鍚?鏀剁泭=涓?鍙ｅ緞=姝讳骸鐜?-->
+<h3>28. 勃起功能出了问题，先去查心血管，别当成单纯的「那方面的事」</h3>
+<!-- 成本标签: 钱=少 时间=中 毅力=否 收益=中 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氭寕鍙峰嚑鍗佸厓銆傞噺琛€鍘嬨€佹娊琛€鏌ヨ绯栧拰琛€鑴傦紝涓€涓ょ櫨鍏冦€傝窇涓€瓒熷尰闄紝绛夊嚑澶╃粨鏋溿€?</li>
-<li>璇翠汉璇濓細鏈夊媰璧峰姛鑳介殰纰嶇殑鐢锋€э紝鍚庢潵寰楀績琛€绠＄梾鐨勬瘮鍒汉澶氱害鍥涙垚锛屽績姊楀绾﹀叚鎴愩€傝秺骞磋交鐨勪汉宸緱瓒婂銆傝繖涓瘺鐥呭父甯告瘮鑳哥棝鍏堝嚭鐜般€傛墍浠ュ厛鍘绘煡琛€鍘嬨€佽绯栥€佽鑴傦紝鍒嚜宸变拱鑽帇杩囧幓銆?</li>
-<li>鏀剁泭锛氫竴绡囪崯钀冨垎鏋愭妸 14 椤硅窡韪爺绌跺悎璧锋潵绠楋紝鍏?92,757 鍚嶇敺鎬э紝骞冲潎璺熻釜 6.1 骞淬€傚拰娌℃湁鍕冭捣鍔熻兘闅滅鐨勪汉鐩告瘮锛屾湁杩欎釜闂鐨勪汉鍚庢潵鐨勯闄╂槸杩欐牱銆傛€荤殑蹇冭绠′簨浠堕珮绾?44%锛圧R 1.44锛?5% CI 1.27 鍒?1.63锛岃繖鏄彲淇¤寖鍥达級銆傚績姊楅珮绾?62%锛圧R 1.62锛?.34 鍒?1.96锛夈€傝剳琛€绠′簨浠堕珮绾?39%锛圧R 1.39锛?.23 鍒?1.57锛夈€傚叏鍥犳浜￠珮绾?25%锛圧R 1.25锛?.12 鍒?1.39锛夈€傚績琛€绠℃浜￠偅涓€椤规病鏈夋媺寮€宸窛锛圧R 1.19锛?.97 鍒?1.46锛夈€傚勾榫勮秺杞伙紝鍊嶆暟瓒婇珮銆傛湰鏉ュ績琛€绠￠闄╁睘浜庝腑绛夌殑閭ｆ壒浜猴紝鍊嶆暟姣旈珮椋庨櫓鍜屼綆椋庨櫓鐨勪汉閮介珮銆傜敤闂嵎鍒ゅ畾鐨勭爺绌讹紝绠楀嚭鏉ョ殑鍊嶆暟鏄?1.61锛?.38 鍒?1.86锛夈€傚彧闂竴鍙ヨ瘽鐨勭爺绌舵槸 1.27锛?.18 鍒?1.37锛?</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛歏lachopoulos CV, Terentes-Printzios DG, Ioakeimidis NK, Aznaouridis KA, Stefanadis CI (2013). Prediction of cardiovascular events and all-cause mortality with erectile dysfunction: a systematic review and meta-analysis of cohort studies. Circulation: Cardiovascular Quality and Outcomes, 6(1), 99-109. <a href="https://doi.org/10.1161/CIRCOUTCOMES.112.966903" target="_blank" rel="noopener noreferrer">https://doi.org/10.1161/CIRCOUTCOMES.112.966903</a>锛汥ailyMed锛堢編鍥藉浗绔嬪尰瀛﹀浘涔﹂鐨勮嵂鍝佽鏄庝功搴擄級. VIAGRA (sildenafil citrate) tablet, CONTRAINDICATIONS. <a href="https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=d905dc8d-917f-4ea3-a4ee-a1ecf6967d4e" target="_blank" rel="noopener noreferrer">https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=d905dc8d-917f-4ea3-a4ee-a1ecf6967d4e</a></li>
-<li>澶囨敞锛氳繖 14 椤归兘鏄窡韪竴缇や汉鐪嬬粨鏋滅殑鐮旂┒锛屼笉鏄殢鏈哄垎缁勮瘯楠屻€傛墍浠ャ€屽鍥涙垚銆嶆槸鍏宠仈锛屼笉鑳藉綋鎴愬洜鏋溿€傚伓灏斾竴涓ゆ涓嶇畻鏁帮紝鎸佺画涓変釜鏈堜互涓婃墠鎸夐棶棰樼湅銆傝鏌ョ殑涓滆タ鍜屾湰鑺傜 7銆? 鏉℃槸鍚屼竴鎵癸細閲忚鍘嬨€佹煡绌鸿吂琛€绯栵紝鍐嶅姞琛€鑴傘€佸惛鐑熷拰鑵板洿銆傚埆鍦ㄧ綉涓婁拱銆屽．闃炽€嶄繚鍋ュ搧銆傛瑙勭殑閭ｇ被鑽槸澶勬柟鑽紝璇存槑涔︽妸纭濋吀閰被鍒椾负绂佸繉锛屾鍦ㄧ敤纭濋吀鐢樻补杩欑被鑽殑浜轰笉鑳藉悆锛屼竴璧风敤浼氳琛€鍘嬮闄嶃€傛€庝箞鏀瑰杽瑙佹湰鑺傜 29 鏉★紙鍑忛噸銆佹垝鐑熻兘璁╁媰璧峰姛鑳藉ソ杞級銆傛敹鐩婅銆屼腑銆嶄笉璁般€屽ぇ銆嶏細44% 鏄袱缇や汉鐨勯闄╁樊璺濓紝涓嶆槸銆屽幓鏌ヤ竴娆¤兘闄嶅灏戞浜°€嶃€備篃涓嶈銆屽皬銆嶏細鏈妭绗?27 鏉★紙灏块噷鍑虹幇鑲夌溂鐪嬪緱瑙佺殑琛€锛夐偅绉嶄俊鍙峰彧鏈夋鍑虹巼锛岃€岃繖閲屾煡鍑烘潵鐨勯珮琛€鍘嬨€佺硸灏跨梾銆佽鑴傚紓甯搁兘鏈夌幇鎴愮殑娌荤枟鍔炴硶銆?</li>
+<li>成本：挂号几十元。量血压、抽血查血糖和血脂，一两百元。跑一趟医院，等几天结果。</li>
+<li>说人话：有勃起功能障碍的男性，后来得心血管病的比别人多约四成，心梗多约六成。越年轻的人差得越多。这个毛病常常比胸痛先出现。所以先去查血压、血糖、血脂，别自己买药压过去。</li>
+<li>收益：一篇荟萃分析把 14 项跟踪研究合起来算，共 92,757 名男性，平均跟踪 6.1 年。和没有勃起功能障碍的人相比，有这个问题的人后来的风险是这样。总的心血管事件高约 44%（RR 1.44，95% CI 1.27 到 1.63，这是可信范围）。心梗高约 62%（RR 1.62，1.34 到 1.96）。脑血管事件高约 39%（RR 1.39，1.23 到 1.57）。全因死亡高约 25%（RR 1.25，1.12 到 1.39）。心血管死亡那一项没有拉开差距（RR 1.19，0.97 到 1.46）。年龄越轻，倍数越高。本来心血管风险属于中等的那批人，倍数比高风险和低风险的人都高。用问卷判定的研究，算出来的倍数是 1.61（1.38 到 1.86）。只问一句话的研究是 1.27（1.18 到 1.37）</li>
+<li>证据等级：A</li>
+<li>来源：Vlachopoulos CV, Terentes-Printzios DG, Ioakeimidis NK, Aznaouridis KA, Stefanadis CI (2013). Prediction of cardiovascular events and all-cause mortality with erectile dysfunction: a systematic review and meta-analysis of cohort studies. Circulation: Cardiovascular Quality and Outcomes, 6(1), 99-109. <a href="https://doi.org/10.1161/CIRCOUTCOMES.112.966903" target="_blank" rel="noopener noreferrer">https://doi.org/10.1161/CIRCOUTCOMES.112.966903</a>；DailyMed（美国国立医学图书馆的药品说明书库）. VIAGRA (sildenafil citrate) tablet, CONTRAINDICATIONS. <a href="https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=d905dc8d-917f-4ea3-a4ee-a1ecf6967d4e" target="_blank" rel="noopener noreferrer">https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=d905dc8d-917f-4ea3-a4ee-a1ecf6967d4e</a></li>
+<li>备注：这 14 项都是跟踪一群人看结果的研究，不是随机分组试验。所以「多四成」是关联，不能当成因果。偶尔一两次不算数，持续三个月以上才按问题看。要查的东西和本节第 7、8 条是同一批：量血压、查空腹血糖，再加血脂、吸烟和腰围。别在网上买「壮阳」保健品。正规的那类药是处方药，说明书把硝酸酯类列为禁忌，正在用硝酸甘油这类药的人不能吃，一起用会让血压骤降。怎么改善见本节第 29 条（减重、戒烟能让勃起功能好转）。收益记「中」不记「大」：44% 是两群人的风险差距，不是「去查一次能降多少死亡」。也不记「小」：本节第 27 条（尿里出现肉眼看得见的血）那种信号只有检出率，而这里查出来的高血压、糖尿病、血脂异常都有现成的治疗办法。</li>
 </ul>
-<h3>29. 鍑忛噸銆佹垝鐑熴€佹妸琛€鍘嬭绯栨帶浣忥紝鍕冭捣鍔熻兘鑳借窡鐫€濂借浆</h3>
-<!-- 鎴愭湰鏍囩: 閽?0 鏃堕棿=澶?姣呭姏=鏄?鏀剁泭=灏?鍙ｅ緞=姝讳骸鐜?-->
+<h3>29. 减重、戒烟、把血压血糖控住，勃起功能能跟着好转</h3>
+<!-- 成本标签: 钱=0 时间=多 毅力=是 收益=小 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氫笉鑺遍挶锛岃繕鍙兘鐪侀挶銆傞毦鐨勬槸闀挎湡鍧氭寔锛氱浣忓悆銆佸姩璧锋潵銆佹妸鐑熸垝鎺夈€?</li>
-<li>璇翠汉璇濓細鎶婂績琛€绠＄殑鍗遍櫓鍥犵礌绠¤捣鏉ワ紝鍕冭捣鍔熻兘鏈韩浼氬ソ杞€傜敤涓€浠介棶鍗锋墦鍒嗭紝骞冲潎鑳藉 2 鍒?3 鍒嗐€傝繖浠介棶鍗锋€诲垎 25 鍒嗭紝22 鍒嗕互涓婄畻姝ｅ父銆?</li>
-<li>鏀剁泭锛氫竴绡囪崯钀冨垎鏋愭妸 6 椤归殢鏈哄鐓ц瘯楠屻€?40 鍚嶇敺鎬у悎璧锋潵绠椼€傚共棰勬槸鏀圭敓娲绘柟寮忥紝鎴栬€呯敤鑽帶鍒跺績琛€绠″嵄闄╁洜绱狅紝闅忚鑷冲皯 6 鍛ㄣ€傜粨鏋滐細鍕冭捣鍔熻兘闂嵎锛圛IEF-5锛夌殑璇勫垎骞冲潎鎻愰珮 2.66 鍒嗭紙95% CI 1.86 鍒?3.47锛岃繖鏄彲淇¤寖鍥达級銆傛妸鍏朵腑鐢ㄤ粬姹€鐨?2 椤硅瘯楠岋紙143 浜猴級鍘绘帀锛屽墿涓?4 椤圭函闈犳敼鐢熸椿鏂瑰紡鐨勶紙597 浜猴級浠嶇劧鎻愰珮 2.40 鍒嗭紙1.19 鍒?3.61锛夈€侷IEF-5 鏄竴浠?5 涓棶棰樼殑闂嵎锛屾€诲垎 5 鍒?25 鍒嗐€傚師鏂囨寜寰楀垎鍒嗘垚浜旀。锛?2 鍒?25 鍒嗙畻娌℃湁闅滅锛? 鍒?7 鍒嗙畻閲嶅害</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛欸upta BP, Murad MH, Clifton MM, Prokop L, Nehra A, Kopecky SL (2011). The effect of lifestyle modification and cardiovascular risk factor reduction on erectile dysfunction: a systematic review and meta-analysis. Archives of Internal Medicine, 171(20), 1797-1803. <a href="https://doi.org/10.1001/archinternmed.2011.440" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/archinternmed.2011.440</a>锛汻osen RC, Cappelleri JC, Smith MD, Lipsky J, Pe帽a BM (1999). Development and evaluation of an abridged, 5-item version of the International Index of Erectile Function (IIEF-5) as a diagnostic tool for erectile dysfunction. International Journal of Impotence Research, 11(6), 319-326. <a href="https://doi.org/10.1038/sj.ijir.3900472" target="_blank" rel="noopener noreferrer">https://doi.org/10.1038/sj.ijir.3900472</a></li>
-<li>澶囨敞锛氳繖 6 椤硅瘯楠岀殑骞查涓嶄竴鏍凤紝鏈夌殑鏄噺閲嶅姞杩愬姩锛屾湁鐨勬槸鐢ㄨ嵂鎺ц鍘嬭鑴傘€傛€诲叡鍙湁 740 浜恒€傛墍浠ユ柟鍚戞槑纭紝鍏蜂綋鑳藉ソ澶氬皯鍥犱汉鑰屽紓銆傛敹鐩婅銆屽皬銆嶏紝鏄洜涓虹粓鐐瑰彧鏈夐棶鍗疯瘎鍒嗭紝娌℃湁銆屽悗鏉ュ皯寰楀灏戠梾銆嶇殑鏁板瓧銆傚悓鏍疯繖鍑犱釜鍔ㄤ綔鍦ㄥ埆澶勬槸鏈夌‖缁堢偣鐨勶細鎴掔儫瑙佺 2 鑺傜 1 鏉★紙鎴掔儫锛岃秺鏃╄秺濂斤級锛屽噺閲嶈绗?2 鑺傜 32 鏉★紙鎶?BMI 鎺у埗鍦?20鈥?5锛夛紝琛€鍘嬭鏈妭绗?7 鏉★紙閲忚鍘嬶紝楂樹簡灏卞悆鑽級銆傚悆鑽湰韬笉鏄鍖猴紝鍓嶆彁鏄尰鐢熷紑鐨勫鏂硅嵂銆傜綉涓婂崠鐨勩€屼繚鍋ュ搧銆嶅父鍋峰姞杩欑被鎴愬垎锛屽墏閲忎笉鏄庯紝鎬庝箞鍒嗚鲸瑙佺 28 鑺傜 4 鏉★紙涓嶄拱鎵胯蹇€熺槮鐨勫噺鑲ヨ嵂锛夈€?</li>
+<li>成本：不花钱，还可能省钱。难的是长期坚持：管住吃、动起来、把烟戒掉。</li>
+<li>说人话：把心血管的危险因素管起来，勃起功能本身会好转。用一份问卷打分，平均能多 2 到 3 分。这份问卷总分 25 分，22 分以上算正常。</li>
+<li>收益：一篇荟萃分析把 6 项随机对照试验、740 名男性合起来算。干预是改生活方式，或者用药控制心血管危险因素，随访至少 6 周。结果：勃起功能问卷（IIEF-5）的评分平均提高 2.66 分（95% CI 1.86 到 3.47，这是可信范围）。把其中用他汀的 2 项试验（143 人）去掉，剩下 4 项纯靠改生活方式的（597 人）仍然提高 2.40 分（1.19 到 3.61）。IIEF-5 是一份 5 个问题的问卷，总分 5 到 25 分。原文按得分分成五档，22 到 25 分算没有障碍，5 到 7 分算重度</li>
+<li>证据等级：A</li>
+<li>来源：Gupta BP, Murad MH, Clifton MM, Prokop L, Nehra A, Kopecky SL (2011). The effect of lifestyle modification and cardiovascular risk factor reduction on erectile dysfunction: a systematic review and meta-analysis. Archives of Internal Medicine, 171(20), 1797-1803. <a href="https://doi.org/10.1001/archinternmed.2011.440" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/archinternmed.2011.440</a>；Rosen RC, Cappelleri JC, Smith MD, Lipsky J, Peña BM (1999). Development and evaluation of an abridged, 5-item version of the International Index of Erectile Function (IIEF-5) as a diagnostic tool for erectile dysfunction. International Journal of Impotence Research, 11(6), 319-326. <a href="https://doi.org/10.1038/sj.ijir.3900472" target="_blank" rel="noopener noreferrer">https://doi.org/10.1038/sj.ijir.3900472</a></li>
+<li>备注：这 6 项试验的干预不一样，有的是减重加运动，有的是用药控血压血脂。总共只有 740 人。所以方向明确，具体能好多少因人而异。收益记「小」，是因为终点只有问卷评分，没有「后来少得多少病」的数字。同样这几个动作在别处是有硬终点的：戒烟见第 2 节第 1 条（戒烟，越早越好），减重见第 2 节第 32 条（把 BMI 控制在 20–25），血压见本节第 7 条（量血压，高了就吃药）。吃药本身不是禁区，前提是医生开的处方药。网上卖的「保健品」常偷加这类成分，剂量不明，怎么分辨见第 28 节第 4 条（不买承诺快速瘦的减肥药）。</li>
 </ul>
-<h3>30. 鎬ц涓哄叏绋嬬敤瀹夊叏濂楋紝涓嶅拰鍒汉鍏辩敤閽堝叿</h3>
-<!-- 鎴愭湰鏍囩: 閽?灏?鏃堕棿=灏?姣呭姏=浜?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?-->
+<h3>30. 性行为全程用安全套，不和别人共用针具</h3>
+<!-- 成本标签: 钱=少 时间=少 毅力=些 收益=大 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氫竴鍙竴涓ゅ厓銆傞毦鐨勫湴鏂逛笉鍦ㄩ挶锛屽湪浜庢瘡涓€娆￠兘鐢紝鑰屼笖浠庝竴寮€濮嬪氨鎴翠笂銆?</li>
-<li>璇翠汉璇濓細姣忎竴娆￠兘鍏ㄧ▼鎴达紝寮傛€т箣闂翠紶鏌撹壘婊嬬梾鐨勬鐜囧ぇ绾﹂檷涓冩垚浠ヤ笂銆傘€屽ぇ閮ㄥ垎鏃跺€欐埓銆嶇殑鏁堟灉锛屽拰涓嶆埓宸笉浜嗗灏戙€傛姣掋€佹穻鐥呰繖浜涗篃涓€骞舵尅浣忋€?</li>
-<li>鏀剁泭锛氫竴椤圭爺绌舵妸 25 椤圭爺绌躲€?0676 瀵瑰紓鎬т即渚ｅ悎璧锋潵涓€璧风畻銆傝繖浜涗即渚ｉ兘鏄竴鏂规劅鏌?HIV銆佷竴鏂规病鎰熸煋锛屽鍚嶅彨琛€娓呬笉涓€鑷淬€傚拰浠庢潵涓嶇敤鐨勪汉鐩告瘮锛屽潥鎸佹瘡娆￠兘鐢ㄥ畨鍏ㄥ鐨勪汉锛孒IV 浼犳挱椋庨櫓浣庣害 71%銆傚師鍊?RR 0.29锛屽彲淇¤寖鍥?95% CI 0.20 鑷?0.43銆傚拰鐢ㄥ緱鏂柇缁画鐨勪汉鐩告瘮锛屼綆绾?77%锛圧R 0.23锛?5% CI 0.13 鑷?0.40锛夈€備綔鑰呯殑缁撹鏄紝瀹夊叏濂楄櫧鐒朵笉瀹岀編锛屼絾銆屽潥鎸佷娇鐢ㄥ彲浣?HIV 浼犳挱闄嶄綆 70% 浠ヤ笂銆嶃€傚悓涓€灞備繚鎶よ繕瑕嗙洊姊呮瘨銆佹穻鐥呫€佽。鍘熶綋绛夊叾浠栨€т紶鎾劅鏌?</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛欸iannou FK, Tsiara CG, Nikolopoulos GK, et al. (2016). Condom effectiveness in reducing heterosexual HIV transmission: a systematic review and meta-analysis of studies on HIV serodiscordant couples. Expert Review of Pharmacoeconomics &amp; Outcomes Research, 16(4), 489-499. <a href="https://doi.org/10.1586/14737167.2016.1102635" target="_blank" rel="noopener noreferrer">https://doi.org/10.1586/14737167.2016.1102635</a>锛汧onner VA 绛?(2016). Effectiveness and safety of oral HIV preexposure prophylaxis for all populations. AIDS. <a href="https://doi.org/10.1097/QAD.0000000000001145" target="_blank" rel="noopener noreferrer">https://doi.org/10.1097/QAD.0000000000001145</a>锛堟毚闇插墠棰勯槻 PrEP锛?</li>
-<li>澶囨敞锛氥€屼笉瑙勫緥浣跨敤銆嶅拰銆屼笉鐢ㄣ€嶇殑宸窛寰堝皬锛岃姣忔銆佸叏绋嬮兘鐢ㄦ墠鏈夋晥銆傚叡鐢ㄩ拡鍏锋槸鍙︿竴鏉＄嫭绔嬬殑楂樻晥浼犳挱閫斿緞锛屽拰鎬ц涓烘棤鍏筹紝娉ㄥ皠姣掑搧銆佺汗韬€佺┛瀛旈兘绠椼€傞珮椋庨櫓浜虹兢杩樺彲浠ョ敤鏆撮湶鍓嶉闃诧紙PrEP锛夛紝灏辨槸浜嬪厛鍚冭嵂鎸′綇鎰熸煋銆傛妸 18 椤圭爺绌跺悎璧锋潵绠楋紝鍑℃槸瓒呰繃涓冩垚浜烘寜鏃跺悆鑽殑璇曢獙锛屽悆 PrEP 鐨勪汉鎰熸煋 HIV 鐨勯闄╂瘮鍚冨畨鎱板墏鐨勪綆绾︿竷鎴愩€傚師鍊兼槸椋庨櫓姣?0.30锛屽彲淇¤寖鍥?95% CI 0.21 鑷?0.45銆傛寜鏃跺悆鑽殑浜哄皯鐨勯偅浜涜瘯楠岋紝鍒欑湅涓嶅埌淇濇姢鏁堟灉銆侾rEP 鏄鏂硅嵂锛屽幓鎰熸煋绉戞垨鑰呯柧鎺ч棶锛屽埆鑷繁缃戣喘銆傚凡缁忔毚闇蹭箣鍚庢€庝箞鍔炶绗?13 鑺?</li>
+<li>成本：一只一两元。难的地方不在钱，在于每一次都用，而且从一开始就戴上。</li>
+<li>说人话：每一次都全程戴，异性之间传染艾滋病的概率大约降七成以上。「大部分时候戴」的效果，和不戴差不了多少。梅毒、淋病这些也一并挡住。</li>
+<li>收益：一项研究把 25 项研究、10676 对异性伴侣合起来一起算。这些伴侣都是一方感染 HIV、一方没感染，学名叫血清不一致。和从来不用的人相比，坚持每次都用安全套的人，HIV 传播风险低约 71%。原值 RR 0.29，可信范围 95% CI 0.20 至 0.43。和用得断断续续的人相比，低约 77%（RR 0.23，95% CI 0.13 至 0.40）。作者的结论是，安全套虽然不完美，但「坚持使用可使 HIV 传播降低 70% 以上」。同一层保护还覆盖梅毒、淋病、衣原体等其他性传播感染</li>
+<li>证据等级：A</li>
+<li>来源：Giannou FK, Tsiara CG, Nikolopoulos GK, et al. (2016). Condom effectiveness in reducing heterosexual HIV transmission: a systematic review and meta-analysis of studies on HIV serodiscordant couples. Expert Review of Pharmacoeconomics &amp; Outcomes Research, 16(4), 489-499. <a href="https://doi.org/10.1586/14737167.2016.1102635" target="_blank" rel="noopener noreferrer">https://doi.org/10.1586/14737167.2016.1102635</a>；Fonner VA 等 (2016). Effectiveness and safety of oral HIV preexposure prophylaxis for all populations. AIDS. <a href="https://doi.org/10.1097/QAD.0000000000001145" target="_blank" rel="noopener noreferrer">https://doi.org/10.1097/QAD.0000000000001145</a>（暴露前预防 PrEP）</li>
+<li>备注：「不规律使用」和「不用」的差距很小，要每次、全程都用才有效。共用针具是另一条独立的高效传播途径，和性行为无关，注射毒品、纹身、穿孔都算。高风险人群还可以用暴露前预防（PrEP），就是事先吃药挡住感染。把 18 项研究合起来算，凡是超过七成人按时吃药的试验，吃 PrEP 的人感染 HIV 的风险比吃安慰剂的低约七成。原值是风险比 0.30，可信范围 95% CI 0.21 至 0.45。按时吃药的人少的那些试验，则看不到保护效果。PrEP 是处方药，去感染科或者疾控问，别自己网购。已经暴露之后怎么办见第 13 节</li>
 </ul>
-<h3>31. 鏈夎繃楂樺嵄琛屼负灏卞幓鏌ヤ竴娆¤壘婊嬬梾锛岀柧鎺т腑蹇冨厤璐广€佺粨鏋滀繚瀵?</h3>
-<!-- 鎴愭湰鏍囩: 閽?0 鏃堕棿=灏?姣呭姏=浜?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?-->
+<h3>31. 有过高危行为就去查一次艾滋病，疾控中心免费、结果保密</h3>
+<!-- 成本标签: 钱=0 时间=少 毅力=些 收益=大 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氫笉鑺遍挶銆傝窇涓€瓒熺柧鎺ф垨鑰呮寚瀹氱殑鍖荤枟鏈烘瀯锛屾娊涓€绠¤銆傞毦鐨勫湴鏂规槸寮€鍙ｅ幓鏌ヨ繖涓€姝ャ€?</li>
-<li>璇翠汉璇濓細鍘荤柧鎺ф煡鑹炬粙鐥呬笉鑺遍挶銆傛病鏈変綘鏈汉鍚屾剰锛屼换浣曞崟浣嶅拰涓汉閮戒笉寰楀叕寮€浣犵殑濮撳悕銆佷綇鍧€銆佸伐浣滃崟浣嶅拰鐥呭彶銆傛煡鍑烘潵涔熶笉鏄垽姝诲垜锛氬潥鎸佸悆鑽妸鐥呮瘨鍘嬪埌娴嬩笉鍑烘潵鐨勪汉锛屼笉浼氬啀浼犵粰鎬т即渚ｃ€傞偅椤圭爺绌惰窡浜嗕竷鐧惧瀵逛即渚ｃ€佷竷涓囧娆℃棤濂楁€ц涓猴紝浼翠荆闂翠紶鏌撴槸闆躲€?</li>
-<li>鏀剁泭锛氥€婅壘婊嬬梾闃叉不鏉′緥銆嬬浜屽崄涓夋潯鍐欐槑銆傚幙绾т互涓婂湴鏂逛汉姘戞斂搴滃崼鐢熶富绠￠儴闂ㄤ細鎸囧畾涓€浜涘尰鐤楀崼鐢熸満鏋勩€傝繖浜涙満鏋勩€屽簲褰撲负鑷効鎺ュ彈鑹炬粙鐥呭挩璇€佹娴嬬殑浜哄憳鍏嶈垂鎻愪緵鍜ㄨ鍜屽垵绛涙娴嬨€嶃€傛煡寰楁棭鏈夊疄闄呯敤澶勶細鐜板湪鐨勬姉鐥呮瘨娌荤枟鑳芥妸鐥呮瘨鍘嬪埌妫€娴嬩笉鍒般€備笘鐣屽崼鐢熺粍缁囩殑鍙ｅ緞鏄€屾帴鍙楁姉鐥呮瘨娌荤枟涓旂梾姣掕浇閲忔娴嬩笉鍒扮殑鎰熸煋鑰呬笉浼氭妸 HIV 浼犳煋缁欐€т即渚ｃ€嶃€侾ARTNER 鐮旂┒璺熻釜浜?782 瀵瑰悓鎬т即渚ｏ紝姣忓閮芥槸涓€鏂规劅鏌撱€佷竴鏂规病鎰熸煋锛屽鍚嶅彨琛€娓呬笉涓€鑷淬€傚悎璁?1593 瀵瑰勾锛堟瘡瀵硅窡韪勾鏁扮浉鍔狅級銆傛湡闂村叡 76088 娆℃棤濂楁€ц涓猴紝鍑虹幇 15 渚嬫柊鎰熸煋銆傛瘮瀵圭梾姣掑熀鍥犲仛绯荤粺鍙戣偛鍒嗘瀽涔嬪悗锛岃繖 15 渚嬪叏閮ㄤ笉鏉ヨ嚜浼翠荆锛屼即渚ｉ棿浼犳挱涓洪浂銆傘€婅壘婊嬬梾闃叉不鏉′緥銆嬬涓夊崄涔濇潯瑙勫畾锛氥€屾湭缁忔湰浜烘垨鑰呭叾鐩戞姢浜哄悓鎰忥紝浠讳綍鍗曚綅鎴栬€呬釜浜轰笉寰楀叕寮€鑹炬粙鐥呯梾姣掓劅鏌撹€呫€佽壘婊嬬梾鐥呬汉鍙婂叾瀹跺睘鐨勫鍚嶃€佷綇鍧€銆佸伐浣滃崟浣嶃€佽倴鍍忋€佺梾鍙茶祫鏂欎互鍙婂叾浠栧彲鑳芥帹鏂嚭鍏跺叿浣撹韩浠界殑淇℃伅銆傘€?</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛氬浗鍔￠櫌 (2006). 鑹炬粙鐥呴槻娌绘潯渚嬶紙绗笁銆佷簩鍗佷笁銆佷笁鍗佸叓銆佷笁鍗佷節鏉★級. <a href="https://wjw.beijing.gov.cn/zwgk_20040/zcwj2022/flfg/202304/t20230408_2992986.html" target="_blank" rel="noopener noreferrer">https://wjw.beijing.gov.cn/zwgk_20040/zcwj2022/flfg/202304/t20230408_2992986.html</a>锛堝寳浜競鍗敓鍋ュ悍濮斿憳浼氳浆杞斤級锛汻odger AJ, Cambiano V, Bruun T, et al. (2019). Risk of HIV transmission through condomless sex in serodifferent gay couples with the HIV-positive partner taking suppressive antiretroviral therapy (PARTNER): final results of a multicentre, prospective, observational study. The Lancet, 393(10189), 2428-2438. <a href="https://doi.org/10.1016/S0140-6736(19)30418-0" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/S0140-6736(19)30418-0</a>锛涘箍涓滅渷鐤剧梾棰勯槻鎺у埗涓績. 鑹炬粙鐥呮娴嬬獥鍙ｆ湡绉戞櫘. <a href="https://web.archive.org/web/20260915151957/https://cdcp.gd.gov.cn/jkjy/kpydjwjxz/content/post_3441820.html" target="_blank" rel="noopener noreferrer">https://web.archive.org/web/20260915151957/https://cdcp.gd.gov.cn/jkjy/kpydjwjxz/content/post_3441820.html</a>锛堢獥鍙ｆ湡閭ｄ釜鏁板瓧锛涘師椤甸潰宸蹭笅绾匡紝閾炬帴涓?2026-09-15 鐨勭綉椤靛瓨妗ｏ級</li>
-<li>澶囨敞锛氱獥鍙ｆ湡鍐冲畾浠€涔堟椂鍊欐煡鎵嶇畻鏁般€傚箍涓滅渷鐤炬帶涓績鐨勫彛寰勬槸锛氭牳閰告娴嬬害 1 鍛ㄣ€佺鍥涗唬鎶楀師鎶椾綋鑱斿悎妫€娴嬬害 2 鍛ㄣ€佺涓変唬鎶椾綋妫€娴嬬害 3 鍛ㄥ彲浠ユ鍑恒€傚缓璁嚦灏?2 鍛ㄥ悗鍐嶆煡锛岄棿闅?2 鑷?4 鍛ㄥ鏌ヤ竴娆°€傛渶鍚庝竴娆￠珮鍗辫涓烘弧 3 涓湀鍚庯紝99.99% 浠ヤ笂鍙互鎺掗櫎鎰熸煋銆傝嚜娴嬭瘯鍓傛樉绀洪槼鎬т笉绛変簬纭瘖锛屽繀椤诲幓鐤炬帶鎴栬€呮瑙勬満鏋勫鏍搞€傛潯渚嬬涓夋潯鍐欐槑锛屼换浣曞崟浣嶅拰涓汉涓嶅緱姝ц鎰熸煋鑰呭強鍏跺灞烇紝濠氬Щ銆佸氨涓氥€佸氨鍖汇€佸叆瀛︾瓑鏉冪泭鍙楁硶寰嬩繚鎶ゃ€傜涓夊崄鍏潯鍚屾椂瑙勫畾锛屾劅鏌撹€呮湁涔夊姟銆屽皢鎰熸煋鎴栬€呭彂鐥呯殑浜嬪疄鍙婃椂鍛婄煡涓庡叾鏈夋€у叧绯昏€呫€嶃€傚瓡鏈熺殑涓夌梾绛涙煡鍜屾瘝濠撮樆鏂绗?27 鑺?</li>
+<li>成本：不花钱。跑一趟疾控或者指定的医疗机构，抽一管血。难的地方是开口去查这一步。</li>
+<li>说人话：去疾控查艾滋病不花钱。没有你本人同意，任何单位和个人都不得公开你的姓名、住址、工作单位和病史。查出来也不是判死刑：坚持吃药把病毒压到测不出来的人，不会再传给性伴侣。那项研究跟了七百多对伴侣、七万多次无套性行为，伴侣间传染是零。</li>
+<li>收益：《艾滋病防治条例》第二十三条写明。县级以上地方人民政府卫生主管部门会指定一些医疗卫生机构。这些机构「应当为自愿接受艾滋病咨询、检测的人员免费提供咨询和初筛检测」。查得早有实际用处：现在的抗病毒治疗能把病毒压到检测不到。世界卫生组织的口径是「接受抗病毒治疗且病毒载量检测不到的感染者不会把 HIV 传染给性伴侣」。PARTNER 研究跟踪了 782 对同性伴侣，每对都是一方感染、一方没感染，学名叫血清不一致。合计 1593 对年（每对跟踪年数相加）。期间共 76088 次无套性行为，出现 15 例新感染。比对病毒基因做系统发育分析之后，这 15 例全部不来自伴侣，伴侣间传播为零。《艾滋病防治条例》第三十九条规定：「未经本人或者其监护人同意，任何单位或者个人不得公开艾滋病病毒感染者、艾滋病病人及其家属的姓名、住址、工作单位、肖像、病史资料以及其他可能推断出其具体身份的信息。」</li>
+<li>证据等级：A</li>
+<li>来源：国务院 (2006). 艾滋病防治条例（第三、二十三、三十八、三十九条）. <a href="https://wjw.beijing.gov.cn/zwgk_20040/zcwj2022/flfg/202304/t20230408_2992986.html" target="_blank" rel="noopener noreferrer">https://wjw.beijing.gov.cn/zwgk_20040/zcwj2022/flfg/202304/t20230408_2992986.html</a>（北京市卫生健康委员会转载）；Rodger AJ, Cambiano V, Bruun T, et al. (2019). Risk of HIV transmission through condomless sex in serodifferent gay couples with the HIV-positive partner taking suppressive antiretroviral therapy (PARTNER): final results of a multicentre, prospective, observational study. The Lancet, 393(10189), 2428-2438. <a href="https://doi.org/10.1016/S0140-6736(19)30418-0" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/S0140-6736(19)30418-0</a>；广东省疾病预防控制中心. 艾滋病检测窗口期科普. <a href="https://web.archive.org/web/20260915151957/https://cdcp.gd.gov.cn/jkjy/kpydjwjxz/content/post_3441820.html" target="_blank" rel="noopener noreferrer">https://web.archive.org/web/20260915151957/https://cdcp.gd.gov.cn/jkjy/kpydjwjxz/content/post_3441820.html</a>（窗口期那个数字；原页面已下线，链接为 2026-09-15 的网页存档）</li>
+<li>备注：窗口期决定什么时候查才算数。广东省疾控中心的口径是：核酸检测约 1 周、第四代抗原抗体联合检测约 2 周、第三代抗体检测约 3 周可以检出。建议至少 2 周后再查，间隔 2 至 4 周复查一次。最后一次高危行为满 3 个月后，99.99% 以上可以排除感染。自测试剂显示阳性不等于确诊，必须去疾控或者正规机构复核。条例第三条写明，任何单位和个人不得歧视感染者及其家属，婚姻、就业、就医、入学等权益受法律保护。第三十八条同时规定，感染者有义务「将感染或者发病的事实及时告知与其有性关系者」。孕期的三病筛查和母婴阻断见第 27 节</li>
 </ul>
-<h3>32. 鑷潃蹇靛ご涓€鍐掑嚭鏉ュ厛鍛婅瘔韬竟鐨勪竴涓汉锛屾妸杩欏嚑鍗佸垎閽熶氦鍑哄幓</h3>
-<!-- 鎴愭湰鏍囩: 閽?0 鏃堕棿=灏?姣呭姏=浜?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?-->
+<h3>32. 自杀念头一冒出来先告诉身边的一个人，把这几十分钟交出去</h3>
+<!-- 成本标签: 钱=0 时间=少 毅力=些 收益=大 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氫笉鑺遍挶銆傞毦鐨勫湴鏂规槸褰撴椂寮€鍙ｏ紝浠ュ強鎵胯鑷繁杩欏嚑涓皬鏃朵笉鑳戒竴涓汉寰呯潃銆?</li>
-<li>璇翠汉璇濓細鑷潃鏈亗鐨勪汉閲屽皢杩戜竴鍗婅锛屼粠蹇靛ご鍐掑嚭鏉ュ埌鍔ㄦ墜涓嶈秴杩?10 鍒嗛挓锛屾墍浠ヨ鐔繃鍘荤殑寰€寰€灏辨槸杩欏嚑鍗佸垎閽熴€傚洓鍒嗕箣涓夌殑浜洪偅娈垫椂闂村拰韬竟浜烘湁杩囨帴瑙︼紝鍙槸娌″紑鍙ｃ€傚洜鑷激杩涜繃鍖婚櫌鐨勪汉锛? 骞村悗绾?2% 姝讳簬鑷潃锛? 骞翠互涓婄害 7%锛岀粷澶у鏁颁汉鍚庢潵娌℃湁姝讳簬鑷潃銆?</li>
-<li>鏀剁泭锛?2 鍚嶈嚜鏉€鏈亗鑰呭湪鍏ラ櫌 3 澶╁唴鎺ュ彈璁胯皥锛?7.6%锛?9 浜猴級璇达紝浠庤繖涓€娆＄涓€娆″啋鍑鸿嚜鏉€蹇靛ご鍒扮湡鐨勫姩鎵嬶紝涓嶈秴杩?10 鍒嗛挓銆傝繖涓繃绋嬫嫋寰楅暱涓€浜涚殑浜猴紝鑷潃鎰忓浘璇勫垎鏄庢樉鏇撮珮銆傚啿鍔ㄦ€ч噺琛ㄧ殑寰楀垎鍜岃繃绋嬮暱鐭病鏈夊叧绯汇€?6.8%锛?3 浜猴級璇达紝鍦ㄨ繖娈垫椂闂撮噷鍜屼即渚ｃ€佸浜烘垨鑰呮湅鍙嬫湁杩囨煇绉嶆帴瑙︺€備綔鑰呯殑缁撹鏄細鑳藉共棰勭殑鏃堕棿绐楅€氬父寰堢煭锛屼笓涓氫汉鍛樺湪杩欎釜闃舵鑳戒粙鍏ョ殑浣欏湴鏈夐檺锛屾墍浠ヨ鎶婅瘑鍒俊鍙峰拰骞查鍔炴硶鏅強鍒版櫘閫氫汉銆傚彟鏈変竴绡囩郴缁熺患杩版眹鎬讳簡 90 椤归殢璁跨爺绌躲€傚洜鑷激灏辫瘖鐨勪汉锛? 骞村悗鍐嶆鑷激浣嗘病姝荤殑姣斾緥鍙栦腑闂村€间负 16%銆? 骞村悗姝讳簬鑷潃鐨勪负 2%銆傞殢璁?9 骞翠互涓婄殑锛岀害 7% 姝讳簬鑷潃</li>
-<li>璇佹嵁绛夌骇锛欱</li>
-<li>鏉ユ簮锛欴eisenhammer EA, Ing CM, Strauss R, Kemmler G, Hinterhuber H, Weiss EM (2009). The duration of the suicidal process: how much time is left for intervention between consideration and accomplishment of a suicide attempt? Journal of Clinical Psychiatry, 70(1), 19-24. <a href="https://doi.org/10.4088/JCP.07m03904" target="_blank" rel="noopener noreferrer">https://doi.org/10.4088/JCP.07m03904</a>锛汷wens D, Horrocks J, House A (2002). Fatal and non-fatal repetition of self-harm: systematic review. British Journal of Psychiatry, 181, 193-199. <a href="https://doi.org/10.1192/bjp.181.3.193" target="_blank" rel="noopener noreferrer">https://doi.org/10.1192/bjp.181.3.193</a></li>
-<li>澶囨敞锛氱粰 B 鐨勫師鍥狅細Deisenhammer 閭ｉ」鍙湁 82 浜猴紝鍑鸿嚜涓€瀹跺尰闄紝闈犲綋浜嬩汉浜嬪悗鍥炲繂銆侽wens 閭ｇ瘒缁欑殑鏄?90 椤瑰仛娉曞悇寮傜殑鐮旂┒鍙栦腑闂寸殑閭ｄ釜姣斾緥锛屼笉鏄妸瀹冧滑鍚堟垚涓€涓暟銆傚悓涓€绡囬噷杩樻槑纭啓鐫€锛岃嚜浼よ€呯殑鑷潃椋庨櫓浠嶆槸鏅€氫汉缇ょ殑鍑犵櫨鍊嶃€傛墍浠ャ€岀粷澶у鏁颁汉鍚庢潵娌℃湁姝讳簬鑷潃銆嶈鐨勬槸杩欐壒浜烘暣浣撶殑鎯呭喌锛屼笉鑳藉綋鎴愬鏌愪竴涓汉鐨勪繚璇侊紝璇ョ湅鐨勭梾杩樻槸瑕佺湅銆傛妸鑷存鎵嬫鎸繙鍜?12356 瑙佹湰鑺傜 25 鏉°€傛儏缁綆钀芥椂鍏堝仛鐨勫嚑浠朵簨瑙佺 3 鑺傜 18 鏉°€傛晳鍥炴潵涔嬪悗鐨勫悗閬楃棁瑙佹湰鑺傜 33 鏉°€傛€€鐤戣韩杈逛汉鏈夎繖绉嶅康澶达紝鍙互鐩存帴闂紝瑙佹湰鑺傜 43 鏉★紙鐩存帴闂韩杈规儏缁笉瀵圭殑浜猴級銆傝韩杈逛汉娴侀湶鍑鸿繖绉嶅康澶存椂浣犺兘鍋氫粈涔堬紝瑙佺 8 鑺傜 15 鏉?</li>
+<li>成本：不花钱。难的地方是当时开口，以及承认自己这几个小时不能一个人待着。</li>
+<li>说人话：自杀未遂的人里将近一半说，从念头冒出来到动手不超过 10 分钟，所以要熬过去的往往就是这几十分钟。四分之三的人那段时间和身边人有过接触，只是没开口。因自伤进过医院的人，1 年后约 2% 死于自杀，9 年以上约 7%，绝大多数人后来没有死于自杀。</li>
+<li>收益：82 名自杀未遂者在入院 3 天内接受访谈：47.6%（39 人）说，从这一次第一次冒出自杀念头到真的动手，不超过 10 分钟。这个过程拖得长一些的人，自杀意图评分明显更高。冲动性量表的得分和过程长短没有关系。76.8%（63 人）说，在这段时间里和伴侣、家人或者朋友有过某种接触。作者的结论是：能干预的时间窗通常很短，专业人员在这个阶段能介入的余地有限，所以要把识别信号和干预办法普及到普通人。另有一篇系统综述汇总了 90 项随访研究。因自伤就诊的人，1 年后再次自伤但没死的比例取中间值为 16%。1 年后死于自杀的为 2%。随访 9 年以上的，约 7% 死于自杀</li>
+<li>证据等级：B</li>
+<li>来源：Deisenhammer EA, Ing CM, Strauss R, Kemmler G, Hinterhuber H, Weiss EM (2009). The duration of the suicidal process: how much time is left for intervention between consideration and accomplishment of a suicide attempt? Journal of Clinical Psychiatry, 70(1), 19-24. <a href="https://doi.org/10.4088/JCP.07m03904" target="_blank" rel="noopener noreferrer">https://doi.org/10.4088/JCP.07m03904</a>；Owens D, Horrocks J, House A (2002). Fatal and non-fatal repetition of self-harm: systematic review. British Journal of Psychiatry, 181, 193-199. <a href="https://doi.org/10.1192/bjp.181.3.193" target="_blank" rel="noopener noreferrer">https://doi.org/10.1192/bjp.181.3.193</a></li>
+<li>备注：给 B 的原因：Deisenhammer 那项只有 82 人，出自一家医院，靠当事人事后回忆。Owens 那篇给的是 90 项做法各异的研究取中间的那个比例，不是把它们合成一个数。同一篇里还明确写着，自伤者的自杀风险仍是普通人群的几百倍。所以「绝大多数人后来没有死于自杀」说的是这批人整体的情况，不能当成对某一个人的保证，该看的病还是要看。把致死手段挪远和 12356 见本节第 25 条。情绪低落时先做的几件事见第 3 节第 18 条。救回来之后的后遗症见本节第 33 条。怀疑身边人有这种念头，可以直接问，见本节第 43 条（直接问身边情绪不对的人）。身边人流露出这种念头时你能做什么，见第 8 节第 15 条</li>
 </ul>
-<h3>33. 鍒妸銆屾晳鍥炴潵銆嶅綋鎴愬厹搴曪細鍠濆啘鑽€佸惛鐓ゆ皵涔嬪悗鎬ヨ瘖鑳戒繚浣忕殑鏄懡锛屼繚涓嶄綇鑲哄拰鑴戝瓙</h3>
-<!-- 鎴愭湰鏍囩: 閽?0 鏃堕棿=灏?姣呭姏=鍚?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?-->
+<h3>33. 别把「救回来」当成兜底：喝农药、吸煤气之后急诊能保住的是命，保不住肺和脑子</h3>
+<!-- 成本标签: 钱=0 时间=少 毅力=否 收益=大 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氫笉鑺遍挶銆傚彧鏄厛鐭ラ亾杩欎欢浜嬨€?</li>
-<li>璇翠汉璇濓細鐧捐崏鏋病鏈夎В鑽紝鍠濅笅鍘荤殑浜哄洓鎴愬鏁戜笉鍥炴潵銆傚畠浼氳鑲哄彂鐐庛€佹參鎱㈠彉纭紝鑲惧拰鑲濅篃璺熺潃鍙椾激銆傜叅姘斾腑姣掕鏁戝洖鏉ョ殑浜猴紝鍏懆鍚庡皢杩戜竴鍗婅剳瀛愪笉濡備粠鍓嶏紝鍋氫簡楂樺帇姘х殑涔熻繕鏈夊洓鍒嗕箣涓€銆?</li>
-<li>鏀剁泭锛氫竴绡囩櫨鑽夋灟涓瘨鐨勭郴缁熺患杩帮細鐥呮鐜囨瀬楂橈紝鍘熷洜鏄畠鏈韩姣掓€у己锛屽張缂轰箯鏈夋晥娌荤枟銆傚畠琚€嗙潃娴撳害宸富鍔ㄦ惉杩涜偤缁勭粐锛屽鍚嶅彨閫嗘祿搴︽搴︿富鍔ㄦ憚鍙栵紝缁撴灉鏄偤鐐庡拰鑲虹氦缁村寲锛屽悓鏃惰繕閫犳垚鑲炬崯浼ゅ拰鑲濇崯浼ゃ€傜患杩板啓鏄庯細涓嶅簲杩涜娲楄儍銆傝娑查€忔瀽鍜岃娑茬亴娴佷笉澶у彲鑳芥敼鍙樹复搴婄梾绋嬨€傛縺绱犱笌鍏嶇柅鎶戝埗鍓傜殑鐤楁晥璇佹嵁寰堝急銆傜患杩拌繕鍐欎簡涓€鍙ワ細銆屾墍鏈変腑蹇冪殑鐥呮鐜囬兘寰堥珮锛屽敖绠℃不鐤楀樊寮傚緢澶с€嶃€傚瓱鍔犳媺 10 瀹朵笁绾у尰闄?2013 鑷?2024 骞存敹浜?1420 渚嬶紝鍏朵腑鍙垎鏋愮殑 257 渚嬶細鐥呮鐜?43.2%銆傚父瑙佽〃鐜版槸鎬ユ€ц偩琛板紩璧风殑涓嬭偄鑲胯儉 71.2%銆佸憰鍚?65.8%銆佽吂鐥?58.0%銆傛€ユ€т竴姘у寲纰充腑姣掔殑璇曢獙鏄弻鐩查殢鏈哄垎缁勶紝涓ょ粍鍚?76 浜恒€傚尰鐢熷拰鐥呬汉閮戒笉鐭ラ亾杩涚殑鏄摢涓€缁勩€傚叚鍛ㄦ椂鐣欎笅璁ょ煡鍚庨仐鐥囩殑锛岄珮鍘嬫哀缁?19/76锛?5.0%锛夈€傚父鍘嬫哀缁?35/76锛?6.1%锛夛紝P=0.007銆傛妸鍏朵粬鍥犵礌鏍℃涔嬪悗 OR 0.45锛?5% CI 0.22 鑷?0.92锛屾嫭鍙烽噷鏄繖涓暟鐨勫彲淇¤寖鍥达級銆傚彟涓€椤圭爺绌惰繛缁瀵熶簡 73 渚嬶細30% 鏈夎鐭ュ悗閬楃棁锛?2% 鍑虹幇鑴戠櫧璐ㄩ珮淇″彿銆備腑鍥借嚜 2014 骞?7 鏈?1 鏃ヨ捣鎾ら攢鐧捐崏鏋按鍓傜殑鐧昏鍜岀敓浜ц鍙紝骞跺仠姝㈢敓浜с€?016 骞?7 鏈?1 鏃ヨ捣锛屾按鍓傚湪鍥藉唴鍋滄閿€鍞拰浣跨敤銆?020 骞?9 鏈?26 鏃ヨ捣锛岀姝㈠彲婧惰兌鍓傚湪澧冨唴閿€鍞€佷娇鐢ㄣ€傛枃浠跺啓鏄庯紝銆岃嚧浣挎湇鐢ㄧ櫨鑽夋灟鑷潃浜嬩欢鏃舵湁鍙戠敓銆嶆槸鍔犲己鐩戠鐨勭洿鎺ュ師鍥?</li>
-<li>璇佹嵁绛夌骇锛欱</li>
-<li>鏉ユ簮锛欸awarammana IB, Buckley NA (2011). Medical management of paraquat ingestion. British Journal of Clinical Pharmacology, 72(5), 745-757. <a href="https://doi.org/10.1111/j.1365-2125.2011.04026.x" target="_blank" rel="noopener noreferrer">https://doi.org/10.1111/j.1365-2125.2011.04026.x</a>锛汣howdhury FR 绛?(2026). Clinical and Laboratory Profile of Paraquat Poisoning: A Toxicological Crisis in Bangladesh. American Journal of Tropical Medicine and Hygiene, 115, 176-182. <a href="https://doi.org/10.4269/ajtmh.25-0719" target="_blank" rel="noopener noreferrer">https://doi.org/10.4269/ajtmh.25-0719</a>锛沇eaver LK, Hopkins RO, Chan KJ, et al. (2002). Hyperbaric oxygen for acute carbon monoxide poisoning. New England Journal of Medicine, 347(14), 1057-1067. <a href="https://doi.org/10.1056/NEJMoa013121" target="_blank" rel="noopener noreferrer">https://doi.org/10.1056/NEJMoa013121</a>锛汸arkinson RB, Hopkins RO, Cleavinger HB, et al. (2002). White matter hyperintensities and neuropsychological outcome following carbon monoxide poisoning. Neurology, 58(10), 1525-1532. <a href="https://doi.org/10.1212/wnl.58.10.1525" target="_blank" rel="noopener noreferrer">https://doi.org/10.1212/wnl.58.10.1525</a>锛涘啘涓氬啘鏉戦儴鍔炲叕鍘?(2018). 鍏充簬鍒囧疄鍔犲己鐧捐崏鏋洃鐫ｇ鐞嗙殑閫氱煡锛堝啘鍔炲啘銆?018銆?7 鍙凤級. <a href="https://www.gov.cn/zhengce/zhengceku/2018-12/31/content_5442594.htm" target="_blank" rel="noopener noreferrer">https://www.gov.cn/zhengce/zhengceku/2018-12/31/content_5442594.htm</a></li>
-<li>澶囨敞锛氱粰 B 鐨勫師鍥狅細杩欏嚑椤圭爺绌剁殑瀵硅薄鏄腑姣掔梾浜猴紝涓嶆槸鍗曚竴鐨勮嚜鏉€鏈亗浜虹兢锛屼竴姘у寲纰抽偅椤硅瘯楠岄噷杩樺惈鎰忓涓瘨鐨勪汉銆傛墍浠ヤ笂闈㈢殑鍚庨仐鐥囨瘮渚嬶紝涓嶈兘鐩存帴褰撴垚銆岃嚜鏉€鏈亗鑰呯殑鍚庢灉姒傜巼銆嶃€傝兘纭畾鐨勬槸锛屾病鏈夊摢涓€绉嶆柟寮忚兘涓嶇暀鍚庨仐鐥囥€備竴姘у寲纰崇殑鐜板満澶勭疆瑙佺 13 鑺傜 19 鏉°€傝鏈嶅啘鑽拰鑽墿鍏堝埆鍌悙銆佸甫涓婄摱瀛愬氨鍖伙紝瑙佺 13 鑺傜 20 鏉°€傚閲屼笉鍥ゅ啘鑽拰瀹夌湢鑽鏈妭绗?25 鏉°€傛湰涔︿笉姣旇緝涓嶅悓鏂瑰紡鐨勮嚧姝荤巼锛屼篃涓嶅啓浠讳綍鍏蜂綋鍋氭硶</li>
+<li>成本：不花钱。只是先知道这件事。</li>
+<li>说人话：百草枯没有解药，喝下去的人四成多救不回来。它会让肺发炎、慢慢变硬，肾和肝也跟着受伤。煤气中毒被救回来的人，六周后将近一半脑子不如从前，做了高压氧的也还有四分之一。</li>
+<li>收益：一篇百草枯中毒的系统综述：病死率极高，原因是它本身毒性强，又缺乏有效治疗。它被逆着浓度差主动搬进肺组织，学名叫逆浓度梯度主动摄取，结果是肺炎和肺纤维化，同时还造成肾损伤和肝损伤。综述写明：不应进行洗胃。血液透析和血液灌流不大可能改变临床病程。激素与免疫抑制剂的疗效证据很弱。综述还写了一句：「所有中心的病死率都很高，尽管治疗差异很大」。孟加拉 10 家三级医院 2013 至 2024 年收了 1420 例，其中可分析的 257 例：病死率 43.2%。常见表现是急性肾衰引起的下肢肿胀 71.2%、呕吐 65.8%、腹痛 58.0%。急性一氧化碳中毒的试验是双盲随机分组，两组各 76 人。医生和病人都不知道进的是哪一组。六周时留下认知后遗症的，高压氧组 19/76（25.0%）。常压氧组 35/76（46.1%），P=0.007。把其他因素校正之后 OR 0.45（95% CI 0.22 至 0.92，括号里是这个数的可信范围）。另一项研究连续观察了 73 例：30% 有认知后遗症，12% 出现脑白质高信号。中国自 2014 年 7 月 1 日起撤销百草枯水剂的登记和生产许可，并停止生产。2016 年 7 月 1 日起，水剂在国内停止销售和使用。2020 年 9 月 26 日起，禁止可溶胶剂在境内销售、使用。文件写明，「致使服用百草枯自杀事件时有发生」是加强监管的直接原因</li>
+<li>证据等级：B</li>
+<li>来源：Gawarammana IB, Buckley NA (2011). Medical management of paraquat ingestion. British Journal of Clinical Pharmacology, 72(5), 745-757. <a href="https://doi.org/10.1111/j.1365-2125.2011.04026.x" target="_blank" rel="noopener noreferrer">https://doi.org/10.1111/j.1365-2125.2011.04026.x</a>；Chowdhury FR 等 (2026). Clinical and Laboratory Profile of Paraquat Poisoning: A Toxicological Crisis in Bangladesh. American Journal of Tropical Medicine and Hygiene, 115, 176-182. <a href="https://doi.org/10.4269/ajtmh.25-0719" target="_blank" rel="noopener noreferrer">https://doi.org/10.4269/ajtmh.25-0719</a>；Weaver LK, Hopkins RO, Chan KJ, et al. (2002). Hyperbaric oxygen for acute carbon monoxide poisoning. New England Journal of Medicine, 347(14), 1057-1067. <a href="https://doi.org/10.1056/NEJMoa013121" target="_blank" rel="noopener noreferrer">https://doi.org/10.1056/NEJMoa013121</a>；Parkinson RB, Hopkins RO, Cleavinger HB, et al. (2002). White matter hyperintensities and neuropsychological outcome following carbon monoxide poisoning. Neurology, 58(10), 1525-1532. <a href="https://doi.org/10.1212/wnl.58.10.1525" target="_blank" rel="noopener noreferrer">https://doi.org/10.1212/wnl.58.10.1525</a>；农业农村部办公厅 (2018). 关于切实加强百草枯监督管理的通知（农办农〔2018〕17 号）. <a href="https://www.gov.cn/zhengce/zhengceku/2018-12/31/content_5442594.htm" target="_blank" rel="noopener noreferrer">https://www.gov.cn/zhengce/zhengceku/2018-12/31/content_5442594.htm</a></li>
+<li>备注：给 B 的原因：这几项研究的对象是中毒病人，不是单一的自杀未遂人群，一氧化碳那项试验里还含意外中毒的人。所以上面的后遗症比例，不能直接当成「自杀未遂者的后果概率」。能确定的是，没有哪一种方式能不留后遗症。一氧化碳的现场处置见第 13 节第 19 条。误服农药和药物先别催吐、带上瓶子就医，见第 13 节第 20 条。家里不囤农药和安眠药见本节第 25 条。本书不比较不同方式的致死率，也不写任何具体做法</li>
 </ul>
-<h3>34. 鍒嬁銆岃汉鍑犲ぉ灏卞ソ銆嶈祵楂樺鍧犺惤锛氳繘浜嗗垱浼?ICU 鐨勪汉澶氭暟娲讳笅鏉ワ紝浠ｄ环鎸夊勾绠?</h3>
-<!-- 鎴愭湰鏍囩: 閽?0 鏃堕棿=灏?姣呭姏=鍚?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?-->
+<h3>34. 别拿「躺几天就好」赌高处坠落：进了创伤 ICU 的人多数活下来，代价按年算</h3>
+<!-- 成本标签: 钱=0 时间=少 毅力=否 收益=大 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氫笉鑺遍挶銆傚彧鏄厛鎶婅繖绗旇处鐪嬫竻銆?</li>
-<li>璇翠汉璇濓細浠庨珮澶勬憯涓嬫潵杩涗簡鍒涗激 ICU 鐨勪汉锛屾浜＄殑鍙湁 5.5%锛屼絾浼ゅ緱閲嶃€佹不寰椾箙銆傚皢杩戜竴鍗婂悓鏃朵激鍒颁笁涓互涓婇儴浣嶏紝涓夊垎涔嬩竴澶氫笂浜嗗懠鍚告満锛屾渶闀跨殑鍦?ICU 浣忎簡 132 澶┿€備竴鍗婁汉鎽斾笅鏉ョ殑楂樺害涓嶈秴杩?3 绫炽€備激寰楅噸鐨勪汉锛屽悗鏉ヨ兘鍥炲幓涓婄彮鐨勪笉鍒板叚鎴愩€?</li>
-<li>鏀剁泭锛氭柊鐤嗗崡閮ㄤ竴瀹跺垱浼?ICU锛堥噸鐥囩洃鎶ょ梾鎴匡級鍋氳繃缁熻銆備粠 2020 骞?4 鏈堝埌 2024 骞?7 鏈堬紝杩欓噷鍏辨敹浜?289 渚嬮珮澶勫潬钀姐€傝繖鎵逛汉骞冲潎骞撮緞 40.3 宀併€傚潬钀介珮搴︿腑浣嶆暟 3 绫筹紝26.6% 浠?5 绫充互涓婂潬钀斤紝11.4% 浠?10 绫充互涓婂潬钀姐€備激鎯呰瘎鍒?ISS 涓綅鏁?24锛岃繖濂楄瘎鍒嗚秺楂樹激寰楄秺閲嶏紝63.3% 鐨勪汉 ISS 澶т簬 20銆?7.1% 浼ゅ強 3 涓互涓婇儴浣嶏紝18.3% 浼ゅ強 4 涓互涓娿€?6% 闇€瑕佷笂鍛煎惛鏈猴紙鏈烘閫氭皵锛夛紝涓婃満鏃堕暱涓綅 103.5 灏忔椂銆傚湪 ICU 浣忛櫌涓綅 8 澶╋紝鏈€鐭?1 澶╋紝鏈€闀?132 澶┿€傞櫌鍐呮垨 30 澶╂浜＄巼 5.5%锛?6/289锛夈€傚痉鍥戒竴瀹跺垱浼や腑蹇冩敹浜?84 渚?ISS 鈮?25 鐨勫鍙戜激鐥呬汉锛屽鍙戜激灏辨槸鍚屾椂浼ゅ埌澶氫釜閮ㄤ綅銆傞殢璁挎湡鍐呴噸杩斿伐浣滅殑姣斾緥涓?58%銆傚勾榫勩€両CU 娌荤枟鏃堕暱鍜岃嚜璇勫仴搴锋槸棰勬祴鍥犵礌銆?024 骞村叏鍥藉尰闄㈡鍧囦綇闄㈣垂鐢紙骞冲潎姣忔浣忛櫌鑺辩殑閽憋級9870.0 鍏冿紝鎸夊綋骞翠环鏍兼瘮涓婂勾涓嬮檷 4.3%銆傚悓骞村叏鍥藉崼鐢熸€昏垂鐢?90895.5 浜垮厓锛屽叾涓釜浜哄崼鐢熸敮鍑?25007.5 浜垮厓锛屽崰 27.5%</li>
-<li>璇佹嵁绛夌骇锛欱</li>
-<li>鏉ユ簮锛欳hen Y, Li W, Wang X, Zhong Q, Abudurexiti A, Qiu Q, Li J, Luo J (2025). Clinical features and prognostic predictors for patients admitted to trauma intensive care unit due to fall from height in South Xinjiang. International Journal of Emergency Medicine, 18, 142. <a href="https://doi.org/10.1186/s12245-025-00959-4" target="_blank" rel="noopener noreferrer">https://doi.org/10.1186/s12245-025-00959-4</a>锛汼immel S, Wurm S, Drisch S, Woltmann A, Coenen M (2020). Pr盲diktion der R眉ckkehr zur Arbeit nach Polytrauma bei Patienten mit einem ISS von mindestens 25. Die Rehabilitation, 59(2), 95-103. <a href="https://doi.org/10.1055/a-0977-6853" target="_blank" rel="noopener noreferrer">https://doi.org/10.1055/a-0977-6853</a>锛涘浗瀹跺崼鐢熷仴搴峰 (2025). 2024 骞存垜鍥藉崼鐢熷仴搴蜂簨涓氬彂灞曠粺璁″叕鎶ヨВ璇? <a href="https://www.gov.cn/zhengce/202512/content_7050025.htm" target="_blank" rel="noopener noreferrer">https://www.gov.cn/zhengce/202512/content_7050025.htm</a></li>
-<li>澶囨敞锛氱粰 B 鐨勫師鍥狅細鍧犺惤閭ｄ竴缁勬槸涓€瀹跺尰闄㈢炕鏃х梾鍘嗙粺璁″嚭鏉ョ殑锛屾病鏈夊垎寮€鎰忓鍜岃嚜浼ゃ€傞噸杩斿伐浣滈偅涓€缁勫彧鏈?84 浜猴紝鑰屼笖鍦ㄥ痉鍥姐€備袱缁勯兘涓嶈兘褰撴垚銆岃烦妤间箣鍚庝竴涓汉浼氭€庝箞鏍枫€嶃€傛鍧囦綇闄㈣垂鐢ㄦ槸鎷垮叏鍥芥墍鏈変綇闄㈢畻鍑烘潵鐨勫钩鍧囨暟锛屼笉鏄潬钀戒激鐨勮垂鐢紝寮曞畠鍙负缁欎竴涓彲浠ユ牳瀵圭殑涓嬮檺銆傚師鏂囧彧缁欎簡杩欐壒浜虹殑楂樺害鍒嗗竷锛屾墍浠ヨ繖閲屼笉鍐欓珮搴︿笌鍚庢灉鐨勫搴斿叧绯汇€傞暱鏈熷崸搴婃湡闂存渶璇ョ洴鐨勫帇鐤绗?17 鑺傜 8 鏉°€傛繁闈欒剦琛€鏍撲笌鑲烘爴濉炶绗?13 鑺傜 11 鏉★紙涓€鏉¤吙绐佺劧鑲胯捣鏉ワ級銆傚康澶村啋鍑烘潵鏃舵€庝箞鍔炶鏈妭绗?32 鏉°€備腑姣掔殑鍚庢灉瑙佹湰鑺傜 33 鏉★紙鍒妸銆屾晳鍥炴潵銆嶅綋鎴愬厹搴曪級銆備笅闈㈡槸浣滆€呮湰浜虹殑缁忓巻锛氫粠鍥涙ゼ鍧犺惤锛屼簨鍓嶄互涓恒€屽崄鍑犲ぉ灏卞ソ銆嶏紝瀹為檯浣忛櫌涓€骞淬€佸洓澶勬墜鏈€佷笂浜嗛挗鏉裤€佸崐骞翠笉鑳借嚜宸辩炕韬潗璧凤紝瀹堕噷涓烘鍊熼挶</li>
+<li>成本：不花钱。只是先把这笔账看清。</li>
+<li>说人话：从高处摔下来进了创伤 ICU 的人，死亡的只有 5.5%，但伤得重、治得久。将近一半同时伤到三个以上部位，三分之一多上了呼吸机，最长的在 ICU 住了 132 天。一半人摔下来的高度不超过 3 米。伤得重的人，后来能回去上班的不到六成。</li>
+<li>收益：新疆南部一家创伤 ICU（重症监护病房）做过统计。从 2020 年 4 月到 2024 年 7 月，这里共收了 289 例高处坠落。这批人平均年龄 40.3 岁。坠落高度中位数 3 米，26.6% 从 5 米以上坠落，11.4% 从 10 米以上坠落。伤情评分 ISS 中位数 24，这套评分越高伤得越重，63.3% 的人 ISS 大于 20。47.1% 伤及 3 个以上部位，18.3% 伤及 4 个以上。36% 需要上呼吸机（机械通气），上机时长中位 103.5 小时。在 ICU 住院中位 8 天，最短 1 天，最长 132 天。院内或 30 天死亡率 5.5%（16/289）。德国一家创伤中心收了 84 例 ISS ≥ 25 的多发伤病人，多发伤就是同时伤到多个部位。随访期内重返工作的比例为 58%。年龄、ICU 治疗时长和自评健康是预测因素。2024 年全国医院次均住院费用（平均每次住院花的钱）9870.0 元，按当年价格比上年下降 4.3%。同年全国卫生总费用 90895.5 亿元，其中个人卫生支出 25007.5 亿元，占 27.5%</li>
+<li>证据等级：B</li>
+<li>来源：Chen Y, Li W, Wang X, Zhong Q, Abudurexiti A, Qiu Q, Li J, Luo J (2025). Clinical features and prognostic predictors for patients admitted to trauma intensive care unit due to fall from height in South Xinjiang. International Journal of Emergency Medicine, 18, 142. <a href="https://doi.org/10.1186/s12245-025-00959-4" target="_blank" rel="noopener noreferrer">https://doi.org/10.1186/s12245-025-00959-4</a>；Simmel S, Wurm S, Drisch S, Woltmann A, Coenen M (2020). Prädiktion der Rückkehr zur Arbeit nach Polytrauma bei Patienten mit einem ISS von mindestens 25. Die Rehabilitation, 59(2), 95-103. <a href="https://doi.org/10.1055/a-0977-6853" target="_blank" rel="noopener noreferrer">https://doi.org/10.1055/a-0977-6853</a>；国家卫生健康委 (2025). 2024 年我国卫生健康事业发展统计公报解读. <a href="https://www.gov.cn/zhengce/202512/content_7050025.htm" target="_blank" rel="noopener noreferrer">https://www.gov.cn/zhengce/202512/content_7050025.htm</a></li>
+<li>备注：给 B 的原因：坠落那一组是一家医院翻旧病历统计出来的，没有分开意外和自伤。重返工作那一组只有 84 人，而且在德国。两组都不能当成「跳楼之后一个人会怎么样」。次均住院费用是拿全国所有住院算出来的平均数，不是坠落伤的费用，引它只为给一个可以核对的下限。原文只给了这批人的高度分布，所以这里不写高度与后果的对应关系。长期卧床期间最该盯的压疮见第 17 节第 8 条。深静脉血栓与肺栓塞见第 13 节第 11 条（一条腿突然肿起来）。念头冒出来时怎么办见本节第 32 条。中毒的后果见本节第 33 条（别把「救回来」当成兜底）。下面是作者本人的经历：从四楼坠落，事前以为「十几天就好」，实际住院一年、四处手术、上了钢板、半年不能自己翻身坐起，家里为此借钱</li>
 </ul>
-<h3>35. 鍒嬁銆屽皯涓€涓偩娌′粈涔堛€嶆崲閽憋細鍓╀笅閭ｄ釜瑕佹浛涓や釜骞叉椿锛屽崠杩囪偩鐨勪汉浜嬪悗 86% 璇磋韩浣撳彉宸?</h3>
-<!-- 鎴愭湰鏍囩: 閽?0 鏃堕棿=灏?姣呭姏=鍚?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?-->
+<h3>35. 别拿「少一个肾没什么」换钱：剩下那个要替两个干活，卖过肾的人事后 86% 说身体变差</h3>
+<!-- 成本标签: 钱=0 时间=少 毅力=否 收益=大 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氫笉鑺遍挶銆傚彧鏄厛鎶婅繖绗旇处鐪嬫竻銆?</li>
-<li>璇翠汉璇濓細鎹愯偩鍓嶅眰灞傜瓫鏌ャ€佹崘鍚庢湁浜哄鏌ョ殑姝ｈ鎹愮尞鑰咃紝15 骞村悗璧板埌灏挎瘨鐥囩殑鏄瘡涓囦汉 31 浜猴紝鍚屾牱鍋ュ悍浣嗘病鎹愮殑浜烘槸姣忎竾浜?4 浜恒€傚崠鑲剧殑浜烘病鏈夌瓫鏌ヤ篃娌℃湁澶嶆煡锛? 骞村悗 86% 璇磋韩浣撳彉宸紝鍥涘垎涔嬩笁杩樻瑺鐫€鍊恒€?</li>
-<li>鏀剁泭锛氱編鍥芥妸 96,217 鍚嶆椿浣撴崘鑲捐€呭拰 20,024 鍚嶆潯浠剁浉褰撶殑鍋ュ悍鏈崘鑰呬綔浜嗘瘮杈冦€傚悗鑰呮潵鑷編鍥藉叏鍥藉仴搴蜂笌钀ュ吇璋冩煡锛圢HANES III锛夈€傚啀鐪嬫崘鍚?15 骞磋蛋鍒板翱姣掔棁鐨勪及璁￠闄┿€傛崘鐚€呬负姣忎竾浜?30.8 浜猴紝鍙俊鑼冨洿 95% CI 24.3鈥?8.5銆傚仴搴锋湭鎹愯€呬负姣忎竾浜?3.9 浜猴紝鍙俊鑼冨洿 95% CI 0.8鈥?.9锛孭&lt;0.001銆傚翱姣掔棁鐨勫鍚嶆槸缁堟湯鏈熻偩鐥?ESRD锛屽埌浜嗚繖涓€姝ュ緱闈犻€忔瀽鎴栫Щ妞嶇淮鎸併€備及璁′竴杈堝瓙璧板埌 ESRD 鐨勯闄╋細鎹愮尞鑰呮瘡涓囦汉 90 浜猴紝鏈粡绛涙煡鐨勪竴鑸汉缇ゆ瘡涓囦汉 326 浜猴紝鍋ュ悍鏈崘鑰呮瘡涓囦汉 14 浜恒€傛尓濞佷篃鍋氳繃涓€娆℃瘮杈冦€備竴杈规槸 1901 鍚嶆崘鑲捐€咃紝涓綅闅忚 15.1 骞淬€傚彟涓€杈规槸 32,621 鍚嶇鍚堟崘鐚潯浠剁殑瀵圭収锛屼腑浣嶉殢璁?24.9 骞淬€傛崘鑲捐€呯殑鍏ㄥ洜姝讳骸楂樼害涓夋垚锛圚R 1.30锛?5% CI 1.11鈥?.52锛夈€傚績琛€绠℃浜￠珮绾﹀洓鎴愶紙HR 1.40锛?.03鈥?.91锛夈€傝蛋鍒?ESRD 楂樺崄鍊嶄笂涓嬶紙HR 11.38锛?.37鈥?9.6锛夈€傝繖鎵规崘鐚€呯殑 ESRD 鎬诲彂鐢熺巼涓烘瘡鐧句竾浜?302 渚嬨€傜編鍥藉彟鏈?3698 鍚嶆崘鑲捐€咃紝鍏朵腑 11 浜哄彂鐢?ESRD锛岀浉褰撲簬姣忕櫨涓囦汉瑙傚療涓€骞撮噷 180 渚嬶紝鍚屾湡涓€鑸汉缇ゆ槸 268 渚嬨€傝繖鎵逛汉閲屾湁 255 浜哄湪鎹愬悗骞冲潎 12.2卤9.2 骞村洖鏉ュ鏌ャ€傚叾涓?85.5% 鐨勮偩婊よ繃鍔熻兘 GFR 鈮?60 ml/min/1.73 m虏銆?0 鏄复搴婃甯镐笅闄愩€?2.1% 鏈夐珮琛€鍘嬨€?2.7% 鏈夎泲鐧藉翱锛堝翱閲屾紡鍑鸿泲鐧斤級銆傚嵃搴﹂噾濂堣皟鏌ヤ簡 305 鍚嶅崠鑲捐€咃紝骞冲潎鍦ㄥ崠鑲?6 骞村悗鎺ュ彈璋冩煡锛?6% 涓鸿繕鍊鸿€屽崠锛屽钩鍧囨嬁鍒?1070 缇庡厓銆傚垏鑲惧悗瀹跺涵骞冲潎鏀跺叆涓嬮檷涓夊垎涔嬩竴锛圥&lt;0.001锛夛紝鐢熸椿鍦ㄨ传鍥扮嚎浠ヤ笅鐨勪汉鏁板鍔狅紝鍥涘垎涔嬩笁鍦ㄨ皟鏌ユ椂浠嶈礋鍊恒€?6% 鎶ュ憡鍋ュ悍鐘跺喌杈冨垏鑲惧墠鍙樺樊锛?9% 涓嶅缓璁粬浜哄崠鑲?</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛歁uzaale AD, Massie AB, Wang MC, Montgomery RA, McBride MA, Wainright JL, Segev DL (2014). Risk of end-stage renal disease following live kidney donation. JAMA, 311(6), 579-586. <a href="https://doi.org/10.1001/jama.2013.285141" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/jama.2013.285141</a>锛汳j酶en G, Hallan S, Hartmann A, et al. (2014). Long-term risks for kidney donors. Kidney International, 86(1), 162-167. <a href="https://doi.org/10.1038/ki.2013.460" target="_blank" rel="noopener noreferrer">https://doi.org/10.1038/ki.2013.460</a>锛汭brahim HN, Foley R, Tan L, et al. (2009). Long-term consequences of kidney donation. New England Journal of Medicine, 360(5), 459-469. <a href="https://doi.org/10.1056/NEJMoa0804883" target="_blank" rel="noopener noreferrer">https://doi.org/10.1056/NEJMoa0804883</a>锛汫oyal M, Mehta RL, Schneiderman LJ, Sehgal AR (2002). Economic and health consequences of selling a kidney in India. JAMA, 288(13), 1589-1593. <a href="https://doi.org/10.1001/jama.288.13.1589" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/jama.288.13.1589</a></li>
-<li>澶囨敞锛氫簤璁細Ibrahim 閭ｉ」鎷挎櫘閫氫汉褰撴瘮杈冨璞★紝缁撹鏄崘鑲捐€呯殑瀛樻椿銆佷互鍙婅蛋鍒板翱姣掔棁锛圗SRD锛夌殑椋庨櫓锛岄兘鍜屾櫘閫氫汉鐩镐豢銆侻uzaale 鍜?Mj酶en 鎶婃瘮杈冨璞℃崲鎴愩€屽悓鏍峰仴搴枫€佸悓鏍峰鏍兼崘鑲俱€嶇殑浜轰箣鍚庯紝椋庨櫓灏辨槑鏄鹃珮鍑烘潵銆傚垎姝у湪鎷胯皝鏉ユ瘮锛屼笉鍦ㄦ崘鐚€呰韩涓娿€備笁椤圭爺绌堕兘鍚屾剰缁濆椋庨櫓涓嶅ぇ锛?5 骞?30.8/涓囷紝鍗充竴涓囦汉閲?30.8 涓級銆傛墍浠ラ噸鐐逛笉鍦ㄣ€屾崘鑲惧緢鍗遍櫓銆嶏紝瑕佺湅鐨勬槸鍙﹀涓や欢浜嬨€傚墿涓嬮偅涓偩纭疄鍦ㄤ粯浠ｄ环锛岄珮琛€鍘嬪拰铔嬬櫧灏跨殑姣斾緥鎽嗗湪閭ｉ噷銆傝繖浜涙暟瀛楀叏閮藉嚭鑷湳鍓嶇粡杩囩瓫鏌ャ€佹湳鍚庢湁浜哄鏌ャ€佸嚭浜嬭兘鍥炲尰闄㈢殑浜虹兢锛岄粦甯傚崠鑲捐繖涓夋牱涓€鏍烽兘娌℃湁锛屽嵃搴﹂偅浠藉洖璁跨粰鍑虹殑鏄彟涓€绉嶇粨灞€銆傚師濮嬬爺绌跺彧缁欏埌鑷堪鍋ュ悍鍙樺樊銆佽泲鐧藉翱銆侀珮琛€鍘嬪拰灏挎瘨鐥囧彂鐢熺巼锛屾病鏈夈€屽灏戜汉鍗у簥銆嶈繖绫绘暟瀛楋紝杩欓噷涓嶆浛瀹冭ˉ銆傚悎娉曟崘鐚殑浜插睘闄愬埗銆佺綒娆句笌鍒戣矗瑙佺 9 鑺傜 22 鏉★紙涓嶅崠鑷繁鐨勫櫒瀹橈級銆傚凡缁忚閫忔瀽鐨勶紝璺ㄧ渷鐩存帴缁撶畻鍜岄暱鏈熺敤鑽绗?16 鑺傜 1銆? 鏉★紙鑽寜鍖诲槺鍚冩弧銆侀棬璇婃參鐗圭梾寮傚湴澶囨锛?</li>
+<li>成本：不花钱。只是先把这笔账看清。</li>
+<li>说人话：捐肾前层层筛查、捐后有人复查的正规捐献者，15 年后走到尿毒症的是每万人 31 人，同样健康但没捐的人是每万人 4 人。卖肾的人没有筛查也没有复查，6 年后 86% 说身体变差，四分之三还欠着债。</li>
+<li>收益：美国把 96,217 名活体捐肾者和 20,024 名条件相当的健康未捐者作了比较。后者来自美国全国健康与营养调查（NHANES III）。再看捐后 15 年走到尿毒症的估计风险。捐献者为每万人 30.8 人，可信范围 95% CI 24.3–38.5。健康未捐者为每万人 3.9 人，可信范围 95% CI 0.8–8.9，P&lt;0.001。尿毒症的学名是终末期肾病 ESRD，到了这一步得靠透析或移植维持。估计一辈子走到 ESRD 的风险：捐献者每万人 90 人，未经筛查的一般人群每万人 326 人，健康未捐者每万人 14 人。挪威也做过一次比较。一边是 1901 名捐肾者，中位随访 15.1 年。另一边是 32,621 名符合捐献条件的对照，中位随访 24.9 年。捐肾者的全因死亡高约三成（HR 1.30，95% CI 1.11–1.52）。心血管死亡高约四成（HR 1.40，1.03–1.91）。走到 ESRD 高十倍上下（HR 11.38，4.37–29.6）。这批捐献者的 ESRD 总发生率为每百万人 302 例。美国另有 3698 名捐肾者，其中 11 人发生 ESRD，相当于每百万人观察一年里 180 例，同期一般人群是 268 例。这批人里有 255 人在捐后平均 12.2±9.2 年回来复查。其中 85.5% 的肾滤过功能 GFR ≥ 60 ml/min/1.73 m²。60 是临床正常下限。32.1% 有高血压。12.7% 有蛋白尿（尿里漏出蛋白）。印度金奈调查了 305 名卖肾者，平均在卖肾 6 年后接受调查：96% 为还债而卖，平均拿到 1070 美元。切肾后家庭平均收入下降三分之一（P&lt;0.001），生活在贫困线以下的人数增加，四分之三在调查时仍负债。86% 报告健康状况较切肾前变差，79% 不建议他人卖肾</li>
+<li>证据等级：A</li>
+<li>来源：Muzaale AD, Massie AB, Wang MC, Montgomery RA, McBride MA, Wainright JL, Segev DL (2014). Risk of end-stage renal disease following live kidney donation. JAMA, 311(6), 579-586. <a href="https://doi.org/10.1001/jama.2013.285141" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/jama.2013.285141</a>；Mjøen G, Hallan S, Hartmann A, et al. (2014). Long-term risks for kidney donors. Kidney International, 86(1), 162-167. <a href="https://doi.org/10.1038/ki.2013.460" target="_blank" rel="noopener noreferrer">https://doi.org/10.1038/ki.2013.460</a>；Ibrahim HN, Foley R, Tan L, et al. (2009). Long-term consequences of kidney donation. New England Journal of Medicine, 360(5), 459-469. <a href="https://doi.org/10.1056/NEJMoa0804883" target="_blank" rel="noopener noreferrer">https://doi.org/10.1056/NEJMoa0804883</a>；Goyal M, Mehta RL, Schneiderman LJ, Sehgal AR (2002). Economic and health consequences of selling a kidney in India. JAMA, 288(13), 1589-1593. <a href="https://doi.org/10.1001/jama.288.13.1589" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/jama.288.13.1589</a></li>
+<li>备注：争议：Ibrahim 那项拿普通人当比较对象，结论是捐肾者的存活、以及走到尿毒症（ESRD）的风险，都和普通人相仿。Muzaale 和 Mjøen 把比较对象换成「同样健康、同样够格捐肾」的人之后，风险就明显高出来。分歧在拿谁来比，不在捐献者身上。三项研究都同意绝对风险不大（15 年 30.8/万，即一万人里 30.8 个）。所以重点不在「捐肾很危险」，要看的是另外两件事。剩下那个肾确实在付代价，高血压和蛋白尿的比例摆在那里。这些数字全都出自术前经过筛查、术后有人复查、出事能回医院的人群，黑市卖肾这三样一样都没有，印度那份回访给出的是另一种结局。原始研究只给到自述健康变差、蛋白尿、高血压和尿毒症发生率，没有「多少人卧床」这类数字，这里不替它补。合法捐献的亲属限制、罚款与刑责见第 9 节第 22 条（不卖自己的器官）。已经要透析的，跨省直接结算和长期用药见第 16 节第 1、2 条（药按医嘱吃满、门诊慢特病异地备案）</li>
 </ul>
-<h3>36. 涓嶆崱銆佷笉鎷嗐€佷笉鍗栨潵璺笉鏄庣殑閲戝睘浠讹紝甯︿笁鍙惰崏璀︾ず鏍囧織鐨勭杩滅偣</h3>
-<!-- 鎴愭湰鏍囩: 閽?0 鏃堕棿=灏?姣呭姏=鍚?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?-->
+<h3>36. 不捡、不拆、不卖来路不明的金属件，带三叶草警示标志的离远点</h3>
+<!-- 成本标签: 钱=0 时间=少 毅力=否 收益=大 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氫笉鑺遍挶銆傜湅瑙佷笉璁よ瘑鐨勯噾灞炲渾鏌便€侀搮缃愩€佷粠璁惧涓婃媶涓嬫潵鐨勯儴浠跺氨缁曞紑锛屼笉鎹°€佷笉鎷嗐€佷笉鏀捐繘鍙ｈ銆?</li>
-<li>璇翠汉璇濓細杈愬皠娌℃湁姘斿懗銆侀鑹插拰娓╁害锛屽鏁版斁灏勬簮灏辨槸涓€鎴櫘閫氶噾灞烇紝鎵€浠ャ€岀湅鐫€娌′簨銆嶄笉鑳藉綋鍒ゆ柇銆傛櫘閫氫汉鎾炰笂鐨勬鐜囨瀬浣庯紝姣忓勾姣忎竾鏋氭斁灏勬簮鍑轰簨涓嶅埌 1 璧枫€傚彲涓€鏃︽挒涓婂氨鏃犳硶鎸藉洖锛?987 骞村反瑗挎湁浜烘妸搴熷純璇婃墍鐨勬斁鐤楁満褰撳簾閾佹媶寮€锛屾渶鍚?4 浜烘浜°€?</li>
-<li>鏀剁泭锛氭埅鑷?2025 骞达紝鍏ㄥ浗绾︽湁 17.8 涓囨灇鍦ㄧ敤鏀惧皠婧愬拰 35.5 涓囧彴锛堝锛夊皠绾胯缃€傛斁灏勬簮杈愬皠浜嬫晠鐨勫勾鍙戠敓鐜囩ǔ瀹氬湪姣忎竾鏋?1 璧蜂互涓嬨€傚垎绾ф槸杩欐牱鐨勩€傗厾绫汇€佲叀绫绘斁灏勬簮涓㈠け銆佽鐩椼€佸け鎺э紝灏辨瀯鎴愰噸澶ц緪灏勪簨鏁呫€傗參绫讳负杈冨ぇ杈愬皠浜嬫晠銆傗叄绫汇€佲叅绫讳涪澶辫鐩楋紝鎴栬€呭鑷翠汉鍛樺彈鍒拌秴杩囧勾鍓傞噺闄愬€肩殑鐓у皠锛屼负涓€鑸緪灏勪簨鏁呫€傚畼鏂规渚嬶細2020 骞?6 鏈堬紝瀹佸閽㈤搧闆嗗洟鐐奸搧鍘傚湪楂樼倝绠￠亾鏀归€犻」鐩笂鍋?纬 灏勭嚎鎺激浣滀笟銆備竴鏋?鈪?绫婚摫-192 鏀惧皠婧愪娇涓夊悕浣滀笟浜哄憳鍙楀埌鐓у皠銆傞檲鏌愭煇宸︽墜鎬ユ€ф斁灏勬€х毊鑲ゆ崯浼?鈪?搴︺€傚垬鏌愭煇宸︽墜鎷囨寚銆侀鎸?鈪?搴︼紝涓寚銆佹棤鍚嶆寚銆佸皬鎸?鈪?搴︺€傛▕鏌愭煇宸︽墜 鈪?鈪?搴︺€備笁浜哄彈鐓у墏閲忓潎涓ラ噸瓒呰繃鍥藉鏍囧噯瑙勫畾鐨勫墏閲忛檺鍊硷紝涓ゅ璐ｄ换鍗曚綅琚悐閿€杈愬皠瀹夊叏璁稿彲璇佸苟缃氭 7 涓囧厓銆傚浗闄呮渚嬶細1987 骞村反瑗挎垐浜氬凹浜氾紝搴熷純璇婃墍鐨勮繙璺濈娌荤枟鏈鸿鎷嗚В锛屽彇鍑轰簡閲岄潰 50.8 TBq 鐨勯摨-137 鏀惧皠婧愶紝杩樺紕鐮翠簡瑁呮簮鐨勫瘑灏佸泭銆傜害 112,000 浜烘帴鍙楃洃娴嬨€傚叾涓?249 浜哄彈鍒颁綋鍐呮垨浣撳姹℃煋銆傝繖 249 浜洪噷锛?29 浜轰负涓害鑷抽噸搴︽薄鏌擄紝50 浜洪渶瀵嗗垏鍖诲鐩戞姢銆傛渶鍚?4 浜烘浜★紙鍏ㄥ浗 / 鍥介檯锛?</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛氱敓鎬佺幆澧冮儴 (2025). 2024 涓浗鐢熸€佺幆澧冪姸鍐靛叕鎶? <a href="https://www.mee.gov.cn/ywgz/sthjjcgl/hjzljcypj/202506/t20250605_1120773.shtml" target="_blank" rel="noopener noreferrer">https://www.mee.gov.cn/ywgz/sthjjcgl/hjzljcypj/202506/t20250605_1120773.shtml</a>锛涘浗瀹舵牳瀹夊叏灞€ (2026). 2025 骞存垜鍥芥牳涓庤緪灏勫畨鍏ㄧ洃绠″伐浣滄垚鏁? <a href="https://nnsa.mee.gov.cn/tpxw/202601/t20260107_1140062.html" target="_blank" rel="noopener noreferrer">https://nnsa.mee.gov.cn/tpxw/202601/t20260107_1140062.html</a>锛涚敓鎬佺幆澧冮儴 (2021). 鍏充簬涓€璧?纬 灏勭嚎鎺激浣滀笟杩濇硶杩濊閫犳垚杈愬皠浜嬫晠妗堜欢澶勭悊鎯呭喌鐨勯€氭姤. <a href="https://www.mee.gov.cn/xxgk2018/xxgk/xxgk06/202101/t20210121_818216.html" target="_blank" rel="noopener noreferrer">https://www.mee.gov.cn/xxgk2018/xxgk/xxgk06/202101/t20210121_818216.html</a>锛涘浗鍔￠櫌 (2019). 鏀惧皠鎬у悓浣嶇礌涓庡皠绾胯缃畨鍏ㄥ拰闃叉姢鏉′緥锛?019 骞翠慨璁紝绗笁鍗佸洓銆佸洓鍗佷簩銆佸叚鍗佸叓鏉★級. <a href="https://www.mee.gov.cn/ywgz/fgbz/xzfg/201909/t20190918_734315.shtml" target="_blank" rel="noopener noreferrer">https://www.mee.gov.cn/ywgz/fgbz/xzfg/201909/t20190918_734315.shtml</a>锛涚幆澧冧繚鎶ら儴 (2009). 鍏充簬寤虹珛鏀惧皠鎬у悓浣嶇礌涓庡皠绾胯缃緪灏勪簨鏁呭垎绾у鐞嗗拰鎶ュ憡鍒跺害鐨勯€氱煡锛堣緪灏勪簨鏁呭垎绾ф爣鍑嗭級. <a href="https://www.mee.gov.cn/gkml/zj/wj/200910/t20091022_172414.htm" target="_blank" rel="noopener noreferrer">https://www.mee.gov.cn/gkml/zj/wj/200910/t20091022_172414.htm</a>锛汭nternational Atomic Energy Agency (1988). The Radiological Accident in Goi芒nia. IAEA, Vienna. <a href="https://www-pub.iaea.org/MTCD/Publications/PDF/Pub815_web.pdf" target="_blank" rel="noopener noreferrer">https://www-pub.iaea.org/MTCD/Publications/PDF/Pub815_web.pdf</a>锛涚帇绂忓, 鐜嬭繘, 浣欏畞涔? 绛?(2019). 鍗椾含鈥?.7鈥濇斁灏勬簮涓㈠け浜嬫晠鍙楃収鑰呯収鍚庡尰瀛﹂殢璁胯瀵? 涓崕鏀惧皠鍖诲涓庨槻鎶ゆ潅蹇? 39(11), 859-863. <a href="https://doi.org/10.3760/cma.j.issn.0254-5098.2019.11.011" target="_blank" rel="noopener noreferrer">https://doi.org/10.3760/cma.j.issn.0254-5098.2019.11.011</a>锛涗腑鍥界幆澧冩姤 (2014-05-15). 鏀惧皠婧愪涪澶辩殑48灏忔椂锛堝緪灏忔€椼€侀偟鑹恒€佽鏂规ǖ銆佹堡鏅尮锛? <a href="http://nnsa.mee.gov.cn/ztzl/haqshmhsh/hjbzl/202406/P020240624472937009953.pdf" target="_blank" rel="noopener noreferrer">http://nnsa.mee.gov.cn/ztzl/haqshmhsh/hjbzl/202406/P020240624472937009953.pdf</a>锛堢綉椤靛瓨妗?<a href="https://web.archive.org/web/20261005044102/http://nnsa.mee.gov.cn/ztzl/haqshmhsh/hjbzl/202406/P020240624472937009953.pdf" target="_blank" rel="noopener noreferrer">https://web.archive.org/web/20261005044102/http://nnsa.mee.gov.cn/ztzl/haqshmhsh/hjbzl/202406/P020240624472937009953.pdf</a>锛?</li>
-<li>澶囨敞锛氱湡閬囧埌浜嗭細绂昏繙鐐癸紝璁颁綇浣嶇疆锛屽埆鎼姩锛屾墦 110銆傛潯渚嬭姹傚悜鐢熸€佺幆澧冧富绠￠儴闂ㄣ€佸叕瀹夐儴闂ㄣ€佸崼鐢熶富绠￠儴闂ㄦ姤鍛娿€傝窛绂诲拰鏃堕棿鏄敮涓€鏈夋晥鐨勯槻鎶わ紝闅旂潃鍙ｈ鎴栬€呭鏂欒娌℃湁浠讳綍鐢ㄣ€俋 鍏夋満銆丆T 杩欑被闈犻€氱數浜х敓灏勭嚎鐨勮缃紝鏂數涔嬪悗涓嶆畫鐣欐斁灏勬€с€傜湡姝ｅ嵄闄╃殑鏄澶囬噷閭ｆ灇瀵嗗皝鏀惧皠婧愩€傚尰闄㈢殑鏀剧枟鏈恒€佺閬撳拰閿呯倝涓婄殑 纬 鎺激鏈恒€佹祴浜曚华銆佹枡浣嶈閮藉惈婧愩€傛媶寮€澶栧３灏辨槸鎶婃簮鏆撮湶鍑烘潵銆傝€屽畠浠殑澶栬鍜屾櫘閫氶噾灞炰欢娌℃湁鍖哄埆銆傛墍浠ュ埆鎸囨湜璁ゅ嚭鏀惧皠婧愶紝鏉ヨ矾涓嶆槑鐨勮澶囬儴浠朵竴寰嬩笉鎷嗐€佷笉鍗栥€佷笉甯﹀洖瀹躲€傚浗鍐呬篃鍑鸿繃鏈変汉涓嶇煡鎯呮崱璧锋斁灏勬簮鐨勪簨銆?014 骞?5 鏈堬紝鍗椾含鍖栧伐鍥尯涓€瀹跺伐鍘傞噷锛屾帰浼や綔涓氫涪浜嗕竴鏋氶摫-192 鏀惧皠婧愩€備竴鍚嶄粨搴撶鐞嗗憳宸℃鏃舵妸瀹冩崱璧锋潵锛岃杩涗簡宸ヤ綔鏈嶅彛琚嬨€備粬鍚庢潵琚瘖鏂负杞诲害鎬ユ€ф斁灏勭梾鍜屽彸鑵挎€ユ€ф斁灏勬€х毊鑲ゆ崯浼わ紝浣忛櫌娌讳簡涓€骞达紝鍑犲勾鍚庝粛瑕佹媱鍙屾嫄璧拌矾銆傚彟鏈変袱鍚嶅伐浜鸿瑙佽繃瀹冿紝鍏朵腑涓€浜哄湪涓婄彮璺笂浠ヤ负鏄」閾撅紝鎷胯捣鏉ョ湅杩囧張鎵斾簡銆備涪婧愮殑鏄ぉ娲ュ畯杩伐绋嬫娴嬪彂灞曟湁闄愬叕鍙搞€傛浜嬫病鏈夋壘鍒板畼鏂逛簨鏁呴€氭姤銆傛崱婧愯€呯殑浼ゆ儏鍙栬嚜姹熻嫃鐪佺柧鎺т腑蹇冨尰鐢熷彂琛ㄧ殑闅忚璁烘枃锛屾崱璧峰張鎵旀帀閭ｆ鍙湁銆婁腑鍥界幆澧冩姤銆嬬殑璁拌€呮姤閬撱€傚簾鍝佸洖鏀躲€佹媶瑙ｃ€佷簲閲戝拰宸ュ湴杩欏嚑琛岀殑浜猴紝椋庨櫓姣斾竴鑸汉楂樺緱澶氾紝宸ュ湴涓婅鍒扮敾鐫€涓夊彾鑽夋爣蹇楃殑璀︽垝鍖哄氨缁曡銆傛牳鐢电珯娉勬紡鏄彟涓€绫讳簨鏁咃紝鏅€氫汉閬囧埌鐨勬鐜囨洿浣庛€傚彈鐩婁汉涓昏鏄綘鑷繁鍜屽悓鍦ㄧ幇鍦虹殑瀹朵汉銆?</li>
+<li>成本：不花钱。看见不认识的金属圆柱、铅罐、从设备上拆下来的部件就绕开，不捡、不拆、不放进口袋。</li>
+<li>说人话：辐射没有气味、颜色和温度，多数放射源就是一截普通金属，所以「看着没事」不能当判断。普通人撞上的概率极低，每年每万枚放射源出事不到 1 起。可一旦撞上就无法挽回，1987 年巴西有人把废弃诊所的放疗机当废铁拆开，最后 4 人死亡。</li>
+<li>收益：截至 2025 年，全国约有 17.8 万枚在用放射源和 35.5 万台（套）射线装置。放射源辐射事故的年发生率稳定在每万枚 1 起以下。分级是这样的。Ⅰ类、Ⅱ类放射源丢失、被盗、失控，就构成重大辐射事故。Ⅲ类为较大辐射事故。Ⅳ类、Ⅴ类丢失被盗，或者导致人员受到超过年剂量限值的照射，为一般辐射事故。官方案例：2020 年 6 月，宁夏钢铁集团炼铁厂在高炉管道改造项目上做 γ 射线探伤作业。一枚 Ⅱ 类铱-192 放射源使三名作业人员受到照射。陈某某左手急性放射性皮肤损伤 Ⅲ 度。刘某某左手拇指、食指 Ⅳ 度，中指、无名指、小指 Ⅲ 度。樊某某左手 Ⅰ-Ⅱ 度。三人受照剂量均严重超过国家标准规定的剂量限值，两家责任单位被吊销辐射安全许可证并罚款 7 万元。国际案例：1987 年巴西戈亚尼亚，废弃诊所的远距离治疗机被拆解，取出了里面 50.8 TBq 的铯-137 放射源，还弄破了装源的密封囊。约 112,000 人接受监测。其中 249 人受到体内或体外污染。这 249 人里，129 人为中度至重度污染，50 人需密切医学监护。最后 4 人死亡（全国 / 国际）</li>
+<li>证据等级：A</li>
+<li>来源：生态环境部 (2025). 2024 中国生态环境状况公报. <a href="https://www.mee.gov.cn/ywgz/sthjjcgl/hjzljcypj/202506/t20250605_1120773.shtml" target="_blank" rel="noopener noreferrer">https://www.mee.gov.cn/ywgz/sthjjcgl/hjzljcypj/202506/t20250605_1120773.shtml</a>；国家核安全局 (2026). 2025 年我国核与辐射安全监管工作成效. <a href="https://nnsa.mee.gov.cn/tpxw/202601/t20260107_1140062.html" target="_blank" rel="noopener noreferrer">https://nnsa.mee.gov.cn/tpxw/202601/t20260107_1140062.html</a>；生态环境部 (2021). 关于一起 γ 射线探伤作业违法违规造成辐射事故案件处理情况的通报. <a href="https://www.mee.gov.cn/xxgk2018/xxgk/xxgk06/202101/t20210121_818216.html" target="_blank" rel="noopener noreferrer">https://www.mee.gov.cn/xxgk2018/xxgk/xxgk06/202101/t20210121_818216.html</a>；国务院 (2019). 放射性同位素与射线装置安全和防护条例（2019 年修订，第三十四、四十二、六十八条）. <a href="https://www.mee.gov.cn/ywgz/fgbz/xzfg/201909/t20190918_734315.shtml" target="_blank" rel="noopener noreferrer">https://www.mee.gov.cn/ywgz/fgbz/xzfg/201909/t20190918_734315.shtml</a>；环境保护部 (2009). 关于建立放射性同位素与射线装置辐射事故分级处理和报告制度的通知（辐射事故分级标准）. <a href="https://www.mee.gov.cn/gkml/zj/wj/200910/t20091022_172414.htm" target="_blank" rel="noopener noreferrer">https://www.mee.gov.cn/gkml/zj/wj/200910/t20091022_172414.htm</a>；International Atomic Energy Agency (1988). The Radiological Accident in Goiânia. IAEA, Vienna. <a href="https://www-pub.iaea.org/MTCD/Publications/PDF/Pub815_web.pdf" target="_blank" rel="noopener noreferrer">https://www-pub.iaea.org/MTCD/Publications/PDF/Pub815_web.pdf</a>；王福如, 王进, 余宁乐, 等 (2019). 南京“5.7”放射源丢失事故受照者照后医学随访观察. 中华放射医学与防护杂志, 39(11), 859-863. <a href="https://doi.org/10.3760/cma.j.issn.0254-5098.2019.11.011" target="_blank" rel="noopener noreferrer">https://doi.org/10.3760/cma.j.issn.0254-5098.2019.11.011</a>；中国环境报 (2014-05-15). 放射源丢失的48小时（徐小怗、邵艺、褚方樵、汤景茹）. <a href="http://nnsa.mee.gov.cn/ztzl/haqshmhsh/hjbzl/202406/P020240624472937009953.pdf" target="_blank" rel="noopener noreferrer">http://nnsa.mee.gov.cn/ztzl/haqshmhsh/hjbzl/202406/P020240624472937009953.pdf</a>（网页存档 <a href="https://web.archive.org/web/20261005044102/http://nnsa.mee.gov.cn/ztzl/haqshmhsh/hjbzl/202406/P020240624472937009953.pdf" target="_blank" rel="noopener noreferrer">https://web.archive.org/web/20261005044102/http://nnsa.mee.gov.cn/ztzl/haqshmhsh/hjbzl/202406/P020240624472937009953.pdf</a>）</li>
+<li>备注：真遇到了：离远点，记住位置，别搬动，打 110。条例要求向生态环境主管部门、公安部门、卫生主管部门报告。距离和时间是唯一有效的防护，隔着口袋或者塑料袋没有任何用。X 光机、CT 这类靠通电产生射线的装置，断电之后不残留放射性。真正危险的是设备里那枚密封放射源。医院的放疗机、管道和锅炉上的 γ 探伤机、测井仪、料位计都含源。拆开外壳就是把源暴露出来。而它们的外观和普通金属件没有区别。所以别指望认出放射源，来路不明的设备部件一律不拆、不卖、不带回家。国内也出过有人不知情捡起放射源的事。2014 年 5 月，南京化工园区一家工厂里，探伤作业丢了一枚铱-192 放射源。一名仓库管理员巡检时把它捡起来，装进了工作服口袋。他后来被诊断为轻度急性放射病和右腿急性放射性皮肤损伤，住院治了一年，几年后仍要拄双拐走路。另有两名工人说见过它，其中一人在上班路上以为是项链，拿起来看过又扔了。丢源的是天津宏迪工程检测发展有限公司。此事没有找到官方事故通报。捡源者的伤情取自江苏省疾控中心医生发表的随访论文，捡起又扔掉那段只有《中国环境报》的记者报道。废品回收、拆解、五金和工地这几行的人，风险比一般人高得多，工地上见到画着三叶草标志的警戒区就绕行。核电站泄漏是另一类事故，普通人遇到的概率更低。受益人主要是你自己和同在现场的家人。</li>
 </ul>
-<h3>37. 璧屽埌鍊熼挶杩樿祵銆佸績鎯呬竴鐩翠綆钀芥椂锛屽厛鎵?12356锛屽啀鎶婇摱琛屽崱鍜屾敮浠樺瘑鐮佷氦缁欏浜虹</h3>
-<!-- 鎴愭湰鏍囩: 閽?0 鏃堕棿=灏?姣呭姏=浜?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?-->
+<h3>37. 赌到借钱还赌、心情一直低落时，先打 12356，再把银行卡和支付密码交给家人管</h3>
+<!-- 成本标签: 钱=0 时间=少 毅力=些 收益=大 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氫笉鑺遍挶銆傛墦涓€涓數璇濄€傛妸閾惰鍗°€佹敮浠樺瘑鐮佸拰鍊熻捶 App 浜ょ粰瀹朵汉绠°€傞毦鍦ㄨ鍏堟壙璁よ嚜宸辨帶鍒朵笉浣忋€?</li>
-<li>璇翠汉璇濓細鍘诲尰闄㈢湅杩囪祵鍗氶棶棰樼殑浜猴紝鑷潃姝讳骸鏄悓榫勪汉鐨?15 鍊嶏紝鎬绘浜℃槸 1.8 鍊嶃€傝兘棰勫厛鐪嬪嚭璋佷細鑷潃鐨勪俊鍙锋槸鎶戦儊銆傛墍浠ヨ祵鍒板€熼挶杩樿祵銆佹儏缁竴鐩翠綆钀斤紝鍏堟墦 12356銆?</li>
-<li>鏀剁泭锛氱憺鍏镐竴椤瑰叏鍥界櫥璁扮爺绌讹紝鎵惧嚭 2005 鍒?2016 骞村湪涓撶琚瘖鏂负璧屽崥闅滅鐨?2099 浜恒€傝祵鍗氶殰纰嶅氨鏄帶鍒朵笉浣忓湴璧屻€佽祵鍒板奖鍝嶇敓娲汇€傚拰鍚岄緞鐨勭憺鍏镐汉姣旓紝20 鍒?74 宀佽繖浜涗汉鐨勬€绘浜＄巼鏄?1.8 鍊嶏紝鑷潃姝讳骸鐜囨槸 15 鍊嶏紙杩欎袱涓暟鏄爣鍑嗗寲姝讳骸姣?SMR锛夈€傞殢璁挎湡闂?67 浜烘浜★紝鍏朵腑 21 浜烘浜庤嚜鏉€銆傝兘棰勬祴鑷潃姝讳骸鐨勬槸鎶戦儊銆備綔鑰?2023 骞村彂浜嗘洿姝ｏ細鐢锋€ц嚜鏉€鏄?12.1 鍊嶏紝濂虫€ф槸 16.1 鍊嶃€備腑鍥戒粠 2025 骞?5 鏈?1 鏃ヨ捣锛屽叏鍥芥嫧 12356 鑳芥帴閫氬績鐞嗘彺鍔╃儹绾匡紝姣忓ぉ寮€閫氫笉灏戜簬 18 灏忔椂锛堢憺鍏?/ 鍏ㄥ浗锛?</li>
-<li>璇佹嵁绛夌骇锛欱</li>
-<li>鏉ユ簮锛欿arlsson A, H氓kansson A. (2018). Gambling disorder, increased mortality, suicidality, and associated comorbidity: A longitudinal nationwide register study. Journal of Behavioral Addictions, 7(4), 1091鈥?099. <a href="https://doi.org/10.1556/2006.7.2018.112" target="_blank" rel="noopener noreferrer">https://doi.org/10.1556/2006.7.2018.112</a>锛汯arlsson A, H氓kansson A. (2023). Corrigendum to: Gambling disorder, increased mortality, suicidality, and associated comorbidity. Journal of Behavioral Addictions, 12(1), 302. <a href="https://doi.org/10.1556/2006.2023.10000" target="_blank" rel="noopener noreferrer">https://doi.org/10.1556/2006.2023.10000</a>锛涘浗瀹跺崼鐢熷仴搴峰 (2024). 鍏充簬搴旂敤&quot;12356&quot;鍏ㄥ浗缁熶竴蹇冪悊鎻村姪鐑嚎鐢佃瘽鍙风爜鐨勯€氱煡锛堝浗鍗尰鏀垮嚱銆?024銆?59 鍙凤級. <a href="https://www.gov.cn/zhengce/zhengceku/202412/content_6994470.htm" target="_blank" rel="noopener noreferrer">https://www.gov.cn/zhengce/zhengceku/202412/content_6994470.htm</a></li>
-<li>澶囨敞锛氱粰 B 鏄洜涓哄彧鏈変竴椤圭爺绌讹紝鑰屼笖鍙畻浜嗗幓涓撶鐪嬭繃鐥呯殑浜恒€傝繖浜涗汉鐥呮儏鍋忛噸锛屾墍浠?15 鍊嶄笉鑳藉鍒版墍鏈夋墦鐗岀殑浜鸿韩涓娿€傛妸閽变氦缁欏浜虹鏄粡楠屽仛娉曪紝娌℃湁鐩存帴鐮旂┒锛屽崟绠楁槸 C 绾с€傝祵鍗氱殑娉曞緥绾㈢嚎瑙佺 9 鑺傜 13 鏉★紙涓嶆娊澶淬€佷笉鐜╃綉缁滆祵鍗氾級銆傚閲屼汉娆犱簡璧屽€鸿涓嶈鏇夸粬杩橈紝瑙佺 8 鑺傜 44 鏉★紙璧屽€轰笉绠楀か濡诲叡鍚屽€哄姟锛夈€傝嚜鏉€蹇靛ご鍐掑嚭鏉ヤ箣鍚庢€庝箞鍔烇紝瑙佹湰鑺傜 32 鏉★紙鍏堝憡璇夎韩杈圭殑涓€涓汉锛夈€傚彈鐩婁汉涓昏鏄綘鑷繁锛屽浜哄彂鐜拌嫍澶存椂涔熷彲浠ユ媺鐫€浠栫収杩欐潯鍔炪€?</li>
+<li>成本：不花钱。打一个电话。把银行卡、支付密码和借贷 App 交给家人管。难在要先承认自己控制不住。</li>
+<li>说人话：去医院看过赌博问题的人，自杀死亡是同龄人的 15 倍，总死亡是 1.8 倍。能预先看出谁会自杀的信号是抑郁。所以赌到借钱还赌、情绪一直低落，先打 12356。</li>
+<li>收益：瑞典一项全国登记研究，找出 2005 到 2016 年在专科被诊断为赌博障碍的 2099 人。赌博障碍就是控制不住地赌、赌到影响生活。和同龄的瑞典人比，20 到 74 岁这些人的总死亡率是 1.8 倍，自杀死亡率是 15 倍（这两个数是标准化死亡比 SMR）。随访期间 67 人死亡，其中 21 人死于自杀。能预测自杀死亡的是抑郁。作者 2023 年发了更正：男性自杀是 12.1 倍，女性是 16.1 倍。中国从 2025 年 5 月 1 日起，全国拨 12356 能接通心理援助热线，每天开通不少于 18 小时（瑞典 / 全国）</li>
+<li>证据等级：B</li>
+<li>来源：Karlsson A, Håkansson A. (2018). Gambling disorder, increased mortality, suicidality, and associated comorbidity: A longitudinal nationwide register study. Journal of Behavioral Addictions, 7(4), 1091–1099. <a href="https://doi.org/10.1556/2006.7.2018.112" target="_blank" rel="noopener noreferrer">https://doi.org/10.1556/2006.7.2018.112</a>；Karlsson A, Håkansson A. (2023). Corrigendum to: Gambling disorder, increased mortality, suicidality, and associated comorbidity. Journal of Behavioral Addictions, 12(1), 302. <a href="https://doi.org/10.1556/2006.2023.10000" target="_blank" rel="noopener noreferrer">https://doi.org/10.1556/2006.2023.10000</a>；国家卫生健康委 (2024). 关于应用&quot;12356&quot;全国统一心理援助热线电话号码的通知（国卫医政函〔2024〕259 号）. <a href="https://www.gov.cn/zhengce/zhengceku/202412/content_6994470.htm" target="_blank" rel="noopener noreferrer">https://www.gov.cn/zhengce/zhengceku/202412/content_6994470.htm</a></li>
+<li>备注：给 B 是因为只有一项研究，而且只算了去专科看过病的人。这些人病情偏重，所以 15 倍不能套到所有打牌的人身上。把钱交给家人管是经验做法，没有直接研究，单算是 C 级。赌博的法律红线见第 9 节第 13 条（不抽头、不玩网络赌博）。家里人欠了赌债该不该替他还，见第 8 节第 44 条（赌债不算夫妻共同债务）。自杀念头冒出来之后怎么办，见本节第 32 条（先告诉身边的一个人）。受益人主要是你自己，家人发现苗头时也可以拉着他照这条办。</li>
 </ul>
-<h3>38. 鏈夐珮鍗辨€ц涓虹殑鐢风敺鎬ц涓鸿€咃紝鍘昏壘婊嬬梾瀹氱偣鍖婚櫌闂毚闇插墠棰勯槻鑽紝鎸夋椂鍚冭兘灏戞劅鏌撲竷鎴愪互涓?</h3>
-<!-- 鎴愭湰鏍囩: 閽?澶?鏃堕棿=涓?姣呭姏=浜?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?-->
+<h3>38. 有高危性行为的男男性行为者，去艾滋病定点医院问暴露前预防药，按时吃能少感染七成以上</h3>
+<!-- 成本标签: 钱=多 时间=中 毅力=些 收益=大 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氳繖鏄鏂硅嵂锛屽鏁板湴鏂硅嚜璐癸紝浠锋牸浠庡嚑鐧惧埌鍑犲崈鍏冧笉绛夈€傚紑鑽墠瑕佹煡 HIV銆佽偩鍔熻兘鍜屼箼鑲濄€備箣鍚庢瘡 3 涓湀澶嶆煡涓€娆°€傞毦鐨勬槸澶╁ぉ鎸夋椂鍚冦€?</li>
-<li>璇翠汉璇濓細杩樻病鎰熸煋鐨勪汉鎻愬墠鍚冧竴绉嶆姉鐥呮瘨鑽紝鍙毚闇插墠棰勯槻銆傛寜鏃跺悆鐨勪汉锛屾劅鏌撻闄╄兘灏戜竷鎴愪互涓娿€傚悆鍚冨仠鍋滅殑浜猴紝鍩烘湰娌℃晥鏋溿€傚畠鏄鏂硅嵂锛岃鍏堝湪鍖婚櫌鏌ヨ繃韬綋鍐嶅紑锛屼箣鍚庡畾鏈熷鏌ャ€?</li>
-<li>鏀剁泭锛氳繖绉嶈嵂鏄仼鏇蹭粬婊ㄥ姞鏇胯绂忛煢鐨勫鏂圭墖銆俰PrEx 璇曢獙璁?2499 鍚嶇敺鐢锋€ц涓鸿€呭拰璺ㄦ€у埆濂虫€ф瘡澶╁悆鑽垨鑰呭悆瀹夋叞鍓傘€傚悆鑽粍鎰熸煋灏戜簡 44%锛?5% CI 15鈥?3锛夈€傝閲屾祴寰楀埌鑽殑浜猴紝淇濇姢鏁堟灉寮哄緱澶氥€傝嫳鍥界殑 PROUD 璇曢獙鏈?544 鍚嶇敺鐢锋€ц涓鸿€呫€傜珛鍒诲悆鑽殑涓€缁勬瘮鎺ㄨ繜涓€骞寸殑涓€缁勬劅鏌撳皯 86%锛?0% CI 64鈥?6锛?0% 鍙俊鑼冨洿锛夈€傛硶鍥界殑 IPERGAY 璇曢獙鍦ㄦ€ц涓哄墠鍚庢寜闇€鍚冭嵂锛屾劅鏌撳皯 86%锛?5% CI 40鈥?8锛夈€備笘鐣屽崼鐢熺粍缁囩敤鐨勪竴绡囪崯钀冨垎鏋愭妸鍚勯」璇曢獙鍚堣捣鏉ャ€傛€讳綋 RR 0.49锛?.33鈥?.73锛屼綆绾?51%锛夈€傚悆鑽巼瓒呰繃涓冩垚鐨勮瘯楠岋紝RR 0.30锛?.21鈥?.45锛屼綆绾?70%锛夈€傚悆鑽巼涓嶅埌鍥涙垚鐨勶紝RR 0.95锛屽熀鏈棤鏁堛€傚浗瀹惰嵂鐩戝眬 2020 骞?8 鏈堟壒鍑嗚繖涓嵂鐢ㄤ簬鏆撮湶鍓嶉闃层€傛垚浜哄拰浣撻噸鑷冲皯 35 鍏枻鐨勯潚灏戝勾鍙互鐢紙澶氬浗 / 涓浗锛?</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛欸rant RM, Lama JR, Anderson PL, et al. (2010). Preexposure chemoprophylaxis for HIV prevention in men who have sex with men. New England Journal of Medicine, 363(27), 2587鈥?599. <a href="https://doi.org/10.1056/NEJMoa1011205" target="_blank" rel="noopener noreferrer">https://doi.org/10.1056/NEJMoa1011205</a>锛汳cCormack S, Dunn DT, Desai M, et al. (2016). Pre-exposure prophylaxis to prevent the acquisition of HIV-1 infection (PROUD): effectiveness results from the pilot phase of a pragmatic open-label randomised trial. The Lancet, 387(10013), 53鈥?0. <a href="https://doi.org/10.1016/S0140-6736(15)00056-2" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/S0140-6736(15)00056-2</a>锛汳olina JM, Capitant C, Spire B, et al. (2015). On-demand preexposure prophylaxis in men at high risk for HIV-1 infection. New England Journal of Medicine, 373(23), 2237鈥?246. <a href="https://doi.org/10.1056/NEJMoa1506273" target="_blank" rel="noopener noreferrer">https://doi.org/10.1056/NEJMoa1506273</a>锛汧onner VA, Dalglish SL, Kennedy CE, et al. (2016). Effectiveness and safety of oral HIV preexposure prophylaxis for all populations. AIDS, 30(12), 1973鈥?983. <a href="https://doi.org/10.1097/QAD.0000000000001145" target="_blank" rel="noopener noreferrer">https://doi.org/10.1097/QAD.0000000000001145</a>锛沊u JJ, Huang XJ, Liu XC, et al. (2020). Consensus statement on human immunodeficiency virus pre-exposure prophylaxis in China. Chinese Medical Journal, 133(23), 2840鈥?846. <a href="https://doi.org/10.1097/CM9.0000000000001181" target="_blank" rel="noopener noreferrer">https://doi.org/10.1097/CM9.0000000000001181</a>锛堜腑鏂囩増銆婁腑鍥?HIV 鏆撮湶鍓嶉闃茬敤鑽笓瀹跺叡璇嗐€嬶級锛沇orld Health Organization (2019). What's the 2+1+1? Event-driven oral pre-exposure prophylaxis to prevent HIV for men who have sex with men (WHO/CDS/HIV/19.8). <a href="https://www.who.int/publications/i/item/what-s-the-2-1-1-event-driven-oral-pre-exposure-prophylaxis-to-prevent-hiv-for-men-who-have-sex-with-men" target="_blank" rel="noopener noreferrer">https://www.who.int/publications/i/item/what-s-the-2-1-1-event-driven-oral-pre-exposure-prophylaxis-to-prevent-hiv-for-men-who-have-sex-with-men</a>锛涘浗鍔￠櫌鍔炲叕鍘?(2024). 涓浗閬忓埗涓庨槻娌昏壘婊嬬梾瑙勫垝锛?024鈥?030 骞达級. <a href="https://www.gov.cn/zhengce/zhengceku/202412/content_6992033.htm" target="_blank" rel="noopener noreferrer">https://www.gov.cn/zhengce/zhengceku/202412/content_6992033.htm</a></li>
-<li>澶囨敞锛氳瘯楠岄噷鐨勪汉涓昏鏄敺鐢锋€ц涓鸿€咃紝鎵€浠ユ渶璇ュ幓闂殑鏄繖缇や汉銆傚叾浠栨湁楂樺嵄鎬ц涓虹殑浜猴紝涔熷彲浠ュ幓闂尰鐢熷悎涓嶅悎閫傘€傚紑鑽墠蹇呴』鍏堢‘璁ゆ病鎰熸煋锛屽凡缁忔劅鏌撶殑浜哄悆瀹冧細璁╃梾姣掕€愯嵂锛岃嚜娴嬭瘯绾哥殑缁撴灉涓嶈兘褰撲緷鎹€傛湁涔欒倽鐨勪汉鍋滆嵂鍙兘璁╄倽鐐庡彂浣滐紝鎵€浠ュ紑鑽墠瑕佹煡銆備笘鐣屽崼鐢熺粍缁囧彧瀵圭敺鐢锋€ц涓鸿€呮帹鑽愭寜闇€鍚冿紝閫傚悎骞冲潎姣忓懆灏戜簬 2 娆＄殑浜恒€傚悆娉曟槸鎬ц涓哄墠 2 鍒?24 灏忔椂鍚?2 鐗囷紝涔嬪悗 24 灏忔椂銆?8 灏忔椂鍚勫悆 1 鐗囥€傚コ鎬у拰鏈変箼鑲濈殑浜哄彧鑳芥瘡澶╁悆銆傛寜闇€鍚冪殑璇曢獙閲岋紝鍚冭嵂缁勮儍鑲犻亾鍜岃偩鑴忕殑涓嶈壇鍙嶅簲姣斿畨鎱板墏缁勫锛屾墍浠ュ鏌ヤ笉鑳界渷銆傚浗鍐?2019 骞磋捣鍦ㄧ敺鐢锋€ц涓轰汉缇ら噷璇曠偣锛?024 骞寸殑瑙勫垝鍐欑殑鏄€岃鑼冨疄鏂姐€嶃€傚叏鍥藉厤璐圭殑鏀跨瓥娌℃湁鏌ュ埌銆傚幓褰撳湴鑹炬粙鐥呭畾鐐瑰尰闄㈢殑鎰熸煋绉戞垨鎬х梾鑹炬粙鐥呴棬璇婂紑锛屽厛鎵撳綋鍦扮柧鎺х數璇濋棶鍝鑳藉紑銆傚畠涓嶉槻姊呮瘨銆佹穻鐥呰繖浜涙€х梾锛屽畨鍏ㄥ鐓ф牱瑕佺敤锛岃鏈妭绗?30 鏉★紙鎬ц涓哄叏绋嬬敤瀹夊叏濂楋級銆傚凡缁忓彂鐢熶簡楂樺嵄琛屼负锛岃ˉ鏁戣绗?13 鑺傜 38 鏉★紙72 灏忔椂鍐呮嬁闃绘柇鑽級銆傚彈鐩婁汉涓昏鏄綘鑷繁锛屼篃鎶や綇浣犵殑浼翠荆銆?</li>
+<li>成本：这是处方药，多数地方自费，价格从几百到几千元不等。开药前要查 HIV、肾功能和乙肝。之后每 3 个月复查一次。难的是天天按时吃。</li>
+<li>说人话：还没感染的人提前吃一种抗病毒药，叫暴露前预防。按时吃的人，感染风险能少七成以上。吃吃停停的人，基本没效果。它是处方药，要先在医院查过身体再开，之后定期复查。</li>
+<li>收益：这种药是恩曲他滨加替诺福韦的复方片。iPrEx 试验让 2499 名男男性行为者和跨性别女性每天吃药或者吃安慰剂。吃药组感染少了 44%（95% CI 15–63）。血里测得到药的人，保护效果强得多。英国的 PROUD 试验有 544 名男男性行为者。立刻吃药的一组比推迟一年的一组感染少 86%（90% CI 64–96，90% 可信范围）。法国的 IPERGAY 试验在性行为前后按需吃药，感染少 86%（95% CI 40–98）。世界卫生组织用的一篇荟萃分析把各项试验合起来。总体 RR 0.49（0.33–0.73，低约 51%）。吃药率超过七成的试验，RR 0.30（0.21–0.45，低约 70%）。吃药率不到四成的，RR 0.95，基本无效。国家药监局 2020 年 8 月批准这个药用于暴露前预防。成人和体重至少 35 公斤的青少年可以用（多国 / 中国）</li>
+<li>证据等级：A</li>
+<li>来源：Grant RM, Lama JR, Anderson PL, et al. (2010). Preexposure chemoprophylaxis for HIV prevention in men who have sex with men. New England Journal of Medicine, 363(27), 2587–2599. <a href="https://doi.org/10.1056/NEJMoa1011205" target="_blank" rel="noopener noreferrer">https://doi.org/10.1056/NEJMoa1011205</a>；McCormack S, Dunn DT, Desai M, et al. (2016). Pre-exposure prophylaxis to prevent the acquisition of HIV-1 infection (PROUD): effectiveness results from the pilot phase of a pragmatic open-label randomised trial. The Lancet, 387(10013), 53–60. <a href="https://doi.org/10.1016/S0140-6736(15)00056-2" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/S0140-6736(15)00056-2</a>；Molina JM, Capitant C, Spire B, et al. (2015). On-demand preexposure prophylaxis in men at high risk for HIV-1 infection. New England Journal of Medicine, 373(23), 2237–2246. <a href="https://doi.org/10.1056/NEJMoa1506273" target="_blank" rel="noopener noreferrer">https://doi.org/10.1056/NEJMoa1506273</a>；Fonner VA, Dalglish SL, Kennedy CE, et al. (2016). Effectiveness and safety of oral HIV preexposure prophylaxis for all populations. AIDS, 30(12), 1973–1983. <a href="https://doi.org/10.1097/QAD.0000000000001145" target="_blank" rel="noopener noreferrer">https://doi.org/10.1097/QAD.0000000000001145</a>；Xu JJ, Huang XJ, Liu XC, et al. (2020). Consensus statement on human immunodeficiency virus pre-exposure prophylaxis in China. Chinese Medical Journal, 133(23), 2840–2846. <a href="https://doi.org/10.1097/CM9.0000000000001181" target="_blank" rel="noopener noreferrer">https://doi.org/10.1097/CM9.0000000000001181</a>（中文版《中国 HIV 暴露前预防用药专家共识》）；World Health Organization (2019). What's the 2+1+1? Event-driven oral pre-exposure prophylaxis to prevent HIV for men who have sex with men (WHO/CDS/HIV/19.8). <a href="https://www.who.int/publications/i/item/what-s-the-2-1-1-event-driven-oral-pre-exposure-prophylaxis-to-prevent-hiv-for-men-who-have-sex-with-men" target="_blank" rel="noopener noreferrer">https://www.who.int/publications/i/item/what-s-the-2-1-1-event-driven-oral-pre-exposure-prophylaxis-to-prevent-hiv-for-men-who-have-sex-with-men</a>；国务院办公厅 (2024). 中国遏制与防治艾滋病规划（2024—2030 年）. <a href="https://www.gov.cn/zhengce/zhengceku/202412/content_6992033.htm" target="_blank" rel="noopener noreferrer">https://www.gov.cn/zhengce/zhengceku/202412/content_6992033.htm</a></li>
+<li>备注：试验里的人主要是男男性行为者，所以最该去问的是这群人。其他有高危性行为的人，也可以去问医生合不合适。开药前必须先确认没感染，已经感染的人吃它会让病毒耐药，自测试纸的结果不能当依据。有乙肝的人停药可能让肝炎发作，所以开药前要查。世界卫生组织只对男男性行为者推荐按需吃，适合平均每周少于 2 次的人。吃法是性行为前 2 到 24 小时吃 2 片，之后 24 小时、48 小时各吃 1 片。女性和有乙肝的人只能每天吃。按需吃的试验里，吃药组胃肠道和肾脏的不良反应比安慰剂组多，所以复查不能省。国内 2019 年起在男男性行为人群里试点，2024 年的规划写的是「规范实施」。全国免费的政策没有查到。去当地艾滋病定点医院的感染科或性病艾滋病门诊开，先打当地疾控电话问哪家能开。它不防梅毒、淋病这些性病，安全套照样要用，见本节第 30 条（性行为全程用安全套）。已经发生了高危行为，补救见第 13 节第 38 条（72 小时内拿阻断药）。受益人主要是你自己，也护住你的伴侣。</li>
 </ul>
-<h3>39. 65 宀佷互涓婄殑濂虫€у幓鍋氫竴娆″弻鑳?X 绾块瀵嗗害妫€鏌ワ紝缁濈粡鍚庢湁楠ㄨ川鐤忔澗鍗遍櫓鍥犵礌鐨勪笉鐢ㄧ瓑鍒?65 宀?</h3>
-<!-- 鎴愭湰鏍囩: 閽?灏?鏃堕棿=灏?姣呭姏=鍚?鏀剁泭=涓?鍙ｅ緞=姝讳骸鐜?浜虹兢=濂虫€?35宀?鑰佷汉 -->
+<h3>39. 65 岁以上的女性去做一次双能 X 线骨密度检查，绝经后有骨质疏松危险因素的不用等到 65 岁</h3>
+<!-- 成本标签: 钱=少 时间=少 毅力=否 收益=中 口径=死亡率 人群=女性+35岁,老人 -->
 <ul>
-<li>鎴愭湰锛氬幓鍖婚櫌鍋氫竴娆″弻鑳?X 绾块瀵嗗害妫€鏌ワ紙绠€绉?DXA锛夛紝鏌ヨ叞妞庡拰楂嬮儴锛岃汉鐫€鍑犲垎閽熷氨鍋氬畬銆傝嚜璐逛竴鑸竴涓ょ櫨鍏冿紝鍚勫湴浠锋牸涓嶅悓銆備綋妫€閲岃俯涓€鑴氱殑璺熼瓒呭０鍙兘鍒濈瓫锛屼笉鑳界‘璇娿€?</li>
-<li>璇翠汉璇濓細65 宀佷互涓婄殑濂虫€э紝浠ュ強缁濈粡鍚庢湁楠ㄨ川鐤忔澗鍗遍櫓鍥犵礌鐨勫コ鎬э紝璇ュ幓鏌ヤ竴娆￠瀵嗗害銆傚厛鏌ラ闄┿€佸啀缁欓珮椋庨櫓鐨勪汉鐢ㄨ嵂锛岄珛閮ㄩ鎶樿兘灏戠害 17%銆傛姌绠椾笅鏉ワ紝姣?1000 涓幓鏌ョ殑浜洪噷锛岀害灏?5 浜洪珛閮ㄩ鎶樸€傛€绘浜＄巼娌℃湁鐪嬪嚭鍙樺寲銆?</li>
-<li>鏀剁泭锛氱編鍥介闃叉湇鍔″伐浣滅粍 2025 骞村彂鐨勬帹鑽愭槸锛?5 宀佸強浠ヤ笂鐨勫コ鎬у仛楠ㄨ川鐤忔澗绛涙煡锛圔 绾ф帹鑽愶級銆傜粷缁忓悗銆佷笉鍒?65 宀併€佷絾鎸夐闄╄瘎浼伴鎶橀闄╅珮鐨勫コ鎬э紝涔熸帹鑽愮瓫鏌ワ紙B 绾э級銆傜敺鎬ц瘉鎹笉瓒筹紝娌℃湁琛ㄦ€併€傜粰杩欎唤鎺ㄨ崘鍋氱殑璇佹嵁缁艰堪鍚堝苟浜?3 椤归殢鏈鸿瘯楠屻€?2009 鍚嶆娲茶€佸勾濂虫€с€傜瓫鏌ョ殑鍋氭硶鏄厛璇勪及楠ㄦ姌椋庨櫓锛岄闄╅珮鐨勫啀鏌ラ瀵嗗害锛屾煡鍑洪珮椋庨櫓灏辩敤鑽€傜瓫鏌ョ粍楂嬮儴楠ㄦ姌浣庣害 17%銆傚師鍊?RR 0.83锛屽彲淇¤寖鍥?95% CI 0.73 鍒?0.93銆傛姌鎴愮粷瀵规暟锛屾瘡 1000 浜虹瓫鏌ュ皯 5 渚嬮珛閮ㄩ鎶樸€傚叾涓嫳鍥?SCOOP 璇曢獙鎵句簡 12483 鍚?70 鍒?85 宀佺殑濂虫€э紝绛涙煡缁勯珛閮ㄩ鎶樹綆绾?28%锛圚R 0.72锛?5% CI 0.59 鍒?0.89锛夛紝姝讳骸鐜囨病鏈夌湅鍑哄樊鍒€備腑鍗庡尰瀛︿細 2017 骞寸増璇婄枟鎸囧崡寤鸿锛氬コ鎬?65 宀佷互涓娿€佺敺鎬?70 宀佷互涓婂仛楠ㄥ瘑搴︽鏌ャ€備笉鍒拌繖涓勾榫勩€佷絾鏈変竴涓垨澶氫釜楠ㄨ川鐤忔澗鍗遍櫓鍥犵礌鐨勶紝涔熷缓璁煡銆?017 鍒?2018 骞寸殑鍏ㄥ浗璋冩煡閲岋紝40 宀佷互涓婂コ鎬ч璐ㄧ枏鏉剧殑鎮ｇ梾鐜囨槸 20.6%锛岀敺鎬ф槸 5.0%锛堜腑鍥斤級</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛歎S Preventive Services Task Force, Nicholson WK, Silverstein M, et al. (2025). Screening for Osteoporosis to Prevent Fractures: US Preventive Services Task Force Recommendation Statement. JAMA. <a href="https://doi.org/10.1001/jama.2024.27154" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/jama.2024.27154</a> ; Kahwati LC, Kistler CE, Booth G, et al. (2025). Screening for Osteoporosis to Prevent Fractures: A Systematic Evidence Review for the US Preventive Services Task Force. JAMA. <a href="https://doi.org/10.1001/jama.2024.21653" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/jama.2024.21653</a> ; Shepstone L, Lenaghan E, Cooper C, et al. (2018). Screening in the community to reduce fractures in older women (SCOOP): a randomised controlled trial. The Lancet. <a href="https://doi.org/10.1016/S0140-6736(17)32640-5" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/S0140-6736(17)32640-5</a> ; 涓崕鍖诲浼氶璐ㄧ枏鏉惧拰楠ㄧ熆鐩愮柧鐥呭垎浼?(2017). 鍘熷彂鎬ч璐ㄧ枏鏉剧棁璇婄枟鎸囧崡(2017). 涓崕楠ㄨ川鐤忔澗鍜岄鐭跨洂鐤剧梾鏉傚織, 10(5), 413-443锛堣〃 5 楠ㄥ瘑搴︽祴閲忕殑涓村簥鎸囧緛锛? <a href="https://html.rhhz.net/GUSS/html/cc825127-29a3-47c1-9a95-7a212fdcce55.htm" target="_blank" rel="noopener noreferrer">https://html.rhhz.net/GUSS/html/cc825127-29a3-47c1-9a95-7a212fdcce55.htm</a> ; Wang L, Yu W, Yin X, et al. (2021). Prevalence of Osteoporosis and Fracture in China: The China Osteoporosis Prevalence Study. JAMA Network Open. <a href="https://doi.org/10.1001/jamanetworkopen.2021.21106" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/jamanetworkopen.2021.21106</a></li>
-<li>澶囨敞锛氫簤璁細SCOOP 浜嬪厛瀹氱殑涓昏缁撴灉鏄墍鏈夐璐ㄧ枏鏉炬€ч鎶橈紝绛涙煡缁勫苟娌℃湁鏄庢樉鍑忓皯锛圚R 0.94锛?5% CI 0.85 鍒?1.03锛夛紝灏戠殑鍙槸楂嬮儴楠ㄦ姌銆備笁椤硅瘯楠岄兘鏄€屽厛璇勪及椋庨櫓銆佸啀鏌ラ瀵嗗害銆嶏紝娌℃湁涓€椤瑰崟鐙瘮杈冨彧鏌ラ瀵嗗害銆傝瘉鎹患杩拌繕浼拌锛屾煡鍑烘潵鐨勪汉閲屾湁 11.8% 鍒?24.1% 灞炰簬杩囧害璇婃柇锛屼篃灏辨槸杩欒緢瀛愭湰鏉ヤ笉浼氬洜姝ら鎶樼殑浜恒€傜敺鎬ц涓嶈鏌ワ紝缇庡浗璇磋瘉鎹笉瓒筹紝涓浗鎸囧崡瀹氬湪 70 宀佷互涓婏紝鎸夊尰鐢熺殑寤鸿璧般€傝繖鏉＄鐨勬槸楠ㄥご缁忎笉缁忓緱璧锋憯锛屽皯鎽斾竴璺ら潬绗?13 鏉★紙骞宠　鍜岃吙閮ㄥ姏閲忥級锛屼袱鏉′竴璧峰仛銆傛煡鍑洪璐ㄧ枏鏉句箣鍚庢€庝箞鍔烇紝瑙佺 40 鏉★紙鏌ュ嚭楠ㄨ川鐤忔澗灏辩敤鑽級銆傚彈鐩婁汉涓昏鏄綘鑷繁锛屼篃鍖呮嫭浣犵殑鐖舵瘝銆?</li>
+<li>成本：去医院做一次双能 X 线骨密度检查（简称 DXA），查腰椎和髋部，躺着几分钟就做完。自费一般一两百元，各地价格不同。体检里踩一脚的跟骨超声只能初筛，不能确诊。</li>
+<li>说人话：65 岁以上的女性，以及绝经后有骨质疏松危险因素的女性，该去查一次骨密度。先查风险、再给高风险的人用药，髋部骨折能少约 17%。折算下来，每 1000 个去查的人里，约少 5 人髋部骨折。总死亡率没有看出变化。</li>
+<li>收益：美国预防服务工作组 2025 年发的推荐是：65 岁及以上的女性做骨质疏松筛查（B 级推荐）。绝经后、不到 65 岁、但按风险评估骨折风险高的女性，也推荐筛查（B 级）。男性证据不足，没有表态。给这份推荐做的证据综述合并了 3 项随机试验、42009 名欧洲老年女性。筛查的做法是先评估骨折风险，风险高的再查骨密度，查出高风险就用药。筛查组髋部骨折低约 17%。原值 RR 0.83，可信范围 95% CI 0.73 到 0.93。折成绝对数，每 1000 人筛查少 5 例髋部骨折。其中英国 SCOOP 试验找了 12483 名 70 到 85 岁的女性，筛查组髋部骨折低约 28%（HR 0.72，95% CI 0.59 到 0.89），死亡率没有看出差别。中华医学会 2017 年版诊疗指南建议：女性 65 岁以上、男性 70 岁以上做骨密度检查。不到这个年龄、但有一个或多个骨质疏松危险因素的，也建议查。2017 到 2018 年的全国调查里，40 岁以上女性骨质疏松的患病率是 20.6%，男性是 5.0%（中国）</li>
+<li>证据等级：A</li>
+<li>来源：US Preventive Services Task Force, Nicholson WK, Silverstein M, et al. (2025). Screening for Osteoporosis to Prevent Fractures: US Preventive Services Task Force Recommendation Statement. JAMA. <a href="https://doi.org/10.1001/jama.2024.27154" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/jama.2024.27154</a> ; Kahwati LC, Kistler CE, Booth G, et al. (2025). Screening for Osteoporosis to Prevent Fractures: A Systematic Evidence Review for the US Preventive Services Task Force. JAMA. <a href="https://doi.org/10.1001/jama.2024.21653" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/jama.2024.21653</a> ; Shepstone L, Lenaghan E, Cooper C, et al. (2018). Screening in the community to reduce fractures in older women (SCOOP): a randomised controlled trial. The Lancet. <a href="https://doi.org/10.1016/S0140-6736(17)32640-5" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/S0140-6736(17)32640-5</a> ; 中华医学会骨质疏松和骨矿盐疾病分会 (2017). 原发性骨质疏松症诊疗指南(2017). 中华骨质疏松和骨矿盐疾病杂志, 10(5), 413-443（表 5 骨密度测量的临床指征）. <a href="https://html.rhhz.net/GUSS/html/cc825127-29a3-47c1-9a95-7a212fdcce55.htm" target="_blank" rel="noopener noreferrer">https://html.rhhz.net/GUSS/html/cc825127-29a3-47c1-9a95-7a212fdcce55.htm</a> ; Wang L, Yu W, Yin X, et al. (2021). Prevalence of Osteoporosis and Fracture in China: The China Osteoporosis Prevalence Study. JAMA Network Open. <a href="https://doi.org/10.1001/jamanetworkopen.2021.21106" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/jamanetworkopen.2021.21106</a></li>
+<li>备注：争议：SCOOP 事先定的主要结果是所有骨质疏松性骨折，筛查组并没有明显减少（HR 0.94，95% CI 0.85 到 1.03），少的只是髋部骨折。三项试验都是「先评估风险、再查骨密度」，没有一项单独比较只查骨密度。证据综述还估计，查出来的人里有 11.8% 到 24.1% 属于过度诊断，也就是这辈子本来不会因此骨折的人。男性要不要查，美国说证据不足，中国指南定在 70 岁以上，按医生的建议走。这条管的是骨头经不经得起摔，少摔一跤靠第 13 条（平衡和腿部力量），两条一起做。查出骨质疏松之后怎么办，见第 40 条（查出骨质疏松就用药）。受益人主要是你自己，也包括你的父母。</li>
 </ul>
-<h3>40. 鏌ュ嚭楠ㄨ川鐤忔澗锛屾垨鑰呰交杞讳竴鎽斿氨楠ㄦ姌杩囷紝灏辫鍖荤敓寮€鎶楅璐ㄧ枏鏉捐嵂骞跺潥鎸佺敤锛屽埆鎷胯ˉ閽欎唬鏇?</h3>
-<!-- 鎴愭湰鏍囩: 閽?灏?鏃堕棿=灏?姣呭姏=浜?鏀剁泭=澶?鍙ｅ緞=姝讳骸鐜?浜虹兢=鑰佷汉,35宀?-->
+<h3>40. 查出骨质疏松，或者轻轻一摔就骨折过，就请医生开抗骨质疏松药并坚持用，别拿补钙代替</h3>
+<!-- 成本标签: 钱=少 时间=少 毅力=些 收益=大 口径=死亡率 人群=老人,35岁 -->
 <ul>
-<li>鎴愭湰锛氳寮€澶勬柟锛岃繛鐫€鐢ㄥ嚑骞淬€傚父鐢ㄧ殑鏈夋瘡鍛ㄥ悆涓€娆＄殑鍙ｆ湇鑽紝涔熸湁姣忓勾杈撲竴娆℃恫鐨勯拡鍓傘€傚垰寮€濮嬬敤鑽姣忓勾澶嶆煡楠ㄥ瘑搴︼紝绋冲畾鍚庢瘡 1 鍒?2 骞存煡涓€娆°€傞毦鐨勬槸娌℃劅瑙変篃瑕佸潥鎸佺敤銆?</li>
-<li>璇翠汉璇濓細宸茬粡纭瘖楠ㄨ川鐤忔澗銆佹垨鑰呰交杞讳竴鎽斿氨楠ㄦ姌杩囩殑浜猴紝鎸夊尰鐢熺殑鏂规鐢ㄨ嵂锛岄珛閮ㄩ鎶樿兘灏戠害涓€鍗婏紝鑴婃煴楠ㄦ姌涔熷皯涓€鍗婂銆傞珛閮ㄩ鎶樺仛瀹屾墜鏈氨寮€濮嬫瘡骞磋緭涓€娆¤嵂鐨勮€佷汉锛屼袱骞撮噷鍐嶉鎶樼殑灏戠害涓夋垚浜斻€傚崟闈犺ˉ閽欎唬鏇夸笉浜嗚繖浜涜嵂銆?</li>
-<li>鏀剁泭锛氳剢鎬ч鎶橈紝鏄彈鍒拌交寰浼ゆ垨鏃ュ父娲诲姩涓氨鍙戠敓鐨勯鎶樸€備腑鍗庡尰瀛︿細 2017 骞寸増鎸囧崡璁ゅ畾鐨勭敤鑽璞℃湁涓夌被銆備竴鏄剨鏌辨垨楂嬮儴鍙戠敓杩囪剢鎬ч鎶樼殑浜恒€備簩鏄瀵嗗害 T 鍊煎湪 -2.5 鍙婁互涓嬬殑浜猴紝涓嶇鏈夋病鏈夐鎶樿繃銆備笁鏄閲忓亸浣庛€佸張鍦ㄦ墜鑵曘€佷笂鑷傛垨楠ㄧ泦鏈夎繃鑴嗘€ч鎶橈紝鎴栬€呯畻鍑烘潵楠ㄦ姌椋庨櫓楂樼殑浜恒€傛寚鍗楄繕鍐欐槑銆岀洰鍓嶅皻鏃犲厖鍒嗚瘉鎹〃鏄庡崟绾ˉ閽欏彲浠ユ浛浠ｅ叾浠栨姉楠ㄨ川鐤忔澗鑽墿娌荤枟銆嶃€侰ochrane 2025 骞存洿鏂颁簡闃夸粦鑶﹂吀閽犵殑缁艰堪銆傚湪宸叉湁楠ㄨ川鐤忔澗鎴栭鎶樼殑缁濈粡鍚庡コ鎬ч噷锛岀敤鑽粍楂嬮儴楠ㄦ姌浣庣害 51%銆傚師鍊?RR 0.49锛屽彲淇¤寖鍥?95% CI 0.25 鍒?0.96銆傛湁鐥囩姸鐨勮剨鏌遍鎶樹綆绾?55%锛圧R 0.45锛?5% CI 0.28 鍒?0.73锛夈€侶ORIZON 璇曢獙鎵句簡 2127 鍚嶉珛閮ㄩ鎶樺仛杩囨墜鏈殑浜猴紝骞冲潎 74.5 宀併€傛墜鏈悗 90 澶╁唴寮€濮嬫瘡骞磋緭涓€娆″攽鏉ヨ啨閰革紝璺熻釜鐨勪腑浣嶆暟鏄?1.9 骞淬€傛柊鐨勯鎶樹粠 13.9% 闄嶅埌 8.6%锛屽皯浜嗙害 35%銆傛浜′粠 13.3% 闄嶅埌 9.6%锛屽皯浜嗙害 28%銆傛寚鍗楀啓鍒帮紝楂嬮儴楠ㄦ姌鍚庝竴骞村唴绾?20% 鐨勪汉姝讳簬鍚勭骞跺彂鐥囥€?017 鍒?2018 骞寸殑鍏ㄥ浗璋冩煡閲岋紝纭瘖楠ㄨ川鐤忔澗鎴栭鎶樿繃鐨勫コ鎬у彧鏈?1.4% 鍦ㄧ敤鑽紝鐢锋€у彧鏈?0.3%锛堜腑鍥斤級</li>
-<li>璇佹嵁绛夌骇锛欰</li>
-<li>鏉ユ簮锛氫腑鍗庡尰瀛︿細楠ㄨ川鐤忔澗鍜岄鐭跨洂鐤剧梾鍒嗕細 (2017). 鍘熷彂鎬ч璐ㄧ枏鏉剧棁璇婄枟鎸囧崡(2017). 涓崕楠ㄨ川鐤忔澗鍜岄鐭跨洂鐤剧梾鏉傚織, 10(5), 413-443锛堣〃 10 鎶楅璐ㄧ枏鏉剧棁鑽墿娌荤枟閫傚簲璇侊紱閽欏墏涓€鑺傦紱鐤楁晥鐩戞祴涓€鑺傦級. <a href="https://html.rhhz.net/GUSS/html/cc825127-29a3-47c1-9a95-7a212fdcce55.htm" target="_blank" rel="noopener noreferrer">https://html.rhhz.net/GUSS/html/cc825127-29a3-47c1-9a95-7a212fdcce55.htm</a> ; Wells GA, Hsieh SC, Peterson J, et al. (2025). Alendronate for the primary and secondary prevention of osteoporotic fractures in postmenopausal women. Cochrane Database of Systematic Reviews. <a href="https://doi.org/10.1002/14651858.CD001155.pub3" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/14651858.CD001155.pub3</a> ; Lyles KW, Col贸n-Emeric CS, Magaziner JS, et al. (2007). Zoledronic acid and clinical fractures and mortality after hip fracture. New England Journal of Medicine. <a href="https://doi.org/10.1056/NEJMoa074941" target="_blank" rel="noopener noreferrer">https://doi.org/10.1056/NEJMoa074941</a> ; Cummings SR, Lui LY, Eastell R, Allen IE (2019). Association Between Drug Treatments for Patients With Osteoporosis and Overall Mortality Rates: A Meta-analysis. JAMA Internal Medicine. <a href="https://doi.org/10.1001/jamainternmed.2019.2779" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/jamainternmed.2019.2779</a> ; Kahwati LC, Kistler CE, Booth G, et al. (2025). Screening for Osteoporosis to Prevent Fractures: A Systematic Evidence Review for the US Preventive Services Task Force. JAMA. <a href="https://doi.org/10.1001/jama.2024.21653" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/jama.2024.21653</a> ; Wang L, Yu W, Yin X, et al. (2021). Prevalence of Osteoporosis and Fracture in China: The China Osteoporosis Prevalence Study. JAMA Network Open. <a href="https://doi.org/10.1001/jamanetworkopen.2021.21106" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/jamanetworkopen.2021.21106</a></li>
-<li>澶囨敞锛氫簤璁細涓€绡囧悎骞朵簡 38 椤硅瘯楠岀殑鑽熻悆鍒嗘瀽娌℃湁鐪嬪嚭杩欑被鑽兘闄嶄綆鎬绘浜＄巼锛圧R 0.98锛?5% CI 0.91 鍒?1.05锛夈€傚崟鐪嬪攽鏉ヨ啨閰镐篃涓嶆樉钁楋紙RR 0.88锛?5% CI 0.68 鍒?1.13锛夈€備綔鑰呯殑缁撹鏄紝杩欑被鑽彧璇ヤ负浜嗗皯楠ㄦ姌鑰岀敤銆侰ochrane 閭ｅ嚑涓暟瀛楃殑鍙俊搴︿篃琚瘎涓轰綆鍒颁腑绛夈€傝繕娌￠鎶樸€侀鎶橀闄╄緝浣庣殑濂虫€э紝闃夸粦鑶﹂吀閽犲楂嬮儴楠ㄦ姌娌＄湅鍑烘槑鏄句綔鐢紙RR 0.76锛?5% CI 0.43 鍒?1.32锛夈€備笅棰岄鍧忔銆佷笉鍏稿瀷鑲￠楠ㄦ姌杩欑被灏戣鐨勫壇浣滅敤锛屽嚑骞寸殑璇曢獙鐪嬩笉鍏紝鎵€浠ヨ鎸夋椂澶嶆煡銆佷笉鑷繁鍔犺嵂鍋滆嵂銆傛湁鐨勪汉閫傚悎鎵撻拡锛屾湁鐨勪汉閫傚悎鍚冭嵂锛岄€夊摢绉嶇敱鍖荤敓瀹氥€傛€庝箞鏌ュ嚭楠ㄨ川鐤忔澗锛岃绗?39 鏉★紙楠ㄥ瘑搴︽鏌ワ級銆傜粷缁忔縺绱犳不鐤椾篃鑳藉噺灏戦鎶橈紝浣嗕竴鑸彧鍦ㄤ笉閫傚悎鐢ㄥ埆鐨勮嵂鏃舵墠鑰冭檻銆備负浜嗘疆鐑洍姹楃敤婵€绱狅紝瑙佺 2 鑺傜 43 鏉★紙缁濈粡鍓嶅悗娼儹鍘昏瘎浼版縺绱犳不鐤楋級銆傚彈鐩婁汉涓昏鏄綘鑷繁锛屼篃鍖呮嫭浣犵殑鐖舵瘝銆?</li>
+<li>成本：要开处方，连着用几年。常用的有每周吃一次的口服药，也有每年输一次液的针剂。刚开始用药要每年复查骨密度，稳定后每 1 到 2 年查一次。难的是没感觉也要坚持用。</li>
+<li>说人话：已经确诊骨质疏松、或者轻轻一摔就骨折过的人，按医生的方案用药，髋部骨折能少约一半，脊柱骨折也少一半多。髋部骨折做完手术就开始每年输一次药的老人，两年里再骨折的少约三成五。单靠补钙代替不了这些药。</li>
+<li>收益：脆性骨折，是受到轻微外伤或日常活动中就发生的骨折。中华医学会 2017 年版指南认定的用药对象有三类。一是脊柱或髋部发生过脆性骨折的人。二是骨密度 T 值在 -2.5 及以下的人，不管有没有骨折过。三是骨量偏低、又在手腕、上臂或骨盆有过脆性骨折，或者算出来骨折风险高的人。指南还写明「目前尚无充分证据表明单纯补钙可以替代其他抗骨质疏松药物治疗」。Cochrane 2025 年更新了阿仑膦酸钠的综述。在已有骨质疏松或骨折的绝经后女性里，用药组髋部骨折低约 51%。原值 RR 0.49，可信范围 95% CI 0.25 到 0.96。有症状的脊柱骨折低约 55%（RR 0.45，95% CI 0.28 到 0.73）。HORIZON 试验找了 2127 名髋部骨折做过手术的人，平均 74.5 岁。手术后 90 天内开始每年输一次唑来膦酸，跟踪的中位数是 1.9 年。新的骨折从 13.9% 降到 8.6%，少了约 35%。死亡从 13.3% 降到 9.6%，少了约 28%。指南写到，髋部骨折后一年内约 20% 的人死于各种并发症。2017 到 2018 年的全国调查里，确诊骨质疏松或骨折过的女性只有 1.4% 在用药，男性只有 0.3%（中国）</li>
+<li>证据等级：A</li>
+<li>来源：中华医学会骨质疏松和骨矿盐疾病分会 (2017). 原发性骨质疏松症诊疗指南(2017). 中华骨质疏松和骨矿盐疾病杂志, 10(5), 413-443（表 10 抗骨质疏松症药物治疗适应证；钙剂一节；疗效监测一节）. <a href="https://html.rhhz.net/GUSS/html/cc825127-29a3-47c1-9a95-7a212fdcce55.htm" target="_blank" rel="noopener noreferrer">https://html.rhhz.net/GUSS/html/cc825127-29a3-47c1-9a95-7a212fdcce55.htm</a> ; Wells GA, Hsieh SC, Peterson J, et al. (2025). Alendronate for the primary and secondary prevention of osteoporotic fractures in postmenopausal women. Cochrane Database of Systematic Reviews. <a href="https://doi.org/10.1002/14651858.CD001155.pub3" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/14651858.CD001155.pub3</a> ; Lyles KW, Colón-Emeric CS, Magaziner JS, et al. (2007). Zoledronic acid and clinical fractures and mortality after hip fracture. New England Journal of Medicine. <a href="https://doi.org/10.1056/NEJMoa074941" target="_blank" rel="noopener noreferrer">https://doi.org/10.1056/NEJMoa074941</a> ; Cummings SR, Lui LY, Eastell R, Allen IE (2019). Association Between Drug Treatments for Patients With Osteoporosis and Overall Mortality Rates: A Meta-analysis. JAMA Internal Medicine. <a href="https://doi.org/10.1001/jamainternmed.2019.2779" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/jamainternmed.2019.2779</a> ; Kahwati LC, Kistler CE, Booth G, et al. (2025). Screening for Osteoporosis to Prevent Fractures: A Systematic Evidence Review for the US Preventive Services Task Force. JAMA. <a href="https://doi.org/10.1001/jama.2024.21653" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/jama.2024.21653</a> ; Wang L, Yu W, Yin X, et al. (2021). Prevalence of Osteoporosis and Fracture in China: The China Osteoporosis Prevalence Study. JAMA Network Open. <a href="https://doi.org/10.1001/jamanetworkopen.2021.21106" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/jamanetworkopen.2021.21106</a></li>
+<li>备注：争议：一篇合并了 38 项试验的荟萃分析没有看出这类药能降低总死亡率（RR 0.98，95% CI 0.91 到 1.05）。单看唑来膦酸也不显著（RR 0.88，95% CI 0.68 到 1.13）。作者的结论是，这类药只该为了少骨折而用。Cochrane 那几个数字的可信度也被评为低到中等。还没骨折、骨折风险较低的女性，阿仑膦酸钠对髋部骨折没看出明显作用（RR 0.76，95% CI 0.43 到 1.32）。下颌骨坏死、不典型股骨骨折这类少见的副作用，几年的试验看不全，所以要按时复查、不自己加药停药。有的人适合打针，有的人适合吃药，选哪种由医生定。怎么查出骨质疏松，见第 39 条（骨密度检查）。绝经激素治疗也能减少骨折，但一般只在不适合用别的药时才考虑。为了潮热盗汗用激素，见第 2 节第 43 条（绝经前后潮热去评估激素治疗）。受益人主要是你自己，也包括你的父母。</li>
 </ul>
-<h3>41. 涓婇噹澶栧啺闈㈠墠鍏堟墦瀛旈噺鍘氬害锛屼笉鍒?15 鍘樼背鍒笂锛屾渤涓婄殑鍐板拰鍐伴挀娲炶竟鍒幓</h3>
-<!-- 鎴愭湰鏍囩: 閽?灏?鏃堕棿=灏?姣呭姏=鍚?鏀剁泭=涓?鍙ｅ緞=姝讳骸鐜?-->
+<h3>41. 上野外冰面前先打孔量厚度，不到 15 厘米别上，河上的冰和冰钓洞边别去</h3>
+<!-- 成本标签: 钱=少 时间=少 毅力=否 收益=中 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氭渶鐪佷簨鐨勬槸鍘绘湁浜虹鐨勬瑙勫啺鍦猴紝涓嶇敤澶氳姳閽便€傞潪瑕佷笂閲庡鐨勫啺锛屽氨甯﹀啺閽绘垨鍐伴暕鎵撳瓟閲忓帤搴︺€傚啀涔颁竴瀵规晳鐢熷啺閿ワ紝灏辨槸涓ゆ牴甯︽彙鏌勭殑灏栭拤锛屾寕鍦ㄨ兏鍓嶃€傝繖浜涘姞璧锋潵鍑犲崄鍒颁竴涓ょ櫨鍏冦€傛瘡璧颁竴娈甸噺涓€娆★紝瑕佸鑺变簺鏃堕棿銆?</li>
-<li>璇翠汉璇濓細鍥藉唴瀹樻柟鐨勮娉曟槸锛屽啺鍘氬埌 15 鍘樼背锛屾垚骞翠汉鎵嶈兘涓婂幓婊戝啺銆傜編鍥藉拰鍔犳嬁澶х殑搴曠嚎鏄?10 鍘樼背锛岃€屼笖鍙畻鏂扮粨鐨勯€忔槑鍐般€傚彂鐧界殑鍐扮粨瀹炵▼搴﹀彧鏈変竴鍗婏紝鍘氬害瑕佺炕鍊嶃€傚悓涓€鐗囧啺锛岃繖閲屼竴灏哄帤锛屽嚑姝ュ鍙兘鍙湁涓€涓ゅ锛屾墍浠ヨ杈硅蛋杈归噺銆?</li>
-<li>鏀剁泭锛氫腑鍥芥皵璞″眬鐨勭鏅锛屽啺灞傚帤搴﹁揪鍒?15 鍘樼背锛屾垚骞翠汉鍙互涓婂幓婊戝啺銆傞湶澶╁啺鍦虹殑鍐板眰涔熻杈惧埌 15 鍘樼背鎵嶈兘寮€鏀俱€傚寳浜競姘村姟灞€璇达紝姝ｈ澶╃劧鍐板満瑕佸啺鍘?15 鍘樼背锛屼箣鍚庝竴鍛ㄦ皵娓╀繚鎸佸湪 -8鈩?鍒?1鈩冦€佹病鏈夊ぇ椋庯紝鎵嶈兘寮€鏀俱€傞噹鍐颁笂甯告湁閽撻奔鐨勪汉鍑跨殑鍐版礊锛屽嚳寮€鍚庡緢闅惧啀鍐荤粨瀹炪€傜編鍥芥槑灏艰嫃杈惧窞鑷劧璧勬簮閮ㄧ殑鎸囧崡鍙拡瀵规柊缁撶殑閫忔槑鍐帮細涓嶅埌 4 鑻卞锛堢害 10 鍘樼背锛夊埆涓婏紝4 鑻卞鍙互姝ヨ鍜屽啺閽撱€傜Н闆寲浜嗗張鍐讳笂鐨勭櫧鍐帮紝缁撳疄绋嬪害鍙湁閫忔槑鍐扮殑涓€鍗婂乏鍙筹紝鍘氬害瑕佹寜涓ゅ€嶇畻銆傚悓涓€鐗囨按闈紝鍐板彲鑳借繖閲屼竴鑻卞昂鍘氾紝鍑犺嫳灏哄鍙湁涓€涓よ嫳瀵搞€傛祦姘翠笂鐨勫啺閫氬父鍗遍櫓锛屾邯娴併€佹ˉ鍜屾兜娲為檮杩戝挨鍏跺姝ゃ€傚哺杈圭殑鍐颁篃鍙兘姣旇繙澶勮杽銆傜編鍥藉浗瀹舵皵璞″眬缁欑殑姝ヨ銆佸啺閽撱€佹粦鍐伴棬妲涗篃鏄?4 鑻卞銆傚姞鎷垮ぇ鑱屼笟鍋ュ悍涓庡畨鍏ㄤ腑蹇冭浆杩板姞鎷垮ぇ绾㈠崄瀛椾細鐨勫缓璁細鍑犱釜浜轰竴璧锋粦鍐般€佹琛岃 15 鍘樼背锛屼汉澶氱殑婊戝啺鑱氫細瑕?20 鍘樼背銆傝繖浜涢兘鏄畨鍏ㄦ寚鍗楋紝娌℃湁鐮旂┒绠楄繃鐓х潃鍋氳兘灏戞澶氬皯浜猴紙鍏ㄥ浗 / 缇庡浗銆佸姞鎷垮ぇ锛?</li>
-<li>璇佹嵁绛夌骇锛欳</li>
-<li>鏉ユ簮锛氫腑鍥芥皵璞″眬 (2019). 鎯宠鍐颁笂鍋ユ璧帮紝澶氬帤鐨勫啺鎵嶅畨鍏紵 <a href="https://www.cma.gov.cn/kppd/kppdqxyr/kppdtyqx/201901/t20190124_513302.html" target="_blank" rel="noopener noreferrer">https://www.cma.gov.cn/kppd/kppdqxyr/kppdtyqx/201901/t20190124_513302.html</a>锛涘寳浜競姘村姟灞€ (2024). 鍖椾含姝ｈ娌虫箹鍐板満杩樻湭杈惧紑鏀炬爣鍑嗭紝鍒啋闄╂粦銆岄噹鍐般€? <a href="https://swj.beijing.gov.cn/swdt/ztzl/fnsbaqztxc/fnszlxx/202412/t20241226_3973959.html" target="_blank" rel="noopener noreferrer">https://swj.beijing.gov.cn/swdt/ztzl/fnsbaqztxc/fnszlxx/202412/t20241226_3973959.html</a>锛汳innesota Department of Natural Resources. General ice thickness guidelines. <a href="https://www.dnr.state.mn.us/safety/ice/thickness.html" target="_blank" rel="noopener noreferrer">https://www.dnr.state.mn.us/safety/ice/thickness.html</a>锛汳innesota Department of Natural Resources. Ice safety. <a href="https://www.dnr.state.mn.us/safety/ice/index.html" target="_blank" rel="noopener noreferrer">https://www.dnr.state.mn.us/safety/ice/index.html</a>锛汳innesota Department of Natural Resources. Steps for surviving immersion. <a href="https://www.dnr.state.mn.us/safety/ice/survival.html" target="_blank" rel="noopener noreferrer">https://www.dnr.state.mn.us/safety/ice/survival.html</a>锛汵ational Weather Service. Winter Weather Safety: Ice and Frost. <a href="https://www.weather.gov/safety/winter-ice-frost" target="_blank" rel="noopener noreferrer">https://www.weather.gov/safety/winter-ice-frost</a>锛汣anadian Centre for Occupational Health and Safety. Working on or near Ice Covered Water - Basic Information. <a href="https://www.ccohs.ca/oshanswers/hsprograms/work_ice.html" target="_blank" rel="noopener noreferrer">https://www.ccohs.ca/oshanswers/hsprograms/work_ice.html</a></li>
-<li>澶囨敞锛氬畼鏂规寚鍗楅兘璇存病鏈夌櫨鍒嗕箣鐧惧畨鍏ㄧ殑鍐帮紝閲忓浜嗗帤搴﹀彧鏄棬妲涳紝涓嶆槸淇濊瘉銆傚垰涓婂喕鐨勫垵鍐拰寮€濮嬪寲鍐扮殑鍒濇槬鏈€鍗遍櫓銆傜湡鎺夎繘鍘讳簡锛屽埆鑴辫。鏈嶏紝鍘氳。鏈嶉噷瀛樼潃绌烘皵鑳藉府浣犳诞鐫€銆傝浆韬湞鏉ョ殑鏂瑰悜锛岄偅杈圭殑鍐版渶缁撳疄銆傛墜鑷傛惌涓婂啺闈紝鎶婂啺閿ユ墡杩涘啺閲岋紝鑴氬線鍚庤宫锛屾妸韬瓙鎷栦笂鏉ャ€備笂鏉ュ悗鍒珯璧锋潵锛屽钩韬虹潃婊氱鍐版礊锛屽啀灏藉揩鍙栨殩锛屽喕寰楀帀瀹崇殑瑕佸幓鍖婚櫌銆傜湅瑙佸埆浜烘帀杩涘啺绐熺锛屽埆璺戣繃鍘绘媺锛屽仛娉曡绗?13 鑺傜 25 鏉★紙鐪嬪埌鏈変汉婧烘按鑷繁涓嶄笅姘达級锛氬厛鍙汉銆佹墦 110锛屽啀閫掓潌瀛愩€佹姏缁冲瓙銆傚彈鐩婁汉涓昏鏄綘鑷繁鍜屽甫鍘荤帺鍐扮殑瀛╁瓙銆?</li>
+<li>成本：最省事的是去有人管的正规冰场，不用多花钱。非要上野外的冰，就带冰钻或冰镩打孔量厚度。再买一对救生冰锥，就是两根带握柄的尖钉，挂在胸前。这些加起来几十到一两百元。每走一段量一次，要多花些时间。</li>
+<li>说人话：国内官方的说法是，冰厚到 15 厘米，成年人才能上去滑冰。美国和加拿大的底线是 10 厘米，而且只算新结的透明冰。发白的冰结实程度只有一半，厚度要翻倍。同一片冰，这里一尺厚，几步外可能只有一两寸，所以要边走边量。</li>
+<li>收益：中国气象局的科普说，冰层厚度达到 15 厘米，成年人可以上去滑冰。露天冰场的冰层也要达到 15 厘米才能开放。北京市水务局说，正规天然冰场要冰厚 15 厘米，之后一周气温保持在 -8℃ 到 1℃、没有大风，才能开放。野冰上常有钓鱼的人凿的冰洞，凿开后很难再冻结实。美国明尼苏达州自然资源部的指南只针对新结的透明冰：不到 4 英寸（约 10 厘米）别上，4 英寸可以步行和冰钓。积雪化了又冻上的白冰，结实程度只有透明冰的一半左右，厚度要按两倍算。同一片水面，冰可能这里一英尺厚，几英尺外只有一两英寸。流水上的冰通常危险，溪流、桥和涵洞附近尤其如此。岸边的冰也可能比远处薄。美国国家气象局给的步行、冰钓、滑冰门槛也是 4 英寸。加拿大职业健康与安全中心转述加拿大红十字会的建议：几个人一起滑冰、步行要 15 厘米，人多的滑冰聚会要 20 厘米。这些都是安全指南，没有研究算过照着做能少死多少人（全国 / 美国、加拿大）</li>
+<li>证据等级：C</li>
+<li>来源：中国气象局 (2019). 想要冰上健步走，多厚的冰才安全？ <a href="https://www.cma.gov.cn/kppd/kppdqxyr/kppdtyqx/201901/t20190124_513302.html" target="_blank" rel="noopener noreferrer">https://www.cma.gov.cn/kppd/kppdqxyr/kppdtyqx/201901/t20190124_513302.html</a>；北京市水务局 (2024). 北京正规河湖冰场还未达开放标准，别冒险滑「野冰」. <a href="https://swj.beijing.gov.cn/swdt/ztzl/fnsbaqztxc/fnszlxx/202412/t20241226_3973959.html" target="_blank" rel="noopener noreferrer">https://swj.beijing.gov.cn/swdt/ztzl/fnsbaqztxc/fnszlxx/202412/t20241226_3973959.html</a>；Minnesota Department of Natural Resources. General ice thickness guidelines. <a href="https://www.dnr.state.mn.us/safety/ice/thickness.html" target="_blank" rel="noopener noreferrer">https://www.dnr.state.mn.us/safety/ice/thickness.html</a>；Minnesota Department of Natural Resources. Ice safety. <a href="https://www.dnr.state.mn.us/safety/ice/index.html" target="_blank" rel="noopener noreferrer">https://www.dnr.state.mn.us/safety/ice/index.html</a>；Minnesota Department of Natural Resources. Steps for surviving immersion. <a href="https://www.dnr.state.mn.us/safety/ice/survival.html" target="_blank" rel="noopener noreferrer">https://www.dnr.state.mn.us/safety/ice/survival.html</a>；National Weather Service. Winter Weather Safety: Ice and Frost. <a href="https://www.weather.gov/safety/winter-ice-frost" target="_blank" rel="noopener noreferrer">https://www.weather.gov/safety/winter-ice-frost</a>；Canadian Centre for Occupational Health and Safety. Working on or near Ice Covered Water - Basic Information. <a href="https://www.ccohs.ca/oshanswers/hsprograms/work_ice.html" target="_blank" rel="noopener noreferrer">https://www.ccohs.ca/oshanswers/hsprograms/work_ice.html</a></li>
+<li>备注：官方指南都说没有百分之百安全的冰，量够了厚度只是门槛，不是保证。刚上冻的初冬和开始化冰的初春最危险。真掉进去了，别脱衣服，厚衣服里存着空气能帮你浮着。转身朝来的方向，那边的冰最结实。手臂搭上冰面，把冰锥扎进冰里，脚往后蹬，把身子拖上来。上来后别站起来，平躺着滚离冰洞，再尽快取暖，冻得厉害的要去医院。看见别人掉进冰窟窿，别跑过去拉，做法见第 13 节第 25 条（看到有人溺水自己不下水）：先叫人、打 110，再递杆子、抛绳子。受益人主要是你自己和带去玩冰的孩子。</li>
 </ul>
-<h3>42. 瑁呭ソ鎶ょ僵銆佹埓涓婃姢鐩暅鍔犻潰灞忓啀鐢ㄨ纾ㄦ満锛屽弻鎵嬫彙绋筹紝鍒鏈ㄥ伐閿墖鍒囨湪澶?</h3>
-<!-- 鎴愭湰鏍囩: 閽?灏?鏃堕棿=灏?姣呭姏=浜?鏀剁泭=涓?鍙ｅ緞=姝讳骸鐜?-->
+<h3>42. 装好护罩、戴上护目镜加面屏再用角磨机，双手握稳，别装木工锯片切木头</h3>
+<!-- 成本标签: 钱=少 时间=少 毅力=些 收益=中 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氫竴鍓姢鐩暅鍔犱竴涓潰灞忥紝鍑犲崄鍏冦€傛瘡娆″紑鏈哄墠鐪嬩竴鐪兼姢缃╁拰鐗囧瓙锛屾崲鐗囧墠鎷旀帀鎻掑ご锛屽鑺变竴涓ゅ垎閽熴€傞毦鍦ㄥ珜楹荤儲鏃朵篃涓嶆媶鎶ょ僵銆佷笉鍗曟墜骞叉椿銆?</li>
-<li>璇翠汉璇濓細瑙掔（鏈鸿浆寰楁瀬蹇紝鐗囧瓙纰庝簡浼氶鍑烘潵浼や汉锛岃涓婃湪宸ラ敮鐗囪繕浼氱獊鐒跺弽寮广€傚浗鍐呬袱璧蜂簨鏁呴兘鏄浜嗛敮鐗囥€佹病瑁呮姢缃╋紝涓€浜哄壊鏂ぇ鑵垮姩鑴夛紝涓€浜哄壊鐮撮鍔ㄨ剦锛岄兘娌℃晳鍥炴潵銆傛姢缃┿€佹姢鐩暅鍔犻潰灞忋€佸弻鎵嬫彙绋筹紝杩欏嚑鏍疯姳涓嶄簡鍑犱釜閽便€?</li>
-<li>鏀剁泭锛氬姞鎷垮ぇ鑱屼笟鍋ュ悍涓庡畨鍏ㄤ腑蹇冨拰婢冲ぇ鍒╀簹鏄嗗＋鍏板窞鐨勫畨鍏ㄦ満鏋勫垪鐨勫仛娉曞涓嬨€傚紑鏈哄墠妫€鏌ユ姢缃╁拰鐗囧瓙锛屾湁瑁傜汗銆佺己鍙ｃ€佸彉褰㈢殑涓嶇敤銆傜墖瀛愪笂鏍囩殑鏈€楂樿浆閫燂紝涓嶈兘浣庝簬鏈哄櫒涓婃爣鐨勮浆閫熴€傜墖瀛愮殑鐩村緞鍜屼腑闂寸殑瀛旇鍜屾満鍣ㄩ厤濂椼€傛崲鐗囧墠鏂紑鐢垫簮銆傝纾ㄨ鍒囩殑涓滆タ鍏堝浐瀹氫綇銆傛埓闃叉姢鐪奸暅鎴栨姢鐩暅锛屽闈㈠啀鍔犻潰灞忋€傚弻鎵嬫彙浣忎袱涓墜鏌勶紝鑴氫笅绔欑ǔ銆傚垏鍓茬墖涓嶈兘鎷挎潵鎵撶（锛岄偅鏍风墖瀛愭洿瀹规槗纰庛€傜墖瀛愬畬鍏ㄥ仠杞箣鍓嶄笉鎶婃満鍣ㄦ斁涓嬨€傜伀鑺卞拰纰庡睉鏈濆悜娌′汉鐨勫湴鏂癸紝鍛ㄥ洿涓嶆斁鏄撶噧鐨勪笢瑗裤€傛槅澹叞鐨勯€氭姤璇达紝鍒囧壊鐗囪竟缂樼殑璁捐閫熷害绾︿负姣忕 70 绫炽€傛妸 356 姣背鐨勫ぇ鐗囪鍒?230 姣背鐨勬満鍣ㄤ笂锛岃竟缂橀€熷害鑷冲皯鍒版瘡绉?120 绫筹紝鐗囧瓙瀹规槗纰庛€?016 骞?2 鏈堬紝褰撳湴涓€鍚嶅伐浜虹敤 230 姣背鐨勮纾ㄦ満鏃惰纰庣墖鍑讳腑鑳搁儴锛屽唴浼ゆ浜°€傚浗鍐呮湁涓や唤浜嬫晠璋冩煡鎶ュ憡銆?019 骞村搱灏旀花涓€鍚嶅伐浜烘妸鍒囧壊鐗囨崲鎴愬甫榻块敮鐗囷紝娌¤鎶ょ僵灏卞幓鍒囨湪鏉裤€傞敮鐗囧嵎浣忚￥瀛愶紝鍓叉柇澶ц吙鍔ㄨ剦锛屽け琛€姝讳骸銆?024 骞存繁鍦崇鐢颁竴鍚嶅伐浜虹敤瑁呯潃鏈ㄥ伐閿墖銆佹病瑁呮姢缃╁拰杈呭姪鎵嬫焺鐨勮纾ㄦ満鍒囨湪闂ㄦ銆傛満鍣ㄥ弽寮癸紝鍓茬牬棰堝姩鑴夋浜°€傛姤鍛婂紩鐢ㄧ殑鍥藉鏍囧噯鍐欑潃銆屼笉瑕侀檮瑁呬笂閿摼銆佹湪闆曞垁鐗囨垨甯﹂娇閿墖銆嶃€傞煩鍥?2011 鍒?2018 骞寸殑鎬ヨ瘖浼ゅ鐩戞祴閲岋紝琚珮閫熸棆杞殑鍒囧壊宸ュ叿寮勪激鐨勬湁 8697 浜烘锛屽叾涓?4603 浜烘鍦ㄧ敤鐮傝疆鏈鸿繖涓€绫诲伐鍏枫€備粬浠激鍦ㄦ墜涓婄殑鍗?46.4%锛屼激鍦ㄥご閮ㄧ殑鍗?23.0%銆傚拰鍏朵粬鍚岀被宸ュ叿姣旓紝鐮傝疆鏈轰激鎴愰噸浼ょ殑鍙兘楂樼害涓€鍊嶏紙OR 2.07锛?5% CI 1.88鈥?.29锛夈€傚洓宸濈坏闃充竴瀹跺尰闄袱骞存敹娌?36 鍚嶈纾ㄦ満浼ょ溂鐨勪綇闄㈢梾浜恒€傛墜鏈悗鎴翠笂鐪奸暅鐨勬渶濂借鍔涗粛浣庝簬 0.05 鐨勬湁 10 浜恒€傚湡鑰冲叾涓€瀹跺尰闄竴骞寸殑 742 渚嬫墜鍜屽墠鑷傛€ユ€у浼ら噷锛岃纾ㄦ満閫犳垚 82 渚嬨€傞櫎 8 渚嬪閮戒笉鏄笂鐝椂浼ょ殑锛?4% 鏄€€浼戠殑浜恒€傛棩鏈竴瀹跺垱浼や腑蹇?2017 鍒?2018 骞寸殑 15 鍚嶈纾ㄦ満浼よ€呴噷锛? 浜烘槸瑁呬笂閿墖鍒囨湪澶磋繖绫婚敊鐢ㄣ€傚叾涓?2 浜烘暣鏍规墜鎸囨柇鎺夛紝1 浜烘柇浜嗕竴鎴紙鍔犳嬁澶с€佹境澶у埄浜?/ 涓浗 / 闊╁浗銆佸湡鑰冲叾銆佹棩鏈級</li>
-<li>璇佹嵁绛夌骇锛欳</li>
-<li>鏉ユ簮锛欳anadian Centre for Occupational Health and Safety (2025). Abrasive Wheels - Use of Portable Grinders. <a href="https://www.ccohs.ca/oshanswers/safety_haz/abrasive_wheels/safeuse1.html" target="_blank" rel="noopener noreferrer">https://www.ccohs.ca/oshanswers/safety_haz/abrasive_wheels/safeuse1.html</a>锛汣anadian Centre for Occupational Health and Safety (2025). Powered Hand Tools - Use of Grinder Attachments. <a href="https://www.ccohs.ca/oshanswers/safety_haz/power_tools/powered-hand-tools-use-of-grinder-attachments.html" target="_blank" rel="noopener noreferrer">https://www.ccohs.ca/oshanswers/safety_haz/power_tools/powered-hand-tools-use-of-grinder-attachments.html</a>锛沇orkplace Health and Safety Queensland (2017). Guards and discs on angle grinders. <a href="https://www.worksafe.qld.gov.au/news-and-events/alerts/workplace-health-and-safety-alerts/2017/guards-and-discs-on-angle-grinders" target="_blank" rel="noopener noreferrer">https://www.worksafe.qld.gov.au/news-and-events/alerts/workplace-health-and-safety-alerts/2017/guards-and-discs-on-angle-grinders</a>锛涘搱灏旀花甯傛澗鍖楀尯浜烘皯鏀垮簻 (2019). 鍝堝皵婊ㄤ笁鍙戣鍗歌繍杈撴湁闄愬叕鍙搞€?.28銆嶆満姊颁激瀹充簨鏁呰皟鏌ユ姤鍛? <a href="https://www.songbei.gov.cn/hebsbq/tzgg/201910/c01_797872.shtml" target="_blank" rel="noopener noreferrer">https://www.songbei.gov.cn/hebsbq/tzgg/201910/c01_797872.shtml</a>锛涚鐢板尯浜烘皯鏀垮簻娌欏ご鏂版床鍗楁潙鎴垮眿瑁呬慨宸ョ▼銆?路14銆嶄竴鑸満姊颁激瀹充簨鏁呰皟鏌ョ粍 (2024). 娌欏ご鏂版床鍗楁潙鎴垮眿瑁呬慨宸ョ▼銆?路14銆嶄竴鑸満姊颁激瀹充簨鏁呰皟鏌ユ姤鍛婏紙寮?GB 3883.3-2007 绗?8.12.1.102 鏉?a銆乪 椤癸級. <a href="https://www.szft.gov.cn/attachment/1/1507/1507749/11317197.pdf" target="_blank" rel="noopener noreferrer">https://www.szft.gov.cn/attachment/1/1507/1507749/11317197.pdf</a>锛汼ong J, Jeon YB, Jang JH, Cho JS, Choi JY, Choi WS. (2023). Severity of grinder injuries and related factors compared with other high-rotation cutting tool injuries: a multicenter retrospective study from 2011 to 2018. Journal of Trauma and Injury, 36(1), 32-38. <a href="https://doi.org/10.20408/jti.2021.0057" target="_blank" rel="noopener noreferrer">https://doi.org/10.20408/jti.2021.0057</a>锛汯e W, Gu K, Zhu S, Wu J, Dai Y. (2025). Prognostics Factors to Avoid Eye Injuries in Angle Grinders. Journal of Craniofacial Surgery, 36(6), e629-e631. <a href="https://doi.org/10.1097/scs.0000000000011108" target="_blank" rel="noopener noreferrer">https://doi.org/10.1097/scs.0000000000011108</a>锛汼ozbilen MC, Dastan AE, Gunay H, Kucuk L. (2018). A prospective study of angle grinder injuries in the hands and forearms during a one-year period. Hand Surgery and Rehabilitation, 37(5), 300-304. <a href="https://doi.org/10.1016/j.hansur.2018.07.002" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.hansur.2018.07.002</a>锛汿sumura T, Matsumoto T, Matsushita M, Kishimoto K, Shiode H. (2021). Do Not Cut Wood with an Angle Grinder, or You Might Lose a Finger: A Retrospective Study. Journal of Hand Surgery Asian-Pacific Volume. <a href="https://doi.org/10.1142/s2424835521500053" target="_blank" rel="noopener noreferrer">https://doi.org/10.1142/s2424835521500053</a></li>
-<li>澶囨敞锛氱粰 C 鏄洜涓鸿繖浜涘仛娉曟潵鑷畨鍏ㄦ満鏋勭殑鎸囧崡鍜屼簨鏁呰皟鏌ワ紝娌℃湁鐮旂┒绠楄繃鐓у仛鑳藉皯浼ゅ灏戜汉銆備激鎯呮暟鎹彧璇存槑浼ゅ緱澶氶噸锛岃€屼笖閮芥槸涓€瀹跺尰闄㈡垨涓€涓浗瀹剁殑鐥呬緥銆傛敹鐩婇噺绾у畾涓轰腑锛屽嚟鐨勬槸鍒ゆ柇锛氬悗鏋滃彲浠ユ槸姝讳骸銆佸け鏄庛€佹柇鎸囷紝浣嗗彧钀藉湪鐢ㄨ纾ㄦ満鐨勪汉韬笂銆傚搱灏旀花閭ｅ彴鏈哄櫒鐨勮鏄庝功鏈潵灏卞啓鐫€涓嶈瑁呭甫榻块敮鐗囥€佸繀椤昏鎶ょ僵銆傞偅鍚嶅伐浜烘墜杈瑰氨鏈夋墜閿紝鍒囨湪澶磋鐢ㄥ畠杩欑被鏈ㄥ伐宸ュ叿銆傚鏉捐。鏈嶃€佸瀭涓嬫潵鐨勯楗板拰闀垮ご鍙戦兘瑕佹敹濂斤紝浼氳鍗疯繘鍘汇€傜（鐨勬椂鍊欑矇灏樺拰鍣０閮藉ぇ锛屽彛缃╁拰鑰冲鐨勮绌惰绗?19 鑺傜 10 鏉★紙闃叉姢鐢ㄥ搧鍗曚綅蹇呴』缁欙級銆傜湡鍓茬牬浜嗗ぇ琛€绠★紝鍏堟姝诲帇浣忎激鍙ｏ紝瑙佺 13 鑺傜 12 鏉★紙澶у嚭琛€鍏堢敤鎵嬫姝诲帇浣忎激鍙ｏ級銆傚彈鐩婁汉涓昏鏄綘鑷繁锛屼篃鎶や綇绔欏湪鏃佽竟甯繖鐨勫浜恒€?</li>
+<li>成本：一副护目镜加一个面屏，几十元。每次开机前看一眼护罩和片子，换片前拔掉插头，多花一两分钟。难在嫌麻烦时也不拆护罩、不单手干活。</li>
+<li>说人话：角磨机转得极快，片子碎了会飞出来伤人，装上木工锯片还会突然反弹。国内两起事故都是装了锯片、没装护罩，一人割断大腿动脉，一人割破颈动脉，都没救回来。护罩、护目镜加面屏、双手握稳，这几样花不了几个钱。</li>
+<li>收益：加拿大职业健康与安全中心和澳大利亚昆士兰州的安全机构列的做法如下。开机前检查护罩和片子，有裂纹、缺口、变形的不用。片子上标的最高转速，不能低于机器上标的转速。片子的直径和中间的孔要和机器配套。换片前断开电源。要磨要切的东西先固定住。戴防护眼镜或护目镜，外面再加面屏。双手握住两个手柄，脚下站稳。切割片不能拿来打磨，那样片子更容易碎。片子完全停转之前不把机器放下。火花和碎屑朝向没人的地方，周围不放易燃的东西。昆士兰的通报说，切割片边缘的设计速度约为每秒 70 米。把 356 毫米的大片装到 230 毫米的机器上，边缘速度至少到每秒 120 米，片子容易碎。2016 年 2 月，当地一名工人用 230 毫米的角磨机时被碎片击中胸部，内伤死亡。国内有两份事故调查报告。2019 年哈尔滨一名工人把切割片换成带齿锯片，没装护罩就去切木板。锯片卷住裤子，割断大腿动脉，失血死亡。2024 年深圳福田一名工人用装着木工锯片、没装护罩和辅助手柄的角磨机切木门框。机器反弹，割破颈动脉死亡。报告引用的国家标准写着「不要附装上锯链、木雕刀片或带齿锯片」。韩国 2011 到 2018 年的急诊伤害监测里，被高速旋转的切割工具弄伤的有 8697 人次，其中 4603 人次在用砂轮机这一类工具。他们伤在手上的占 46.4%，伤在头部的占 23.0%。和其他同类工具比，砂轮机伤成重伤的可能高约一倍（OR 2.07，95% CI 1.88–2.29）。四川绵阳一家医院两年收治 36 名角磨机伤眼的住院病人。手术后戴上眼镜的最好视力仍低于 0.05 的有 10 人。土耳其一家医院一年的 742 例手和前臂急性外伤里，角磨机造成 82 例。除 8 例外都不是上班时伤的，44% 是退休的人。日本一家创伤中心 2017 到 2018 年的 15 名角磨机伤者里，9 人是装上锯片切木头这类错用。其中 2 人整根手指断掉，1 人断了一截（加拿大、澳大利亚 / 中国 / 韩国、土耳其、日本）</li>
+<li>证据等级：C</li>
+<li>来源：Canadian Centre for Occupational Health and Safety (2025). Abrasive Wheels - Use of Portable Grinders. <a href="https://www.ccohs.ca/oshanswers/safety_haz/abrasive_wheels/safeuse1.html" target="_blank" rel="noopener noreferrer">https://www.ccohs.ca/oshanswers/safety_haz/abrasive_wheels/safeuse1.html</a>；Canadian Centre for Occupational Health and Safety (2025). Powered Hand Tools - Use of Grinder Attachments. <a href="https://www.ccohs.ca/oshanswers/safety_haz/power_tools/powered-hand-tools-use-of-grinder-attachments.html" target="_blank" rel="noopener noreferrer">https://www.ccohs.ca/oshanswers/safety_haz/power_tools/powered-hand-tools-use-of-grinder-attachments.html</a>；Workplace Health and Safety Queensland (2017). Guards and discs on angle grinders. <a href="https://www.worksafe.qld.gov.au/news-and-events/alerts/workplace-health-and-safety-alerts/2017/guards-and-discs-on-angle-grinders" target="_blank" rel="noopener noreferrer">https://www.worksafe.qld.gov.au/news-and-events/alerts/workplace-health-and-safety-alerts/2017/guards-and-discs-on-angle-grinders</a>；哈尔滨市松北区人民政府 (2019). 哈尔滨三发装卸运输有限公司「8.28」机械伤害事故调查报告. <a href="https://www.songbei.gov.cn/hebsbq/tzgg/201910/c01_797872.shtml" target="_blank" rel="noopener noreferrer">https://www.songbei.gov.cn/hebsbq/tzgg/201910/c01_797872.shtml</a>；福田区人民政府沙头新洲南村房屋装修工程「3·14」一般机械伤害事故调查组 (2024). 沙头新洲南村房屋装修工程「3·14」一般机械伤害事故调查报告（引 GB 3883.3-2007 第 8.12.1.102 条 a、e 项）. <a href="https://www.szft.gov.cn/attachment/1/1507/1507749/11317197.pdf" target="_blank" rel="noopener noreferrer">https://www.szft.gov.cn/attachment/1/1507/1507749/11317197.pdf</a>；Song J, Jeon YB, Jang JH, Cho JS, Choi JY, Choi WS. (2023). Severity of grinder injuries and related factors compared with other high-rotation cutting tool injuries: a multicenter retrospective study from 2011 to 2018. Journal of Trauma and Injury, 36(1), 32-38. <a href="https://doi.org/10.20408/jti.2021.0057" target="_blank" rel="noopener noreferrer">https://doi.org/10.20408/jti.2021.0057</a>；Ke W, Gu K, Zhu S, Wu J, Dai Y. (2025). Prognostics Factors to Avoid Eye Injuries in Angle Grinders. Journal of Craniofacial Surgery, 36(6), e629-e631. <a href="https://doi.org/10.1097/scs.0000000000011108" target="_blank" rel="noopener noreferrer">https://doi.org/10.1097/scs.0000000000011108</a>；Sozbilen MC, Dastan AE, Gunay H, Kucuk L. (2018). A prospective study of angle grinder injuries in the hands and forearms during a one-year period. Hand Surgery and Rehabilitation, 37(5), 300-304. <a href="https://doi.org/10.1016/j.hansur.2018.07.002" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.hansur.2018.07.002</a>；Tsumura T, Matsumoto T, Matsushita M, Kishimoto K, Shiode H. (2021). Do Not Cut Wood with an Angle Grinder, or You Might Lose a Finger: A Retrospective Study. Journal of Hand Surgery Asian-Pacific Volume. <a href="https://doi.org/10.1142/s2424835521500053" target="_blank" rel="noopener noreferrer">https://doi.org/10.1142/s2424835521500053</a></li>
+<li>备注：给 C 是因为这些做法来自安全机构的指南和事故调查，没有研究算过照做能少伤多少人。伤情数据只说明伤得多重，而且都是一家医院或一个国家的病例。收益量级定为中，凭的是判断：后果可以是死亡、失明、断指，但只落在用角磨机的人身上。哈尔滨那台机器的说明书本来就写着不要装带齿锯片、必须装护罩。那名工人手边就有手锯，切木头该用它这类木工工具。宽松衣服、垂下来的首饰和长头发都要收好，会被卷进去。磨的时候粉尘和噪声都大，口罩和耳塞的讲究见第 19 节第 10 条（防护用品单位必须给）。真割破了大血管，先死死压住伤口，见第 13 节第 12 条（大出血先用手死死压住伤口）。受益人主要是你自己，也护住站在旁边帮忙的家人。</li>
 </ul>
-<h3>43. 鐩存帴闂韩杈规儏缁笉瀵圭殑浜恒€屼綘鏈夋病鏈夋兂杩囪嚜鏉€銆嶏紝闂簡涓嶄細璁╀粬鏇存兂</h3>
-<!-- 鎴愭湰鏍囩: 閽?0 鏃堕棿=灏?姣呭姏=浜?鏀剁泭=灏?鍙ｅ緞=姝讳骸鐜?-->
+<h3>43. 直接问身边情绪不对的人「你有没有想过自杀」，问了不会让他更想</h3>
+<!-- 成本标签: 钱=0 时间=少 毅力=些 收益=小 口径=死亡率 -->
 <ul>
-<li>鎴愭湰锛氫笉鑺遍挶銆傞棶涓€鍙ヨ瘽锛屽啀鑺辩偣鏃堕棿鍚粬璇淬€傞毦鍦ㄥ紑鍙ｏ紝寰堝浜烘€曚竴闂弽鍊掓妸蹇靛ご鍕惧嚭鏉ャ€?</li>
-<li>璇翠汉璇濓細鎬曚竴鎻愯嚜鏉€灏辨妸蹇靛ご鍕惧嚭鏉ワ紝鐮旂┒閲屾病鐪嬪埌杩欏洖浜嬨€傜粰涓鐢熺殑闂嵎閲屽姞涓婅嚜鏉€鐨勯棶棰橈紝琚棶鐨勪汉娌℃湁鏇撮毦鍙楋紝鎯宠嚜鏉€鐨勪篃娌℃湁鍙樺銆傛湰鏉ュ氨鎶戦儊鐨勫瀛愯闂簡鍙嶈€屾病閭ｄ箞闅惧彈锛岃嚜鏉€杩囩殑瀛╁瓙鎯宠嚜鏉€鐨勫弽鑰屽皯浜涖€?</li>
-<li>鏀剁泭锛氱航绾﹀窞 6 鎵€楂樹腑鐨?2342 鍚嶅鐢熸寜鐝骇闅忔満鍒嗘垚涓ょ粍銆備竴缁勭殑闂嵎閲屾湁鑷潃闂锛屽彟涓€缁勬病鏈夈€傚仛瀹岄棶鍗峰綋鍦哄拰 2 澶╁悗锛屼袱缁勭殑闅惧彈绋嬪害閮芥病鏈夊樊鍒紙P = .66 鍜?P = .41锛孭 澶т簬 0.05 灏辨槸鐪嬩笉鍑哄樊鍒級銆? 澶╁悗璇磋嚜宸辨兂杩囪嚜鏉€鐨勶紝琚棶閭ｇ粍 4.7%锛屾病琚棶閭ｇ粍 3.9%锛岀湅涓嶅嚭宸埆锛圥 = .49锛夈€傚師鏈湁鎶戦儊鐥囩姸鐨勫鐢燂紝琚棶浜嗗弽鑰屾病閭ｄ箞闅惧彈锛圥 = .01锛夈€備互鍓嶈嚜鏉€鏈亗杩囩殑瀛︾敓锛岃闂簡鍙嶈€屾病閭ｄ箞鎯宠嚜鏉€锛圥 = .02锛夈€?022 骞翠竴绡囪崯钀冨垎鏋愯瘎浜?17 椤圭爺绌讹紝鎶婂叾涓?8 椤广€岄棶浜嗐€嶅拰銆屾病闂€嶇殑姣旇緝鍚堣捣鏉ョ畻銆傞棶浜嗕互鍚庯紝褰撳満鍜屼箣鍚庣殑鑷潃蹇靛ご涓庤嚜鏉€琛屼负銆佷笉涓哄姝荤殑鑷激銆佸績鐞嗙棝鑻︼紝閮芥病鏈夋樉钁楀鍔犮€傛渶纭殑璇佹嵁鏄?8 椤归殢鏈哄鐓ц瘯楠岋紝鍋忓€氶闄╀綆鎴栦笉娓呮銆?014 骞村彟涓€绡囨枃鐚患杩颁篃鍐欑潃锛屾病鏈変竴椤圭爺绌跺彂鐜伴棶浜嗕互鍚庤嚜鏉€蹇靛ご鏄捐憲澧炲姞</li>
-<li>璇佹嵁绛夌骇锛欱</li>
-<li>鏉ユ簮锛欸ould MS, Marrocco FA, Kleinman M, Thomas JG, Mostkoff K, Cote J, Davies M (2005). Evaluating iatrogenic risk of youth suicide screening programs: a randomized controlled trial. JAMA, 293(13), 1635-1643. <a href="https://doi.org/10.1001/jama.293.13.1635" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/jama.293.13.1635</a>锛汸olihronis C, Cloutier P, Kaur J, Skinner R, Cappelli M (2022). What's the harm in asking? A systematic review and meta-analysis on the risks of asking about suicide-related behaviors and self-harm with quality appraisal. Archives of Suicide Research, 26(2), 325-347. <a href="https://doi.org/10.1080/13811118.2020.1793857" target="_blank" rel="noopener noreferrer">https://doi.org/10.1080/13811118.2020.1793857</a>锛汥azzi T, Gribble R, Wessely S, Fear NT (2014). Does asking about suicide and related behaviours induce suicidal ideation? What is the evidence? Psychological Medicine, 44(16), 3361-3363. <a href="https://doi.org/10.1017/S0033291714001299" target="_blank" rel="noopener noreferrer">https://doi.org/10.1017/S0033291714001299</a></li>
-<li>澶囨敞锛氱粰 B 鐨勫師鍥狅細杩欎簺鐮旂┒鍙瘉鏄庨棶浜嗘病鏈夊澶勶紝娌℃湁鐮旂┒绠楄繃闂簡鑳借鑷潃姝讳骸灏戝灏戙€傛敹鐩婇噺绾у畾涓哄皬锛屼篃鏄洜涓烘病鏈夋浜＄巼鏁板瓧锛屽彧鏈夈€屽康澶存病鏈夊彉澶氥€嶈繖涓浛浠ｇ粓鐐广€傜爺绌堕噷闂殑鏂瑰紡澶氭槸闂嵎鍜岀爺绌惰璋堬紝涓嶆槸瀹朵汉鏈嬪弸褰撻潰闂紝鎼埌褰撻潰闂槸鎺ㄨ銆傞棶鍑烘潵浠栫‘瀹炴兂杩囷紝鍏堝埆璧板紑锛岄櫔浠栨墦 12356锛屾妸鑽拰鍐滆嵂鎸繙锛岃鏈妭绗?25 鏉★紙鏈夎嚜鏉€蹇靛ご鏃舵墦 12356锛夈€備粬璇磋甯︿笂鍒汉锛屾垨鑰呭凡缁忓噯澶囧ソ浜嗘墜娈碉紝杩戜翰灞炲彲浠ョ洿鎺ラ€佸尰锛屼篃鍙互鎶?110锛岃绗?8 鑺傜 15 鏉★紙杩戜翰灞炲彲浠ョ洿鎺ラ€佽瘖锛夈€傚康澶村啋鍑烘潵鍒板姩鎵嬪線寰€鍙湁鍑犲崄鍒嗛挓锛岃鏈妭绗?32 鏉★紙鑷潃蹇靛ご涓€鍐掑嚭鏉ュ厛鍛婅瘔韬竟鐨勪竴涓汉锛夈€傚彈鐩婁汉涓昏鏄厤鍋跺拰鐩寸郴浜插睘锛屽鏈嬪弸鍚屼簨涓€鏍峰彲浠ラ棶銆?</li>
+<li>成本：不花钱。问一句话，再花点时间听他说。难在开口，很多人怕一问反倒把念头勾出来。</li>
+<li>说人话：怕一提自杀就把念头勾出来，研究里没看到这回事。给中学生的问卷里加上自杀的问题，被问的人没有更难受，想自杀的也没有变多。本来就抑郁的孩子被问了反而没那么难受，自杀过的孩子想自杀的反而少些。</li>
+<li>收益：纽约州 6 所高中的 2342 名学生按班级随机分成两组。一组的问卷里有自杀问题，另一组没有。做完问卷当场和 2 天后，两组的难受程度都没有差别（P = .66 和 P = .41，P 大于 0.05 就是看不出差别）。2 天后说自己想过自杀的，被问那组 4.7%，没被问那组 3.9%，看不出差别（P = .49）。原本有抑郁症状的学生，被问了反而没那么难受（P = .01）。以前自杀未遂过的学生，被问了反而没那么想自杀（P = .02）。2022 年一篇荟萃分析评了 17 项研究，把其中 8 项「问了」和「没问」的比较合起来算。问了以后，当场和之后的自杀念头与自杀行为、不为寻死的自伤、心理痛苦，都没有显著增加。最硬的证据是 8 项随机对照试验，偏倚风险低或不清楚。2014 年另一篇文献综述也写着，没有一项研究发现问了以后自杀念头显著增加</li>
+<li>证据等级：B</li>
+<li>来源：Gould MS, Marrocco FA, Kleinman M, Thomas JG, Mostkoff K, Cote J, Davies M (2005). Evaluating iatrogenic risk of youth suicide screening programs: a randomized controlled trial. JAMA, 293(13), 1635-1643. <a href="https://doi.org/10.1001/jama.293.13.1635" target="_blank" rel="noopener noreferrer">https://doi.org/10.1001/jama.293.13.1635</a>；Polihronis C, Cloutier P, Kaur J, Skinner R, Cappelli M (2022). What's the harm in asking? A systematic review and meta-analysis on the risks of asking about suicide-related behaviors and self-harm with quality appraisal. Archives of Suicide Research, 26(2), 325-347. <a href="https://doi.org/10.1080/13811118.2020.1793857" target="_blank" rel="noopener noreferrer">https://doi.org/10.1080/13811118.2020.1793857</a>；Dazzi T, Gribble R, Wessely S, Fear NT (2014). Does asking about suicide and related behaviours induce suicidal ideation? What is the evidence? Psychological Medicine, 44(16), 3361-3363. <a href="https://doi.org/10.1017/S0033291714001299" target="_blank" rel="noopener noreferrer">https://doi.org/10.1017/S0033291714001299</a></li>
+<li>备注：给 B 的原因：这些研究只证明问了没有害处，没有研究算过问了能让自杀死亡少多少。收益量级定为小，也是因为没有死亡率数字，只有「念头没有变多」这个替代终点。研究里问的方式多是问卷和研究访谈，不是家人朋友当面问，搬到当面问是推论。问出来他确实想过，先别走开，陪他打 12356，把药和农药挪远，见本节第 25 条（有自杀念头时打 12356）。他说要带上别人，或者已经准备好了手段，近亲属可以直接送医，也可以报 110，见第 8 节第 15 条（近亲属可以直接送诊）。念头冒出来到动手往往只有几十分钟，见本节第 32 条（自杀念头一冒出来先告诉身边的一个人）。受益人主要是配偶和直系亲属，对朋友同事一样可以问。</li>
 </ul>
 ]]></content>
     <published>2026-10-13T06:24:44.000Z</published>
