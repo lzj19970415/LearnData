@@ -1,332 +1,61 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="light">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LearnData - 读书笔记</title>
-    <meta name="description" content="将书籍转化为你的工具书！专注实体书摘要总结，涵盖效率习惯、思维成长、沟通技巧等领域，运用费曼技巧和3-2-1训练法，助你真正吸收并运用所学知识。" />
-    <!-- 与主站一致：朱砂印章 favicon + 移动端浏览器外壳着色（宣纸/暖墨黑） -->
-    <link rel="icon" href="/logo.svg" type="image/svg+xml" />
-    <meta name="theme-color" content="#faf6ef" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#1c1814" media="(prefers-color-scheme: dark)" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="keywords" content="自我提升,效率提升,开源工具,学习笔记" />
+    <!-- 移动端浏览器外壳着色：宣纸（亮）/ 暖墨黑（暗），与 --vp-c-bg 保持一致 -->
+    <meta
+      name="theme-color"
+      content="#faf6ef"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#1c1814"
+      media="(prefers-color-scheme: dark)"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.cn" />
     <link rel="preconnect" href="https://fonts.gstatic.cn" crossorigin />
-    <link href="https://fonts.googleapis.cn/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-    <!-- vue.css 和 docsify-toc.css 已移除：reading 用自写主题接管所有样式 -->
-    <link rel="stylesheet" href="https://oss.newzone.top/@waline/3.8.0/client/dist/waline.css" />
+    <link
+      href="https://fonts.googleapis.cn/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --vp-c-bg: #faf6ef;
+      }
+
+      [data-theme="dark"] {
+        --vp-c-bg: #1c1814;
+      }
+
+      html,
+      body {
+        background: var(--vp-c-bg);
+      }
+    </style>
     <script>
-      // Dark mode 初始化必须 inline 在 head 早期执行避免 FOUC——其他逻辑全在 reading-app.js
-      (function () {
-        var saved = localStorage.getItem("reading-theme");
-        var systemDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-        document.documentElement.setAttribute("data-theme", saved || (systemDark ? "dark" : "light"));
-      })();
-    </script>
-    <script defer src="reading-app.js"></script>
-    <link rel="stylesheet" href="reading-theme.css" />
-  </head>
+      const userMode = localStorage.getItem("vuepress-theme-hope-scheme");
+      const systemDarkMode = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-  <body>
-    <!-- 自写顶栏（替代 docsify nav.app-nav） -->
-    <header class="topbar">
-      <a class="brand" href="https://newzone.top/">
-        <span class="brand-seal">读</span>
-        <span class="brand-text">LearnData</span>
-      </a>
-      <nav class="nav-mid">
-        <a href="https://tools.newzone.top/zh">Tools By AI</a>
-        <a href="https://www.aishort.top/">ChatGPT SC</a>
-        <a href="https://talk.newzone.top">AI 圆桌</a>
-        <a href="https://prompt.newzone.top/app/zh">IMGPrompt</a>
-        <a href="https://chat.newzone.top/?lang=zh">ChatBox</a>
-        <a href="https://nav.newzone.top/">工具收藏</a>
-      </nav>
-      <div class="nav-right">
-        <button class="icon-btn theme-toggle" onclick="toggleReadingTheme()" aria-label="切换到夜间" title="切换到夜间">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
-        </button>
-      </div>
-    </header>
-
-    <!-- 窄屏浮动触发按钮：左下 sidebar / 右上原 TOC 锚点位置 toc。
-         - data-custom-toggle 标记自家按钮，配合 CSS 把 docsify 注入的同名按钮藏掉
-         - onclick 用命名函数（toggleSidebar/toggleTocDrawer）做事件流拦截，避免 docsify 同元素 listener 把状态抹掉
-         - aria-expanded 由 syncAria() 同步状态
-         - 无 TOC 的页面（如 README）通过 :has() 不显示 toc-toggle -->
-    <button class="sidebar-toggle" data-custom-toggle
-            onclick="toggleSidebar(event)"
-            aria-label="切换目录" aria-controls="sidebar" aria-expanded="false" title="目录">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="3" y1="6" x2="21" y2="6"/>
-        <line x1="3" y1="12" x2="21" y2="12"/>
-        <line x1="3" y1="18" x2="21" y2="18"/>
-      </svg>
-    </button>
-    <button class="toc-toggle"
-            onclick="toggleTocDrawer(event)"
-            aria-label="切换本章目录" aria-controls="page-toc" aria-expanded="false" title="本章目录">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="8" y1="6" x2="21" y2="6"/>
-        <line x1="8" y1="12" x2="21" y2="12"/>
-        <line x1="8" y1="18" x2="21" y2="18"/>
-        <circle cx="3.5" cy="6" r="0.5" fill="currentColor"/>
-        <circle cx="3.5" cy="12" r="0.5" fill="currentColor"/>
-        <circle cx="3.5" cy="18" r="0.5" fill="currentColor"/>
-      </svg>
-    </button>
-
-    <div id="app" class="initial-load">
-      <div class="loading-mark">
-        <span class="loading-seal">读</span>
-        <span class="loading-text">展卷品读…</span>
-      </div>
-    </div>
-
-    <!-- 回到顶部 -->
-    <button class="back-to-top" onclick="scrollToTop(event)" aria-label="回到顶部" title="回到顶部">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-    </button>
-    <script>
-      window.$docsify = {
-        // 仅文字（朱砂印章在顶栏品牌处已有"读"，此处不重复）
-        name: '<span class="site-titles"><span class="site-title">读书笔记</span><span class="site-subtitle">books · digest · apply</span></span>',
-        nameLink: "#/",
-        notFoundPage: "README.md",
-        auto2top: true,
-
-        // _navbar.md 不再加载（顶栏由 hardcoded header.topbar 接管）
-        loadNavbar: false,
-        topMargin: 80, // 让锚点跳转避开 fixed topbar (56px) + 一点缓冲
-
-        loadSidebar: true,
-        maxLevel: 4,
-        subMaxLevel: 2,
-
-        search: {
-          maxAge: 86400000,
-          paths: "auto",
-          placeholder: "🔍 搜索",
-          noData: "😒 找不到结果，请缩短搜索词",
-          depth: 2,
-          hideOtherSidebarContent: false,
-        },
-
-        alias: {
-          "/.*/_sidebar.md": "/_sidebar.md",
-        },
-
-        toc: {
-          scope: ".markdown-section",
-          headings: "h2, h3, h4, h5, h6",
-          title: "",
-        },
-        pagination: {
-          previousText: "上一篇",
-          nextText: "下一篇",
-          crossChapter: true,
-        },
-
-        count: {
-          language: "chinese",
-        },
-        // Waline 评论（可选）：部署自己的 Waline 后端后，填入 serverURL 即可启用
-        // 文档：https://waline.js.org/guide/get-started/
-        // waline: {
-        //   serverURL: "https://your-waline-server.example.com",
-        //   pageview: true,
-        // },
-        // footer 不再走 docsify-footer-enh 插件 —— 该插件输出的 <footer> 默认无 class、
-        // 且通过 afterEach 把 HTML 拼到 markdown content 内（变 article 子元素），与本主题
-        // 基于 grid order 的 section 子元素布局不兼容。改为下面 ensureFooter() 直接 DOM 注入。
-
-        // beforeEach: 路由切换前清 section 里旧 TOC（防止 A→B 时 A 的 TOC 残留）
-        // doneEach + setTimeout 重试: 找 docsify-toc 新注入的（不在 section 直接子的）TOC 移到 section
-        // pagination 只在 article 内才移（否则 docsify-pagination 自己管位置）
-        plugins: [
-          function (hook) {
-            function moveTocToSection() {
-              var section = document.querySelector("section.content");
-              if (!section) return;
-              // 找所有不在 section 直接子的 TOC（docsify-toc 可能注入到 article 内或 main 内别处）
-              var all = Array.prototype.slice.call(document.querySelectorAll("nav.page_toc, .page_toc"));
-              var outside = all.filter(function (el) { return el.parentElement !== section; });
-              if (outside.length === 0) return;
-              // 清 section 里所有旧 TOC + 移最新的过来
-              section.querySelectorAll(":scope > nav.page_toc, :scope > .page_toc").forEach(function (el) {
-                el.remove();
-              });
-              var latest = outside[outside.length - 1];
-              outside.forEach(function (el) {
-                if (el !== latest && el.parentElement) el.remove();
-              });
-              section.appendChild(latest);
-            }
-            function movePaginationToSection() {
-              var section = document.querySelector("section.content");
-              var article = document.querySelector("article.markdown-section");
-              if (!section || !article) return;
-              var inArticle = article.querySelector(".docsify-pagination-container");
-              if (inArticle) {
-                section.querySelectorAll(":scope > .docsify-pagination-container").forEach(function (el) {
-                  el.remove();
-                });
-                inArticle.style.gridColumn = "1";
-                inArticle.style.order = "1";
-                section.appendChild(inArticle);
-              }
-            }
-            // ensureFooter: 注入 <footer class="reading-footer"> 到 section.content 第 1 列末尾，
-            // 与 article、waline 同列，共享 max-width: 820px + margin auto 的对齐线。
-            // 内容固定（不随路由变化），所以 idempotent —— 已存在就 noop。
-            function ensureFooter() {
-              var section = document.querySelector("section.content");
-              if (!section) return;
-              if (section.querySelector(":scope > .reading-footer")) return;
-              var footer = document.createElement("footer");
-              footer.className = "reading-footer";
-              footer.innerHTML =
-                '<span class="footer-quote">盛年不重来，一日难再晨。</span>' +
-                '<span class="footer-meta">' +
-                  '<a href="https://newzone.top/" target="_blank" rel="noopener">LearnData</a>' +
-                  '&nbsp;·&nbsp;<span id="sitetime"></span>' +
-                '</span>';
-              section.appendChild(footer);
-            }
-            // 给 sidebar 与 TOC 落地 aria-controls 指向的 id（docsify 不会自动加）
-            function ensureAriaTargets() {
-              var sb = document.querySelector("aside.sidebar");
-              if (sb && !sb.id) sb.id = "sidebar";
-              var toc = document.querySelector('section.content > nav.page_toc, section.content > .page_toc, section.content > nav[class*="page_toc"]');
-              if (toc && !toc.id) toc.id = "page-toc";
-            }
-            function moveAll() {
-              moveTocToSection();
-              movePaginationToSection();
-              ensureFooter();
-              ensureAriaTargets();
-            }
-            hook.beforeEach(function (content, next) {
-              // 路由切换前清掉 section 里旧 TOC（如果新页面没 TOC，section 保持空；有则后面 move 过来）
-              var section = document.querySelector("section.content");
-              if (section) {
-                section.querySelectorAll(":scope > nav.page_toc, :scope > .page_toc").forEach(function (el) {
-                  el.remove();
-                });
-              }
-              next(content);
-            });
-            hook.doneEach(function () {
-              setTimeout(moveAll, 0);
-              setTimeout(moveAll, 100);
-              setTimeout(moveAll, 300);
-            });
-          },
-        ],
-      };
-    </script>
-
-    <script src="https://oss.newzone.top/docsify/main/4.13.1/docsify.min.js"></script>
-    <script src="https://oss.newzone.top/docsify/main/4.13.1/plugins/search.min.js"></script>
-    <script src="https://oss.newzone.top/docsify/main/4.13.1/plugins/zoom-image.min.js"></script>
-    <script src="https://oss.newzone.top/docsify/docsify-pagination/dist/docsify-pagination.min.js"></script>
-    <script src="https://oss.newzone.top/docsify/docsify-toc/dist/toc.js"></script>
-
-    <!-- 网站运行时间统计的 setInterval 已并入 reading-app.js -->
-    <script src="https://oss.newzone.top/docsify/docsify-count/dist/countable.min.js"></script>
-
-    <!-- Waline v3 评论系统 -->
-    <script type="module">
-      import { init, pageviewCount } from "https://oss.newzone.top/@waline/3.8.0/client/dist/waline.js";
-
-      const walineConfig = window.$docsify?.waline || {};
-      if (!walineConfig.serverURL) {
-        console.warn("[Waline] serverURL is required");
-      } else {
-        let walineInstance = null;
-        const lang = window.$docsify?.count?.language || "chinese";
-        const suffix = lang === "chinese" ? "次阅读" : " views";
-
-        function createContainer() {
-          let container = document.getElementById("waline");
-          if (!container) {
-            container = document.createElement("div");
-            container.id = "waline";
-          }
-          return container;
-        }
-
-        function initWaline() {
-          const article = document.querySelector("article.markdown-section");
-          if (!article) return;
-          // 把 Waline 评论区放在 section.content 直接子（与 article 同级），
-          // 这样它能占满 grid 第 1 列宽度，而不是被 article 的 max-width: 700 限制
-          const section = document.querySelector("section.content");
-          const target = section || article;
-
-          const container = createContainer();
-          if (!target.contains(container)) {
-            // 移除可能存在的 inline style（让 CSS 接管宽度）
-            container.removeAttribute("style");
-            target.appendChild(container);
-          }
-
-          const path = (window.location.pathname + window.location.hash).replace(/\?.*$/, "");
-
-          const headerSpan = document.querySelector("#main div > span");
-          if (headerSpan) {
-            let counter = headerSpan.querySelector(".waline-pageview-count");
-            if (!counter) {
-              headerSpan.innerHTML += `&nbsp;|&nbsp;<span class="waline-pageview-count" data-path="${path}"></span>&nbsp;${suffix}`;
-            } else {
-              counter.setAttribute("data-path", path);
-              counter.textContent = "";
-            }
-          }
-
-          if (walineInstance?.destroy) walineInstance.destroy();
-
-          walineInstance = init({
-            el: "#waline",
-            serverURL: walineConfig.serverURL,
-            path: path,
-            pageview: true,
-            reaction: walineConfig.reaction || false,
-            locale: walineConfig.locales?.["/"] || {},
-            dark: 'html[data-theme="dark"]',
-          });
-
-          pageviewCount({
-            serverURL: walineConfig.serverURL,
-            path: path,
-            selector: ".waline-pageview-count",
-            update: true,
-          });
-        }
-
-        setTimeout(initWaline, 500);
-        setTimeout(initWaline, 1500);
-
-        let lastPath = "";
-        const observer = new MutationObserver(() => {
-          const currentPath = window.location.pathname + window.location.hash;
-          if (currentPath !== lastPath) {
-            lastPath = currentPath;
-            setTimeout(initWaline, 100);
-          }
-        });
-
-        const target = document.querySelector("#main");
-        if (target) {
-          observer.observe(target, { childList: true, subtree: true });
-        } else {
-          window.addEventListener("DOMContentLoaded", () => {
-            const t = document.querySelector("#main");
-            if (t) observer.observe(t, { childList: true, subtree: true });
-            setTimeout(initWaline, 500);
-          });
-        }
+      if (userMode === "dark" || (userMode !== "light" && systemDarkMode)) {
+        document.documentElement.setAttribute("data-theme", "dark");
       }
     </script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"高性价比人生指南","image":[""],"dateModified":"2026-10-13T06:24:44.000Z","author":[{"@type":"Person","name":"LearnData","url":"https://newzone.top"}]}</script><meta property="og:url" content="https://newzone.top/LearnData/reading/"><meta property="og:site_name" content="LearnData 开源笔记"><meta property="og:title" content="高性价比人生指南"><meta property="og:description" content="高性价比人生指南 读书笔记整理：基于开源项目 《高性价比人生指南》（How To Live Better） 这份指南把「普通人这辈子会遇到的事」整理成一条条可以照着做、而且有据可查的建议——从别出意外、别早死，到怎么看病、怎么养孩子、怎么规划钱和人生选择。 每条建议都做了统一标注，让你知道值不值得做： 成本：要花多少钱、花多少时间、要不要毅力 说人话：..."><meta property="og:type" content="article"><meta property="og:locale" content="zh-CN"><meta property="og:updated_time" content="2026-10-13T06:24:44.000Z"><meta property="article:modified_time" content="2026-10-13T06:24:44.000Z"><link rel="alternate" type="application/atom+xml" href="https://newzone.top/LearnData/atom.xml" title="LearnData 开源笔记 Atom Feed"><link rel="alternate" type="application/json" href="https://newzone.top/LearnData/feed.json" title="LearnData 开源笔记 JSON Feed"><link rel="alternate" type="application/rss+xml" href="https://newzone.top/LearnData/rss.xml" title="LearnData 开源笔记 RSS Feed"><link rel="icon" href="/LearnData/logo.svg"><title>高性价比人生指南 | LearnData 开源笔记</title><meta name="description" content="高性价比人生指南 读书笔记整理：基于开源项目 《高性价比人生指南》（How To Live Better） 这份指南把「普通人这辈子会遇到的事」整理成一条条可以照着做、而且有据可查的建议——从别出意外、别早死，到怎么看病、怎么养孩子、怎么规划钱和人生选择。 每条建议都做了统一标注，让你知道值不值得做： 成本：要花多少钱、花多少时间、要不要毅力 说人话：...">
+    <link rel="preload" href="/LearnData/assets/style-3WETgtjl.css" as="style"><link rel="stylesheet" href="/LearnData/assets/style-3WETgtjl.css">
+    <link rel="modulepreload" href="/LearnData/assets/app-CDlrNb_C.js"><link rel="modulepreload" href="/LearnData/assets/README-BYKzSElI.js"><link rel="modulepreload" href="/LearnData/assets/plugin-vue_export-helper-BDNMzG2s.js">
+    
+    <!-- 统计代码区域：在此粘贴你自己的 Google Tag Manager / Umami / 百度统计 等脚本 -->
+  </head>
+  <body>
+    <div id="app"><!--[--><!--[--><!--[--><span tabindex="-1"></span><a href="#main-content" class="vp-skip-link sr-only">跳到主要内容</a><!--]--><div class="theme-container external-link-icon has-toc" vp-container><!--[--><header id="navbar" class="vp-navbar" vp-navbar><div class="vp-navbar-start"><button type="button" class="vp-toggle-sidebar-button" title="Toggle Sidebar"><span class="icon"></span></button><!--[--><a class="route-link vp-brand" href="/LearnData/" aria-label="回到首页"><img class="vp-nav-logo" src="/LearnData/logo.svg" alt><!----><span class="vp-site-name hide-in-pad">LearnData 开源笔记</span></a><!--]--></div><div class="vp-navbar-center"><!--[--><nav class="vp-nav-links"><div class="vp-nav-item hide-in-mobile"><div class="vp-dropdown-wrapper"><button type="button" class="vp-dropdown-title" aria-label="应用"><!--[--><iconify-icon class="vp-icon" icon="fa6-solid:bars-staggered" sizing="height" height="1em"></iconify-icon>应用<!--]--><span class="arrow"></span><ul class="vp-dropdown"><li class="vp-dropdown-item"><a class="route-link auto-link" href="/LearnData/apps/Applist.html" aria-label="必备应用"><!--[--><iconify-icon class="vp-icon" icon="fa6-solid:list" sizing="both" width="1em" height="1em"></iconify-icon><!--]-->必备应用<!----></a></li><li class="vp-dropdown-item"><a class="route-link auto-link" href="/LearnData/apps/Chrome.html" aria-label="常用扩展"><!--[--><iconify-icon class="vp-icon" icon="fa6-brands:chrome" sizing="both" width="1em" height="1em"></iconify-icon><!--]-->常用扩展<!----></a></li><li class="vp-dropdown-item"><h4 class="vp-dropdown-subtitle">服务/专题</h4><ul class="vp-dropdown-subitems"><li class="vp-dropdown-subitem"><a class="route-link auto-link" href="/LearnData/apps/topic/" aria-label="专题示例"><!--[--><iconify-icon class="vp-icon" icon="fa6-solid:dice-d20" sizing="both" width="1em" height="1em"></iconify-icon><!--]-->专题示例<!----></a></li></ul></li></ul></button></div></div><div class="vp-nav-item hide-in-mobile"><div class="vp-dropdown-wrapper"><button type="button" class="vp-dropdown-title" aria-label="工具"><!--[--><iconify-icon class="vp-icon" icon="fa6-solid:toolbox" sizing="height" height="1em"></iconify-icon>工具<!--]--><span class="arrow"></span><ul class="vp-dropdown"><li class="vp-dropdown-item"><a class="auto-link external-link" href="https://tools.newzone.top/zh" aria-label="Tools By AI" rel="noopener noreferrer" target="_blank"><!--[--><iconify-icon class="vp-icon" icon="fa6-solid:language" sizing="both" width="1em" height="1em"></iconify-icon><!--]-->Tools By AI<!----></a></li><li class="vp-dropdown-item"><a class="auto-link external-link" href="https://www.aishort.top/" aria-label="ChatGPT SC" rel="noopener noreferrer" target="_blank"><!--[--><iconify-icon class="vp-icon" icon="fa6-solid:bolt" sizing="both" width="1em" height="1em"></iconify-icon><!--]-->ChatGPT SC<!----></a></li><li class="vp-dropdown-item"><a class="auto-link external-link" href="https://prompt.newzone.top/app/zh" aria-label="IMGPrompt" rel="noopener noreferrer" target="_blank"><!--[--><iconify-icon class="vp-icon" icon="fa6-solid:image" sizing="both" width="1em" height="1em"></iconify-icon><!--]-->IMGPrompt<!----></a></li><li class="vp-dropdown-item"><a class="auto-link external-link" href="https://chat.newzone.top/?lang=zh" aria-label="ChatBox" rel="noopener noreferrer" target="_blank"><!--[--><iconify-icon class="vp-icon" icon="ri:chat-smile-ai-fill" sizing="both" width="1em" height="1em"></iconify-icon><!--]-->ChatBox<!----></a></li><li class="vp-dropdown-item"><a class="auto-link external-link" href="https://nav.newzone.top/" aria-label="工具收藏" rel="noopener noreferrer" target="_blank"><!--[--><iconify-icon class="vp-icon" icon="fa6-solid:bars" sizing="both" width="1em" height="1em"></iconify-icon><!--]-->工具收藏<!----></a></li></ul></button></div></div></nav><!--]--></div><div class="vp-navbar-end"><!--[--><div class="vp-nav-item vp-action"><a class="vp-action-link" href="https://discord.gg/PZTQfJ4GjX" target="_blank" rel="noopener noreferrer" aria-label="discord"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width:1.25rem;height:1.25rem;vertical-align:middle"><path d='m534.42,126.58a1.57,1.57 0 0 0 -0.79,-0.73a507.33,507.33 0 0 0 -125.19,-38.81a1.9,1.9 0 0 0 -2.01,0.95a352.96,352.96 0 0 0 -15.58,32.01a468.41,468.41 0 0 0 -140.6,0a323.75,323.75 0 0 0 -15.82,-32.01a1.98,1.98 0 0 0 -2.02,-0.95a505.9,505.9 0 0 0 -125.19,38.81a1.79,1.79 0 0 0 -0.82,0.7c-79.73,119.07 -101.57,235.21 -90.86,349.9a2.11,2.11 0 0 0 0.81,1.44a510.06,510.06 0 0 0 153.56,77.6a1.99,1.99 0 0 0 2.15,-0.71a364.19,364.19 0 0 0 31.42,-51.08a1.95,1.95 0 0 0 -1.07,-2.71a335.92,335.92 0 0 1 -47.98,-22.85a1.98,1.98 0 0 1 -0.19,-3.27c3.22,-2.42 6.44,-4.93 9.53,-7.46a1.9,1.9 0 0 1 1.99,-0.27c100.65,45.94 209.61,45.94 309.07,0a1.89,1.89 0 0 1 2.01,0.24c3.09,2.54 6.31,5.07 9.55,7.49a1.97,1.97 0 0 1 -0.17,3.27a315.25,315.25 0 0 1 -48,22.83a1.97,1.97 0 0 0 -1.05,2.73a409.02,409.02 0 0 0 31.4,51.05a1.95,1.95 0 0 0 2.15,0.73a508.37,508.37 0 0 0 153.81,-77.59a1.97,1.97 0 0 0 0.81,-1.41c12.82,-132.61 -21.48,-247.79 -90.93,-349.9zm-315.91,280.03c-30.3,0 -55.27,-27.81 -55.27,-61.96s24.48,-61.96 55.27,-61.96c31.03,0 55.76,28.05 55.27,61.96c0,34.15 -24.48,61.96 -55.27,61.96zm204.35,0c-30.3,0 -55.27,-27.81 -55.27,-61.96s24.48,-61.96 55.27,-61.96c31.03,0 55.76,28.05 55.27,61.96c0,34.15 -24.23,61.96 -55.27,61.96z' fill="currentColor"/></svg></a></div><div class="vp-nav-item vp-action"><a class="vp-action-link" href="https://github.com/rockbenben/LearnData" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" class="icon github-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="github icon" name="github" style="width:1.25rem;height:1.25rem;vertical-align:middle;"><path d="M511.957 21.333C241.024 21.333 21.333 240.981 21.333 512c0 216.832 140.544 400.725 335.574 465.664 24.49 4.395 32.256-10.07 32.256-23.083 0-11.69.256-44.245 0-85.205-136.448 29.61-164.736-64.64-164.736-64.64-22.315-56.704-54.4-71.765-54.4-71.765-44.587-30.464 3.285-29.824 3.285-29.824 49.195 3.413 75.179 50.517 75.179 50.517 43.776 75.008 114.816 53.333 142.762 40.79 4.523-31.66 17.152-53.377 31.19-65.537-108.971-12.458-223.488-54.485-223.488-242.602 0-53.547 19.114-97.323 50.517-131.67-5.035-12.33-21.93-62.293 4.779-129.834 0 0 41.258-13.184 134.912 50.346a469.803 469.803 0 0 1 122.88-16.554c41.642.213 83.626 5.632 122.88 16.554 93.653-63.488 134.784-50.346 134.784-50.346 26.752 67.541 9.898 117.504 4.864 129.834 31.402 34.347 50.474 78.123 50.474 131.67 0 188.586-114.73 230.016-224.042 242.09 17.578 15.232 33.578 44.672 33.578 90.454v135.85c0 13.142 7.936 27.606 32.854 22.87C862.25 912.597 1002.667 728.747 1002.667 512c0-271.019-219.648-490.667-490.71-490.667z"></path></svg></a></div><div class="vp-nav-item hide-in-mobile"><button type="button" class="vp-appearance-button" tabindex="-1" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" class="icon outlook-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="outlook icon" name="outlook"><path d="M224 800c0 9.6 3.2 44.8 6.4 54.4 6.4 48-48 76.8-48 76.8s80 41.6 147.2 0 134.4-134.4 38.4-195.2c-22.4-12.8-41.6-19.2-57.6-19.2C259.2 716.8 227.2 761.6 224 800zM560 675.2l-32 51.2c-51.2 51.2-83.2 32-83.2 32 25.6 67.2 0 112-12.8 128 25.6 6.4 51.2 9.6 80 9.6 54.4 0 102.4-9.6 150.4-32l0 0c3.2 0 3.2-3.2 3.2-3.2 22.4-16 12.8-35.2 6.4-44.8-9.6-12.8-12.8-25.6-12.8-41.6 0-54.4 60.8-99.2 137.6-99.2 6.4 0 12.8 0 22.4 0 12.8 0 38.4 9.6 48-25.6 0-3.2 0-3.2 3.2-6.4 0-3.2 3.2-6.4 3.2-6.4 6.4-16 6.4-16 6.4-19.2 9.6-35.2 16-73.6 16-115.2 0-105.6-41.6-198.4-108.8-268.8C704 396.8 560 675.2 560 675.2zM224 419.2c0-28.8 22.4-51.2 51.2-51.2 28.8 0 51.2 22.4 51.2 51.2 0 28.8-22.4 51.2-51.2 51.2C246.4 470.4 224 448 224 419.2zM320 284.8c0-22.4 19.2-41.6 41.6-41.6 22.4 0 41.6 19.2 41.6 41.6 0 22.4-19.2 41.6-41.6 41.6C339.2 326.4 320 307.2 320 284.8zM457.6 208c0-12.8 12.8-25.6 25.6-25.6 12.8 0 25.6 12.8 25.6 25.6 0 12.8-12.8 25.6-25.6 25.6C470.4 233.6 457.6 220.8 457.6 208zM128 505.6C128 592 153.6 672 201.6 736c28.8-60.8 112-60.8 124.8-60.8-16-51.2 16-99.2 16-99.2l316.8-422.4c-48-19.2-99.2-32-150.4-32C297.6 118.4 128 291.2 128 505.6zM764.8 86.4c-22.4 19.2-390.4 518.4-390.4 518.4-22.4 28.8-12.8 76.8 22.4 99.2l9.6 6.4c35.2 22.4 80 12.8 99.2-25.6 0 0 6.4-12.8 9.6-19.2 54.4-105.6 275.2-524.8 288-553.6 6.4-19.2-3.2-32-19.2-32C777.6 76.8 771.2 80 764.8 86.4z"></path></svg><div class="vp-appearance-dropdown"><!----></div></button></div><!--[--><button type="button" class="slimsearch-button" aria-label="搜索"><svg xmlns="http://www.w3.org/2000/svg" class="icon search-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="search icon"><path d="M192 480a256 256 0 1 1 512 0 256 256 0 0 1-512 0m631.776 362.496-143.2-143.168A318.464 318.464 0 0 0 768 480c0-176.736-143.264-320-320-320S128 303.264 128 480s143.264 320 320 320a318.016 318.016 0 0 0 184.16-58.592l146.336 146.368c12.512 12.48 32.768 12.48 45.28 0 12.48-12.512 12.48-32.768 0-45.28"></path></svg><div class="slimsearch-placeholder">搜索</div><div class="slimsearch-key-hints"><kbd class="slimsearch-key">Ctrl</kbd><kbd class="slimsearch-key">K</kbd></div></button><!--]--><!--]--><button type="button" class="vp-toggle-navbar-button" aria-label="Toggle Navbar" aria-expanded="false" aria-controls="nav-screen"><span><span class="vp-top"></span><span class="vp-middle"></span><span class="vp-bottom"></span></span></button></div></header><!----><!--]--><!----><div class="toggle-sidebar-wrapper"><span class="arrow start"></span></div><aside id="sidebar" class="vp-sidebar" vp-sidebar><!----><ul class="vp-sidebar-links"><li><section class="vp-sidebar-group"><button class="vp-sidebar-header clickable" type="button"><!----><span class="vp-sidebar-title">🚀 工作流程与问题处理</span><span class="vp-arrow end"></span></button><!----></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-header clickable" type="button"><!----><span class="vp-sidebar-title">📚 Linux基础</span><span class="vp-arrow end"></span></button><!----></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-header clickable" type="button"><!----><span class="vp-sidebar-title">🐧 Linux进阶</span><span class="vp-arrow end"></span></button><!----></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-header clickable" type="button"><!----><span class="vp-sidebar-title">🌐 网络设备（华为/华三）</span><span class="vp-arrow end"></span></button><!----></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-header clickable" type="button"><!----><span class="vp-sidebar-title">🔐 运维安全</span><span class="vp-arrow end"></span></button><!----></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-header clickable active" type="button"><iconify-icon class="vp-icon" icon="fa6-brands:readme" sizing="both" width="1em" height="1em"></iconify-icon><span class="vp-sidebar-title">📕 读书笔记</span><span class="vp-arrow down"></span></button><ul class="vp-sidebar-links"><li><a class="route-link route-link-active auto-link vp-sidebar-link active" href="/LearnData/reading/" aria-label="高性价比人生指南"><!---->高性价比人生指南<!----></a></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-header clickable active" type="button"><iconify-icon class="vp-icon" icon="fa6-solid:heart-pulse" sizing="both" width="1em" height="1em"></iconify-icon><span class="vp-sidebar-title">🚑 健康、急救与身体</span><span class="vp-arrow end"></span></button><!----></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-header clickable active" type="button"><iconify-icon class="vp-icon" icon="fa6-solid:coins" sizing="both" width="1em" height="1em"></iconify-icon><span class="vp-sidebar-title">💰 金钱、时间与精力</span><span class="vp-arrow end"></span></button><!----></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-header clickable active" type="button"><iconify-icon class="vp-icon" icon="fa6-solid:scale-balanced" sizing="both" width="1em" height="1em"></iconify-icon><span class="vp-sidebar-title">⚖️ 法律红线与自我保护</span><span class="vp-arrow end"></span></button><!----></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-header clickable active" type="button"><iconify-icon class="vp-icon" icon="fa6-solid:people-roof" sizing="both" width="1em" height="1em"></iconify-icon><span class="vp-sidebar-title">👨‍👩‍👧 家庭、婚育与子女</span><span class="vp-arrow end"></span></button><!----></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-header clickable active" type="button"><iconify-icon class="vp-icon" icon="fa6-solid:compass" sizing="both" width="1em" height="1em"></iconify-icon><span class="vp-sidebar-title">🧭 人生选择与成长</span><span class="vp-arrow end"></span></button><!----></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-header clickable active" type="button"><iconify-icon class="vp-icon" icon="fa6-solid:dove" sizing="both" width="1em" height="1em"></iconify-icon><span class="vp-sidebar-title">🕊️ 重大变故与善后</span><span class="vp-arrow end"></span></button><!----></section></li></ul></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-header clickable" type="button"><!----><span class="vp-sidebar-title">🧰 应用手册</span><span class="vp-arrow end"></span></button><!----></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-header clickable" type="button"><!----><span class="vp-sidebar-title">🌐 页面开发</span><span class="vp-arrow end"></span></button><!----></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-header clickable" type="button"><!----><span class="vp-sidebar-title">🏗️ 网站部署</span><span class="vp-arrow end"></span></button><!----></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-header clickable" type="button"><!----><span class="vp-sidebar-title">🔡 代码编程</span><span class="vp-arrow end"></span></button><!----></section></li></ul><!----></aside><!--[--><main id="main-content" class="vp-page"><!--[--><!--[--><div class="edit-this-page" style="margin:0 0 0.8rem 0;display:flex;justify-content:flex-end;"><a href="http://localhost:8099/?path=reading%2FREADME.md" target="_blank" rel="noopener noreferrer" title="在本地编辑器中打开此笔记" style="display:inline-flex;align-items:center;gap:4px;padding:4px 12px;background:#eef1fb;color:#5c6bc0;border-radius:6px;font-size:13px;text-decoration:none;border:1px solid #d5dcf5;">✏️ 编辑此页</a></div><!--]--><!----><nav class="vp-breadcrumb disable"></nav><div class="vp-page-title"><h1><!---->高性价比人生指南</h1><div class="page-info"><!----><!----><span class="page-word-info" aria-label="字数🔠" data-balloon-pos="up"><svg xmlns="http://www.w3.org/2000/svg" class="icon word-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="word icon" name="word"><path d="M518.217 432.64V73.143A73.143 73.143 0 01603.43 1.097a512 512 0 01419.474 419.474 73.143 73.143 0 01-72.046 85.212H591.36a73.143 73.143 0 01-73.143-73.143z"></path><path d="M493.714 566.857h340.297a73.143 73.143 0 0173.143 85.577A457.143 457.143 0 11371.566 117.76a73.143 73.143 0 0185.577 73.143v339.383a36.571 36.571 0 0036.571 36.571z"></path></svg><span>约 1273 字</span><meta property="wordCount" content="1273"></span><span class="page-reading-time-info" aria-label="阅读时间⌛" data-balloon-pos="up"><svg xmlns="http://www.w3.org/2000/svg" class="icon timer-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="timer icon" name="timer"><path d="M799.387 122.15c4.402-2.978 7.38-7.897 7.38-13.463v-1.165c0-8.933-7.38-16.312-16.312-16.312H256.33c-8.933 0-16.311 7.38-16.311 16.312v1.165c0 5.825 2.977 10.874 7.637 13.592 4.143 194.44 97.22 354.963 220.201 392.763-122.204 37.542-214.893 196.511-220.2 389.397-4.661 5.049-7.638 11.651-7.638 19.03v5.825h566.49v-5.825c0-7.379-2.849-13.981-7.509-18.9-5.049-193.016-97.867-351.985-220.2-389.527 123.24-37.67 216.446-198.453 220.588-392.892zM531.16 450.445v352.632c117.674 1.553 211.787 40.778 211.787 88.676H304.097c0-48.286 95.149-87.382 213.728-88.676V450.445c-93.077-3.107-167.901-81.297-167.901-177.093 0-8.803 6.99-15.793 15.793-15.793 8.803 0 15.794 6.99 15.794 15.793 0 80.261 63.69 145.635 142.01 145.635s142.011-65.374 142.011-145.635c0-8.803 6.99-15.793 15.794-15.793s15.793 6.99 15.793 15.793c0 95.019-73.789 172.82-165.96 177.093z"></path></svg><span>大约 4 分钟</span><meta property="timeRequired" content="PT4M"></span><!----></div><hr></div><!----><div class="" vp-content><!----><div id="markdown-content"><h1 id="高性价比人生指南" tabindex="-1"><a class="header-anchor" href="#高性价比人生指南"><span>高性价比人生指南</span></a></h1><blockquote><p>读书笔记整理：基于开源项目 <strong>《高性价比人生指南》</strong>（How To Live Better）</p></blockquote><p>这份指南把「普通人这辈子会遇到的事」整理成一条条可以照着做、而且有据可查的建议——从别出意外、别早死，到怎么看病、怎么养孩子、怎么规划钱和人生选择。</p><p>每条建议都做了统一标注，让你知道<strong>值不值得做</strong>：</p><ul><li><strong>成本</strong>：要花多少钱、花多少时间、要不要毅力</li><li><strong>说人话</strong>：一句话讲清楚做了能怎样</li><li><strong>收益</strong>：数据或出处支撑的实际效果</li><li><strong>证据等级</strong>：A（有随机试验/权威统计）、B（有较好研究）、C（法规原文或推断）</li><li><strong>来源</strong>：可追溯的数据来源</li></ul><blockquote><p>内容来自开源项目 <a href="https://github.com/eternity4719/howtolivebetter" target="_blank" rel="noopener noreferrer">howtolivebetter</a>，采用 Unlicense 协议，可自由使用、复制、修改。此处为按阅读主题整理后的本地笔记。</p></blockquote><hr><h2 id="阅读导览-按主题分组" tabindex="-1"><a class="header-anchor" href="#阅读导览-按主题分组"><span>阅读导览（按主题分组）</span></a></h2><p><strong>🚑 健康、急救与身体</strong></p><p>意外与急救、看病吃药、慢性病与身体信号，先保住命和身体。</p><table><thead><tr><th>篇</th><th>内容</th></tr></thead><tbody><tr><td><a class="route-link" href="/LearnData/reading/01-%E4%B8%8D%E8%A6%81%E6%97%A9%E6%AD%BB.html">01 不要早死</a></td><td>车祸/火灾/中毒等意外、疫苗、该去查的信号</td></tr><tr><td><a class="route-link" href="/LearnData/reading/02-%E4%B8%8D%E8%A6%81%E6%85%A2%E6%85%A2%E6%AD%BB.html">02 不要慢慢死</a></td><td>慢性病、不良习惯带来的长期死亡风险</td></tr><tr><td><a class="route-link" href="/LearnData/reading/13-%E7%B4%A7%E6%80%A5%E6%83%85%E5%86%B5.html">13 紧急情况</a></td><td>出事时怎么办：急救、逃生、求助</td></tr><tr><td><a class="route-link" href="/LearnData/reading/24-%E7%9C%8B%E7%97%85.html">24 看病</a></td><td>怎么就医、常见症状怎么处理</td></tr><tr><td><a class="route-link" href="/LearnData/reading/34-%E5%AE%B6%E9%87%8C%E7%9A%84%E5%B8%B8%E5%A4%87%E8%8D%AF%E5%88%AB%E5%90%83%E5%87%BA%E4%BA%8B.html">34 家里的常备药别吃出事</a></td><td>常备药、用药安全</td></tr><tr><td><a class="route-link" href="/LearnData/reading/16-%E5%BE%97%E4%BA%86%E6%85%A2%E6%80%A7%E7%97%85%E4%B9%8B%E5%90%8E%E6%80%8E%E4%B9%88%E6%B4%BB.html">16 得了慢性病之后怎么活</a></td><td>确诊慢性病后的生活安排</td></tr><tr><td><a class="route-link" href="/LearnData/reading/28-%E5%88%AB%E4%B8%BA%E4%BA%86%E5%A4%96%E5%BD%A2%E6%8A%8A%E8%BA%AB%E4%BD%93%E6%90%9E%E5%9D%8F.html">28 别为了外形把身体搞坏</a></td><td>健身、整形的健康代价</td></tr></tbody></table><p><strong>💰 金钱、时间与精力</strong></p><p>钱和精力怎么花得划算，怎么少浪费。</p><table><thead><tr><th>篇目</th><th>内容</th></tr></thead><tbody><tr><td><a class="route-link" href="/LearnData/reading/03-%E4%B8%8D%E8%A6%81%E6%B5%AA%E8%B4%B9%E7%B2%BE%E5%8A%9B.html">03 不要浪费精力</a></td><td>精力用在刀刃上</td></tr><tr><td><a class="route-link" href="/LearnData/reading/04-%E4%B8%8D%E8%A6%81%E6%B5%AA%E8%B4%B9%E6%97%B6%E9%97%B4.html">04 不要浪费时间</a></td><td>时间管理</td></tr><tr><td><a class="route-link" href="/LearnData/reading/05-%E4%B8%8D%E8%A6%81%E6%B5%AA%E8%B4%B9%E9%92%B1.html">05 不要浪费钱</a></td><td>消费、理财踩坑避坑</td></tr><tr><td><a class="route-link" href="/LearnData/reading/07-%E6%B2%A1%E9%92%B1%E7%9A%84%E6%97%B6%E5%80%99%E6%80%8E%E4%B9%88%E6%B4%BB.html">07 没钱的时候怎么活</a></td><td>手头紧时的选择</td></tr><tr><td><a class="route-link" href="/LearnData/reading/23-%E5%AD%A6%E4%BB%80%E4%B9%88%E6%8A%80%E8%83%BD%E5%88%92%E7%AE%97.html">23 学什么技能划算</a></td><td>学哪些技能收益高</td></tr><tr><td><a class="route-link" href="/LearnData/reading/22-%E6%80%8E%E4%B9%88%E6%94%BE%E6%9D%BE.html">22 怎么放松</a></td><td>有效放松</td></tr></tbody></table><p><strong>⚖️ 法律红线与自我保护</strong></p><p>别把自己搭进法律和职场风险里。</p><table><thead><tr><th>篇目</th><th>内容</th></tr></thead><tbody><tr><td><a class="route-link" href="/LearnData/reading/08-%E5%88%AB%E6%8A%8A%E8%87%AA%E5%B7%B1%E6%90%AD%E8%BF%9B%E5%8E%BB.html">08 别把自己搭进去</a></td><td>避免连带责任</td></tr><tr><td><a class="route-link" href="/LearnData/reading/09-%E6%99%AE%E9%80%9A%E4%BA%BA%E5%AE%B9%E6%98%93%E8%B8%A9%E7%9A%84%E6%B3%95%E5%BE%8B%E7%BA%A2%E7%BA%BF.html">09 普通人容易踩的法律红线</a></td><td>常见法律风险</td></tr><tr><td><a class="route-link" href="/LearnData/reading/11-%E7%A8%8B%E5%BA%8F%E5%91%98%E5%92%8C%E6%8A%80%E6%9C%AF%E4%BA%BA%E5%AE%B9%E6%98%93%E8%B8%A9%E7%9A%84%E7%BA%A2%E7%BA%BF.html">11 程序员和技术人容易踩的红线</a></td><td>技术岗专属风险</td></tr><tr><td><a class="route-link" href="/LearnData/reading/19-%E5%9C%A8%E8%81%8C%E7%A6%BB%E8%81%8C%E5%92%8C%E5%B7%A5%E4%BC%A4.html">19 在职、离职和工伤</a></td><td>劳动权益</td></tr><tr><td><a class="route-link" href="/LearnData/reading/14-%E8%B4%A6%E5%8F%B7%E4%B8%8E%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8.html">14 账号与信息安全</a></td><td>账号、隐私、安全</td></tr></tbody></table><p><strong>👨‍👩‍👧 家庭、婚育与子女</strong></p><p>从恋爱、结婚到养孩子、照顾老人的账与注意事项。</p><table><thead><tr><th>篇目</th><th>内容</th></tr></thead><tbody><tr><td><a class="route-link" href="/LearnData/reading/10-%E6%81%8B%E7%88%B1%E5%92%8C%E7%BB%93%E5%A9%9A%E5%88%92%E4%B8%8D%E5%88%92%E7%AE%97.html">10 恋爱和结婚划不划算</a></td><td>婚恋的投入产出</td></tr><tr><td><a class="route-link" href="/LearnData/reading/27-%E6%80%80%E5%AD%95%E5%92%8C%E7%94%9F%E4%BA%A7.html">27 怀孕和生产</a></td><td>孕产期注意</td></tr><tr><td><a class="route-link" href="/LearnData/reading/20-%E5%88%9A%E5%87%BA%E7%94%9F%E7%9A%84%E5%AD%A9%E5%AD%90%E6%80%8E%E4%B9%88%E5%B8%A6.html">20 刚出生的孩子怎么带</a></td><td>新生儿护理</td></tr><tr><td><a class="route-link" href="/LearnData/reading/18-%E5%85%BB%E5%AD%A9%E5%AD%90%E5%88%92%E4%B8%8D%E5%88%92%E7%AE%97.html">18 养孩子划不划算</a></td><td>养娃成本</td></tr><tr><td><a class="route-link" href="/LearnData/reading/30-%E4%B8%8A%E5%AD%A6%E4%BB%A5%E5%90%8E%E7%9A%84%E5%AD%A9%E5%AD%90.html">30 上学以后的孩子</a></td><td>上学后子女教育</td></tr><tr><td><a class="route-link" href="/LearnData/reading/17-%E5%AE%B6%E9%87%8C%E6%9C%89%E8%80%81%E4%BA%BA.html">17 家里有老人</a></td><td>老人照护</td></tr></tbody></table><p><strong>🧭 人生选择与成长</strong></p><p>职业、学业、创业与自我发展的岔路口。</p><table><thead><tr><th>篇目</th><th>内容</th></tr></thead><tbody><tr><td><a class="route-link" href="/LearnData/reading/31-%E5%8D%81%E5%85%AB%E5%B2%81%E4%B9%8B%E5%90%8E%E6%9C%89%E5%93%AA%E5%87%A0%E6%9D%A1%E8%B7%AF.html">31 十八岁之后有哪几条路</a></td><td>成年后的路径选择</td></tr><tr><td><a class="route-link" href="/LearnData/reading/32-%E5%87%BA%E5%9B%BD%E7%95%99%E5%AD%A6.html">32 出国留学</a></td><td>留学值不值</td></tr><tr><td><a class="route-link" href="/LearnData/reading/21-%E5%87%BA%E5%9B%BD%E6%97%85%E8%A1%8C%E4%B8%8E%E5%A2%83%E5%A4%96%E5%AE%89%E5%85%A8.html">21 出国旅行与境外安全</a></td><td>出境安全</td></tr><tr><td><a class="route-link" href="/LearnData/reading/26-%E5%81%9A%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99%E6%88%96%E5%B9%B3%E5%8F%B0.html">26 做一个网站或平台</a></td><td>个人/小团队做产品</td></tr><tr><td><a class="route-link" href="/LearnData/reading/12-%E5%88%9B%E4%B8%9A%E4%B8%8E%E5%81%9A%E7%94%9F%E6%84%8F.html">12 创业与做生意</a></td><td>创业避坑</td></tr></tbody></table><p><strong>🕊️ 重大变故与善后</strong></p><p>意外、损失、低谷之后如何走下去。</p><table><thead><tr><th>篇目</th><th>内容</th></tr></thead><tbody><tr><td><a class="route-link" href="/LearnData/reading/06-%E5%8F%8D%E9%9D%A2%E6%B8%85%E5%8D%95.html">06 反面清单</a></td><td>全书「别做」汇总</td></tr><tr><td><a class="route-link" href="/LearnData/reading/25-%E4%BA%BA%E8%B5%B0%E4%BA%86%E4%BB%A5%E5%90%8E%E8%A6%81%E5%8A%9E%E4%BB%80%E4%B9%88.html">25 人走了以后要办什么</a></td><td>后事与遗产</td></tr><tr><td><a class="route-link" href="/LearnData/reading/29-%E9%81%AD%E9%81%87%E9%87%8D%E5%A4%A7%E6%89%93%E5%87%BB%E4%B9%8B%E5%90%8E.html">29 遭遇重大打击之后</a></td><td>低谷复原</td></tr><tr><td><a class="route-link" href="/LearnData/reading/33-%E6%AE%8B%E7%96%BE%E4%B9%8B%E5%90%8E%E6%80%8E%E4%B9%88%E6%B4%BB.html">33 残疾之后怎么活</a></td><td>失能后的安排</td></tr></tbody></table><blockquote><p>想快速找一条「要不要做」的建议，优先看 <a class="route-link" href="/LearnData/reading/06-%E5%8F%8D%E9%9D%A2%E6%B8%85%E5%8D%95.html">06 反面清单</a>；想系统看完，建议按「健康→金钱→法律→家庭→选择→变故」的顺序读。</p></blockquote><blockquote><p>AI生成</p></blockquote></div><!----><!----><!----></div><footer class="vp-page-meta"><div class="vp-meta-item edit-link"><a class="auto-link external-link vp-meta-label" href="http://localhost:8099/?path=src/reading/README.md" aria-label="编辑此页" rel="noopener noreferrer" target="_blank"><!--[--><svg xmlns="http://www.w3.org/2000/svg" class="icon edit-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="edit icon" name="edit"><path d="M430.818 653.65a60.46 60.46 0 0 1-50.96-93.281l71.69-114.012 7.773-10.365L816.038 80.138A60.46 60.46 0 0 1 859.225 62a60.46 60.46 0 0 1 43.186 18.138l43.186 43.186a60.46 60.46 0 0 1 0 86.373L588.879 565.55l-8.637 8.637-117.466 68.234a60.46 60.46 0 0 1-31.958 11.229z"></path><path d="M728.802 962H252.891A190.883 190.883 0 0 1 62.008 771.98V296.934a190.883 190.883 0 0 1 190.883-192.61h267.754a60.46 60.46 0 0 1 0 120.92H252.891a69.962 69.962 0 0 0-69.098 69.099V771.98a69.962 69.962 0 0 0 69.098 69.098h475.911A69.962 69.962 0 0 0 797.9 771.98V503.363a60.46 60.46 0 1 1 120.922 0V771.98A190.883 190.883 0 0 1 728.802 962z"></path></svg><!--]-->编辑此页<!----></a></div><div class="vp-meta-item git-info"><div class="update-time"><span class="vp-meta-label">最近更新: </span><time class="vp-meta-info" datetime="2026-10-13T06:24:44.000Z" data-allow-mismatch>2026/10/13 06:24</time></div><!----></div></footer><nav class="vp-page-nav"><a class="route-link auto-link prev" href="/LearnData/security/" aria-label="🔐 运维安全"><div class="hint"><span class="arrow start"></span>上一页</div><div class="link"><!---->🔐 运维安全</div></a><a class="route-link route-link-active auto-link next" href="/LearnData/reading/" aria-label="🚑 健康、急救与身体"><div class="hint">下一页<span class="arrow end"></span></div><div class="link">🚑 健康、急救与身体<iconify-icon class="vp-icon" icon="fa6-solid:heart-pulse" sizing="height" height="1em"></iconify-icon></div></a></nav><!----><!----><!--]--></main><!--]--><footer class="vp-footer-wrapper" vp-footer><!----><div class="vp-copyright">
+  版权声明：自由转载 · 非商用 · 非衍生 · 保持署名<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-hans" target="_blank" rel="noopener noreferrer">（创意共享 4.0 许可证）</a><br />
+  Copyright © 2023-present LearnData
+  </div></footer></div><!--]--><!--[--><!----><!----><!--[--><!--]--><!--]--><!--]--></div>
+    <script type="module" src="/LearnData/assets/app-CDlrNb_C.js" defer></script>
+    <!-- 看板娘区块 -->
+    <!-- End 看板娘区块 -->
   </body>
 </html>
