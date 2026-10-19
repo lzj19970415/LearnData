@@ -104,6 +104,19 @@
 - [33. 残疾之后怎么活](https://newzone.top/reading/#/33-残疾之后怎么活) - 这一节写的是残疾已经发生之后的日子。怎么防住致残，在第 1 节和第 13 节，这里不重复。
 - [34. 家里的常备药别吃出事](https://newzone.top/reading/#/34-家里的常备药别吃出事) - 退烧药、止痛药、感冒药、胃药、止泻药，很多在药店就能自己买。不用处方能买，不等于怎么吃都行。这一节不讲每种病该吃什么药，只挑一个动作就能避开重后果的几件事。
 - [高性价比人生指南](https://newzone.top/reading/#/README) - 这份指南把「普通人这辈子会遇到的事」整理成一条条可以照着做、而且有据可查的建议——从别出意外、别早死，到怎么看病、怎么养孩子、怎么规划钱和人生选择。
+- [网络信息安全及攻防演练培训（2026）](https://newzone.top/security-training/) - | 日期 | 赛道 | 上午 | 下午 |
+- [01 应急响应基础（Windows/Linux 入侵排查）](https://newzone.top/security-training/01-应急响应基础.html) - 隔离取证 → 查进程 → 查持久化 → 查账户 → 查日志 → 清理加固
+- [02 日志分析基础（系统/中间件/数据库）](https://newzone.top/security-training/02-日志分析基础.html) - 看什么日志 → 按时间线串起来 → 找攻击特征 → 还原攻击链
+- [03 Web 安全基础（高频漏洞概念）](https://newzone.top/security-training/03-Web安全基础.html) - 用户输入被**拼接到 SQL 语句**中执行，攻击者构造输入改变 SQL 语义，实现拖库/提权。
+- [04 数据安全基础（分类分级/风险评估/合规）](https://newzone.top/security-training/04-数据安全基础.html) - | 法律/法规 | 施行时间 | 一句话定位 |
+- [05 AI 安全基础（提示注入/越狱/护栏）](https://newzone.top/security-training/05-AI安全基础.html) - 模型本身安全（对抗样本、数据投毒、模型窃取）
+- [06 溯源反制实战（攻击链还原/画像/钓鱼邮件溯源）](https://newzone.top/security-training/06-溯源反制实战.html) - ①侦察 → ②武器化 → ③投递 → ④利用 → ⑤安装 → ⑥命令控制(C2) → ⑦行动(横向/破坏)
+- [07 漏洞利用与安全加固实战](https://newzone.top/security-training/07-漏洞利用与加固实战.html) - ① 找注入点：' 或 and 1=1 / and 1=2 观察差异
+- [08 全链条综合实验（比赛题型带练）](https://newzone.top/security-training/08-全链条综合实验.html) - ①漏洞利用 → ②修复 → ③加固 → ④应急排查 → ⑤溯源反制
+- [09 数据安全评估实操（模拟演练）](https://newzone.top/security-training/09-数据安全评估实操.html) - | 材料 | 看什么 |
+- [10 护栏设计与评测（注入攻击测试/双层护栏）](https://newzone.top/security-training/10-护栏设计与评测.html) - ①威胁枚举 → ②规则层设计 → ③模型层设计 → ④评测对比 → ⑤调参迭代
+- [11 智能体应用安全与治理](https://newzone.top/security-training/11-智能体应用安全.html) - 智能体（Agent）= 大模型 + 工具调用 + 自动执行。安全核心三件事：
+- [12 备赛冲刺（高频考点串讲 + 答题策略）](https://newzone.top/security-training/12-备赛冲刺.html) - 1. **40 分钟，先易后难**：一遍过掉会的，标记回头啃难的，绝不恋战（一题最多 3 分钟）。
 - [一、HTTP 介绍](https://newzone.top/security/HTTPS详解/) - HTTP协议是Hyper Text Transfer Protocol（超文本传输协议）的缩写,是用于从万维网（WWW:World Wide Web ）服务器传输超文本到本地浏览器的传送协议。
 - [虚拟专用网络-VPN](https://newzone.top/security/VPN详解/) - Virtual Private Network，即虚拟专用网络，简称VPN，VPN是在互联网上建立专用网络，为了保证数据安全，VPN服务器和客户机之间数据通信都进行了加密处理，有了数据加密就可以认为数据是在一条安全链路上进行安全...
 - [企业级iptalbes防火墙](https://newzone.top/security/企业级iptables防火墙/) - Netfilter/Iptables(以下简称Iptables)是unix/linux自带的一款优秀且开放源代码的完全自由的基于包过滤的防火墙工具，它的功能十分强大，使用非常灵活，可以对流入和流出服务器的数据包进行很精细的控制。
