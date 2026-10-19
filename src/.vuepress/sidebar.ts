@@ -87,6 +87,44 @@ export default sidebar({
       collapsible: true,
       children: "structure",
     },
+    // 2026 网络信息安全及攻防演练培训（基础/中高级）
+    {
+      text: "🎯 安全攻防培训（2026）",
+      icon: "",
+      prefix: "security-training/",
+      collapsible: true,
+      children: [
+        "README.md",
+        {
+          text: "📖 基础篇",
+          icon: "",
+          prefix: "security-training/",
+          collapsible: true,
+          children: [
+            "01-应急响应基础.md",
+            "02-日志分析基础.md",
+            "03-Web安全基础.md",
+            "04-数据安全基础.md",
+            "05-AI安全基础.md",
+          ],
+        },
+        {
+          text: "⚔️ 中高级篇",
+          icon: "",
+          prefix: "security-training/",
+          collapsible: true,
+          children: [
+            "06-溯源反制实战.md",
+            "07-漏洞利用与加固实战.md",
+            "08-全链条综合实验.md",
+            "09-数据安全评估实操.md",
+            "10-护栏设计与评测.md",
+            "11-智能体应用安全.md",
+            "12-备赛冲刺.md",
+          ],
+        },
+      ],
+    },
     // 读书笔记：高性价比人生指南（本地 reading/ 目录）
     {
       text: "📕 读书笔记",
