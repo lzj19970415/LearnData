@@ -98,7 +98,6 @@ export default sidebar({
         {
           text: "📖 基础篇",
           icon: "",
-          prefix: "security-training/",
           collapsible: true,
           children: [
             "01-应急响应基础.md",
@@ -111,7 +110,6 @@ export default sidebar({
         {
           text: "⚔️ 中高级篇",
           icon: "",
-          prefix: "security-training/",
           collapsible: true,
           children: [
             "06-溯源反制实战.md",
