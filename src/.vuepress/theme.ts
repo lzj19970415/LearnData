@@ -141,7 +141,9 @@ const hope = hopeTheme(
         },
       },
       align: true, // 启用自定义对齐
-      attrs: true, // 使用特殊标记为 Markdown 元素添加属性
+      // 关闭 attrs：正文行尾的 {A,B,C} 集合记号会被该功能当成「元素属性」塞进 HTML 标签，
+      // 生成 AB→D="" 之类的非法属性导致构建失败。全站正文无一处使用此语法，可安全关闭。
+      attrs: false,
       mark: true, // 使用 == == 进行标记，注意两边需要有空格
       // spoiler: true, // 使用 !! !! 标记剧透剧透文字，注意两边需要有空格
       sup: true, // 上下角标

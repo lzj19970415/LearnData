@@ -123,6 +123,44 @@ export default sidebar({
         },
       ],
     },
+    // MySQL软考学习（软考中级《数据库系统工程师》：综合知识 + 案例分析）
+    {
+      text: "🗃️ MySQL软考学习",
+      icon: "",
+      prefix: "softexam-mysql/",
+      collapsible: true,
+      children: [
+        "README.md",
+        {
+          text: "📘 综合知识（上午选择题）",
+          icon: "",
+          collapsible: true,
+          children: [
+            "01-数据库基本概念与体系结构.md",
+            "02-数据模型与ER图.md",
+            "03-关系代数与候选键求解.md",
+            "04-SQL语言核心.md",
+            "05-规范化与模式分解.md",
+            "06-事务ACID与并发控制.md",
+            "07-备份恢复与数据库安全.md",
+            "08-MySQL专项高频考点.md",
+          ],
+        },
+        {
+          text: "📝 案例分析（下午大题）",
+          icon: "",
+          collapsible: true,
+          children: [
+            "09-案例答题总纲与评分套路.md",
+            "10-案例-ER图与关系模式设计.md",
+            "11-案例-SQL建表与查询.md",
+            "12-案例-候选键与范式分解.md",
+            "13-案例-事务与并发调度.md",
+            "14-案例-数据库设计全流程模拟.md",
+          ],
+        },
+      ],
+    },
     // 读书笔记：高性价比人生指南（本地 reading/ 目录）
     {
       text: "📕 读书笔记",
