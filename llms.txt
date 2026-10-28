@@ -33,6 +33,7 @@
 - [华为IT云部署运维笔记](https://newzone.top/huawei/IT云部署运维笔记.html) - - 使用smartkit工具升级（ibmc，网卡，raid卡，rised卡、划分raid
 - [WAF阻断放行步骤](https://newzone.top/huawei/waf阻断放行步骤.html) - 已外网二为例子，当日志中阻断记录根客户上报匹配时，点击该策略
 - [信创外网创建云主机流程](https://newzone.top/huawei/信创外网创建云主机流程/) - 外网1跟外网2主机的堡垒机是开在绿盟堡垒机上
+- [如何帮助客户上传文件](https://newzone.top/huawei/如何帮助客户上传文件.html) - 该页内容已加密保存，输入密码后可见。
 - [问题流程与运维操作](https://newzone.top/huawei/问题流程.html) - - **源IP**：10.100.7.228（内网云）
 - [个人介绍](https://newzone.top/intro.html) - 互联网广告人，
 - [Docker 从入门到生产实战](https://newzone.top/linux/16-Docker.html) - - **镜像（Image）**：只读模板，包含运行应用所需的程序、依赖、配置。类比：软件安装包。
