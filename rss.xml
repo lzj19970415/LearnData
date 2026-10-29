@@ -6,8 +6,8 @@
     <link>https://newzone.top/LearnData/</link>
     <description>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 28 Oct 2026 05:59:16 GMT</pubDate>
-    <lastBuildDate>Wed, 28 Oct 2026 05:59:16 GMT</lastBuildDate>
+    <pubDate>Thu, 29 Oct 2026 03:13:01 GMT</pubDate>
+    <lastBuildDate>Thu, 29 Oct 2026 03:13:01 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>工作流程与问题处理</category>
@@ -1057,6 +1057,11 @@ cli_start -u admin，然后输入密码
 </ul>
 </li>
 </ul>
+<div style="color:#d33">
+<p><strong>备注：</strong></p>
+<p>1、策略是单向，只需要在出口防火墙写出去的端口策略即可</p>
+<p>2、内网云防火墙的规则策略是全部放通的，所以从内网云防火墙出去的策略都不需要写了，只需要配置好平台上的配置就可以</p>
+</div>
 <h2>VPN登录失败排查流程</h2>
 <h3>举例：回复话术（我们查了一下，该VPN账户是有访问https://10.100.7.251:8443的权限）</h3>
 <h3>VPN打不开处理流程（以https://10.100.7.251:8443 账户：yzw-xcnw_znyw举例）</h3>

@@ -4,7 +4,7 @@
   <title>LearnData 开源笔记</title>
   <subtitle>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</subtitle>
   <icon>https://newzone.top/LearnData/logo.svg</icon>
-  <updated>2026-10-28T05:59:16.801Z</updated>
+  <updated>2026-10-29T03:13:01.014Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://newzone.top/LearnData/atom.xml"/>
   <link rel="alternate" href="https://newzone.top/LearnData/"/>
@@ -1117,7 +1117,7 @@ cli_start -u admin，然后输入密码
     <title type="text">问题流程与运维操作</title>
     <id>https://newzone.top/LearnData/huawei/%E9%97%AE%E9%A2%98%E6%B5%81%E7%A8%8B.html</id>
     <link href="https://newzone.top/LearnData/huawei/%E9%97%AE%E9%A2%98%E6%B5%81%E7%A8%8B.html"/>
-    <updated>2026-10-12T08:55:38.000Z</updated>
+    <updated>2026-10-29T03:05:23.000Z</updated>
     <summary type="html"><![CDATA[<blockquote>
 <p>本笔记由 xmind 思维导图《问题流程》整理而来，涵盖添加策略、VPN排查、IP封堵解封等运维操作流程。</p>
 </blockquote>
@@ -1170,6 +1170,11 @@ cli_start -u admin，然后输入密码
 </ul>
 </li>
 </ul>
+<div style="color:#d33">
+<p><strong>备注：</strong></p>
+<p>1、策略是单向，只需要在出口防火墙写出去的端口策略即可</p>
+<p>2、内网云防火墙的规则策略是全部放通的，所以从内网云防火墙出去的策略都不需要写了，只需要配置好平台上的配置就可以</p>
+</div>
 <h2>VPN登录失败排查流程</h2>
 <h3>举例：回复话术（我们查了一下，该VPN账户是有访问https://10.100.7.251:8443的权限）</h3>
 <h3>VPN打不开处理流程（以https://10.100.7.251:8443 账户：yzw-xcnw_znyw举例）</h3>
