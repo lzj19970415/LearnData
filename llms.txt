@@ -36,10 +36,10 @@
 - [如何帮助客户上传文件](https://newzone.top/huawei/如何帮助客户上传文件.html) - 该页内容已加密保存，输入密码后可见。
 - [问题流程与运维操作](https://newzone.top/huawei/问题流程.html) - - **源IP**：10.100.7.228（内网云）
 - [个人介绍](https://newzone.top/intro.html) - 互联网广告人，
-- [Docker 从入门到生产实战](https://newzone.top/linux/16-Docker.html) - - **镜像（Image）**：只读模板，包含运行应用所需的程序、依赖、配置。类比：软件安装包。
-- [Kubernetes 从入门到生产实战](https://newzone.top/linux/17-Kubernetes.html) - | 问题 | Docker 单机 | K8S 集群 |
-- [MySQL 运维从入门到生产实战](https://newzone.top/linux/18-MySQL.html) - | 版本 | 现状 | 建议 |
-- [Nginx 从入门到生产实战](https://newzone.top/linux/19-Nginx.html) - Nginx 是高性能的 **HTTP 服务器**和**反向代理服务器**，采用事件驱动模型（epoll），内存占用极低却能支撑数万并发连接。
+- [Docker 从入门到生产实战](https://newzone.top/linux/16-Docker.html) - **这台虚机要满足什么：**
+- [Kubernetes 从入门到生产实战](https://newzone.top/linux/17-Kubernetes.html) - | 项目 | 最低要求 | 建议 | 为什么卡这道门 |
+- [MySQL 运维从入门到生产实战](https://newzone.top/linux/18-MySQL.html) - 先确认"装备"够不够，别做到一半发现电脑带不动：
+- [Nginx 从入门到生产实战](https://newzone.top/linux/19-Nginx.html) - **用哪台机器**：CentOS 7 虚拟机（2 核 CPU / 2G 内存 / 20G 磁盘足够；1核1G 也能跑，只是卡）。**要联网**（yum 要装包）。全程用 root 登录操作。
 - [Linux基础](https://newzone.top/linux/basic/) - 本目录是 Linux 运维的基础学习笔记（千锋 Linux 服务管理课程整理），按运维学习路径排序，建议从上往下依次学习：
 - [文件管理](https://newzone.top/linux/basic/01-文件管理.html) - 本篇整理千锋 Linux 服务管理课程中的文件管理与编辑命令，涵盖目录创建、文本查看、文件比较、过滤搜索、删除、复制、查找、分割、移动与链接等核心命令。掌握这些命令是 Linux 运维的必备基础。
 - [命令的组合应用](https://newzone.top/linux/basic/02-命令的组合应用.html) - 本篇讲解 Linux 中通过管道 `|`、`for` 循环、`awk`、`xargs`、`sort`、`uniq`、`join`、`paste` 等组合命令解决实际运维问题的方法。命令组合是 Linux 运维进阶的核心能力。
@@ -56,8 +56,8 @@
 - [计划任务与服务器远程管理](https://newzone.top/linux/basic/13-计划任务_服务器远程管理.html) - 在 Linux 中，除了用户即时执行的命令操作外，还可以配置在**指定时间、指定日期**执行预先计划好的系统管理任务，例如：
 - [系统维护篇](https://newzone.top/linux/basic/14-系统维护篇.html) - | 命令 | 一句话功能 |
 - [网络维护与管理](https://newzone.top/linux/basic/15-网络维护与管理.html) - | 命令 | 功能 |
-- [Python运维自动化入门](https://newzone.top/linux/Python运维自动化.html) - 面向运维方向的 Python 入门笔记，涵盖环境、基本语法、正则、文件操作、数据库与自动化脚本。
-- [Shell脚本编程从入门到实战](https://newzone.top/linux/Shell脚本编程.html) - Shell 是一个**命令解释器**，位于操作系统外层，负责解释执行用户输入的命令，并把结果返回给用户。用户每输入一条命令，Shell 就解释执行一条，这种交互方式称为**交互式**。把一系列命令写进一个文件批量执行...
+- [Python运维自动化入门](https://newzone.top/linux/Python运维自动化.html) - ---
+- [Shell脚本编程从入门到实战](https://newzone.top/linux/Shell脚本编程.html) - **第 1 步：登录 CentOS 7 虚拟机，确认 bash 在岗。**
 - [防火墙](https://newzone.top/network/firewall/) - 防火墙安全配置与运维专题，按初级→中级→高级递进：
 - [防火墙·初级](https://newzone.top/network/firewall/01-初级.html) - 防火墙是**网络边界上的安全检查站**：所有进出网络的流量都必须经过它，由它根据"允许/拒绝"规则决定放行还是拦截。它把网络划分成"可信区"和"不可信区"，是内网安全的第一道大门。
 - [防火墙·中级](https://newzone.top/network/firewall/02-中级.html) - 当源/目的地址很多时，一条条写 IP 太痛苦，用地址组一次定义、处处引用。
