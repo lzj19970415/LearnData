@@ -5,7 +5,8 @@ tags:
   - 运维
   - VPN
   - 排查
-order: 3
+order: 4
+redirectFrom: /huawei/问题流程/03-VPN登录失败排查.html
 ---
 
 ## 举例：回复话术
