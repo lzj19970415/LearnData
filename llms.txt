@@ -35,13 +35,13 @@
 - [信创外网创建云主机流程](https://newzone.top/huawei/信创外网创建云主机流程/) - 外网1跟外网2主机的堡垒机是开在绿盟堡垒机上
 - [如何帮助客户上传文件](https://newzone.top/huawei/如何帮助客户上传文件.html) - 该页内容已加密保存，输入密码后可见。
 - [问题流程与运维操作](https://newzone.top/huawei/问题流程/) - | 序号 | 问题 | 什么时候用 |
-- [添加策略流程](https://newzone.top/huawei/问题流程/01-添加策略流程.html) - - **源IP**：10.100.7.228（内网云）
-- [开通VPN访问端口策略](https://newzone.top/huawei/问题流程/02-开通VPN访问端口策略.html) - - 申请访问：10.130.135.11:3306（3306 端口访问）
-- [添加策略后网络还是不通怎么排查（防火墙）](https://newzone.top/huawei/问题流程/03-添加策略后网络不通排查.html) - - **第一**：先检查是否有源端和目的端的策略，是否有需要的端口
-- [VPN登录失败排查流程](https://newzone.top/huawei/问题流程/04-VPN登录失败排查.html) - 1、登录 inode 客户端后打开 cmd ping 客户说的不通网址，先查看 ping 结果再进行下一步
-- [IP封堵与解封](https://newzone.top/huawei/问题流程/05-IP封堵与解封.html) - - **处理方案**
-- [物理机网卡断联排查（聚合问题）](https://newzone.top/huawei/问题流程/06-物理机网卡断联排查.html) - 1、`Ip -4 a` 查看对应 bond 有无 UP
-- [系统加固镜像问题处理](https://newzone.top/huawei/问题流程/07-系统加固镜像问题处理.html) - 使用系统加固镜像时出现问题的处理方法：
+- [添加策略流程](https://newzone.top/huawei/问题流程/01-添加策略流程.html) - 该页内容已加密保存，输入密码后可见。
+- [开通VPN访问端口策略](https://newzone.top/huawei/问题流程/02-开通VPN访问端口策略.html) - 该页内容已加密保存，输入密码后可见。
+- [添加策略后网络还是不通怎么排查（防火墙）](https://newzone.top/huawei/问题流程/03-添加策略后网络不通排查.html) - 该页内容已加密保存，输入密码后可见。
+- [VPN登录失败排查流程](https://newzone.top/huawei/问题流程/04-VPN登录失败排查.html) - 该页内容已加密保存，输入密码后可见。
+- [IP封堵与解封](https://newzone.top/huawei/问题流程/05-IP封堵与解封.html) - 该页内容已加密保存，输入密码后可见。
+- [物理机网卡断联排查（聚合问题）](https://newzone.top/huawei/问题流程/06-物理机网卡断联排查.html) - 该页内容已加密保存，输入密码后可见。
+- [系统加固镜像问题处理](https://newzone.top/huawei/问题流程/07-系统加固镜像问题处理.html) - 该页内容已加密保存，输入密码后可见。
 - [个人介绍](https://newzone.top/intro.html) - 互联网广告人，
 - [Docker 从入门到生产实战](https://newzone.top/linux/16-Docker.html) - **这台虚机要满足什么：**
 - [Kubernetes 从入门到生产实战](https://newzone.top/linux/17-Kubernetes.html) - | 项目 | 最低要求 | 建议 | 为什么卡这道门 |
