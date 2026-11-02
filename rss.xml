@@ -6,8 +6,8 @@
     <link>https://newzone.top/LearnData/</link>
     <description>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</description>
     <language>zh-CN</language>
-    <pubDate>Mon, 02 Nov 2026 07:19:42 GMT</pubDate>
-    <lastBuildDate>Mon, 02 Nov 2026 07:19:42 GMT</lastBuildDate>
+    <pubDate>Mon, 02 Nov 2026 08:20:05 GMT</pubDate>
+    <lastBuildDate>Mon, 02 Nov 2026 08:20:05 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>工作流程与问题处理</category>
@@ -131,7 +131,7 @@
 <li><strong>可以绑定临时IP然后使用远程登陆</strong>
 <ul>
 <li>ifconfig 网口名称 ip地址/子网掩码 up（子网掩码例如：24，25）</li>
-<li>删除临时ip：ip addr del 10.200.153.142/25 dev SLOT3-1</li>
+<li>删除临时ip：ip addr del 10.200.153.X/25 dev SLOT3-1</li>
 </ul>
 </li>
 <li><strong>绑定网口配置文件</strong>
@@ -271,7 +271,7 @@ fi</p>
 service network restart
 exit
 - 脚本已.sh后缀结尾
-- 配置临时IP地址：ifconfig eth0 192.168.2.100/24 up 配置哪个口就就将网线插入哪个网口
+- 配置临时IP地址：ifconfig eth0 192.168.2.X/24 up 配置哪个口就就将网线插入哪个网口
 - <strong>使用远程工具连接然后给脚本权限</strong>
 - 给文件夹权限：chown -R root:root 文件名称
 给文件权限：chmod 777 laocheng-omc.sh
@@ -355,7 +355,7 @@ cd /proc/net/bonding/  然后使用ls查看
 </ul>
 </li>
 <li>说明：执行完成后，在“/opt/ServiceTool”目录下将生成FusionCare文件夹。</li>
-<li><strong>步骤11 设置FusionCare绑定IP，进入FusionCare安装目录“/FusionCare/tomcat/conf”文件夹，打开server.xml文件，为Connector添加或修改address属性，值为要绑定的IP。以192.168.0.0为例，如下所示。</strong></li>
+<li><strong>步骤11 设置FusionCare绑定IP，进入FusionCare安装目录“/FusionCare/tomcat/conf”文件夹，打开server.xml文件，为Connector添加或修改address属性，值为要绑定的IP。以192.168.0.X为例，如下所示。</strong></li>
 <li><strong>步骤12 先创建ROOT文件夹</strong>
 <ul>
 <li>mkdir ROOT</li>
@@ -428,8 +428,8 @@ cd /proc/net/bonding/  然后使用ls查看
 <h3>fc内置账号是gandalf、分布式存储内置账号fsadmin</h3>
 <h3>验证tftp是否开启成功</h3>
 <ul>
-<li>export configuration_data ip=192.168.11.30 user=HP password=jie db_file=conf01.dat protocol=FTP</li>
-<li>export running_data ip=192.168.11.30 user=HP password=jie running_data_file=conf02.txt port=21 protocol=FTP</li>
+<li>export configuration_data ip=192.168.11.X user=HP password=*** db_file=conf01.dat protocol=FTP</li>
+<li>export running_data ip=192.168.11.X user=HP password=*** running_data_file=conf02.txt port=21 protocol=FTP</li>
 <li>备注 其中的IP是本机地址，user是本机名，password是本机密码</li>
 </ul>
 <h3>网卡重启失败问题</h3>
@@ -517,9 +517,9 @@ remember=5 改为remember=0
 <li><strong>方法二</strong>
 <ul>
 <li>如果/etc/sysconfig/路径下存在这个static-route文件，也可以直接在这个配置文件下直接配置路由</li>
-<li><strong>举例：系统给ip是10.0.7.0段，现在需要添加10.0.11.0段的ip以能够互通，10.0.7.48是10.0.7.X段的网关</strong>
+<li><strong>举例：系统给ip是10.0.7.X段，现在需要添加10.0.11.X段的ip以能够互通，10.0.7.Y是10.0.7.X段的网关</strong>
 <ul>
-<li>any net 10.0.11.0/24 via 10.0.7.48</li>
+<li>any net 10.0.11.X/24 via 10.0.7.Y</li>
 </ul>
 </li>
 </ul>
@@ -529,7 +529,7 @@ remember=5 改为remember=0
 <li><strong>在/etc/sysconfig/network-sripts/route-eth0</strong>
 <ul>
 <li>说明，如果/etc/sysconfig/路径下存在这个static-route文件，也可以直接在这个配置文件下直接配置路由</li>
-<li>添加路由10.0.7.0/24 via 10.0.7.48 dev eth0</li>
+<li>添加路由10.0.7.X/24 via 10.0.7.Y dev eth0</li>
 </ul>
 </li>
 </ul>
@@ -596,7 +596,7 @@ service sshd restart
 usermod -G wheel 账户</li>
 </ul>
 <h2>抓包命令</h2>
-<h3>tcpdump -i any src 10.197.11.246 and dst 10.197.10.206 -vvv -n（本机地址到服务器地址）</h3>
+<h3>tcpdump -i any src 10.197.11.X and dst 10.197.10.X -vvv -n（本机地址到服务器地址）</h3>
 <h2>全闪存储学习</h2>
 <h3>4U控制框后端可划分为A、B、C、D共4个象限</h3>
 <h3>硬盘框级联方案</h3>
@@ -815,7 +815,7 @@ mv /etc/snmp/snmpd.conf /etc/snmp/snmpd.conf.bk</li>
 <ul>
 <li><strong>连接交换机</strong>
 <ul>
-<li>export configuration_data ip=192.168.11.86 user=HP password=*** db_file=conf01.dat protocol=FTP</li>
+<li>export configuration_data ip=192.168.11.X user=HP password=*** db_file=conf01.dat protocol=FTP</li>
 <li>export configuration_data ip=本机配置的地址 user=电脑用户名 password=电脑密码 db_file=conf01.dat protocol=FTP</li>
 </ul>
 </li>
@@ -936,12 +936,12 @@ usermod -G wheel 账户</li>
 <ul>
 <li><strong>增加</strong>
 <ul>
-<li>route add default gw 10.200.153.254</li>
+<li>route add default gw 10.200.153.X</li>
 </ul>
 </li>
 <li><strong>删除</strong>
 <ul>
-<li>route del default gw 10.200.153.254</li>
+<li>route del default gw 10.200.153.X</li>
 </ul>
 </li>
 </ul>
@@ -951,7 +951,7 @@ usermod -G wheel 账户</li>
 </ul>
 <h3>ssh命令</h3>
 <ul>
-<li>ssh 账号@ip 举例：ssh gandalf@10.200.214.86</li>
+<li>ssh 账号@ip 举例：ssh gandalf@10.200.214.X</li>
 </ul>
 <h3>关闭历史命令</h3>
 <ul>
@@ -986,7 +986,7 @@ usermod -G wheel 账户</li>
 cli_start -u admin，然后输入密码
 配置命令create route config &lt;dest_ip&gt; &lt;network_type&gt; [prefer]</strong>
 <ul>
-<li>举例：admin:/&gt;create route config 192.168.100.10/16 Management 1777</li>
+<li>举例：admin:/&gt;create route config 192.168.100.X/16 Management 1777</li>
 <li><strong>删除路由</strong>
 <ul>
 <li>delete route config &lt;dest_ip&gt;</li>
