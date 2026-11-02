@@ -67,7 +67,7 @@ tags:
     - ethtool 网口名
   - **可以绑定临时IP然后使用远程登陆**
     - ifconfig 网口名称 ip地址/子网掩码 up（子网掩码例如：24，25）
-    - 删除临时ip：ip addr del 10.200.153.142/25 dev SLOT3-1
+    - 删除临时ip：ip addr del 10.200.153.X/25 dev SLOT3-1
   - **绑定网口配置文件**
     - cp 文件名 备份名（也可以放到别的路径）
     - **修改主管理平面网口**
@@ -190,7 +190,7 @@ fi
 service network restart
 exit
       - 脚本已.sh后缀结尾
-      - 配置临时IP地址：ifconfig eth0 192.168.2.100/24 up 配置哪个口就就将网线插入哪个网口
+      - 配置临时IP地址：ifconfig eth0 192.168.2.X/24 up 配置哪个口就就将网线插入哪个网口
       - **使用远程工具连接然后给脚本权限**
         - 给文件夹权限：chown -R root:root 文件名称
 给文件权限：chmod 777 laocheng-omc.sh
@@ -233,7 +233,7 @@ exit
 - **步骤10 在“/opt/ServiceTool”目录下，以fusioncare帐户，执行如下命令，解压FusionCare安装包。**
   - tar zxvf FusionCare.tar.gz
 - 说明：执行完成后，在“/opt/ServiceTool”目录下将生成FusionCare文件夹。
-- **步骤11 设置FusionCare绑定IP，进入FusionCare安装目录“/FusionCare/tomcat/conf”文件夹，打开server.xml文件，为Connector添加或修改address属性，值为要绑定的IP。以192.168.0.0为例，如下所示。**
+- **步骤11 设置FusionCare绑定IP，进入FusionCare安装目录“/FusionCare/tomcat/conf”文件夹，打开server.xml文件，为Connector添加或修改address属性，值为要绑定的IP。以192.168.0.X为例，如下所示。**
 - **步骤12 先创建ROOT文件夹**
   - mkdir ROOT
 - **步骤13 执行如下命令，进入webapps目录，解压hct.war压缩包。**
@@ -282,8 +282,8 @@ exit
 ### fc内置账号是gandalf、分布式存储内置账号fsadmin
 
 ### 验证tftp是否开启成功
-- export configuration_data ip=192.168.11.30 user=HP password=jie db_file=conf01.dat protocol=FTP
-- export running_data ip=192.168.11.30 user=HP password=jie running_data_file=conf02.txt port=21 protocol=FTP
+- export configuration_data ip=192.168.11.X user=HP password=*** db_file=conf01.dat protocol=FTP
+- export running_data ip=192.168.11.X user=HP password=*** running_data_file=conf02.txt port=21 protocol=FTP
 - 备注 其中的IP是本机地址，user是本机名，password是本机密码
 
 ### 网卡重启失败问题
@@ -355,12 +355,12 @@ remember=5 改为remember=0
   - **计算节点配置路由**
     - **方法二**
       - 如果/etc/sysconfig/路径下存在这个static-route文件，也可以直接在这个配置文件下直接配置路由
-      - **举例：系统给ip是10.0.7.0段，现在需要添加10.0.11.0段的ip以能够互通，10.0.7.48是10.0.7.X段的网关**
-        - any net 10.0.11.0/24 via 10.0.7.48
+      - **举例：系统给ip是10.0.7.X段，现在需要添加10.0.11.X段的ip以能够互通，10.0.7.Y是10.0.7.X段的网关**
+        - any net 10.0.11.X/24 via 10.0.7.Y
     - **方法一**
       - **在/etc/sysconfig/network-sripts/route-eth0**
         - 说明，如果/etc/sysconfig/路径下存在这个static-route文件，也可以直接在这个配置文件下直接配置路由
-        - 添加路由10.0.7.0/24 via 10.0.7.48 dev eth0
+        - 添加路由10.0.7.X/24 via 10.0.7.Y dev eth0
     - **重启网卡**
       - service network restart
   - 存储节点配置路由如计算节点侧配置即可
@@ -417,7 +417,7 @@ usermod -G wheel 账户
 
 ## 抓包命令
 
-### tcpdump -i any src 10.197.11.246 and dst 10.197.10.206 -vvv -n（本机地址到服务器地址）
+### tcpdump -i any src 10.197.11.X and dst 10.197.10.X -vvv -n（本机地址到服务器地址）
 
 ## 全闪存储学习
 
@@ -540,7 +540,7 @@ mv /etc/snmp/snmpd.conf /etc/snmp/snmpd.conf.bk
 
 ### tftp开启验证方法
 - **连接交换机**
-  - export configuration_data ip=192.168.11.86 user=HP password=*** db_file=conf01.dat protocol=FTP
+  - export configuration_data ip=192.168.11.X user=HP password=*** db_file=conf01.dat protocol=FTP
   - export configuration_data ip=本机配置的地址 user=电脑用户名 password=电脑密码 db_file=conf01.dat protocol=FTP
 
 ## 日常使用的命令
@@ -616,15 +616,15 @@ usermod -G wheel 账户
 
 ### 配置和删除临时网关
 - **增加**
-  - route add default gw 10.200.153.254
+  - route add default gw 10.200.153.X
 - **删除**
-  - route del default gw 10.200.153.254
+  - route del default gw 10.200.153.X
 
 ### 版本查询
 - cat /opt/huawei/deploy/package/version
 
 ### ssh命令
-- ssh 账号@ip 举例：ssh gandalf@10.200.214.86
+- ssh 账号@ip 举例：ssh gandalf@10.200.214.X
 
 ### 关闭历史命令
 - **vim /etc/profile**
@@ -659,7 +659,7 @@ usermod -G wheel 账户
 通过cls登录admin，使用普通账户切换
 cli_start -u admin，然后输入密码
 配置命令create route config <dest_ip> <network_type> [prefer]**
-      - 举例：admin:/>create route config 192.168.100.10/16 Management 1777
+      - 举例：admin:/>create route config 192.168.100.X/16 Management 1777
       - **删除路由**
         - delete route config <dest_ip>
 
