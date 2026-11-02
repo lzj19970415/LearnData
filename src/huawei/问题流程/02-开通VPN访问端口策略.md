@@ -6,24 +6,15 @@ tags:
   - VPN
   - 防火墙
 order: 2
+description: 该页内容已加密保存，输入密码后可见。
+article: false
+feed: false
 ---
 
-## 举例
+<!-- 私密页：正文以 AES-256-GCM 密文形式存放在下方 SecretGate 组件的 cipher 属性中。
+     明文原件只保存在本机 D:\AI\learndata\私密页备份\问题流程\ 下。
+     修改内容：编辑明文备份后双击「问题流程加密.bat」。 -->
 
-- 申请访问：10.130.135.11:3306（3306 端口访问）
-
-## 备注
-
-- 10.240.3.0 是 VPN 网段
-
-## 步骤
-
-1、先查看园内安全组（10.130.135.0）有没有把 VPN（10.240.3.0）加入安全组，没有则需要加入
-
-2、再看园内防火墙、路由器是否也放通
-
-3、VPN 网段是在 M9000（10.240.0.2）防火墙上
-
-4、查看有没有策略
+<SecretGate cipher="eyJzIjoiWVN6MVYxM2xJL1M5RHBsNFYxNmprZz09IiwiaSI6Ing0WEpjQVh2dkdoUWlXeU0iLCJjIjoiNnBiTDlwNzUyYWVKOWVkb2g0ZE05NXdPZkVDK05DK3NsT2lIa09iakxTMnRJbVNGeFpWQldueTVOdktOVEJ5eXhsbFl2L2JQZUd5UGZwR29YN2pvRHVseDl1SGYrUjRWSmlQalhLWWk2ODZyMThsN1A0MmxKSE5WV2FnSXFZVnpIWDRDOUcrM3BiY0VrYkZXNGpEZ1k3cWcvb2FvMlN6cTJRMEFWclp2N21uUFJUeldHQ3ErZ2VLUFRjVVVmWU9UdDExS2xRTG1XbmhvSC9BSGNZa2RCdktaamdDakVQd2hoMWIzZjRiT0NEdjFlUllxbnFoZnp3bFk4SFcwdVpKTmFFNEFnUFBMUWZxa3Y1RCtIczdReERKVXYxRFhHSHlZTGQyQTdFeExsK095UTdVNkpja3kxT2hJUFh1K1N2b09zSUxpekdOa0k2YzRmOWd1bTFHNC9rMnkvSWFHMjJZSWVUNDZ2M3Y5RllBQVJMUllsbXRBc0NaK0M0cm95d1M1U05XNFkxRDdGVE1sQjRqZ2FpY0RDNGJ0VHVNUzhEQ0Z4OWxTR290Wkluek1iUFFtZExva2xQTTlaVk85NURZWU50OUpZbzg4cThEZ2N0WklkZEV3RzdtWGJzaktoS08wMXJsMGF6Mi9QdUtuRHhwQ2Fic2lsc0tYTWlHRkpJMG1icXZlREpxZ05TTWJtNzl4aXZ1ZS9zUDZHSnNCVWpxMXV6ZkNZRlMvMkxmYUVURHdvSzV2cmFmbk11Q210L0J4TEViYzFGS0F0MkdSSXF1L2YwcXp1eHAzN2huVGkrUDVhclZoQWFjNkM4NnZkaGlJYmIwTHkyd0ZRVFdNN2dJeU9TL2pMRFhNRVlUKzJsS2pYQlhnMUZlVzFNcmdpcHVaaUx0WGN6ZXNpQkVyQXM4VVpEOHUyYUZjeUIrSVVEbmhiYUt5WEtnWXFaMFN1TEVGTVFsbSJ9" />
 
 > AI生成

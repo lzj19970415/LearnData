@@ -214,4 +214,32 @@ onMounted(() => {
 .secret-gate-content :deep(h2) {
   margin-top: 1.5rem;
 }
+
+.secret-gate-content :deep(pre) {
+  padding: 0.8rem 1rem;
+  overflow-x: auto;
+  background: rgba(128, 128, 128, 0.12);
+  border-radius: 8px;
+}
+
+.secret-gate-content :deep(pre code) {
+  padding: 0;
+  font-size: 0.85rem;
+  background: none;
+}
+
+.secret-gate-content :deep(p code),
+.secret-gate-content :deep(li code) {
+  padding: 0.1em 0.35em;
+  font-size: 0.9em;
+  background: rgba(128, 128, 128, 0.14);
+  border-radius: 4px;
+}
+
+.secret-gate-content :deep(blockquote) {
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: var(--vp-c-text-2, #666);
+  border-left: 3px solid rgba(128, 128, 128, 0.4);
+}
 </style>
