@@ -37,11 +37,12 @@
 - [问题流程与运维操作](https://newzone.top/huawei/问题流程/) - | 序号 | 问题 | 什么时候用 |
 - [添加策略流程](https://newzone.top/huawei/问题流程/01-添加策略流程.html) - 该页内容已加密保存，输入密码后可见。
 - [开通VPN访问端口策略](https://newzone.top/huawei/问题流程/02-开通VPN访问端口策略.html) - 该页内容已加密保存，输入密码后可见。
-- [添加策略后网络还是不通怎么排查（防火墙）](https://newzone.top/huawei/问题流程/03-添加策略后网络不通排查.html) - 该页内容已加密保存，输入密码后可见。
-- [VPN登录失败排查流程](https://newzone.top/huawei/问题流程/04-VPN登录失败排查.html) - 该页内容已加密保存，输入密码后可见。
-- [IP封堵与解封](https://newzone.top/huawei/问题流程/05-IP封堵与解封.html) - 该页内容已加密保存，输入密码后可见。
-- [物理机网卡断联排查（聚合问题）](https://newzone.top/huawei/问题流程/06-物理机网卡断联排查.html) - 该页内容已加密保存，输入密码后可见。
-- [系统加固镜像问题处理](https://newzone.top/huawei/问题流程/07-系统加固镜像问题处理.html) - 该页内容已加密保存，输入密码后可见。
+- [VPN账号增加拨号网段](https://newzone.top/huawei/问题流程/03-VPN账号增加拨号网段.html) - 该页内容已加密保存，输入密码后可见。
+- [添加策略后网络还是不通怎么排查（防火墙）](https://newzone.top/huawei/问题流程/04-添加策略后网络不通排查.html) - 该页内容已加密保存，输入密码后可见。
+- [VPN登录失败排查流程](https://newzone.top/huawei/问题流程/05-VPN登录失败排查.html) - 该页内容已加密保存，输入密码后可见。
+- [IP封堵与解封](https://newzone.top/huawei/问题流程/06-IP封堵与解封.html) - 该页内容已加密保存，输入密码后可见。
+- [物理机网卡断联排查（聚合问题）](https://newzone.top/huawei/问题流程/07-物理机网卡断联排查.html) - 该页内容已加密保存，输入密码后可见。
+- [系统加固镜像问题处理](https://newzone.top/huawei/问题流程/08-系统加固镜像问题处理.html) - 该页内容已加密保存，输入密码后可见。
 - [个人介绍](https://newzone.top/intro.html) - 互联网广告人，
 - [Docker 从入门到生产实战](https://newzone.top/linux/16-Docker.html) - **这台虚机要满足什么：**
 - [Kubernetes 从入门到生产实战](https://newzone.top/linux/17-Kubernetes.html) - | 项目 | 最低要求 | 建议 | 为什么卡这道门 |
