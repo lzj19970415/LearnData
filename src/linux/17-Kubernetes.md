@@ -57,7 +57,7 @@ systemctl stop firewalld && systemctl disable firewalld
 两个提醒：
 
 - CentOS 7 已停止官方维护，拿来学机能跑，但**别把这种虚机暴露在公网**。若 `yum` 报 404，先按前面篇章把 yum 源换成国内 Vault 镜像再来。
-- 本篇全部操作都在虚机里以 root 用户执行，跟着敲就行。
+- 本篇操作都在虚机里执行：**装工具阶段用 root，启动集群阶段按教程切普通用户 k8s**（docker 驱动不允许 root），跟着标提示走就行。
 
 ## 实验一：起 K8s——把"总管家"搬进虚机
 
@@ -70,7 +70,7 @@ systemctl stop firewalld && systemctl disable firewalld
 
 ### 📍 在哪动手
 
-CentOS 7 虚机的终端里（Xshell/SSH 都行），root 用户，全程联网。
+CentOS 7 虚机的终端里（Xshell/SSH 都行），先用 root（装工具），全程联网。
 
 ### 🔧 动手做
 
@@ -88,13 +88,14 @@ EOF
 yum install -y kubectl
 
 # ③ 下载 minikube 主程序（约 140MB 的单文件，无需安装）
-#    ⚠ 网上老教程的阿里云镜像 kubernetes.oss-cn-hangzhou.aliyuncs.com 已失效（404），
-#      下载到的会是几百字节的错误页面而不是程序；官方 google 源国内也基本拉不动。
-#      下面两条 curl 二选一：
-#    a) GitHub 官方 release（国内时快时慢）：
-curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
-#    b) a 拉不动/太慢时，前面加加速代理前缀（代理域名会更换，失效就搜「GitHub 文件加速」）：
+#    ⚠ 说明：阿里云 K8s 源里没有 minikube 包；老教程的 OSS 镜像已失效（404，会下到几百字节的
+#      错误页面）；官方 google 源国内拉不动。国内没有稳定官方源，走 GitHub 加速代理最现实。
+#      下面两条 curl 二选一（2026-11 实测代理域名可用；代理常换，失效就搜「GitHub 文件加速」）：
+#    a) 首选：国内加速代理（实测约 0.2MB/s，虽慢但稳）：
 curl -LO https://ghfast.top/https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
+#    b) 备选：GitHub 直连（时快时慢，个别网络下反而更快）：
+curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
+#    还嫌慢：在 Windows 上用浏览器/下载工具下 b 的直链再拷进虚机（共享文件夹/U盘），速度最快
 
 # ④ 防呆验证：先看文件大小再安装
 ls -lh minikube-linux-amd64
@@ -111,7 +112,29 @@ minikube version
 
 预期输出应包含关键字 `Client Version: v1.29.x` 和 `minikube version: v1.x`。如果虚机里 curl 太慢，也可以在 Windows 上下载好文件，用共享文件夹/U 盘拷进虚机再执行第 ⑤ 步。
 
-启动集群（本篇最重要的一条命令，逐行看注释）：
+启动集群（本篇最重要的一步）。先说清运行身份，再执行命令：
+
+## 第一步：切到普通用户（root 会直接报错！)
+
+minikube 的 docker 驱动**不允许 root 启动**，用 root 跑会报：
+
+```
+X 因 DRV_AS_ROOT 错误而退出：docker 驱动不应使用 root 权限。
+```
+
+所以先建一个普通用户、加进 docker 组，再用它跑（一次环境准备，后续实验都用这个用户）：
+
+```bash
+useradd -m k8s            # 建普通用户（如果虚机里已有其他普通用户，就用那个名字替换 k8s）
+usermod -aG docker k8s    # 加入 docker 组，免 sudo 操作 docker
+su - k8s                  # 切过去（提示符从 # 变成 $，就说明不再是 root 了）
+id                        # 验证：groups=...(...,docker)里要有 docker 组
+docker ps                 # 不报 permission denied 就对了
+```
+
+> 前面 root 装的 minikube/kubectl 在 `/usr/local/bin`，全局可用，普通用户直接敲就行。
+
+## 第二步：启动集群（逐行看注释）
 
 ```bash
 minikube start \
@@ -123,10 +146,10 @@ minikube start \
   --registry-mirror=https://docker.m.daocloud.io
 ```
 
-- `--driver=docker`：K8s 整个装在一个 Docker 容器里——虚机已有 Docker，零额外依赖
+- `--driver=docker`：K8s 整个装在一个 Docker 容器里——虚机已有 Docker，零额外依赖；**必须普通用户跑（见上）**，实在要用 root 就加 `--force`，但官方不推荐
 - `--cpus=2`：分给这套迷你集群的 CPU
 - `--memory=4096`：分给它的内存；**虚机总内存只有 4G 就改成 3072**，别把虚机自己挤死；8G 才给 4096
-- `--kubernetes-version=v1.29.4`：固定 K8s 版本，和生产速查里 kubeadm 的版本号一致，将来命令无缝迁移
+- `--kubernetes-version=v1.29.4`：固定 1.29 系列小版本（1.29.x 任一都可以），和生产速查里 kubeadm 的系列一致，将来命令无缝迁移
 - `--image-mirror-country=cn`：K8s 自身组件镜像从国内仓库拉，**国内必加**，否则卡在下载
 - `--registry-mirror`：拉业务镜像（如 nginx）的 Docker 加速器；这个地址失效就换成你公司/云厂商自己的加速地址，再 `minikube start` 重启
 
@@ -166,7 +189,8 @@ minikube   Ready    control-plane   3m12s   v1.29.4
 ### 🩹 如果不对
 
 1. 报 `X Exiting due to PROVIDER_DOCKER_ERROR: "docker: Cannot connect to the Docker daemon"` → Docker 没起来。执行 `systemctl start docker && systemctl enable docker`，`docker ps` 能出列表后再重跑 `minikube start`。
-2. 卡在 `Downloading Kubernetes ... images` 十几分钟不动或超时退出 → 国外镜像仓库拉不动。确认 `--image-mirror-country=cn` 加了没；已下载的部分不会白下，重跑 `minikube start` 会续传。虚机直接卡死的话是内存不够，关机把虚机内存调到 8G。
+2. 报 `X 因 DRV_AS_ROOT 错误而退出：docker 驱动不应使用 root 权限` → 你在用 root 跑。回到第一步建/切普通用户（`su - k8s`）再启动。
+3. 卡在 `Downloading Kubernetes ... images` 十几分钟不动或超时退出 → 国外镜像仓库拉不动。确认 `--image-mirror-country=cn` 加了没；已下载的部分不会白下，重跑 `minikube start` 会续传。虚机直接卡死的话是内存不够，关机把虚机内存调到 8G。
 
 ## 实验二：第一个 Pod——给程序一间单人牢房
 
@@ -230,15 +254,15 @@ my-nginx  1/1     Running             0          38s   ← 过一会儿看：入
 
 ### 📍 在哪动手
 
-虚机里建实验目录，写第一个 YAML 文件：`/root/k8s-lab/nginx-deployment.yaml`（全路径，别只看文件名）。
+虚机里建实验目录，写第一个 YAML 文件：`~/k8s-lab/nginx-deployment.yaml`（全路径，别只看文件名）。
 
 ### 🔧 动手做
 
 ```bash
-mkdir -p /root/k8s-lab    # 建个专门放实验文件的目录，后面文件全放这
+mkdir -p ~/k8s-lab    # 建个专门放实验文件的目录，后面文件全放这
 
 # 用 heredoc 直接把 YAML 写进文件（对新手比 vi 稳，回车原样落盘）
-cat > /root/k8s-lab/nginx-deployment.yaml <<'EOF'
+cat > ~/k8s-lab/nginx-deployment.yaml <<'EOF'
 apiVersion: apps/v1        # Deployment 属于 apps 组、大版本 v1
 kind: Deployment           # 资源类型：监工
 metadata:
@@ -261,7 +285,7 @@ spec:                      # 下面全是"你要的期望结果"
 EOF
 
 # 交给 K8s 去干（apply = "照着这张图纸给我办"）
-kubectl apply -f /root/k8s-lab/nginx-deployment.yaml
+kubectl apply -f ~/k8s-lab/nginx-deployment.yaml
 ```
 
 ### ✅ 怎么算成功
@@ -305,7 +329,7 @@ nginx-deploy-6d4b7f9c-w7q5z   0/1     ContainerCreating   0          3s    ← �
 
 ### 🩹 如果不对
 
-1. `error: error parsing /root/k8s-lab/nginx-deployment.yaml: yaml: line 10: ...` → YAML 缩进错了。YAML 只认空格不认 Tab，层级全靠缩进；报错信息里有行号，去那行附近对着上面的代码块核对。
+1. `error: error parsing ~/k8s-lab/nginx-deployment.yaml: yaml: line 10: ...` → YAML 缩进错了。YAML 只认空格不认 Tab，层级全靠缩进；报错信息里有行号，去那行附近对着上面的代码块核对。
 2. `The Deployment "nginx-deploy" is invalid: ... spec.template.metadata.labels: Invalid value: ... must be equal to selector` → template 里的 labels 和 selector 里的 matchLabels 写得不一致，两处必须完全相同。
 
 ## 实验四：扩缩容——一键调整编制
@@ -362,12 +386,12 @@ nginx-deploy-6d4b7f9c-9dz6k   1/1     Running   0          20s
 
 ### 📍 在哪动手
 
-虚机，写第二个 YAML：`/root/k8s-lab/nginx-service.yaml`。
+虚机，写第二个 YAML：`~/k8s-lab/nginx-service.yaml`。
 
 ### 🔧 动手做
 
 ```bash
-cat > /root/k8s-lab/nginx-service.yaml <<'EOF'
+cat > ~/k8s-lab/nginx-service.yaml <<'EOF'
 apiVersion: v1            # Service 是基础资源，属于 v1
 kind: Service             # 资源类型：服务（固定门牌 + 前台）
 metadata:
@@ -382,7 +406,7 @@ spec:
     nodePort: 30100       # 在节点上开的对外端口（不写就随机挑一个 30000+）
 EOF
 
-kubectl apply -f /root/k8s-lab/nginx-service.yaml
+kubectl apply -f ~/k8s-lab/nginx-service.yaml
 kubectl get svc
 ```
 
