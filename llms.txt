@@ -37,7 +37,7 @@
 - [问题流程与运维操作](https://newzone.top/huawei/问题流程/) - | 序号 | 问题 | 什么时候用 |
 - [添加策略流程](https://newzone.top/huawei/问题流程/01-添加策略流程.html) - 该页内容已加密保存，输入密码后可见。
 - [开通VPN访问端口策略](https://newzone.top/huawei/问题流程/02-开通VPN访问端口策略.html) - 该页内容已加密保存，输入密码后可见。
-- [VPN账号增加拨号网段](https://newzone.top/huawei/问题流程/03-VPN账号增加拨号网段.html) - 该页内容已加密保存，输入密码后可见。
+- [VPN账号增加拨号网段](https://newzone.top/huawei/问题流程/03-VPN账号增加拨号网段.html) - 给已有 SSL VPN 账号增加新的拨号网段（放通新网段访问）的标准流程。
 - [添加策略后网络还是不通怎么排查（防火墙）](https://newzone.top/huawei/问题流程/04-添加策略后网络不通排查.html) - 该页内容已加密保存，输入密码后可见。
 - [VPN登录失败排查流程](https://newzone.top/huawei/问题流程/05-VPN登录失败排查.html) - 该页内容已加密保存，输入密码后可见。
 - [IP封堵与解封](https://newzone.top/huawei/问题流程/06-IP封堵与解封.html) - 该页内容已加密保存，输入密码后可见。
