@@ -87,21 +87,29 @@ EOF
 # ② 安装 kubectl（注意装的是 1.29 系列，与速查里生产 kubeadm 版本一致）
 yum install -y kubectl
 
-# ③ 下载 minikube 主程序（约 70MB 的单文件，无需安装）
-#    下面两条 curl 二选一：官方地址拉不动/太慢，就换成第二条阿里云镜像
-curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-curl -LO https://kubernetes.oss-cn-hangzhou.aliyuncs.com/minikube/releases/latest/minikube-linux-amd64
+# ③ 下载 minikube 主程序（约 140MB 的单文件，无需安装）
+#    ⚠ 网上老教程的阿里云镜像 kubernetes.oss-cn-hangzhou.aliyuncs.com 已失效（404），
+#      下载到的会是几百字节的错误页面而不是程序；官方 google 源国内也基本拉不动。
+#      下面两条 curl 二选一：
+#    a) GitHub 官方 release（国内时快时慢）：
+curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
+#    b) a 拉不动/太慢时，前面加加速代理前缀（代理域名会更换，失效就搜「GitHub 文件加速」）：
+curl -LO https://ghfast.top/https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
 
-# ④ 把它安装成系统命令，删掉安装包
+# ④ 防呆验证：先看文件大小再安装
+ls -lh minikube-linux-amd64
+#    正常应为 100MB 以上；如果只有几百字节 = 下到的是错误页面，rm 掉换另一条重下
+
+# ⑤ 把它安装成系统命令，删掉安装包
 install minikube-linux-amd64 /usr/local/bin/minikube
 rm -f minikube-linux-amd64
 
-# ⑤ 验收两个工具都活了
+# ⑥ 验收两个工具都活了
 kubectl version --client
 minikube version
 ```
 
-预期输出应包含关键字 `Client Version: v1.29.x` 和 `minikube version: v1.x`。如果虚机里 curl 太慢，也可以在 Windows 上下载好文件，用共享文件夹/U 盘拷进虚机再执行第 ④ 步。
+预期输出应包含关键字 `Client Version: v1.29.x` 和 `minikube version: v1.x`。如果虚机里 curl 太慢，也可以在 Windows 上下载好文件，用共享文件夹/U 盘拷进虚机再执行第 ⑤ 步。
 
 启动集群（本篇最重要的一条命令，逐行看注释）：
 
