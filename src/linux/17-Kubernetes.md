@@ -136,20 +136,40 @@ docker ps                 # 不报 permission denied 就对了
 
 ## 第二步：启动集群（逐行看注释）
 
+> 🔁 **2026-11-05 实测更新**（minikube v1.39.0）：① 新版 minikube 只支持 K8s v1.28.0 起步，集群版本从 v1.29.4 调整为 v1.29.6（预载包覆盖的版本，仍是 1.29 系列）；② 新增下面 ②③ 两步「提前备料」——阿里云仓库的 kicbase:v0.0.51 地基镜像被官方推错成 IBM 大型机架构（s390x），在 x86 机器上必报 `exec format error`，必须换成官方 amd64 版；minikube 自己的预载包下载源在国内也不通，要手动放进缓存目录。
+
 ```bash
+# ① 清掉上次失败的残留（第一次跑会提示不存在，忽略即可）
+minikube delete
+
+# ② 提前拉好"地基镜像"（官方 amd64 版，走 daocloud 加速）
+#    ⚠ 别用阿里云仓库的 kicbase:v0.0.51：该标签被推错成 s390x 架构，拉了必报 exec format error
+docker pull --platform linux/amd64 docker.m.daocloud.io/kicbase/stable:v0.0.51
+
+# ③ 预下载 K8s 预载包放进 minikube 缓存（约 350MB；minikube 检测到本地有就直接用，不再联网找）
+mkdir -p ~/.minikube/cache/preloaded-tarball
+curl -L -o ~/.minikube/cache/preloaded-tarball/preloaded-images-k8s-v18-v1.29.6-docker-overlay2-amd64.tar.lz4 \
+  "https://ghfast.top/https://github.com/kubernetes-sigs/minikube-preloads/releases/download/v18/preloaded-images-k8s-v18-v1.29.6-docker-overlay2-amd64.tar.lz4"
+
+# ④ 防呆验证：正常应为 350MB 左右；只有几百 KB = 下到错误页，rm 掉后换 GitHub 直连重下
+ls -lh ~/.minikube/cache/preloaded-tarball/
+
+# ⑤ 启动集群
 minikube start \
   --driver=docker \
   --cpus=2 \
   --memory=4096 \
-  --kubernetes-version=v1.29.4 \
+  --kubernetes-version=v1.29.6 \
   --image-mirror-country=cn \
-  --registry-mirror=https://docker.m.daocloud.io
+  --registry-mirror=https://docker.m.daocloud.io \
+  --base-image=docker.m.daocloud.io/kicbase/stable:v0.0.51
 ```
 
 - `--driver=docker`：K8s 整个装在一个 Docker 容器里——虚机已有 Docker，零额外依赖；**必须普通用户跑（见上）**，实在要用 root 就加 `--force`，但官方不推荐
 - `--cpus=2`：分给这套迷你集群的 CPU
 - `--memory=4096`：分给它的内存；**虚机总内存只有 4G 就改成 3072**，别把虚机自己挤死；8G 才给 4096
-- `--kubernetes-version=v1.29.4`：固定 1.29 系列小版本（1.29.x 任一都可以），和生产速查里 kubeadm 的系列一致，将来命令无缝迁移
+- `--kubernetes-version=v1.29.6`：固定 1.29 系列。为什么是 .6 不是 .4：minikube 启动用的「预载包」（把整套 K8s 镜像和二进制预先打好的离线包，免去启动时联网下载）里，1.29 系列只打包了 v1.29.6——与 kubectl 1.29.x 同系列零版本差，生产 kubeadm 速查的命令照样无缝迁移
+- `--base-image`：指定「地基镜像」。minikube 国内模式默认拉阿里云的 kicbase:v0.0.51，但这个标签是坏的（里面只有 IBM s390x 架构的二进制），必须显式换成官方 amd64 版；daocloud 失效就换 `registry.cn-hangzhou.aliyuncs.com/google_containers/kicbase:v0.0.50`（v0.0.45～v0.0.50 都是正常多架构镜像，与 v0.0.51 仅小版本差）
 - `--image-mirror-country=cn`：K8s 自身组件镜像从国内仓库拉，**国内必加**，否则卡在下载
 - `--registry-mirror`：拉业务镜像（如 nginx）的 Docker 加速器；这个地址失效就换成你公司/云厂商自己的加速地址，再 `minikube start` 重启
 
@@ -158,11 +178,10 @@ minikube start \
 启动过程要下载约 2G 镜像，5~20 分钟正常，别关虚机。成功时最后几行应包含关键字 `Done! kubectl is now configured`：
 
 ```
-* minikube v1.33.2 on Centos 7.9 (amd64)
+* minikube v1.39.0 on Centos 7.9 (amd64)
 * Using the docker driver based on user configuration
 * Starting control plane node minikube in cluster minikube
 * Pulling base image ...
-* Downloading Kubernetes v1.29.4 images ...
 * Creating Kubernetes in docker container with (CPUs=2, Memory=4096MB) ...
 * Verifying Kubernetes components...
 * Enabled addons: default-storageclass, storage-provisioner
@@ -177,7 +196,7 @@ kubectl get nodes
 
 ```
 NAME       STATUS   ROLES           AGE     VERSION
-minikube   Ready    control-plane   3m12s   v1.29.4
+minikube   Ready    control-plane   3m12s   v1.29.6
 ```
 
 **STATUS 列是 Ready**——你人生第一个 K8s 集群上线了。可以再敲 `kubectl cluster-info`，应看到 `Kubernetes control plane is running at https://192.168.49.2:8443`。
@@ -191,6 +210,9 @@ minikube   Ready    control-plane   3m12s   v1.29.4
 1. 报 `X Exiting due to PROVIDER_DOCKER_ERROR: "docker: Cannot connect to the Docker daemon"` → Docker 没起来。执行 `systemctl start docker && systemctl enable docker`，`docker ps` 能出列表后再重跑 `minikube start`。
 2. 报 `X 因 DRV_AS_ROOT 错误而退出：docker 驱动不应使用 root 权限` → 你在用 root 跑。回到第一步建/切普通用户（`su - k8s`）再启动。
 3. 卡在 `Downloading Kubernetes ... images` 十几分钟不动或超时退出 → 国外镜像仓库拉不动。确认 `--image-mirror-country=cn` 加了没；已下载的部分不会白下，重跑 `minikube start` 会续传。虚机直接卡死的话是内存不够，关机把虚机内存调到 8G。
+4. 开头就报 `指定的 Kubernetes 版本 x.x.x 小于支持的最低版本 v1.28.0` 或 `当前版本的 minikube 不支持 Kubernetes x.x.x` → 2026 年起的新版 minikube 只认 v1.28.0+，老教程里的 v1.23.x、v1.24.x 都不能用了，用本篇的 `--kubernetes-version=v1.29.6`。
+5. 报 `因 GUEST_PROVISION 错误而退出`，且日志里有 `WARNING: The requested image's platform (linux/s390x) does not match the detected host platform (linux/amd64)` 和 `exec format error` → 地基镜像用错了：阿里云仓库的 kicbase:v0.0.51 被官方推错成只有 IBM 大型机（s390x）架构的镜像。先 `minikube delete` 清残留，确认 ② 拉的是官方 amd64 版，且启动命令带 `--base-image=docker.m.daocloud.io/kicbase/stable:v0.0.51`。
+6. ② 拉镜像或 ③ 下载预载包超时/失败 → 国内加速站换域名了（常事）：基础镜像换 `registry.cn-hangzhou.aliyuncs.com/google_containers/kicbase:v0.0.50`（`--base-image` 同步改）；预载包换 GitHub 直连，或在 Windows 浏览器下载后用共享文件夹/U盘拷进虚机的 `~/.minikube/cache/preloaded-tarball/` 目录（文件名保持不变）。
 
 ## 实验二：第一个 Pod——给程序一间单人牢房
 
