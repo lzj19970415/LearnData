@@ -6,15 +6,58 @@ tags:
   - VPN
   - 防火墙
 order: 3
-description: 该页内容已加密保存，输入密码后可见。
-article: false
-feed: false
 ---
 
-<!-- 私密页：正文以 AES-256-GCM 密文形式存放在下方 SecretGate 组件的 cipher 属性中。
-     明文原件只保存在本机 D:\AI\learndata\私密页备份\问题流程\ 下。
-     修改内容：编辑明文备份后双击「问题流程加密.bat」。 -->
+给已有 SSL VPN 账号增加新的拨号网段（放通新网段访问）的标准流程。
 
-<SecretGate cipher="eyJzIjoiWVN6MVYxM2xJL1M5RHBsNFYxNmprZz09IiwiaSI6Ing0WEpjQVh2dkdoUWlXeU0iLCJjIjoiNnBiTDlwNzUyYWVKOWVkb2g0ZE05NXdPZkVDK05DK3NsT2lIa09iakxTMnRJbVNGeFpWQldueTVOdktOVEJ5eXhsbFl2L2JQZUd5UGZwR29YN2pvRHVseDl1SGYrUjRWSmlQalhLWWk2ODZyMThsN1A0MmxKSE5WV2FnSXFZVnpIWDRDOUcrM3BiY0VrYkZXNGpEZ1k3cWcvb2FvMlN6cTJRMEFWclp2N21uUFJUeldHQ3ErZ2VLUFRjVVVmWU9UdDExS2xRTG1XbmhvSC9BSGNZa2RCdktaamdDakVQd2hoMWIzZjRiT0NEdjFlUllxbnFoZnp3bFk4SFcwdVpKTmFFNEFnUFBMUWZxa3Y1RCtIczdReERKVXYxRFhHSHlZTGQyQTdFeExsK095UTdVNkpja3kxT2hJUFh1K1N2b09zSUxpekdOa0k2YzRmOWd1bTFHNC9rMnkvSWFHMjJZSWVUNDZ2M3Y5RllBQVJMUllsbXRBc0NaK0M0cm95d1M1U05XNFkxRDdGVE1sQjRqZ2FpY0RDNGJ0VHVNUzhEQ0Z4OWxTR290Wkluek1iUFFtZExva2xQTTlaVk85NURZWU50OUpZbzg4cThEZ2N0WklkZEV3RzdtWGJzaktoS08wMXJsMGF6Mi9QdUtuRHhwQ2Fic2lsc0tYTWlHRkpJMG1icXZlREpxZ05TTWJtNzl4aXZ1ZS9zUDZHSnNCVWpxMXV6ZkNZRlMvMkxmYUVURHdvSzV2cmFmbk11Q210L0J4TEViYzFGS0F0MkdSSXF1L2YwcXp1eHAzN2huVGkrUDVhclZoQWFjNkM4NnZkaGlJYmIwTHkyd0ZRVFdNN2dJeU9TL2pMRFhNRVlUKzJsS2pYQlhnMUZlVzFNcmdpcHVaaUx0WGN6ZXNpQkVyQXM4VVpEOHUyYUZjeUIrSVVEbmhiYUt5WEtnWXFaMFN1TEVGTVFsbSJ9" />
+## 举例
+
+- 以账号 zw_Ncc_cwxtXXX 为例，给该账号增加新的拨号网段（如 10.190.1.0）
+
+## 步骤
+
+### 1、查账号属于哪个 SSL 组
+
+```
+dis cu | include zw_Ncc_cwxtXXX
+```
+
+- 从输出里看这个账号挂在哪个组，假设是 111 组
+
+### 2、进 SSL 视图和策略组，查分流到哪个 ACL
+
+```
+vpn context ssl
+policy-group 111
+dis th
+```
+
+- 从输出里看该组分流到哪个 ACL，假设是 3222
+
+### 3、退出策略组，查看 ACL 里有没有要放通的网段
+
+```
+q
+dis acl 3222
+```
+
+- 已有目标网段就不用再加，没有就进下一步
+
+### 4、进 ACL 组添加放通规则（沿用现有规则的写法）
+
+```
+acl ad 3222
+rule xx permit ip destination xx.xx.xx.xx 0
+q
+```
+
+### 5、添加完成，让账号重新登录 VPN 即可生效
+
+- 验证：重连后 ping 目标网段，业务端口用 tcping 验证
+
+## 注意
+
+- rule 编号必须排在兜底拒绝规则（如 `rule 100 deny ip`）之前，否则放通不生效
+- 如果该策略组没有引用 ACL（`dis th` 看不到 filter ACL、隧道内全放行），不适用本流程，需要去放通安全策略
 
 > AI生成
