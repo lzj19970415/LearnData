@@ -49,10 +49,10 @@
       "title": "Kubernetes 从入门到生产实战",
       "url": "https://newzone.top/LearnData/linux/17-Kubernetes.html",
       "id": "https://newzone.top/LearnData/linux/17-Kubernetes.html",
-      "summary": "Kubernetes 从入门到生产实战 跟着这篇做完 7 个实验，你会亲手搞出一套能跑的 K8s 集群：发布 3 个副本的 nginx、亲手杀掉一个 Pod 看它&quot;复活&quot;、把服务挂上固定门牌让 curl 打通、体验一次滚动上线和&quot;反悔药&quot;回滚，最后学会运维吃饭的本事——排错三板斧。全程只要一台 CentOS 7 ...",
-      "content_html": "\n<blockquote>\n<p>跟着这篇做完 7 个实验，你会亲手搞出一套能跑的 K8s 集群：发布 3 个副本的 nginx、亲手杀掉一个 Pod 看它&quot;复活&quot;、把服务挂上固定门牌让 curl 打通、体验一次滚动上线和&quot;反悔药&quot;回滚，最后学会运维吃饭的本事——排错三板斧。全程只要一台 CentOS 7 虚机。</p>\n<p>诚实预告：K8s 是本系列里最吃资源、门槛最高的一篇。主线实验用最轻量的 minikube（把一套迷你 K8s 塞进你虚机里的一个容器），但对家用电脑仍有硬性门槛：虚机内存至少 4G（强烈建议 8G）、CPU 2 核起步、必须联网。开工前先到下面「实验环境准备」逐条对表——<strong>家里电脑跑不动就先读懂流程，上班在测试环境练</strong>，所有命令在生产里一模一样。</p>\n</blockquote>\n<h2>实验环境准备</h2>\n<p>| 项目 | 最低要求 | 建议 | 为什么卡这道门 |\n|</p>\n",
+      "summary": "Kubernetes 从入门到生产实战 跟着这篇做完 7 个实验，你会亲手搞出一套能跑的 K8s 集群：发布 3 个副本的 nginx、亲手杀掉一个 Pod 看它&quot;复活&quot;、把服务挂上固定门牌让 curl 打通、体验一次滚动上线和&quot;反悔药&quot;回滚，最后学会运维吃饭的本事——排错三板斧。全程只要一台 AlmaLinux...",
+      "content_html": "\n<blockquote>\n<p>跟着这篇做完 7 个实验，你会亲手搞出一套能跑的 K8s 集群：发布 3 个副本的 nginx、亲手杀掉一个 Pod 看它&quot;复活&quot;、把服务挂上固定门牌让 curl 打通、体验一次滚动上线和&quot;反悔药&quot;回滚，最后学会运维吃饭的本事——排错三板斧。全程只要一台 AlmaLinux 9.8 虚机。</p>\n<p>诚实预告：K8s 是本系列里最吃资源、门槛最高的一篇。主线实验用 kubeadm 起一套单节点集群（一台虚机跑完 init 就是 control-plane + worker，比 minikube 更贴近生产），对家用电脑仍有硬性门槛：虚机内存至少 4G（强烈建议 8G）、CPU 2 核起步、必须联网。开工前先到下面「实验环境准备」逐条对表——<strong>家里电脑跑不动就先读懂流程，上班在测试环境练</strong>，所有命令在生产里一模一样。</p>\n</blockquote>\n<h2>实验环境准备</h2>\n<p>| 项目 | 最低要求 | 建议 | 为什么卡这道门 |\n|</p>\n",
       "date_published": "2026-10-12T11:31:48.000Z",
-      "date_modified": "2026-11-05T08:53:51.000Z",
+      "date_modified": "2026-11-08T02:10:57.000Z",
       "authors": [],
       "tags": [
         "Linux进阶"

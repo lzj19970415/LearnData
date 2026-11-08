@@ -40,6 +40,7 @@
 - [VPN账号增加拨号网段](https://newzone.top/huawei/问题流程/03-VPN账号增加拨号网段.html) - 给已有 SSL VPN 账号增加新的拨号网段（放通新网段访问）的标准流程。
 - [添加策略后网络还是不通怎么排查（防火墙）](https://newzone.top/huawei/问题流程/04-添加策略后网络不通排查.html) - 该页内容已加密保存，输入密码后可见。
 - [VPN登录失败排查流程](https://newzone.top/huawei/问题流程/05-VPN登录失败排查.html) - 该页内容已加密保存，输入密码后可见。
+- [MobaXterm连接堡垒机配置手册](https://newzone.top/huawei/问题流程/05z-MobaXterm连接堡垒机配置.html) - 运维平台点「mobaxterm」按钮连接堡垒机/老服务器时，MobaXterm 报 sshpass: command not found 或算法不匹配的完整修复手册。个人版与专业版分开操作，一次配好重启不丢。
 - [IP封堵与解封](https://newzone.top/huawei/问题流程/06-IP封堵与解封.html) - 该页内容已加密保存，输入密码后可见。
 - [物理机网卡断联排查（聚合问题）](https://newzone.top/huawei/问题流程/07-物理机网卡断联排查.html) - 该页内容已加密保存，输入密码后可见。
 - [系统加固镜像问题处理](https://newzone.top/huawei/问题流程/08-系统加固镜像问题处理.html) - 该页内容已加密保存，输入密码后可见。
