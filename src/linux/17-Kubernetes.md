@@ -9,20 +9,20 @@ tags:
 
 # Kubernetes 从入门到生产实战
 
-> 跟着这篇做完 7 个实验，你会亲手搞出一套能跑的 K8s 集群：发布 3 个副本的 nginx、亲手杀掉一个 Pod 看它"复活"、把服务挂上固定门牌让 curl 打通、体验一次滚动上线和"反悔药"回滚，最后学会运维吃饭的本事——排错三板斧。全程只要一台 CentOS 7 虚机。
+> 跟着这篇做完 7 个实验，你会亲手搞出一套能跑的 K8s 集群：发布 3 个副本的 nginx、亲手杀掉一个 Pod 看它"复活"、把服务挂上固定门牌让 curl 打通、体验一次滚动上线和"反悔药"回滚，最后学会运维吃饭的本事——排错三板斧。全程只要一台 AlmaLinux 9.8 虚机。
 >
-> 诚实预告：K8s 是本系列里最吃资源、门槛最高的一篇。主线实验用最轻量的 minikube（把一套迷你 K8s 塞进你虚机里的一个容器），但对家用电脑仍有硬性门槛：虚机内存至少 4G（强烈建议 8G）、CPU 2 核起步、必须联网。开工前先到下面「实验环境准备」逐条对表——**家里电脑跑不动就先读懂流程，上班在测试环境练**，所有命令在生产里一模一样。
+> 诚实预告：K8s 是本系列里最吃资源、门槛最高的一篇。主线实验用 kubeadm 起一套单节点集群（一台虚机跑完 init 就是 control-plane + worker，比 minikube 更贴近生产），对家用电脑仍有硬性门槛：虚机内存至少 4G（强烈建议 8G）、CPU 2 核起步、必须联网。开工前先到下面「实验环境准备」逐条对表——**家里电脑跑不动就先读懂流程，上班在测试环境练**，所有命令在生产里一模一样。
 
 ## 实验环境准备
 
 | 项目 | 最低要求 | 建议 | 为什么卡这道门 |
 | ---- | ---- | ---- | ---- |
-| 虚机系统 | CentOS 7.9 | 同左 | 跟着本系列建的虚机就行 |
+| 虚机系统 | AlmaLinux 9.8 | 同左 | 跟着本系列建的虚机就行 |
 | 虚机内存 | 4G | **8G** | K8s 本体 + 你的业务容器全住在内存里，4G 只能"挤一挤" |
 | CPU | 2 核 | 4 核 | 低于 2 核会卡到怀疑人生 |
 | 磁盘 | 剩余 20G | 40G | K8s 组件镜像约 2G，还要给后面的实验留量 |
 | 网络 | 必须能联网 | — | 装软件、拉镜像全靠网络 |
-| Docker | 已安装且跑通 | — | minikube 在 Docker 容器里建 K8s；没装先看站内 Linux 分类的 16-Docker 篇 |
+| 容器运行时 | 自带 containerd 即可 | — | 用 kubeadm 装时，需要先按实验一修好 containerd 的 CRI 插件（自带的是默认禁用）|
 
 确认就绪（在虚机里依次敲，全过再往下走）：
 
@@ -30,8 +30,8 @@ tags:
 free -h          # 看内存：Mem 行 total 要 ≥ 4G（8G 更稳）
 nproc            # 看 CPU 核数：要 ≥ 2
 df -h /          # 看根分区剩余空间：≥ 20G
-docker --version # 看装没装 Docker
-docker ps        # 看 Docker 活没活：能打出列表就行，哪怕一行没有
+containerd --version # 看 containerd 版本
+systemctl status containerd --no-pager | head -3   # 看 containerd 活没活
 ```
 
 预期输出长这样（数字有差异没关系，看数量级）：
@@ -42,10 +42,10 @@ $ free -h
 Mem:           7.6G        300M        6.8G        12M        512M        7.0G
 $ nproc
 4
-$ docker --version
-Docker version 24.0.9, build 2939816
-$ docker ps
-CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+$ containerd --version
+containerd containerd.io 2.4.2
+$ systemctl is-active containerd
+active
 ```
 
 顺手关掉防火墙（学习环境图省事；生产是放行特定端口，不是关）：
@@ -56,137 +56,144 @@ systemctl stop firewalld && systemctl disable firewalld
 
 两个提醒：
 
-- CentOS 7 已停止官方维护，拿来学机能跑，但**别把这种虚机暴露在公网**。若 `yum` 报 404，先按前面篇章把 yum 源换成国内 Vault 镜像再来。
-- 本篇操作都在虚机里执行：**装工具阶段用 root，启动集群阶段按教程切普通用户 k8s**（docker 驱动不允许 root），跟着标提示走就行。
+- 本篇实验都用 kubeadm，**全程用 root 执行**（kubeadm 不允许普通用户/非 root 起控制面）。
+- 记得先把防火墙关掉（见上面命令），并确保虚机能连网、能拉阿里云镜像；国内直连 Docker Hub / k8s.io 拉不到，所以实验一里镜像源统一走阿里云 / 国内加速。
 
 ## 实验一：起 K8s——把"总管家"搬进虚机
 
 ### 🎯 目标
 
 - 人话说清干嘛：Docker 管"一台机器上的容器"，K8s 管"一群机器上的容器"。要用 K8s，第一步是让它上岗——**这不是测试，是装机**，后面 6 个实验全跑在这套集群上。
-- 干成一件什么事：装上 kubectl（你下命令的"话筒"）和 minikube（一键安装器），启动一个单节点 K8s 集群，最后 `kubectl get nodes` 看到 Ready，集群就算活了——**这是本篇第一个正反馈时刻**。
+- 干成一件什么事：装上 kubectl / kubeadm，用 kubeadm 在单台虚机上起一个单节点 K8s 集群（control-plane + worker 一体），最后 `kubectl get nodes` 看到 Ready，集群就算活了——**这是本篇第一个正反馈时刻**。
 - 有什么用：没有这一步，后面全部免谈。练会它，你到公司面对真集群时，第一件事也是敲这条命令确认"集群活着没"。
-- 生产对应：生产是 3 台 Master + N 台 Worker 的真机集群，用 kubeadm 装（全套流程收在篇末速查 2），kubectl 命令与 minikube 环境 95% 相同；minikube 只是"把迷你集群塞进一台虚机"方便练手。
+- 生产对应：生产是 3 台 Master + N 台 Worker 的真机集群，同样用 kubeadm 装（全套流程收在篇末速查 2）；本篇单节点版就是它的缩小版，kubectl 命令与生产 95% 相同。
 
 ### 📍 在哪动手
 
-CentOS 7 虚机的终端里（Xshell/SSH 都行），先用 root（装工具），全程联网。
+AlmaLinux 9.8 虚机的终端里（SecureCRT/SSH 都行），**全程用 root**（kubeadm 必须是 root），全程联网。
 
 ### 🔧 动手做
 
+> 本实验改用 **kubeadm** 方案（对应《K8s_v1.29.15_单节点_AlmaLinux9_部署手册》）：一台虚机跑完 `kubeadm init` 就同时是 control-plane + worker。全程用 root，镜像源走阿里云 / 国内加速，不翻墙。
+
+**第一步：关 swap + 开内核桥接模块（kubelet 硬性要求）**
+
 ```bash
-# ① 配 kubectl 的 yum 源（阿里云镜像；国内直连官方源会失败）
-cat > /etc/yum.repos.d/kubernetes.repo <<'EOF'
+# 1. 关 swap（不关 kubelet 一启动即崩）
+swapoff -a
+sed -i '/ swap / s/^/#/' /etc/fstab
+free -h                      # 验证 Swap 行应为 0
+
+# 2. 打开 overlay / br_netfilter 内核模块
+cat >/etc/modules-load.d/k8s.conf <<'EOF'
+overlay
+br_netfilter
+EOF
+modprobe overlay && modprobe br_netfilter
+
+# 3. 写内核转发参数
+cat >/etc/sysctl.d/k8s.conf <<'EOF'
+net.bridge.bridge-nf-call-iptables  = 1
+net.bridge.bridge-nf-call-ip6tables = 1
+net.ipv4.ip_forward                 = 1
+EOF
+sysctl --system
+```
+
+> ⚠️ **坑**：swap 不关 → kubelet 报 `running with swap on is not supported`。
+
+**第二步：修好 containerd 的 CRI 插件（本机自带 containerd 的默认坑）**
+
+```bash
+# 默认禁用了 CRI，先看一眼
+grep 'disabled_plugins' /etc/containerd/config.toml
+
+# 注释掉这行（先备份）
+cp /etc/containerd/config.toml /etc/containerd/config.toml.bak
+sed -i 's/^disabled_plugins = \["cri"\]/# disabled_plugins = ["cri"]/' /etc/containerd/config.toml
+
+# 原文件没有 cri 段就补默认段
+grep -q 'plugins."io.containerd.grpc.v1.cri"' /etc/containerd/config.toml \
+  || containerd config default >> /etc/containerd/config.toml
+
+# pause 镜像换国内源（默认 k8s.io 拉不到）
+sed -i 's|sandbox_image = "pause:.*"|sandbox_image = "registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.9"|' \
+  /etc/containerd/config.toml
+
+systemctl restart containerd && systemctl enable containerd
+crictl --runtime-endpoint unix:///run/containerd/containerd.sock version   # 不再报 Unimplemented 才对
+```
+
+> ⚠️ **坑**：不修这一步 → kubelet 起不来，报 `unknown service runtime.v1.RuntimeService` 或 `failed to get sandbox image`。
+
+**第三步：配阿里云 k8s 仓库 + 安装 kubelet / kubeadm / kubectl**
+
+```bash
+cat >/etc/yum.repos.d/kubernetes.repo <<'EOF'
 [kubernetes]
 name=Kubernetes
+# 阿里云已把仓库从 kubernetes/yum/repos/... 迁到 kubernetes-new
 baseurl=https://mirrors.aliyun.com/kubernetes-new/core/stable/v1.29/rpm/
 enabled=1
 gpgcheck=0
 EOF
+rm -rf /var/cache/dnf/kubernetes* /var/lib/dnf/repos/kubernetes*
+dnf makecache --disablerepo='*' --enablerepo=kubernetes
 
-# ② 安装 kubectl（注意装的是 1.29 系列，与速查里生产 kubeadm 版本一致）
-yum install -y kubectl
-
-# ③ 下载 minikube 主程序（约 140MB 的单文件，无需安装）
-#    ⚠ 说明：阿里云 K8s 源里没有 minikube 包；老教程的 OSS 镜像已失效（404，会下到几百字节的
-#      错误页面）；官方 google 源国内拉不动。国内没有稳定官方源，走 GitHub 加速代理最现实。
-#      下面两条 curl 二选一（2026-11 实测代理域名可用；代理常换，失效就搜「GitHub 文件加速」）：
-#    a) 首选：国内加速代理（实测约 0.2MB/s，虽慢但稳）：
-curl -LO https://ghfast.top/https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
-#    b) 备选：GitHub 直连（时快时慢，个别网络下反而更快）：
-curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
-#    还嫌慢：在 Windows 上用浏览器/下载工具下 b 的直链再拷进虚机（共享文件夹/U盘），速度最快
-
-# ④ 防呆验证：先看文件大小再安装
-ls -lh minikube-linux-amd64
-#    正常应为 100MB 以上；如果只有几百字节 = 下到的是错误页面，rm 掉换另一条重下
-
-# ⑤ 把它安装成系统命令，删掉安装包
-install minikube-linux-amd64 /usr/local/bin/minikube
-rm -f minikube-linux-amd64
-
-# ⑥ 验收两个工具都活了
-kubectl version --client
-minikube version
+dnf install -y kubelet-1.29.15 kubeadm-1.29.15 kubectl-1.29.15
+systemctl enable kubelet          # 注意：先 enable 不要 start
+kubelet --version                 # 应输出 v1.29.15
+kubectl version --client          # 应输出 Client Version: v1.29.15
 ```
 
-预期输出应包含关键字 `Client Version: v1.29.x` 和 `minikube version: v1.x`。如果虚机里 curl 太慢，也可以在 Windows 上下载好文件，用共享文件夹/U 盘拷进虚机再执行第 ⑤ 步。
-
-启动集群（本篇最重要的一步）。先说清运行身份，再执行命令：
-
-## 第一步：切到普通用户（root 会直接报错！)
-
-minikube 的 docker 驱动**不允许 root 启动**，用 root 跑会报：
-
-```
-X 因 DRV_AS_ROOT 错误而退出：docker 驱动不应使用 root 权限。
-```
-
-所以先建一个普通用户、加进 docker 组，再用它跑（一次环境准备，后续实验都用这个用户）：
+**第四步：kubeadm init 把控制面立起来**
 
 ```bash
-useradd -m k8s            # 建普通用户（如果虚机里已有其他普通用户，就用那个名字替换 k8s）
-usermod -aG docker k8s    # 加入 docker 组，免 sudo 操作 docker
-su - k8s                  # 切过去（提示符从 # 变成 $，就说明不再是 root 了）
-id                        # 验证：groups=...(...,docker)里要有 docker 组
-docker ps                 # 不报 permission denied 就对了
+kubeadm init \
+  --kubernetes-version=v1.29.15 \
+  --pod-network-cidr=10.244.0.0/16 \
+  --service-cidr=10.96.0.0/12 \
+  --image-repository=registry.cn-hangzhou.aliyuncs.com/google_containers \
+  2>&1 | tee /tmp/kubeadm-init.log
 ```
 
-> 前面 root 装的 minikube/kubectl 在 `/usr/local/bin`，全局可用，普通用户直接敲就行。
+| 参数 | 含义 |
+|---|---|
+| `--kubernetes-version=v1.29.15` | 必须与 kubelet/kubeadm/kubectl 版本一致 |
+| `--pod-network-cidr=10.244.0.0/16` | flannel v0.24 默认网段 |
+| `--service-cidr=10.96.0.0/12` | Service 默认网段 |
+| `--image-repository=...aliyun` | 组件镜像走阿里云，否则 k8s.io 拉不到 |
 
-## 第二步：启动集群（逐行看注释）
+**成功标志**：末尾出现 `Your Kubernetes control-plane has initialized successfully!`。若卡在 `[kubelet-start] Waiting for the kubelet to boot up...` → 回第二步重查 containerd 的 CRI。
 
-> 🔁 **2026-11-05 实测更新**（minikube v1.39.0）：① 新版 minikube 只支持 K8s v1.28.0 起步，集群版本从 v1.29.4 调整为 v1.29.6（预载包覆盖的版本，仍是 1.29 系列）；② 新增下面 ②③ 两步「提前备料」——阿里云仓库的 kicbase:v0.0.51 地基镜像被官方推错成 IBM 大型机架构（s390x），在 x86 机器上必报 `exec format error`，必须换成官方 amd64 版；minikube 自己的预载包下载源在国内也不通，要手动放进缓存目录。
+**第五步：配置 kubectl 凭证 + 补 cluster-admin 绑定**
 
 ```bash
-# ① 清掉上次失败的残留（第一次跑会提示不存在，忽略即可）
-minikube delete
+mkdir -p $HOME/.kube
+cp -f /etc/kubernetes/admin.conf $HOME/.kube/config     # 注意 -f 强制覆盖
+chown $(id -u):$(id -g) $HOME/.kube/config
+kubectl config view --minify
 
-# ② 提前拉好"地基镜像"（官方 amd64 版，走 daocloud 加速）
-#    ⚠ 别用阿里云仓库的 kicbase:v0.0.51：该标签被推错成 s390x 架构，拉了必报 exec format error
-docker pull --platform linux/amd64 docker.m.daocloud.io/kicbase/stable:v0.0.51
-
-# ③ 预下载 K8s 预载包放进 minikube 缓存（约 350MB；minikube 检测到本地有就直接用，不再联网找）
-mkdir -p ~/.minikube/cache/preloaded-tarball
-curl -L -o ~/.minikube/cache/preloaded-tarball/preloaded-images-k8s-v18-v1.29.6-docker-overlay2-amd64.tar.lz4 \
-  "https://ghfast.top/https://github.com/kubernetes-sigs/minikube-preloads/releases/download/v18/preloaded-images-k8s-v18-v1.29.6-docker-overlay2-amd64.tar.lz4"
-
-# ④ 防呆验证：正常应为 350MB 左右；只有几百 KB = 下到错误页，rm 掉后换 GitHub 直连重下
-ls -lh ~/.minikube/cache/preloaded-tarball/
-
-# ⑤ 启动集群
-minikube start \
-  --driver=docker \
-  --cpus=2 \
-  --memory=4096 \
-  --kubernetes-version=v1.29.6 \
-  --image-mirror-country=cn \
-  --registry-mirror=https://docker.m.daocloud.io \
-  --base-image=docker.m.daocloud.io/kicbase/stable:v0.0.51
+# 确认 kubernetes-admin 有绑定（kubeadm 成功一般会自动建，没建就手动补一次）
+kubectl get clusterrolebinding kubernetes-admin 2>/dev/null && echo "OK" \
+  || kubectl create clusterrolebinding kubernetes-admin \
+      --clusterrole=cluster-admin --user=kubernetes-admin
 ```
 
-- `--driver=docker`：K8s 整个装在一个 Docker 容器里——虚机已有 Docker，零额外依赖；**必须普通用户跑（见上）**，实在要用 root 就加 `--force`，但官方不推荐
-- `--cpus=2`：分给这套迷你集群的 CPU
-- `--memory=4096`：分给它的内存；**虚机总内存只有 4G 就改成 3072**，别把虚机自己挤死；8G 才给 4096
-- `--kubernetes-version=v1.29.6`：固定 1.29 系列。为什么是 .6 不是 .4：minikube 启动用的「预载包」（把整套 K8s 镜像和二进制预先打好的离线包，免去启动时联网下载）里，1.29 系列只打包了 v1.29.6——与 kubectl 1.29.x 同系列零版本差，生产 kubeadm 速查的命令照样无缝迁移
-- `--base-image`：指定「地基镜像」。minikube 国内模式默认拉阿里云的 kicbase:v0.0.51，但这个标签是坏的（里面只有 IBM s390x 架构的二进制），必须显式换成官方 amd64 版；daocloud 失效就换 `registry.cn-hangzhou.aliyuncs.com/google_containers/kicbase:v0.0.50`（v0.0.45～v0.0.50 都是正常多架构镜像，与 v0.0.51 仅小版本差）
-- `--image-mirror-country=cn`：K8s 自身组件镜像从国内仓库拉，**国内必加**，否则卡在下载
-- `--registry-mirror`：拉业务镜像（如 nginx）的 Docker 加速器；这个地址失效就换成你公司/云厂商自己的加速地址，再 `minikube start` 重启
+**第六步：装 flannel 网络插件（节点 Ready 的关键）**
+
+```bash
+kubectl apply -f https://gitee.com/mirrors/flannel/raw/v0.24.3/Documentation/kube-flannel.yml
+sleep 30
+kubectl get pods -n kube-flannel     # 应看到 kube-flannel-ds-xxx 2/2 Running
+kubectl get nodes -o wide            # 节点应 Ready
+```
+
+> 如果 flannel 一直 `ImagePullBackOff` → 国内拉不到镜像，把 flannel 镜像换成国内源后重 apply（见手册「问题速查 #6」）。
 
 ### ✅ 怎么算成功
 
-启动过程要下载约 2G 镜像，5~20 分钟正常，别关虚机。成功时最后几行应包含关键字 `Done! kubectl is now configured`：
-
-```
-* minikube v1.39.0 on Centos 7.9 (amd64)
-* Using the docker driver based on user configuration
-* Starting control plane node minikube in cluster minikube
-* Pulling base image ...
-* Creating Kubernetes in docker container with (CPUs=2, Memory=4096MB) ...
-* Verifying Kubernetes components...
-* Enabled addons: default-storageclass, storage-provisioner
-* Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default
-```
+kubeadm init 会下载控制面组件镜像，几分钟正常，别关虚机。完成时最后一行应包含关键字 `Your Kubernetes control-plane has initialized successfully!`。
 
 然后敲本篇最关键的一条验收命令：
 
@@ -195,24 +202,23 @@ kubectl get nodes
 ```
 
 ```
-NAME       STATUS   ROLES           AGE     VERSION
-minikube   Ready    control-plane   3m12s   v1.29.6
+NAME                 STATUS   ROLES           AGE     VERSION
+localhost            Ready    control-plane   10m     v1.29.15
 ```
 
-**STATUS 列是 Ready**——你人生第一个 K8s 集群上线了。可以再敲 `kubectl cluster-info`，应看到 `Kubernetes control plane is running at https://192.168.49.2:8443`。
+**STATUS 列是 Ready**——你人生第一个 K8s 集群上线了。可以再敲 `kubectl cluster-info`，应看到 `Kubernetes control plane is running at https://192.168.85.181:6443`。
 
-顺带认认人（minikube 里一人分饰所有角色，生产里它们是不同机器上的进程）：**apiserver** = 前台窗口（你所有 kubectl 命令都递给它）、**etcd** = 档案库（集群的一切状态都记在这）、**scheduler** = 分房调度员（决定新 Pod 住哪台机器）、**controller-manager** = 查房管家（发现"说好 3 个副本只剩 2 个"就去补）、**kubelet** = 牢房管理员（每台节点都有，真正把容器拉起来的人）。
+顺带认认人（单节点集群里一人分饰所有角色，生产里它们是不同机器、不同进程）：**apiserver** = 前台窗口（你所有 kubectl 命令都递给它）、**etcd** = 档案库（集群的一切状态都记在这）、**scheduler** = 分房调度员（决定新 Pod 住哪台机器）、**controller-manager** = 查房管家（发现"说好 3 个副本只剩 2 个"就去补）、**kubelet** = 牢房管理员（每台节点都有，真正把容器拉起来的人）。
 
 ⚠️【必考】架构就是"Master 管事 + Node 干活"，生产最低配 3 台 Master（保证 etcd 多数派存活）。完整组件定义见篇末速查 1。
 
 ### 🩹 如果不对
 
-1. 报 `X Exiting due to PROVIDER_DOCKER_ERROR: "docker: Cannot connect to the Docker daemon"` → Docker 没起来。执行 `systemctl start docker && systemctl enable docker`，`docker ps` 能出列表后再重跑 `minikube start`。
-2. 报 `X 因 DRV_AS_ROOT 错误而退出：docker 驱动不应使用 root 权限` → 你在用 root 跑。回到第一步建/切普通用户（`su - k8s`）再启动。
-3. 卡在 `Downloading Kubernetes ... images` 十几分钟不动或超时退出 → 国外镜像仓库拉不动。确认 `--image-mirror-country=cn` 加了没；已下载的部分不会白下，重跑 `minikube start` 会续传。虚机直接卡死的话是内存不够，关机把虚机内存调到 8G。
-4. 开头就报 `指定的 Kubernetes 版本 x.x.x 小于支持的最低版本 v1.28.0` 或 `当前版本的 minikube 不支持 Kubernetes x.x.x` → 2026 年起的新版 minikube 只认 v1.28.0+，老教程里的 v1.23.x、v1.24.x 都不能用了，用本篇的 `--kubernetes-version=v1.29.6`。
-5. 报 `因 GUEST_PROVISION 错误而退出`，且日志里有 `WARNING: The requested image's platform (linux/s390x) does not match the detected host platform (linux/amd64)` 和 `exec format error` → 地基镜像用错了：阿里云仓库的 kicbase:v0.0.51 被官方推错成只有 IBM 大型机（s390x）架构的镜像。先 `minikube delete` 清残留，确认 ② 拉的是官方 amd64 版，且启动命令带 `--base-image=docker.m.daocloud.io/kicbase/stable:v0.0.51`。
-6. ② 拉镜像或 ③ 下载预载包超时/失败 → 国内加速站换域名了（常事）：基础镜像换 `registry.cn-hangzhou.aliyuncs.com/google_containers/kicbase:v0.0.50`（`--base-image` 同步改）；预载包换 GitHub 直连，或在 Windows 浏览器下载后用共享文件夹/U盘拷进虚机的 `~/.minikube/cache/preloaded-tarball/` 目录（文件名保持不变）。
+1. `kubectl ... 403 Forbidden: user "kubernetes-admin" cannot ...` → admin.conf 没生效或 clusterrolebinding 没建。先 `cp -f /etc/kubernetes/admin.conf $HOME/.kube/config` 再重试；还不行就手动补 `kubectl create clusterrolebinding kubernetes-admin --clusterrole=cluster-admin --user=kubernetes-admin`。
+2. `crictl ... unknown service runtime.v1.RuntimeService` → containerd 的 CRI 插件还被禁着。回「动手做·第二步」重查 `disabled_plugins` 那行有没有注释掉。
+3. kubeadm init 卡在 `[kubelet-start] Waiting for the kubelet to boot up...` → kubelet 没起来。`systemctl status kubelet` 看日志；99% 是第一步的 swap 没关，或第二步的 containerd CRI 没修好。
+4. `kubectl get nodes` 节点一直 NotReady → flannel 网络没就绪。`kubectl get pods -n kube-flannel` 看状态；Pod 卡 `ImagePullBackOff` 就按手册「问题速查 #6」换国内镜像。
+5. flannel Pod `ImagePullBackOff` → 国内拉不到 flannel 镜像。用手册「问题速查 #6」把镜像换成国内源后重新 apply，再 `kubectl delete pod -n kube-flannel -l app=kube-flannel` 让它重建。
 
 ## 实验二：第一个 Pod——给程序一间单人牢房
 
@@ -230,7 +236,7 @@ minikube   Ready    control-plane   3m12s   v1.29.6
 
 ```bash
 # ① 让 K8s 起一个名叫 my-nginx 的 Pod，里面装个 nginx 容器
-kubectl run my-nginx --image=nginx:1.25
+kubectl run my-nginx --image=docker.m.daocloud.io/library/nginx:1.25
 
 # ② 看 Pod 状态（过十几秒再看一次，状态会变）
 kubectl get pods
@@ -263,7 +269,7 @@ my-nginx  1/1     Running             0          38s   ← 过一会儿看：入
 ### 🩹 如果不对
 
 1. STATUS 长时间停在 `ImagePullBackOff` → 镜像拉不动（K8s 头号网络问题）。先 `kubectl describe pod my-nginx` 看最下面 Events 里的报错原因；实验七会专门练它，这里先混个脸熟。
-2. 一直 `Pending` 或虚机越来越卡 → 资源不够。`docker ps` 确认 Docker 还活着；虚机只有 4G 内存的话，检查实验一的 `--memory` 是否改成了 3072。
+2. 一直 `Pending` 或虚机越来越卡 → 资源不够。`crictl ps` 确认 containerd 还活着；虚机只有 4G 内存的话，少开几个副本或给虚机加内存。
 
 ## 实验三：Deployment——雇 3 个克隆人，死一个自动补
 
@@ -301,7 +307,7 @@ spec:                      # 下面全是"你要的期望结果"
     spec:
       containers:
       - name: nginx        # 容器名：实验六滚动更新要指定它
-        image: nginx:1.25  # 用哪个镜像造（生产禁用 latest，写死版本才可追溯）
+        image: docker.m.daocloud.io/library/nginx:1.25  # 国内源直拉（本机到不了 Docker Hub；生产禁用 latest，写死版本才可追溯）
         ports:
         - containerPort: 80  # 容器里 nginx 监听 80 端口
 EOF
@@ -395,7 +401,7 @@ nginx-deploy-6d4b7f9c-9dz6k   1/1     Running   0          20s
 ### 🩹 如果不对
 
 1. `Error from server (NotFound): deployments.apps "nginx-deploy" not found` → 名字打错了，`kubectl get deployment` 核对后重敲；注意斜杠后是 Deployment 名不是 Pod 名。
-2. 扩到 5 后新 Pod 一直 `Pending` → 虚机资源不够了（minikube 分的内存小）。`kubectl describe pod 卡住的那个Pod名` 看 Events，有 `Insufficient memory` 就把 replicas 缩回来，或给虚机加内存——生产里同样这条报错，解法就是"调小 requests 或加节点"。
+2. 扩到 5 后新 Pod 一直 `Pending` → 虚机资源不够了（单节点集群 CPU/内存全靠这一台虚机）。`kubectl describe pod 卡住的那个Pod名` 看 Events，有 `Insufficient memory` 就把 replicas 缩回来，或给虚机加内存——生产里同样这条报错，解法就是"调小 requests 或加节点"。
 
 ## 实验五：Service——Pod 会死会换 IP，所以要有个固定门牌
 
@@ -444,8 +450,8 @@ nginx-svc   NodePort    10.96.123.45    <none>        80:30100/TCP   20s
 PORT(S) 列 `80:30100` = 内部 80 映射对外 30100。然后打通它：
 
 ```bash
-minikube ip                                          # 打出 minikube 这台"节点"的 IP，形如 192.168.49.2
-curl -sI http://$(minikube ip):30100 | head -4
+kubectl get nodes -o wide    # INTERNAL-IP 列 = 节点 IP（单节点集群里就是虚机自己的 IP）
+curl -sI http://192.168.85.181:30100 | head -4
 ```
 
 ```
@@ -455,18 +461,18 @@ Content-Type: text/html
 Connection: keep-alive
 ```
 
-**看到 `HTTP/1.1 200 OK` 就算打通**：请求从"门牌"一路打进了"牢房"。想看完整欢迎页再敲 `curl -s http://$(minikube ip):30100 | grep -i title`，应包含关键字 `Welcome to nginx!`。
+**看到 `HTTP/1.1 200 OK` 就算打通**：请求从"门牌"一路打进了"牢房"。想看完整欢迎页再敲 `curl -s http://192.168.85.181:30100 | grep -i title`，应包含关键字 `Welcome to nginx!`。
 
 再补一发"人换了门牌不变"的实证：
 
 ```bash
 kubectl scale deployment/nginx-deploy --replicas=4   # 换一批人
 kubectl get pods -o wide                            # 新旧 Pod 的 IP 各不相同
-curl -sI http://$(minikube ip):30100 | head -1       # 门牌照样通：HTTP/1.1 200 OK
+curl -sI http://192.168.85.181:30100 | head -1       # 门牌照样通：HTTP/1.1 200 OK
 ```
 
 ❗【易错】`port` 是 Service 自己的端口，`targetPort` 才是容器里的端口，两个"80"各管各的，写反就不通。
-说明：minikube 的"节点"其实是虚机里一个 Docker 容器，所以用 `minikube ip` 的地址 curl（虚机内直通）。生产里节点 IP 就是服务器 IP，直接 `curl 节点IP:30100`，命令里连 `$( )` 都不用换。
+说明：单节点 kubeadm 集群里，"节点"就是这台虚机本身，节点 IP 就是虚机 IP（`kubectl get nodes -o wide` 的 INTERNAL-IP 列），直接 `curl 节点IP:30100`。生产多节点时任选一台节点的 IP 都通（NodePort 每个节点都开同一扇门）。
 
 ### 🩹 如果不对
 
@@ -489,7 +495,7 @@ curl -sI http://$(minikube ip):30100 | head -1       # 门牌照样通：HTTP/1.
 
 ```bash
 # ① 换镜像：格式是 容器名=新镜像。nginx 是实验三 yaml 里写的容器名，别写成 Deployment 名
-kubectl set image deployment/nginx-deploy nginx=nginx:1.26
+kubectl set image deployment/nginx-deploy nginx=docker.m.daocloud.io/library/nginx:1.26
 
 # ② 盯着滚动更新的全过程（跑完自动退出）
 kubectl rollout status deployment/nginx-deploy
@@ -518,7 +524,7 @@ REVISION  CHANGE-CAUSE
 
 ```bash
 kubectl get deployment nginx-deploy -o wide          # IMAGES 列变成 1.26
-curl -sI http://$(minikube ip):30100 | grep -i server  # 应包含关键字 Server: nginx/1.26
+curl -sI http://192.168.85.181:30100 | grep -i server  # 应包含关键字 Server: nginx/1.26
 ```
 
 然后吃下反悔药：
@@ -526,13 +532,13 @@ curl -sI http://$(minikube ip):30100 | grep -i server  # 应包含关键字 Serv
 ```bash
 kubectl rollout undo deployment/nginx-deploy        # 退回上一版
 kubectl rollout status deployment/nginx-deploy
-curl -sI http://$(minikube ip):30100 | grep -i server  # 又变回 Server: nginx/1.25
+curl -sI http://192.168.85.181:30100 | grep -i server  # 又变回 Server: nginx/1.25
 ```
 
 ```
 $ kubectl rollout undo deployment/nginx-deploy
 deployment.apps/nginx-deploy rolled back
-$ curl -sI http://$(minikube ip):30100 | grep -i server
+$ curl -sI http://192.168.85.181:30100 | grep -i server
 Server: nginx/1.25.5
 ```
 
@@ -586,7 +592,7 @@ kubectl describe pod bad-pod
 Events:
   Type     Reason     Age                 From               Message
   ----     ------     ----                ----               -------
-  Normal   Scheduled  3m                  default-scheduler  Successfully assigned default/bad-pod to minikube
+  Normal   Scheduled  3m                  default-scheduler  Successfully assigned default/bad-pod to localhost.localdomain
   Warning  Failed     2m (x3 over 2m30s)  kubelet            Failed to pull image "ngixn:1.25": Error response from daemon: pull access denied for ngixn, repository does not exist or may require authorization: repository does not exist
   Warning  Failed     2m (x3 over 2m30s)  kubelet            Error: ErrImagePull
   Warning  Failed     108s (x6 over 3m)   kubelet            Back-off pulling image "ngixn:1.25"
@@ -613,7 +619,7 @@ kubectl get events --sort-by=.lastTimestamp | tail -5
 收案——修复并验证：
 
 ```bash
-kubectl set image pod bad-pod bad-pod=nginx:1.25   # 单个 Pod 也能改镜像（容器名默认同 Pod 名）
+kubectl set image pod bad-pod bad-pod=docker.m.daocloud.io/library/nginx:1.25   # 单个 Pod 也能改镜像（容器名默认同 Pod 名）
 kubectl get pods                                    # 状态转 Running
 ```
 
@@ -637,13 +643,13 @@ bad-pod   1/1     Running   1          8m
 ### 🩹 如果不对
 
 1. describe 里 Events 一片空白 → 事件默认只保留约 1 小时，过期就清了；补刀用 `kubectl get events --sort-by=.lastTimestamp`。
-2. Events 明明写着 `repository does not exist` 但你确认名字没错 → 国内网络拉 Docker Hub 失败也会报类似错误：确认实验一的 `--registry-mirror` 加了没、地址还活着没，换个可用的加速地址后 `minikube stop && minikube start` 重启再试。
+2. Events 明明写着 `repository does not exist` 但你确认名字没错 → 国内网络拉 Docker Hub 失败也会报类似错误：确认镜像用的是国内源（本篇统一用 `docker.m.daocloud.io/library/...`），换一个还活着的加速地址，再 `kubectl delete pod 那个Pod` 让它重建重试。
 
 ## 收尾：你现在会了什么
 
 回头看，你这几个小时干完了一个运维从"听说过 K8s"到"上手过 K8s"的全过程：
 
-- **装了一套能跑的 K8s 集群**（minikube），并知道生产上它叫 kubeadm 集群、由 3 台 Master + N 台 Worker 组成
+- **装了一套能跑的 K8s 集群**（kubeadm 单节点版），并知道生产上它就是同一套 kubeadm，由 3 台 Master + N 台 Worker 组成
 - **kubectl 基本功**：get / run / apply / scale / set image / delete
 - **Pod**：最小工位，看得懂它从 ContainerCreating 到 Running 的一生
 - **Deployment**：声明式监工，`replicas: 3` 一行保住 3 条命——你亲手杀过它一个副本又看着它复活
@@ -659,8 +665,8 @@ bad-pod   1/1     Running   1          8m
 收拾战场（可选）：
 
 ```bash
-minikube stop     # 停集群（下次 minikube start 秒起，东西都在）
-minikube delete   # 彻底删除（想从头再练一遍时用）
+systemctl stop kubelet    # 停集群（配置都在，下次 start kubelet 集群就回来）
+kubeadm reset -f          # 彻底重置（想从头再练一遍时用）
 ```
 
 接下来去哪：把 7 个实验连起来从头再做一遍，做到不翻笔记；然后带着实验建立的直觉读下面的「生产速查」——那是你上班接手真集群时的工作手册。
@@ -694,7 +700,7 @@ minikube delete   # 彻底删除（想从头再练一遍时用）
 | Node | kube-proxy | 维护 Service 转发规则（iptables/ipvs 模式），实现 ClusterIP 负载均衡 |
 | Node | 容器运行时 | 真正拉镜像起容器，常用 containerd（**Docker 从 K8S 1.24 起被移除**） |
 
-### 速查 2：kubeadm 生产部署（对照实验：minikube 替你自动干的就是这些）
+### 速查 2：kubeadm 生产部署（实验一单节点版的放大版：多台机器、同样步骤）
 
 所有节点执行（主机名每台不同；关 swap 是 kubelet 硬性要求）：
 
