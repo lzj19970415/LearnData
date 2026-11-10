@@ -27,7 +27,7 @@ dis cu | include zw_Ncc_cwxtXXX
 ### 2、进 SSL 视图和策略组，查分流到哪个 ACL
 
 ```
-vpn context ssl
+sslvpn context ssl
 policy-group 111
 dis th
 ```
