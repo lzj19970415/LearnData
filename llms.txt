@@ -44,6 +44,7 @@
 - [IP封堵与解封](https://newzone.top/huawei/问题流程/06-IP封堵与解封.html) - 该页内容已加密保存，输入密码后可见。
 - [物理机网卡断联排查（聚合问题）](https://newzone.top/huawei/问题流程/07-物理机网卡断联排查.html) - 该页内容已加密保存，输入密码后可见。
 - [系统加固镜像问题处理](https://newzone.top/huawei/问题流程/08-系统加固镜像问题处理.html) - 该页内容已加密保存，输入密码后可见。
+- [最大用户限制解除指令](https://newzone.top/huawei/问题流程/09-最大用户限制解除指令.html) - VPN 登录提示"达到最大用户限制"（在线会话数占满）时，查看并踢掉占用会话的账号，解除限制。
 - [个人介绍](https://newzone.top/intro.html) - 互联网广告人，
 - [Docker 从入门到生产实战](https://newzone.top/linux/16-Docker.html) - **这台虚机要满足什么：**
 - [Kubernetes 从入门到生产实战](https://newzone.top/linux/17-Kubernetes.html) - | 项目 | 最低要求 | 建议 | 为什么卡这道门 |
